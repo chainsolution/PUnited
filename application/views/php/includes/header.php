@@ -14,12 +14,12 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="index" href="../[SITE_MAP_PATH]">
 	<link rel="start" href="../[SITE_URL]" title="Home">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js-src/libs/jquery3.min.js"><\/script>')</script>
-	<script src="js/script.js"></script>
-	<script src="js-src/useful.js"></script>
-	<script src="js-src/common.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/js-src/libs/jquery3.min.js"><\/script>')</script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js-src/useful.js"></script>
+	<script src="assets/js-src/common.js"></script>
 	<!--[if lt IE 9]>
 	<script src="../../js/html5shiv-printshiv.js"></script>
 	<script src="../../js/selectivizr-min.js"></script>
@@ -31,7 +31,7 @@
 <div class="site_header">
 	<div class="site_container">
 		<div class="site_logo">
-			<img src="img/common/logo/site_header_logo.png" height="42" width="158">
+			<img src="assets/img/common/logo/site_header_logo.png" height="42" width="158">
 		</div>
 		<nav class="global_nav">
 			<ul>

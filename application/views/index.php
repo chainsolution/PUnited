@@ -49,7 +49,7 @@
 						<span>ヴィザヴィ会社概要</span>
 					</div>
 					<div class="item_img">
-						<img src="img/main/banner/main_banner_01.png">
+						<img src="assets/img/main/banner/main_banner_01.png">
 					</div>
 				</div>
 			</li>
@@ -60,7 +60,7 @@
 						<span>ヴィザヴィ会社概要</span>
 					</div>
 					<div class="item_img">
-						<img src="img/main/banner/main_banner_02.png">
+						<img src="assets/img/main/banner/main_banner_02.png">
 					</div>
 				</div>
 			</li>
@@ -71,7 +71,7 @@
 						<span>ヴィザヴィ会社概要</span>
 					</div>
 					<div class="item_img">
-						<img src="img/main/banner/main_banner_03.png">
+						<img src="assets/img/main/banner/main_banner_03.png">
 					</div>
 				</div>
 			</li>
@@ -129,7 +129,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="img/common/icons/icon_research_04.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_research_04.png" width="63" height="63">
 									</figure>
 									<div class="title">
 										<h4>研究</h4>
@@ -153,7 +153,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="img/common/icons/icon_area_content_06.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_area_content_06.png" width="63" height="63">
 									</figure>
 									<div class="title">
 										<h4>エリアコンテンツ</h4>
@@ -174,7 +174,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="img/common/icons/icon_advertising_pr_02.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_advertising_pr_02.png" width="63" height="63">
 									</figure>
 									<div class="title">
 										<h4>広告 - PR</h4>
@@ -205,7 +205,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="img/common/icons/icon_recruit_05.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_recruit_05.png" width="63" height="63">
 									</figure>
 									<div class="title">
 										<h4>リクルート</h4>
@@ -221,7 +221,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="img/common/icons/icon_event_01.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_event_01.png" width="63" height="63">
 									</figure>
 									<div class="title">
 										<h4>イベント</h4>
@@ -237,7 +237,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="img/common/icons/icon_internet_03.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_internet_03.png" width="63" height="63">
 									</figure>
 									<div class="title">
 										<h4>インターネット</h4>
@@ -275,7 +275,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="img/main/works/main_works_img_01.png" height="238" width="175">
+										<img src="assets/img/main/works/main_works_img_01.png" height="238" width="175">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -286,7 +286,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="img/main/works/main_works_img_02.png" height="238" width="175">
+										<img src="assets/img/main/works/main_works_img_02.png" height="238" width="175">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -297,7 +297,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="img/main/works/main_works_img_03.png" height="238" width="175">
+										<img src="assets/img/main/works/main_works_img_03.png" height="238" width="175">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -308,7 +308,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="img/main/works/main_works_img_04.png" height="238" width="175">
+										<img src="assets/img/main/works/main_works_img_04.png" height="238" width="175">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -319,7 +319,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="img/main/works/main_works_img_05.png">
+										<img src="assets/img/main/works/main_works_img_05.png">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -330,7 +330,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="img/main/works/main_works_img_06.png">
+										<img src="assets/img/main/works/main_works_img_06.png">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -341,7 +341,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="img/main/works/main_works_img_07.png">
+										<img src="assets/img/main/works/main_works_img_07.png">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -352,7 +352,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="img/main/works/main_works_img_08.png">
+										<img src="assets/img/main/works/main_works_img_08.png">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -363,7 +363,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="img/main/works/main_works_img_09.png">
+										<img src="assets/img/main/works/main_works_img_09.png">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
