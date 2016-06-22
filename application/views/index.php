@@ -161,11 +161,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<!-- second row -->
-					<div class="row">
-						<div class="canvas_box_container">
+				
 							<div class="canvas_box">
 								<div class="inner">
 									
@@ -197,11 +193,7 @@
 									
 								</div>
 							</div>
-						</div>
-					</div>
-					<!-- third row -->
-					<div class="row">
-						<div class="canvas_box_container">
+					
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>

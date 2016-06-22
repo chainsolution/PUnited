@@ -22,6 +22,7 @@
 				& > .canvas_box{
 					width: 20%;
 					padding: 50px 10px;
+					min-height: 220px;
 				}
 				& > .canvas_box.frosted_glass{
 					&:after{
