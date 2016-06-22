@@ -1,0 +1,46 @@
+
+.page_content{
+	
+	/** Company overview **/
+	.overview {
+		padding: $section-padding 0px;
+		width: 100%;
+		border-bottom: 1px solid $lightGray;
+		@include clearfix();
+    }
+	
+	/** Business domain **/
+	.business_domain{
+		width: 100%;
+		position: relative;
+		@include clearfix();
+		background-origin: 50% 50%;
+		
+		.content{
+			background: $defaultBg url($business_domain_bg) no-repeat center center;
+			background-attachment: fixed;
+		}
+		.canvas_box_container{
+			& > .canvas_box{
+				width: 20%;
+				padding: 50px 10px;
+			}
+		}
+
+	}
+
+	#works{
+		width: 100%;
+		position: relative;
+		@include clearfix();
+		background-origin: 50% 50%;
+
+		.canvas_box_container{
+			& > .canvas_box{
+				width: 33.3333333%;
+				padding: 35px;
+			}
+		}
+	}
+
+}

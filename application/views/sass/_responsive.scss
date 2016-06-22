@@ -1,0 +1,14 @@
+@import 'plugin/bourbon/_bourbon.scss';
+
+@media only screen and (max-width: 1400px){
+	.site_banner .banner_inner{
+		height: 600px;
+	}
+}
+
+@media only screen and (max-width: 888px){
+	.site_container,.site_banner{
+		width: 888px !important;
+	}
+
+}

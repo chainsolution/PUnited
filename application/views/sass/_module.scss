@@ -1,0 +1,71 @@
+
+
+.site_container{
+
+	a{
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+	}
+	.page_content{
+		.overview{
+			article{
+				text-align: center;
+				padding: 0px;
+				margin: 0 auto !important;
+				width: 60%;
+				margin: 0px;
+				h2{
+					font-size: 180%;
+					font-weight: 300 !important;
+					margin: 20px 0px;
+					color: $headingColor;
+				}
+
+				p{
+					text-align: center;
+					line-height: 35px;
+					margin-bottom: 10px;
+					font-size: 110%;
+					color: $paragraphColor;
+				}
+			}
+		}
+		
+		/* style for all section heading */
+		.section_heading{
+
+			h1{
+				font-size: 40px;
+				font-weight: 500;
+				margin:0 0 10px 0 !important;
+				letter-spacing: -3px;
+			}
+			span{
+				display: block;
+				font-size: 105%;
+				font-weight: 100;
+				color: $paragraphColor;
+			}
+		}
+		
+		.canvas_box_container .canvas_box .title{
+			h4{
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 18px;
+				color: $headingColor;
+				margin: 10px 0px 5px 0px;
+			}
+			span{
+				display: block;
+				line-height: 14px;
+				letter-spacing: -1px;
+				color: $paragraphColor;
+			}
+		}
+
+	}
+}
