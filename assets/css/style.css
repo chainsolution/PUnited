@@ -15,7 +15,7 @@
 .clear_fix:after {
   content: ".";
   display: block;
-  height: 0;
+  height: 10;
   clear: both;
   font-size: 0;
   line-height: 0;
