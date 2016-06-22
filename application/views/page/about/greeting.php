@@ -2,7 +2,7 @@
 	
 	// class MetaDescription : contain all the meta header and page title array,
 	// require "../../php/function/MetaDescription.php";
-	require_once (dirname(__FILE__).'/php/function/MetaDescription.php');
+	require("/../..php/function/MetaDescription.php");
 
 	// to get the meta header of a specific page
 	// have to instanciate an object of class MetaDescription and construct with following exact string parameter:
