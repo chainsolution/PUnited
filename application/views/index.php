@@ -110,7 +110,7 @@
 		<!-- /overview -->
 
 		<!-- business domain -->
-		<div class="business_domain">
+		<div id="business_domain">
 			
 			<div class="content_inner">
 				<!-- headring title -->
@@ -275,7 +275,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="assets/img/main/works/main_works_img_01.png" height="238" width="175">
+										<img src="assets/img/main/works/main_works_img_01.png">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -286,7 +286,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="assets/img/main/works/main_works_img_02.png" height="238" width="175">
+										<img src="assets/img/main/works/main_works_img_02.png">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -297,7 +297,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="assets/img/main/works/main_works_img_03.png" height="238" width="175">
+										<img src="assets/img/main/works/main_works_img_03.png">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -308,7 +308,7 @@
 							<div class="canvas_box striped">
 								<div class="inner">
 									<figure>
-										<img src="assets/img/main/works/main_works_img_04.png" height="238" width="175">
+										<img src="assets/img/main/works/main_works_img_04.png">
 									</figure>
 									<div class="title">
 										<span>例えば、タイトルコンテンツの No.71</span>
@@ -380,15 +380,101 @@
 		<!-- /work -->
 
 		<!-- News -->
-		<div class="news">
+		<div id="news">
 			<div class="content_inner">
 
 				<div class="section_heading">
-					
+					<div class="inner">
+						<h1>NEWS</h1>
+						<span>ビジネスマイルストーン</span>
+						<span>一時的な記事</span>
+					</div>
 				</div>
 
 				<div class="content">
-					<div></div>
+					<div class="row">
+					
+						<div class="left_news_heading">
+							<div class="news_heading_canvas frosted_glass">
+								<div class="inner">
+									<h1>NEWS</h1>
+									<span>ビジネスマイルストーン</span>
+									<span>一時的な記事</span>
+									<a href="#" class="more_btn">> MORE</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="canvas_box_container">
+							<div class="canvas_box frosted_glass">
+								<div class="inner">
+									<div class="heading">
+										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+									</div>
+									<p class="news_paragraph">
+										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+									</p>
+								</div>
+							</div>
+
+							<div class="canvas_box frosted_glass">
+								<div class="inner">
+									<div class="heading">
+										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+									</div>
+									<p class="news_paragraph">
+										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+									</p>
+								</div>
+							</div>
+
+							<div class="canvas_box frosted_glass">
+								<div class="inner">
+									<div class="heading">
+										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+									</div>
+									<p class="news_paragraph">
+										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+									</p>
+								</div>
+							</div>
+
+							<div class="canvas_box frosted_glass">
+								<div class="inner">
+									<div class="heading">
+										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+									</div>
+									<p class="news_paragraph">
+										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+									</p>
+								</div>
+							</div>
+
+							<div class="canvas_box frosted_glass">
+								<div class="inner">
+									<div class="heading">
+										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+									</div>
+									<p class="news_paragraph">
+										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+									</p>
+								</div>
+							</div>
+
+							<div class="canvas_box frosted_glass">
+								<div class="inner">
+									<div class="heading">
+										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+									</div>
+									<p class="news_paragraph">
+										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+									</p>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
 				</div>
 
 			</div>

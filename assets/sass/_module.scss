@@ -9,7 +9,28 @@
 		-ms-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
 	}
+
+
 	.page_content{
+		
+		a.more_btn{
+			width: 140px;
+			display: block;
+			padding: 7px;
+			background: $lightBlack;
+			color: $white;
+			border: 1px solid $lightBlack;
+			font-size: 12px;
+			font-weight: 500;
+			text-align: center;
+			line-height: 6px;
+			text-decoration: none;
+			&:hover{
+				background: $white;
+				color: $black;
+				font-weight: 600;
+			}
+		}
 		.overview{
 			article{
 				text-align: center;
@@ -49,22 +70,42 @@
 				font-weight: 100;
 				color: $paragraphColor;
 			}
+
 		}
 		
-		.canvas_box_container .canvas_box .title{
-			h4{
-				font-size: 18px;
-				font-weight: 500;
-				line-height: 18px;
-				color: $headingColor;
-				margin: 10px 0px 5px 0px;
+		#works a.more_btn{
+			position: absolute;
+			top: 50%;
+			right: 70px;
+			margin-top: -7px;
+		}
+
+		#news a.more_btn{
+			position: relative;
+			margin: 10px auto;
+		}
+		.canvas_box_container .canvas_box{
+			.title{
+				h4{
+					font-size: 18px;
+					font-weight: 500;
+					line-height: 18px;
+					color: $headingColor;
+					margin: 10px 0px 5px 0px;
+				}
+				span{
+					display: block;
+					line-height: 14px;
+					letter-spacing: -1px;
+					color: $paragraphColor;
+				}
 			}
-			span{
-				display: block;
-				line-height: 14px;
-				letter-spacing: -1px;
-				color: $paragraphColor;
+
+			figure > img{
+				max-width: 100%;
+				vertical-align: middle;
 			}
+			
 		}
 
 	}

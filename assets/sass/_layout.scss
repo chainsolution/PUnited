@@ -13,7 +13,6 @@ body{
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 0px;
 	padding-top: 70px;
-	height: 3000px;
 }
 
 .site_container{
@@ -277,30 +276,6 @@ body{
 			background: $white;
 			padding: 50px 0px;
 			text-align: center;
-
-			a.more_btn{
-				float: right;
-				width: 140px;
-				display: inline;
-				position: absolute;
-				right: 70px;
-				top: 50%;
-				margin-top: -7px;
-				padding: 7px;
-				background: $lightBlack;
-				color: $white;
-				border: 1px solid $lightBlack;
-				font-size: 100%;
-				font-weight: 500;
-				text-align: center;
-				line-height: 8px;
-				text-decoration: none;
-				&:hover{
-					background: $white;
-					color: $black;
-					font-weight: 600;
-				}
-			}
 		}
 
 		.content{
@@ -310,6 +285,11 @@ body{
 			background-size: cover;
 			background-origin: 50% 50%;
 			@include clearfix();
+			.row{
+				position: relative;
+				width: 100%;
+				display: inline-flex;
+			}
 		}
  }
 
@@ -326,9 +306,11 @@ body{
 		height: auto;
 		position: relative;
 		float: left;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		overflow: hidden;
-		vertical-align: middle;
-		background-origin: 50% 50%; /* last added */
+		background-origin: 50% 50%;
 		box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		-ms-box-sizing: border-box;
@@ -345,6 +327,7 @@ body{
 		figure{ /* last added */
 			width: 100%;
 			float: left;
+			position: relative;
 			background-size: cover;
 			background-origin: 50% 50%;
 			background-position: center center;
@@ -372,25 +355,24 @@ body{
 			content: "";
 			z-index: 2;
 			opacity: 0.4;
-			background-image: (linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url($business_domain_bg));
 			background-size:cover;
 			background-origin: 50% 50%;
 			background-position: center center;
 			background-attachment: fixed;
-			filter: blur(10px);
-			-webkit-filter: blur(10px);
-			-moz-filter: blur(10px);
-			-ms-filter: blur(10px);
-			-o-filter: blur(10px);
+			filter: blur(6px);
+			-webkit-filter: blur(6px);
+			-moz-filter: blur(6px);
+			-ms-filter: blur(6px);
+			-o-filter: blur(6px);
 			filter: url("#frostedGlass");
 		}	
 	}
 	.canvas_box.striped{
 		position: relative;
 		background: $white;
-		min-height: 352px; /* last added */
+		min-height: 350px;
 		.inner span{
-			padding: 10px; /* last added */
+			padding: 10px;
 		}
 
 		&:nth-child(even){ /* last added */
