@@ -193,4 +193,63 @@
 		}
 	}
 
+	/** Recruit section **/
+	#recruit{
+		.left_box,.right_box{
+			position: relative;
+			width: 50%;
+			background-size: cover;
+			background-position: center center;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+		.left_box .inner,.right_box .inner{
+			position: relative;
+			width: 100%;
+		}
+		.left_box figure img,.left_box figure img{
+			width: 100%;
+			vertical-align: bottom;
+		}
+		.left_box .box_title,.right_box .box_title{
+			position: absolute;
+			top: 0;
+			width: 260px;
+			height: 210px;
+			padding: 15px;
+			background: rgba(0,0,0,0.4);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+		.left_box .box_title{
+			right: 0;
+		}
+		.right_box .box_title{
+			left: 0;
+		}
+		.right_box .fb_canvas{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 260px;
+			background: $fbBackground;
+		}
+		.box_title h2{
+			display: block;
+			margin: 0px;
+			font-size: 30px;
+			color: darken($white,10%);
+			font-weight: 500;
+		}
+	}
+	/* /Recruit section **/
+
 }

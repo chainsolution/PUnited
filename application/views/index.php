@@ -474,8 +474,42 @@
 		<!-- /News -->
 
 		<!-- Recruit -->
-		<div class="recruit">
-			
+		<div id="recruit">
+			<div class="content_inner">
+				<div class="section_heading">
+					<h1>RECRUIT</h1>
+					<span>これは、このウェブサイトのニュ</span>
+				</div>
+
+				<div class="content">
+					<div class="row">
+						<div class="left_box">
+							<div class="inner">
+								<figure>
+									<img src="assets/img/main/recruit/main_recruit_man_img_01.png">
+								</figure>
+								<div class="box_title">
+									<h2>このウサ</h2>
+								</div>
+							</div>
+						</div>
+						<div class="right_box">
+							<div class="inner">
+								<figure>
+									<img src="assets/img/main/recruit/main_recruit_woman_img_02.png">
+								</figure>
+								<div class="box_title">
+									<h2>このウブ</h2>
+								</div>
+								<div class="fb_canvas">
+									<h2 class="kanji">このウブこの</h2>
+									<h2 class="en">Facebook</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- /Recruit -->
 
