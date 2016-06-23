@@ -449,8 +449,7 @@ body {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0px;
-  padding-top: 70px;
-  padding-bottom: 300px; }
+  padding-top: 70px; }
 
 .site_container {
   position: relative;
@@ -659,6 +658,33 @@ body {
  * Layout for structure of each section
  *
  */
+.site_container .content_inner {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  .site_container .content_inner::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.site_container .content {
+  width: 100%;
+  position: relative;
+  float: left;
+  background-size: cover;
+  background-origin: 50% 50%; }
+  .site_container .content::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .site_container .content .row {
+    position: relative;
+    width: 100%;
+    display: inline-flex; }
+
 .page_content {
   width: 100%;
   position: relative; }
@@ -666,17 +692,6 @@ body {
     clear: both;
     content: "";
     display: block; }
-  .page_content .content_inner {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; }
-    .page_content .content_inner::after {
-      clear: both;
-      content: "";
-      display: block; }
   .page_content .section_heading {
     width: 100%;
     position: relative;
@@ -684,20 +699,6 @@ body {
     background: #fff;
     padding: 50px 0px;
     text-align: center; }
-  .page_content .content {
-    width: 100%;
-    position: relative;
-    float: left;
-    background-size: cover;
-    background-origin: 50% 50%; }
-    .page_content .content::after {
-      clear: both;
-      content: "";
-      display: block; }
-    .page_content .content .row {
-      position: relative;
-      width: 100%;
-      display: inline-flex; }
 
 /** Page : Main visual **/
 /** Layout for canvas box **/
@@ -1013,6 +1014,50 @@ body {
     font-size: 30px;
     color: #e6e6e6;
     font-weight: 500; }
+
+.site_footer {
+  width: 100%;
+  position: relative;
+  padding: 30px 0px 0px; }
+  .site_footer::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .site_footer .scroll_top {
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 30px 0px;
+    text-align: center; }
+    .site_footer .scroll_top span {
+      padding: 7px 15px;
+      cursor: pointer; }
+  .site_footer .local_nav, .site_footer .footer_copyright {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .site_footer .footer_copyright {
+    padding: 10px; }
+  .site_footer .local_nav {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    align-items: center; }
+    .site_footer .local_nav ul {
+      list-style-type: none; }
+      .site_footer .local_nav ul li {
+        display: inline-block; }
+        .site_footer .local_nav ul li a {
+          position: relative;
+          text-decoration: none;
+          color: #000;
+          display: inline-block;
+          padding: 18px;
+          font-size: 80%;
+          font-weight: 300; }
+          .site_footer .local_nav ul li a:hover {
+            text-decoration: underline;
+            color: #4d4d4d; }
 
 .site_container a {
   transition: all 0.3s ease-in-out;
