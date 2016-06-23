@@ -23,6 +23,6 @@ class system extends CI_Controller {
 
 	}
 	public function greeting() {
-		$this->load->view('greeting');
+		$this->load->view('page/about/greeting');
 	}
 }
