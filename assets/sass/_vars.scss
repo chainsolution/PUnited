@@ -27,8 +27,9 @@ $slaveBlack: #333F48;
  ----------------------------------------- */
 
  $fullWidth: 100%;
+ $site_container_width: 96%;
  $half: 50%;
- $siteContainer: 90%;
+ $site_container_padding: 2%;
 
  /* Section padding & margin
   ----------------------------------------- */ 
@@ -39,8 +40,8 @@ $slaveBlack: #333F48;
 /* Text color
  ----------------------------------------- */
 
- $paragraphColor: #444;
- $headingColor: #333;
+ $paragraphColor: #111;
+ $headingColor: #222;
 
 /* Image url / directory path
  ------------------------------------------ */

@@ -93,7 +93,7 @@
 		<!-- overview -->
 		<div class="overview">
 			<article>
-				<p>会社統合のごあいさつ</p>
+				<h4>会社統合のごあいさつ</h4>
 				<p>2016年4月、新生ビザビがスタートします。</p>
 				<p>１社体制となります。乱暴な言い方をすれば「体をひとつ」にするだけです。もともとの「心はひとつ」です。</p>
 				<p>その心とは「情報文化の創造を通じて社会を豊かに楽しくする」ということです。</p>
@@ -130,7 +130,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="assets/img/common/icons/icon_research_04.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_research_04.png">
 									</figure>
 									<div class="title">
 										<h4>研究</h4>
@@ -154,7 +154,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="assets/img/common/icons/icon_area_content_06.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_area_content_06.png">
 									</figure>
 									<div class="title">
 										<h4>エリアコンテンツ</h4>
@@ -171,7 +171,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="assets/img/common/icons/icon_advertising_pr_02.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_advertising_pr_02.png">
 									</figure>
 									<div class="title">
 										<h4>広告 - PR</h4>
@@ -198,7 +198,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="assets/img/common/icons/icon_recruit_05.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_recruit_05.png">
 									</figure>
 									<div class="title">
 										<h4>リクルート</h4>
@@ -214,7 +214,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="assets/img/common/icons/icon_event_01.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_event_01.png">
 									</figure>
 									<div class="title">
 										<h4>イベント</h4>
@@ -230,7 +230,7 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
-										<img src="assets/img/common/icons/icon_internet_03.png" width="63" height="63">
+										<img src="assets/img/common/icons/icon_internet_03.png">
 									</figure>
 									<div class="title">
 										<h4>インターネット</h4>
@@ -528,7 +528,7 @@
 			<div class="content">
 
 				<div class="scroll_top">
-					<span><img src="assets/img/common/icons/icon_scroll_to_top_07.png"></span>
+					<span onclick="PUNITED.useful.jumpToPageTop();"><img src="assets/img/common/icons/icon_scroll_to_top_07.png"></span>
 				</div>
 
 				<nav class="local_nav">

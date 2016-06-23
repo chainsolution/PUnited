@@ -16,7 +16,7 @@ if (!PUNITED.useful) PUNITED.useful = {};
 	/** Smooth scroll to the top **/
 	   /***********************/
 	ns.jumpToPageTop = function() {
-		$('html,body').stop().animate({ scrollTop: 0 }, 'normal');
+		$('html,body').stop().animate({ scrollTop: 0 }, 1200);
 	}
 	
 	/**  **/
