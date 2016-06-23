@@ -495,15 +495,20 @@
 						</div>
 						<div class="right_box">
 							<div class="inner">
-								<figure>
-									<img src="assets/img/main/recruit/main_recruit_woman_img_02.png">
-								</figure>
-								<div class="box_title">
-									<h2>このウブ</h2>
+								<div class="top_img">
+									<figure>
+										<img src="assets/img/main/recruit/main_recruit_woman_img_02.png">
+									</figure>
+									<div class="box_title">
+										<h2>このウブ</h2>
+									</div>
 								</div>
+								
 								<div class="fb_canvas">
-									<h2 class="kanji">このウブこの</h2>
-									<h2 class="en">Facebook</h2>
+									<div>
+										<h2 class="kanji">このウブ</h2>
+										<h2 class="en">Facebook</h2>
+									</div>
 								</div>
 							</div>
 						</div>

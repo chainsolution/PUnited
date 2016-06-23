@@ -449,7 +449,8 @@ body {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0px;
-  padding-top: 70px; }
+  padding-top: 70px;
+  padding-bottom: 300px; }
 
 .site_container {
   position: relative;
@@ -943,24 +944,31 @@ body {
   .page_content #recruit .left_box, .page_content #recruit .right_box {
     position: relative;
     width: 50%;
+    float: left;
+    display: flex;
     background-size: cover;
     background-position: center center;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -moz-box-sizing: border-box; }
+    .page_content #recruit .left_box::after, .page_content #recruit .right_box::after {
+      clear: both;
+      content: "";
+      display: block; }
   .page_content #recruit .left_box .inner, .page_content #recruit .right_box .inner {
     position: relative;
     width: 100%; }
-  .page_content #recruit .left_box figure img, .page_content #recruit .left_box figure img {
-    width: 100%;
+  .page_content #recruit .left_box figure, .page_content #recruit .left_box figure {
+    background-size: cover;
+    background-position: center center; }
+  .page_content #recruit .left_box figure img, .page_content #recruit .right_box figure img {
+    max-width: 100%;
     vertical-align: bottom; }
   .page_content #recruit .left_box .box_title, .page_content #recruit .right_box .box_title {
     position: absolute;
     top: 0;
-    width: 260px;
-    height: 210px;
-    padding: 15px;
+    padding: 80px 60px;
     background: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
@@ -973,13 +981,32 @@ body {
     right: 0; }
   .page_content #recruit .right_box .box_title {
     left: 0; }
+  .page_content #recruit .right_box .top_img, .page_content #recruit .right_box .fb_canvas {
+    width: 100%;
+    float: left; }
+  .page_content #recruit .right_box .top_img {
+    position: relative; }
   .page_content #recruit .right_box .fb_canvas {
     position: absolute;
+    background: #3b5999;
+    top: 63%;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 260px;
-    background: #3b5999; }
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .page_content #recruit .right_box .fb_canvas h2 {
+      display: block;
+      color: #f2f2f2;
+      margin: 0px; }
+    .page_content #recruit .right_box .fb_canvas .kanji {
+      font-size: 200%;
+      font-weight: 400; }
+    .page_content #recruit .right_box .fb_canvas .en {
+      font-size: 270%;
+      letter-spacing: -2px; }
   .page_content #recruit .box_title h2 {
     display: block;
     margin: 0px;
