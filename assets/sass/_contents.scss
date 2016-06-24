@@ -26,9 +26,21 @@
 					min-height: 220px;
 				}
 				& > .canvas_box.frosted_glass{
+					.inner{
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+
 					&:after{
 						background-image: (linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url($business_domain_bg));
 						background-position: center 70px;
+					}
+
+					&:hover{
+						&:after{
+							background: rgba(0,0,0,0.1);
+						}
 					}
 				}
 			}
@@ -52,17 +64,18 @@
 				    -moz-transform-origin: 50% 50%;
 				    -o-transform-origin: 50% 50%;
 				    -ms-transform-origin: 50% 50%;
-				    transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
-				    -webkit-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
-				    -moz-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
-				    -o-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
-				    -ms-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+				    transition: all .3s cubic-bezier(0, 0, 1, 1) 0s;
+				    -webkit-transition: all .3s cubic-bezier(0, 0, 1, 1) 0s;
+				    -moz-transition: all .3s cubic-bezier(0, 0, 1, 1) 0s;
+				    -o-transition: all .3s cubic-bezier(0, 0, 1, 1) 0s;
+				    -ms-transition: all .3s cubic-bezier(0, 0, 1, 1) 0s;
 				    transform: scaleX(1) scaleY(1) scaleZ(1);
 				    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
 				    -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
 				    -o-transform: scaleX(1) scaleY(1) scaleZ(1);
 				    -ms-transform: scaleX(1) scaleY(1) scaleZ(1);
 				    &:hover{
+				  		cursor: pointer;
 				    	transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
 					    -webkit-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
 					    -moz-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
@@ -203,6 +216,10 @@
 					.news_paragraph{
 						font-size: 16px;
 						line-height: 1.7;
+						&:hover{
+							cursor: pointer;
+							text-decoration: underline;
+						}
 					}
 				}
 				& > .canvas_box.frosted_glass{
@@ -238,36 +255,50 @@
 			width: 100%;
 
 		}
-		.left_box figure, .left_box figure{
+		.left_box figure, .right_box figure{
+			&::after{
+				position: absolute;
+				content: "";
+				background: transparent;
+				display: block;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+		}
+		.left_box figure, .right_box figure{
 			background-size: cover;
 			background-position: center center;
-			
-		}
-		.left_box figure img,.right_box figure img{
-			max-width: 100%;
-			vertical-align: bottom;
 			transform-origin: 50% 50%;
 		    -webkit-transform-origin: 50% 50%;
 		    -moz-transform-origin: 50% 50%;
 		    -o-transform-origin: 50% 50%;
 		    -ms-transform-origin: 50% 50%;
-		    transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
-		    -webkit-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
-		    -moz-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
-		    -o-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
-		    -ms-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+		    transition: all .3s cubic-bezier(0, 0, 1, 1) 0s;
+		    -webkit-transition: all .3s cubic-bezier(0, 0, 1, 1) 0s;
+		    -moz-transition: all .3s cubic-bezier(0, 0, 1, 1) 0s;
+		    -o-transition: all .3s cubic-bezier(0, 0, 1, 1) 0s;
+		    -ms-transition: all .3s cubic-bezier(0, 0, 1, 1) 0s;
 		    transform: scaleX(1) scaleY(1) scaleZ(1);
 		    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
 		    -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
 		    -o-transform: scaleX(1) scaleY(1) scaleZ(1);
 		    -ms-transform: scaleX(1) scaleY(1) scaleZ(1);
-			&:hover{
-				transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-				-webkit-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-				-moz-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-				-ms-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-				opacity: 0.7;
-			}
+		    &:hover{
+		    	&::after{
+		    		background: rgba(0,0,0,0.4);
+		    	}
+		    	transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
+				-webkit-transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
+				-moz-transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
+				-ms-transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
+		    }
+			
+		}
+		.left_box figure img,.right_box figure img{
+			max-width: 100%;
+			vertical-align: bottom;
 		}
 		.left_box .box_title,.right_box .box_title{
 			position: absolute;
@@ -275,6 +306,7 @@
 			padding: 80px 60px;
 			background: rgba(0,0,0,0.4);
 			display: flex;
+			z-index: 2;
 			justify-content: center;
 			align-items: center;
 			box-sizing: border-box;
@@ -298,6 +330,7 @@
 		}
 		.right_box .fb_canvas{
 			position: absolute;
+			text-decoration: none;
 			background: $fbBackground;
 			top: 63%;
 			bottom: 0;
@@ -313,7 +346,7 @@
 			-ms-transition: all 0.5s ease-out;
 
 			&:hover{
-				background: lighten($fbBackground,12%);
+				background: lighten($fbBackground,15%);
 			}
 			h2{
 				display: block;

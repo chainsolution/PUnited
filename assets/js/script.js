@@ -26,8 +26,8 @@ var animateSlide;
       // check whether it's the last image.
       if(!next.length){
         next = $(".site_banner .banner_item:first");
-        current.css("z-index","1");
         current.find(".item_img").addClass("img_scale");
+        current.css("z-index","1");
         current.animate({opacity:1.0},3000,function(){
           current.animate({opacity:0.99},6000,function(){
             next.addClass("active");
@@ -42,8 +42,8 @@ var animateSlide;
 
       }else{
         // if it's not the last imgae, execute the following
-        current.css("z-index","1");
         current.find(".item_img").addClass("img_scale");
+        current.css("z-index","1");
         current.animate({opacity:1.0},3000,function(){
           current.animate({opacity:0.99},6000,function(){
             next.addClass("active");
@@ -67,19 +67,38 @@ bannerInitialize = function(){
   $('.site_banner .load_banner').addClass('loading');
 }
 
-/* ---------------------------------------------------------
-  Set the height of banner to expand
-  entire window height, when document has loaded
-  ---------------------------------------------------------- */
-var setBannerHeight;
-setBannerHeight = function(){
-  var winHeight = $(window).height();
-  $('.site_banner .banner_inner').css("height",winHeight+"px");
+
+/** Set border bottom for global nav when scroll down, and remove when at the top **/
+  /*****************************************************************************/
+var setNavBarBorder;
+setNavBarBorder = function(){
+  var headbar = $('.site_header');
+  $(window).scroll(function(){
+    var scrolltop = $(window).scrollTop();
+    if(scrolltop>0){
+      headbar.css("border-bottom","1px solid #f5f5f5");
+    }else{
+      headbar.css("border-bottom","0px");
+    }
+  });
 }
 
+/** Resize the height of banner slide, when window width get resize smaller **/
+  /***********************************************************************/
+  var resizeBannerHeight;
+  resizeBannerHeight = function(){
+    $(window).resize(function(){
+       var winWidth = $(window).width();
+        if(winWidth <= 888){
+          alert(winWidth);
+        }
+    });
+  }
 
 $(document).ready(function(){
   bannerInitialize();
   animateSlide();
+  setNavBarBorder();
+  resizeBannerHeight();
 });
 

@@ -127,7 +127,7 @@
 					<div class="row">
 						<div class="canvas_box_container">
 							<div class="canvas_box frosted_glass">
-								<div class="inner">
+								<a href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_research_04.png">
 									</figure>
@@ -135,7 +135,7 @@
 										<h4>研究</h4>
 										<span>RESEARCH</span>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div class="canvas_box">
 								<div class="inner">
@@ -151,7 +151,7 @@
 								
 							</div>
 							<div class="canvas_box frosted_glass">
-								<div class="inner">
+								<a href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_area_content_06.png">
 									</figure>
@@ -159,7 +159,7 @@
 										<h4>エリアコンテンツ</h4>
 										<span>AREA CONTENT</span>
 									</div>
-								</div>
+								</a>
 							</div>
 				
 							<div class="canvas_box">
@@ -168,7 +168,7 @@
 								</div>
 							</div>
 							<div class="canvas_box frosted_glass">
-								<div class="inner">
+								<a href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_advertising_pr_02.png">
 									</figure>
@@ -176,7 +176,7 @@
 										<h4>広告 - PR</h4>
 										<span>ADVERTISING/PR</span>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div class="canvas_box">
 								<div class="inner">
@@ -195,7 +195,7 @@
 							</div>
 					
 							<div class="canvas_box frosted_glass">
-								<div class="inner">
+								<a href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_recruit_05.png">
 									</figure>
@@ -203,7 +203,7 @@
 										<h4>リクルート</h4>
 										<span>RECRUIT</span>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div class="canvas_box">
 								<div class="inner">
@@ -211,7 +211,7 @@
 								</div>
 							</div>
 							<div class="canvas_box frosted_glass">
-								<div class="inner">
+								<a href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_event_01.png">
 									</figure>
@@ -219,7 +219,7 @@
 										<h4>イベント</h4>
 										<span>EVENT</span>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div class="canvas_box">
 								<div class="inner">
@@ -227,7 +227,7 @@
 								</div>
 							</div>
 							<div class="canvas_box frosted_glass">
-								<div class="inner">
+								<a href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_internet_03.png">
 									</figure>
@@ -235,7 +235,7 @@
 										<h4>インターネット</h4>
 										<span>INTERNET</span>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -504,12 +504,12 @@
 									</div>
 								</div>
 								
-								<div class="fb_canvas">
+								<a href="http://facebook.com" class="fb_canvas">
 									<div>
 										<h2 class="kanji">このウブ</h2>
 										<h2 class="en">Facebook</h2>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>

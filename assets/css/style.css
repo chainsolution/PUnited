@@ -451,6 +451,16 @@ body {
   letter-spacing: 0px;
   padding-top: 70px; }
 
+.site_md_container {
+  position: relative;
+  width: 86%;
+  padding: 0 6%;
+  margin: 0 auto; }
+  .site_md_container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
 .site_container {
   position: relative;
   width: 96%;
@@ -614,8 +624,9 @@ body {
           .site_banner .banner_inner .banner_list .banner_item .item_inner .item_title {
             position: absolute;
             height: 100%;
-            width: 76%;
-            left: 12%;
+            width: 100%;
+            padding: 0 13%;
+            box-sizing: border-box;
             margin: 0 auto;
             display: flex;
             justify-content: center;
@@ -637,16 +648,11 @@ body {
             width: 100%;
             background-size: cover !important;
             background-position: center center !important;
-            transform-origin: 50% 50%;
-            -webkit-transform-origin: 50% 50%;
-            -moz-transform-origin: 50% 50%;
-            -o-transform-origin: 50% 50%;
-            -ms-transform-origin: 50% 50%;
-            transition: all 25s cubic-bezier(0, 0, 1, 1) 0s;
-            -webkit-transition: all 25s cubic-bezier(0, 0, 1, 1) 0s;
-            -moz-transition: all 25s cubic-bezier(0, 0, 1, 1) 0s;
-            -o-transition: all 25s cubic-bezier(0, 0, 1, 1) 0s;
-            -ms-transition: all 25s cubic-bezier(0, 0, 1, 1) 0s;
+            transition: all 20s cubic-bezier(0, 0, 1, 1) 0s;
+            -webkit-transition: all 20s cubic-bezier(0, 0, 1, 1) 0s;
+            -moz-transition: all 20s cubic-bezier(0, 0, 1, 1) 0s;
+            -o-transition: all 20s cubic-bezier(0, 0, 1, 1) 0s;
+            -ms-transition: all 20s cubic-bezier(0, 0, 1, 1) 0s;
             transform: scaleX(1) scaleY(1) scaleZ(1);
             -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
             -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
@@ -812,9 +818,13 @@ body {
         width: 20%;
         padding: 10px;
         min-height: 220px; }
+      .page_content #business_domain .content .canvas_box_container > .canvas_box.frosted_glass .inner:hover {
+        text-decoration: underline; }
       .page_content #business_domain .content .canvas_box_container > .canvas_box.frosted_glass:after {
         background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/main/business_domain/main_business_domain_bg_07.png");
         background-position: center 70px; }
+      .page_content #business_domain .content .canvas_box_container > .canvas_box.frosted_glass:hover:after {
+        background: rgba(0, 0, 0, 0.1); }
   .page_content #works {
     width: 100%;
     position: relative; }
@@ -831,17 +841,18 @@ body {
         -moz-transform-origin: 50% 50%;
         -o-transform-origin: 50% 50%;
         -ms-transform-origin: 50% 50%;
-        transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
-        -webkit-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
-        -moz-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
-        -o-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
-        -ms-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+        transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+        -webkit-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+        -moz-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+        -o-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+        -ms-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
         transform: scaleX(1) scaleY(1) scaleZ(1);
         -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
         -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
         -o-transform: scaleX(1) scaleY(1) scaleZ(1);
         -ms-transform: scaleX(1) scaleY(1) scaleZ(1); }
         .page_content #works .canvas_box_container > .canvas_box figure:hover {
+          cursor: pointer;
           transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
           -webkit-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
           -moz-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
@@ -961,6 +972,9 @@ body {
           .page_content #news .content .canvas_box_container > .canvas_box .news_paragraph {
             font-size: 16px;
             line-height: 1.7; }
+            .page_content #news .content .canvas_box_container > .canvas_box .news_paragraph:hover {
+              cursor: pointer;
+              text-decoration: underline; }
         .page_content #news .content .canvas_box_container > .canvas_box.frosted_glass:after {
           background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/main/news/main_news_bg_01.png"); }
   .page_content #recruit .left_box, .page_content #recruit .right_box {
@@ -982,39 +996,50 @@ body {
   .page_content #recruit .left_box .inner, .page_content #recruit .right_box .inner {
     position: relative;
     width: 100%; }
-  .page_content #recruit .left_box figure, .page_content #recruit .left_box figure {
+  .page_content #recruit .left_box figure::after, .page_content #recruit .right_box figure::after {
+    position: absolute;
+    content: "";
+    background: transparent;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .page_content #recruit .left_box figure, .page_content #recruit .right_box figure {
     background-size: cover;
-    background-position: center center; }
-  .page_content #recruit .left_box figure img, .page_content #recruit .right_box figure img {
-    max-width: 100%;
-    vertical-align: bottom;
+    background-position: center center;
     transform-origin: 50% 50%;
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
-    transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
-    -webkit-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
-    -moz-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
-    -o-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
-    -ms-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+    transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+    -webkit-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+    -o-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+    -ms-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
     transform: scaleX(1) scaleY(1) scaleZ(1);
     -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
     -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
     -o-transform: scaleX(1) scaleY(1) scaleZ(1);
     -ms-transform: scaleX(1) scaleY(1) scaleZ(1); }
-    .page_content #recruit .left_box figure img:hover, .page_content #recruit .right_box figure img:hover {
-      transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-      -webkit-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-      -moz-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-      -ms-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-      opacity: 0.7; }
+    .page_content #recruit .left_box figure:hover, .page_content #recruit .right_box figure:hover {
+      transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
+      -webkit-transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
+      -moz-transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
+      -ms-transform: scaleX(1.2) scaleY(1.2) scaleZ(1); }
+      .page_content #recruit .left_box figure:hover::after, .page_content #recruit .right_box figure:hover::after {
+        background: rgba(0, 0, 0, 0.4); }
+  .page_content #recruit .left_box figure img, .page_content #recruit .right_box figure img {
+    max-width: 100%;
+    vertical-align: bottom; }
   .page_content #recruit .left_box .box_title, .page_content #recruit .right_box .box_title {
     position: absolute;
     top: 0;
     padding: 80px 60px;
     background: rgba(0, 0, 0, 0.4);
     display: flex;
+    z-index: 2;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -1032,6 +1057,7 @@ body {
     position: relative; }
   .page_content #recruit .right_box .fb_canvas {
     position: absolute;
+    text-decoration: none;
     background: #3b5999;
     top: 63%;
     bottom: 0;
@@ -1046,7 +1072,7 @@ body {
     -moz-transition: all 0.5s ease-out;
     -ms-transition: all 0.5s ease-out; }
     .page_content #recruit .right_box .fb_canvas:hover {
-      background: #5476bd; }
+      background: #5f7ec1; }
     .page_content #recruit .right_box .fb_canvas h2 {
       display: block;
       color: #f2f2f2;
@@ -1139,7 +1165,7 @@ body {
   -moz-transition: margin-top .4s ease;
   -ms-transition: margin-top .4s ease; }
 
-.site_container a {
+.site_container a, .site_container .canvas_box.frosted:after {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
