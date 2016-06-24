@@ -29,6 +29,8 @@
 	include(dirname(dirname(__DIR__)).'/php/includes/header.php');
 ?>
 
+<div>
+	
+</div>
 
-</body>
-</html>
+<?php include(dirname(dirname(__DIR__)).'/php/includes/footer.php'); ?>

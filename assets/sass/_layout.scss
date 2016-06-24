@@ -65,9 +65,13 @@ body{
 	li.relative{
 		position: relative;
 	}
-	li.over_black a:hover{
-		background: $black;
+	li.over_black a{
+		background: $lightBlack;
 		color: $white;
+		&:hover{
+			background: $black;
+			color: darken($white,10%);
+		}
 	}
 	a{
 		text-decoration: none;
@@ -313,7 +317,6 @@ body{
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
-		background-origin: 50% 50%;
 		box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		-ms-box-sizing: border-box;
@@ -332,7 +335,6 @@ body{
 			float: left;
 			position: relative;
 			background-size: cover;
-			background-origin: 50% 50%;
 			background-position: center center;
 			display: block;
 		}
@@ -359,8 +361,6 @@ body{
 			z-index: 2;
 			opacity: 0.4;
 			background-size:cover;
-			background-origin: 50% 50%;
-			background-position: center center;
 			background-attachment: fixed;
 			filter: blur(6px);
 			-webkit-filter: blur(6px);

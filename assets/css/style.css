@@ -496,9 +496,12 @@ body {
     vertical-align: middle; }
   .global_nav ul li.relative {
     position: relative; }
-  .global_nav ul li.over_black a:hover {
-    background: #000;
+  .global_nav ul li.over_black a {
+    background: #333;
     color: #fff; }
+    .global_nav ul li.over_black a:hover {
+      background: #000;
+      color: #e6e6e6; }
   .global_nav ul a {
     text-decoration: none;
     padding: 27px 17px;
@@ -721,7 +724,6 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-origin: 50% 50%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -742,7 +744,6 @@ body {
       float: left;
       position: relative;
       background-size: cover;
-      background-origin: 50% 50%;
       background-position: center center;
       display: block; }
     .canvas_box_container .canvas_box .title {
@@ -766,8 +767,6 @@ body {
       z-index: 2;
       opacity: 0.4;
       background-size: cover;
-      background-origin: 50% 50%;
-      background-position: center center;
       background-attachment: fixed;
       filter: blur(6px);
       -webkit-filter: blur(6px);
@@ -814,11 +813,11 @@ body {
         padding: 10px;
         min-height: 220px; }
       .page_content #business_domain .content .canvas_box_container > .canvas_box.frosted_glass:after {
-        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/main/business_domain/main_business_domain_bg_07.png"); }
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/main/business_domain/main_business_domain_bg_07.png");
+        background-position: center 70px; }
   .page_content #works {
     width: 100%;
-    position: relative;
-    background-origin: 50% 50%; }
+    position: relative; }
     .page_content #works::after {
       clear: both;
       content: "";
@@ -850,8 +849,7 @@ body {
           -ms-transform: scaleX(1.1) scaleY(1.1) scaleZ(1); }
   .page_content #news {
     width: 100%;
-    position: relative;
-    background-origin: 50% 50%; }
+    position: relative; }
     .page_content #news::after {
       clear: both;
       content: "";
@@ -880,7 +878,6 @@ body {
         justify-content: center;
         align-items: center;
         background-size: cover;
-        background-origin: 50% 50%;
         background-position: center center;
         overflow: hidden;
         color: #fff;
@@ -920,7 +917,6 @@ body {
           opacity: 0.4;
           background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/main/news/main_news_bg_01.png");
           background-size: cover;
-          background-origin: 50% 50%;
           background-position: center center;
           background-attachment: fixed;
           filter: blur(6px);

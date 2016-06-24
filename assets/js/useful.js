@@ -16,11 +16,15 @@ if (!PUNITED.useful) PUNITED.useful = {};
 	/** Smooth scroll to the top **/
 	   /***********************/
 	ns.jumpToPageTop = function() {
-		$('html,body').stop().animate({ scrollTop: 0 }, 1200);
+		$('html,body').stop().animate({ scrollTop: 0 }, 1000);
+		return false;
 	}
 
 	ns.SmoothScrollTo = function(id){
-		$('html,body').stop().animate({ scrollTop: $('#'+id).offset().top - 70 },1000);
+
+		var top = $('#'+id).offset().top - 70;
+		$('html,body').stop().animate({ scrollTop: top },900,'swing');
+		return false;
 	}
 	
 })();
