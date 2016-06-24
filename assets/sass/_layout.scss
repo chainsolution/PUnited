@@ -178,7 +178,7 @@ body{
 	    .banner_list{
 	    	visibility: visible;
 	    	width: 100%;
-	    	@include position(relative,0 0 0 0);
+	    	@include position(absolute,0 0 0 0);
 	    	height: 100%;
 	    	.banner_item{
 	    		width: 100%;

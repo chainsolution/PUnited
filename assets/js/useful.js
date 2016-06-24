@@ -18,9 +18,10 @@ if (!PUNITED.useful) PUNITED.useful = {};
 	ns.jumpToPageTop = function() {
 		$('html,body').stop().animate({ scrollTop: 0 }, 1200);
 	}
-	
-	/**  **/
-	/*****/
+
+	ns.SmoothScrollTo = function(id){
+		$('html,body').stop().animate({ scrollTop: $('#'+id).offset().top - 70 },1000);
+	}
 	
 })();
 

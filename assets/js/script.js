@@ -21,12 +21,14 @@ var animateSlide;
       // Query the document to get the first,next image
       current = $(".site_banner .banner_item.active");
       next = current.next();
+      console.log(next.length);
 
       // check whether it's the last image.
       if(!next.length){
         next = $(".site_banner .banner_item:first");
+        current.css("z-index","1");
         current.find(".item_img").addClass("img_scale");
-        current.css("z-index","1").animate({opacity:1.0},3000,function(){
+        current.animate({opacity:1.0},3000,function(){
           current.animate({opacity:0.99},6000,function(){
             next.addClass("active");
             current.removeClass("active");
@@ -40,8 +42,9 @@ var animateSlide;
 
       }else{
         // if it's not the last imgae, execute the following
+        current.css("z-index","1");
         current.find(".item_img").addClass("img_scale");
-        current.css("z-index","1").animate({opacity:1.0},3000,function(){
+        current.animate({opacity:1.0},3000,function(){
           current.animate({opacity:0.99},6000,function(){
             next.addClass("active");
             current.removeClass("active");
@@ -73,12 +76,10 @@ setBannerHeight = function(){
   var winHeight = $(window).height();
   $('.site_banner .banner_inner').css("height",winHeight+"px");
 }
-  
-$(window).load(function(){
-  bannerInitialize();
-});
+
 
 $(document).ready(function(){
+  bannerInitialize();
   animateSlide();
 });
 

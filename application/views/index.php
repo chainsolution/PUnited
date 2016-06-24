@@ -75,10 +75,10 @@
 					</div>
 				</div>
 			</li>
-			<div class="scroll_bottom">
-				<span target-id="overview"><img src="assets/img/common/icons/icon_scroll_to_bottom_08.png"></span>
-			</div>			
 		</ul>
+		<div class="scroll_bottom">
+			<span onclick="PUNITED.useful.SmoothScrollTo('overview');"><img src="assets/img/common/icons/icon_scroll_to_bottom_08.png"></span>
+		</div>
 	</div>
 
 	<div class="load_banner"></div>

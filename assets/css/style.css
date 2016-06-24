@@ -591,7 +591,7 @@ body {
     .site_banner .banner_inner .banner_list {
       visibility: visible;
       width: 100%;
-      position: relative;
+      position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
@@ -1076,29 +1076,6 @@ body {
     clear: both;
     content: "";
     display: block; }
-  .site_footer .scroll_top {
-    position: relative;
-    width: 100%;
-    float: left;
-    padding: 50px 0px;
-    text-align: center; }
-    .site_footer .scroll_top span {
-      padding: 7px 15px;
-      cursor: pointer;
-      display: inline-block;
-      position: absolute;
-      top: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transition: margin-top .4s ease;
-      -webkit-transition: margin-top .4s ease;
-      -moz-transition: margin-top .4s ease;
-      -ms-transition: margin-top .4s ease; }
-      .site_footer .scroll_top span:hover {
-        margin-top: -10px; }
   .site_footer .local_nav, .site_footer .footer_copyright {
     position: relative;
     width: 100%;
@@ -1126,14 +1103,45 @@ body {
             text-decoration: underline;
             color: #4d4d4d; }
 
-.site_banner .scroll_bottom {
+.scroll_bottom {
   position: absolute;
   z-index: 3;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
-  padding: 15px 0px; }
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px 50px 0px; }
+  .scroll_bottom span {
+    top: -80%; }
+    .scroll_bottom span:hover {
+      margin-top: 10px; }
+
+.scroll_top {
+  position: relative;
+  width: 100%;
+  float: left;
+  padding: 50px 0px;
+  text-align: center; }
+  .scroll_top span {
+    top: 20%;
+    left: 50%; }
+    .scroll_top span:hover {
+      margin-top: -10px; }
+
+.scroll_top span, .scroll_bottom span {
+  padding: 7px 15px;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transition: margin-top .4s ease;
+  -webkit-transition: margin-top .4s ease;
+  -moz-transition: margin-top .4s ease;
+  -ms-transition: margin-top .4s ease; }
 
 .site_container a {
   transition: all 0.3s ease-in-out;

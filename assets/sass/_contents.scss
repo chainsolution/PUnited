@@ -350,33 +350,6 @@
 	position: relative;
 	padding: 30px 0px 0px;
 	@include clearfix();
-
-	.scroll_top{
-		position: relative;
-		width: 100%;
-		float: left;
-		padding: 50px 0px;
-		text-align: center;
-		span{
-			padding: 7px 15px;
-			cursor: pointer;
-			display: inline-block;
-			position: absolute;
-			top: 20%;
-			left: 50%;
-			transform: translateX(-50%);
-			-webkit-transform: translateX(-50%);
-			-moz-transform: translateX(-50%);
-			-ms-transform: translateX(-50%);
-			transition: margin-top .4s ease;
-			-webkit-transition: margin-top .4s ease;
-			-moz-transition: margin-top .4s ease;
-			-ms-transition: margin-top .4s ease;
-			&:hover{
-				margin-top: -10px;
-			}
-		}
-	}
 	
 	.local_nav, .footer_copyright{
 		position: relative;

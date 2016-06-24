@@ -1,15 +1,53 @@
 
-.site_banner{
-	.scroll_bottom{
-		position: absolute;
-		z-index: 3;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 60px;
-		padding: 15px 0px;
+
+.scroll_bottom{
+	position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 50px 0px;
+    span{
+    	top: -80%;
+    	&:hover{
+    		margin-top:10px;
+    	}
+    }
+}
+
+.scroll_top{
+	position: relative;
+	width: 100%;
+	float: left;
+	padding: 50px 0px;
+	text-align: center;
+	span{
+		top: 20%;
+		left: 50%;
+		&:hover{
+			margin-top: -10px;
+		}
 	}
 }
+
+.scroll_top span, .scroll_bottom span{
+	padding: 7px 15px;
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transition: margin-top .4s ease;
+	-webkit-transition: margin-top .4s ease;
+	-moz-transition: margin-top .4s ease;
+	-ms-transition: margin-top .4s ease;
+		
+}
+
 .site_container{
 
 	a{
