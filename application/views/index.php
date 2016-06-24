@@ -46,8 +46,7 @@
 			<li class="banner_item active" style="z-index:0;opacity:0;">
 				<div class="item_inner">
 					<div class="item_title">
-						<span>新しい、うれしい、おもしろいを
-      創りつづける</span>
+						<span>新しい、うれしい、おもしろいを創りつづける</span>
 					</div>
 					<div class="item_img">
 						<img src="assets/img/main/banner/main_banner_01.png">
@@ -58,8 +57,7 @@
 			<li class="banner_item" style="z-index:0;opacity:0;">
 				<div class="item_inner">
 					<div class="item_title">
-						<span>新しい、うれしい、おもしろいを
-      創りつづける</span>
+						<span>新しい、うれしい、おもしろいを創りつづける</span>
 					</div>
 					<div class="item_img">
 						<img src="assets/img/main/banner/main_banner_02.png">
@@ -70,15 +68,16 @@
 			<li class="banner_item" style="z-index:0;opacity:0;">
 				<div class="item_inner">
 					<div class="item_title">
-						<span>新しい、うれしい、おもしろいを
-      創りつづける</span>
+						<span>新しい、うれしい、おもしろいを創りつづける</span>
 					</div>
 					<div class="item_img">
 						<img src="assets/img/main/banner/main_banner_03.png">
 					</div>
 				</div>
 			</li>
-
+			<div class="scroll_bottom">
+				<span target-id="overview"><img src="assets/img/common/icons/icon_scroll_to_bottom_08.png"></span>
+			</div>			
 		</ul>
 	</div>
 
@@ -91,7 +90,7 @@
 	<div class="page_content">
 
 		<!-- overview -->
-		<div class="overview">
+		<div id="overview">
 			<article>
 				<h4>会社統合のごあいさつ</h4>
 				<p>2016年4月、新生ビザビがスタートします。</p>

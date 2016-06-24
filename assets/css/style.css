@@ -790,11 +790,11 @@ body {
   /** Business domain **/
   /** Recruit section **/
   /* /Recruit section **/ }
-  .page_content .overview {
+  .page_content #overview {
     padding: 30px 0px;
     width: 100%;
     border-bottom: 1px solid #dddddd; }
-    .page_content .overview::after {
+    .page_content #overview::after {
       clear: both;
       content: "";
       display: block; }
@@ -1126,6 +1126,15 @@ body {
             text-decoration: underline;
             color: #4d4d4d; }
 
+.site_banner .scroll_bottom {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 15px 0px; }
+
 .site_container a {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1149,18 +1158,18 @@ body {
     .site_container .page_content a.more_btn:hover {
       background: #333;
       color: #d9d9d9; }
-  .site_container .page_content .overview article {
+  .site_container .page_content #overview article {
     text-align: center;
     padding: 0px;
     margin: 0 auto !important;
     width: 100%;
     margin: 0px; }
-    .site_container .page_content .overview article h4 {
+    .site_container .page_content #overview article h4 {
       font-size: 180%;
       font-weight: 300 !important;
       margin: 20px 0px;
       color: #222; }
-    .site_container .page_content .overview article p {
+    .site_container .page_content #overview article p {
       text-align: center;
       line-height: 35px;
       margin-bottom: 10px;
