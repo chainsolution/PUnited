@@ -31,7 +31,7 @@
 <div class="site_header">
 	<div class="site_container">
 		<div class="site_logo">
-			<img src="assets/img/common/logo/site_header_logo.png" height="42" width="158">
+			<a href="/"><img src="assets/img/common/logo/site_header_logo.png" height="42" width="158"></a>
 		</div>
 		<nav class="global_nav">
 			<ul>
