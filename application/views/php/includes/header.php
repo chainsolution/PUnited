@@ -31,18 +31,18 @@
 <div class="site_header">
 	<div class="site_container">
 		<div class="site_logo">
-			<img src="assets/img/common/logo/site_header_logo.png" height="42" width="158">
+			<a href="index.php"><img src="assets/img/common/logo/site_header_logo.png" height="42" width="158"></a>
 		</div>
 		<nav class="global_nav">
 			<ul>
-				<li class="relative"><a href="page/about_us.php">ABOUT US</a>
+				<li class="relative"><a href="about_us">ABOUT US</a>
 					<ul>
-						<li><a href="page/about/greeting.php">GREETING</a></li>
-						<li><a href="page/about/philosophy.php">PHILOSOPHY</a></li>
-						<li><a href="page/about/profile.php">COMPANY PROFILE</a></li>
-						<li><a href="page/about/history.php">HISTORY</a></li>
-						<li><a href="page/about/privacy.php">PRIVACY &amp; POLICY</a></li>
-						<li><a href="page/about/en/about_us.php">ABOUT US (EN)</a></li>
+						<li><a href="about-greeting">GREETING</a></li>
+						<li><a href="about-philosophy">PHILOSOPHY</a></li>
+						<li><a href="about-profile">COMPANY PROFILE</a></li>
+						<li><a href="about-history">HISTORY</a></li>
+						<li><a href="about-privacy">PRIVACY &amp; POLICY</a></li>
+						<li><a href="about-en-about_us">ABOUT US (EN)</a></li>
 					</ul>
 				</li>
 				<li><a href="#business_domain">BUSINESS DOMAIN</a></li>
