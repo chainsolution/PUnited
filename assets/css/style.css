@@ -676,9 +676,7 @@ body {
 .site_container .content {
   width: 100%;
   position: relative;
-  float: left;
-  background-size: cover;
-  background-origin: 50% 50%; }
+  float: left; }
   .site_container .content::after {
     clear: both;
     content: "";
@@ -716,6 +714,7 @@ body {
   .canvas_box_container .canvas_box {
     visibility: visible;
     height: auto;
+    overflow: hidden;
     position: relative;
     float: left;
     display: flex;
@@ -807,8 +806,9 @@ body {
       content: "";
       display: block; }
     .page_content #business_domain .content {
-      background: #f7f7f7 url("../img/main/business_domain/main_business_domain_bg_07.png") no-repeat center center;
-      background-attachment: fixed; }
+      background: #f7f7f7 url("../img/main/business_domain/main_business_domain_bg_07.png") no-repeat center 70px;
+      background-attachment: fixed;
+      background-size: cover; }
       .page_content #business_domain .content .canvas_box_container > .canvas_box {
         width: 20%;
         padding: 10px;
@@ -826,6 +826,28 @@ body {
     .page_content #works .canvas_box_container > .canvas_box {
       width: 33.3333333%;
       padding: 15px; }
+      .page_content #works .canvas_box_container > .canvas_box figure {
+        transform-origin: 50% 50%;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+        -webkit-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+        -moz-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+        -o-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+        -ms-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+        transform: scaleX(1) scaleY(1) scaleZ(1);
+        -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+        -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
+        -o-transform: scaleX(1) scaleY(1) scaleZ(1);
+        -ms-transform: scaleX(1) scaleY(1) scaleZ(1); }
+        .page_content #works .canvas_box_container > .canvas_box figure:hover {
+          transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+          -webkit-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+          -moz-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+          -o-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+          -ms-transform: scaleX(1.1) scaleY(1.1) scaleZ(1); }
   .page_content #news {
     width: 100%;
     position: relative;
@@ -949,6 +971,7 @@ body {
     position: relative;
     width: 50%;
     float: left;
+    overflow: hidden;
     display: flex;
     background-size: cover;
     background-position: center center;
@@ -968,7 +991,28 @@ body {
     background-position: center center; }
   .page_content #recruit .left_box figure img, .page_content #recruit .right_box figure img {
     max-width: 100%;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+    -webkit-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+    -moz-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+    -o-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+    -ms-transition: all 0.2s cubic-bezier(0, 0, 1, 1) 0s;
+    transform: scaleX(1) scaleY(1) scaleZ(1);
+    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+    -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
+    -o-transform: scaleX(1) scaleY(1) scaleZ(1);
+    -ms-transform: scaleX(1) scaleY(1) scaleZ(1); }
+    .page_content #recruit .left_box figure img:hover, .page_content #recruit .right_box figure img:hover {
+      transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+      -webkit-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+      -moz-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+      -ms-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+      opacity: 0.7; }
   .page_content #recruit .left_box .box_title, .page_content #recruit .right_box .box_title {
     position: absolute;
     top: 0;
@@ -1000,7 +1044,13 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out; }
+    .page_content #recruit .right_box .fb_canvas:hover {
+      background: #5476bd; }
     .page_content #recruit .right_box .fb_canvas h2 {
       display: block;
       color: #f2f2f2;
@@ -1030,11 +1080,25 @@ body {
     position: relative;
     width: 100%;
     float: left;
-    padding: 30px 0px;
+    padding: 50px 0px;
     text-align: center; }
     .site_footer .scroll_top span {
       padding: 7px 15px;
-      cursor: pointer; }
+      cursor: pointer;
+      display: inline-block;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transition: margin-top .4s ease;
+      -webkit-transition: margin-top .4s ease;
+      -moz-transition: margin-top .4s ease;
+      -ms-transition: margin-top .4s ease; }
+      .site_footer .scroll_top span:hover {
+        margin-top: -10px; }
   .site_footer .local_nav, .site_footer .footer_copyright {
     position: relative;
     width: 100%;
@@ -1075,18 +1139,16 @@ body {
     width: 140px;
     display: block;
     padding: 7px;
-    background: #333;
+    background: #000;
     color: #fff;
-    border: 1px solid #333;
     font-size: 12px;
     font-weight: 500;
     text-align: center;
-    line-height: 6px;
+    line-height: 7px;
     text-decoration: none; }
     .site_container .page_content a.more_btn:hover {
-      background: #fff;
-      color: #000;
-      font-weight: 600; }
+      background: #333;
+      color: #d9d9d9; }
   .site_container .page_content .overview article {
     text-align: center;
     padding: 0px;

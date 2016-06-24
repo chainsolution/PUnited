@@ -271,8 +271,6 @@ body{
 		width: 100%;
 		position: relative;
 		float: left;
-		background-size: cover;
-		background-origin: 50% 50%;
 		@include clearfix();
 		.row{
 			position: relative;
@@ -308,6 +306,7 @@ body{
 	.canvas_box{
 		visibility: visible;
 		height: auto;
+		overflow: hidden;
 		position: relative;
 		float: left;
 		display: flex;

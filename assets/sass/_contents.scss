@@ -16,8 +16,9 @@
 		@include clearfix();
 		
 		.content{
-			background: $defaultBg url($business_domain_bg) no-repeat center center;
+			background: $defaultBg url($business_domain_bg) no-repeat center 70px;
 			background-attachment: fixed;
+			background-size: cover;
 			.canvas_box_container{
 				& > .canvas_box{
 					width: 20%;
@@ -44,6 +45,31 @@
 			& > .canvas_box{
 				width: 33.3333333%;
 				padding: 15px;
+
+				figure{
+					transform-origin: 50% 50%;
+				    -webkit-transform-origin: 50% 50%;
+				    -moz-transform-origin: 50% 50%;
+				    -o-transform-origin: 50% 50%;
+				    -ms-transform-origin: 50% 50%;
+				    transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+				    -webkit-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+				    -moz-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+				    -o-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+				    -ms-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+				    transform: scaleX(1) scaleY(1) scaleZ(1);
+				    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+				    -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
+				    -o-transform: scaleX(1) scaleY(1) scaleZ(1);
+				    -ms-transform: scaleX(1) scaleY(1) scaleZ(1);
+				    &:hover{
+				    	transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+					    -webkit-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+					    -moz-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+					    -o-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+					    -ms-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+				    }
+				}
 			}
 		}
 	}
@@ -200,6 +226,7 @@
 			position: relative;
 			width: 50%;
 			float: left;
+			overflow: hidden;
 			display: flex;
 			background-size: cover;
 			background-position: center center;
@@ -217,15 +244,37 @@
 		.left_box figure, .left_box figure{
 			background-size: cover;
 			background-position: center center;
+			
 		}
 		.left_box figure img,.right_box figure img{
 			max-width: 100%;
 			vertical-align: bottom;
+			transform-origin: 50% 50%;
+		    -webkit-transform-origin: 50% 50%;
+		    -moz-transform-origin: 50% 50%;
+		    -o-transform-origin: 50% 50%;
+		    -ms-transform-origin: 50% 50%;
+		    transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+		    -webkit-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+		    -moz-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+		    -o-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+		    -ms-transition: all .2s cubic-bezier(0, 0, 1, 1) 0s;
+		    transform: scaleX(1) scaleY(1) scaleZ(1);
+		    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+		    -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
+		    -o-transform: scaleX(1) scaleY(1) scaleZ(1);
+		    -ms-transform: scaleX(1) scaleY(1) scaleZ(1);
+			&:hover{
+				transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+				-webkit-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+				-moz-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+				-ms-transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+				opacity: 0.7;
+			}
 		}
 		.left_box .box_title,.right_box .box_title{
 			position: absolute;
 			top: 0;
-			
 			padding: 80px 60px;
 			background: rgba(0,0,0,0.4);
 			display: flex;
@@ -261,6 +310,14 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			transition: all 0.5s ease-out;
+			-webkit-transition: all 0.5s ease-out;
+			-moz-transition: all 0.5s ease-out;
+			-ms-transition: all 0.5s ease-out;
+
+			&:hover{
+				background: lighten($fbBackground,12%);
+			}
 			h2{
 				display: block;
 				color: darken($white,5%);
@@ -298,11 +355,26 @@
 		position: relative;
 		width: 100%;
 		float: left;
-		padding: 30px 0px;
+		padding: 50px 0px;
 		text-align: center;
 		span{
 			padding: 7px 15px;
 			cursor: pointer;
+			display: inline-block;
+			position: absolute;
+			top: 20%;
+			left: 50%;
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			transition: margin-top .4s ease;
+			-webkit-transition: margin-top .4s ease;
+			-moz-transition: margin-top .4s ease;
+			-ms-transition: margin-top .4s ease;
+			&:hover{
+				margin-top: -10px;
+			}
 		}
 	}
 	
