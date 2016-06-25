@@ -31,7 +31,9 @@
 <div class="site_header">
 	<div class="site_md_container">
 		<div class="site_logo">
-			<a href="index.php"><img src="assets/img/common/logo/site_header_logo.png" height="42" width="158"></a>
+			<div>
+				<a href="index.php"><img src="assets/img/common/logo/site_header_logo.png"></a>
+			</div>
 		</div>
 		<nav class="global_nav">
 			<ul>

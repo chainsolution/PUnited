@@ -6,9 +6,65 @@
 	}
 }
 
-@media only screen and (max-width: 888px){
-	.site_container,.site_banner{
-		width: 888px !important;
+@media only screen and (max-width: 1000px){
+	.site_container,.site_md_container{
+		width: 94%;
+		padding: 0px 3%;
 	}
 
+}
+
+@media only screen and (max-width: 960px){
+	.site_banner .item_title span{
+		font-size: 300% !important;
+	}
+	#news .news_heading_canvas{
+		width: 65% !important;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.hide_sm{
+		display: none !important;
+	}
+	.show_sm{
+		display: inherit !important;
+	}
+	.float_r_sm{
+		float: right !important;
+	}
+	#business_domain .canvas_box_container > .canvas_box,
+	#works .canvas_box_container > .canvas_box{
+		width: 50% !important;
+	}
+	#news{
+		.content{
+			padding: 70px 0px;
+		}
+		.canvas_box_container{
+			width: 100% !important;
+			padding: 0px 70px;
+			.canvas_box {
+			    width: 100% !important;
+			    padding: 40px 70;
+			    margin-bottom: 1px;
+				.inner{
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	#recruit .row{
+		display: inline-block !important;
+		.left_box, .right_box{
+			width: 100% !important;
+		}
+
+		.right_box .fb_canvas{
+			position: relative !important;
+			padding: 30px 0px;
+		}
+	}
+	
 }

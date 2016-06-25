@@ -87,12 +87,27 @@ setNavBarBorder = function(){
   /***********************************************************************/
   var resizeBannerHeight;
   resizeBannerHeight = function(){
-    $(window).resize(function(){
-       var winWidth = $(window).width();
-        if(winWidth <= 888){
-          alert(winWidth);
+    var banner, bannerWidth, bannerHeight, bannerRatio, winWidth;
+
+    banner = $('.banner_inner');
+    /* Function to resize the height of banner to the right aspect ratio */ 
+    (function(){
+      
+      bannerWidth = banner.width();
+      bannerHeight = banner.height();
+      bannerRatio = 1300 / 600;
+      $(window).resize(function(){
+        winWidth = $(window).width();
+        bannerWidth = banner.width();
+        if(winWidth < 900){
+          banner.css({"height": (bannerWidth / (bannerRatio * 1.2))+"px"});
+        }else{
+          banner.css({"height": (bannerWidth / bannerRatio)+"px"});
         }
-    });
+        
+      });
+    })();
+
   }
 
 $(document).ready(function(){

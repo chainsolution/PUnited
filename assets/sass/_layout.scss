@@ -47,10 +47,16 @@ body{
 	.site_logo{
 		float: left;
 		width: 20%;
-		padding: 12px 0px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100%;
 
 		img{
 			margin: 0px;
+			max-width: 100%;
+			vertical-align: bottom;
+			display: block;
 		}
 	}
 
@@ -210,6 +216,9 @@ body{
 					    width: 100%;
 					    padding: 0 13%;
 					    box-sizing: border-box;
+					    -webkit-box-sizing: border-box;
+					    -moz-box-sizing: border-box;
+					    -ms-box-sizing: border-box;
 					    margin: 0 auto;
 					    display: flex;
 					    justify-content: center;

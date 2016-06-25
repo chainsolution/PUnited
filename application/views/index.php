@@ -126,6 +126,7 @@
 					<!-- first row -->
 					<div class="row">
 						<div class="canvas_box_container">
+
 							<div class="canvas_box frosted_glass">
 								<a href="#" class="inner">
 									<figure>
@@ -137,19 +138,25 @@
 									</div>
 								</a>
 							</div>
+
 							<div class="canvas_box">
 								<div class="inner">
 									
 								</div>
 							</div>
+
+							<div class="canvas_box hide_sm">
+								<div class="inner">
+									
+								</div>
+							</div>
+
 							<div class="canvas_box">
 								<div class="inner">
 									
 								</div>
 							</div>
-							<div class="canvas_box">
-								
-							</div>
+
 							<div class="canvas_box frosted_glass">
 								<a href="#" class="inner">
 									<figure>
@@ -162,11 +169,12 @@
 								</a>
 							</div>
 				
-							<div class="canvas_box">
+							<div class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
 							</div>
+
 							<div class="canvas_box frosted_glass">
 								<a href="#" class="inner">
 									<figure>
@@ -178,16 +186,19 @@
 									</div>
 								</a>
 							</div>
+
 							<div class="canvas_box">
 								<div class="inner">
 									
 								</div>
 							</div>
-							<div class="canvas_box">
+
+							<div class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
 							</div>
+
 							<div class="canvas_box">
 								<div class="inner">
 									
@@ -205,11 +216,13 @@
 									</div>
 								</a>
 							</div>
-							<div class="canvas_box">
+
+							<div class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
 							</div>
+
 							<div class="canvas_box frosted_glass">
 								<a href="#" class="inner">
 									<figure>
@@ -221,12 +234,14 @@
 									</div>
 								</a>
 							</div>
+
 							<div class="canvas_box">
 								<div class="inner">
 									
 								</div>
 							</div>
-							<div class="canvas_box frosted_glass">
+
+							<div class="canvas_box frosted_glass float_r_sm">
 								<a href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_internet_03.png">
@@ -237,6 +252,7 @@
 									</div>
 								</a>
 							</div>
+
 						</div>
 					</div>
 				</div>
@@ -352,7 +368,7 @@
 								</div>
 							</div>
 
-							<div class="canvas_box striped">
+							<div class="canvas_box striped hide_sm">
 								<div class="inner">
 									<figure>
 										<img src="assets/img/main/works/main_works_img_09.png">
@@ -376,7 +392,7 @@
 			<div class="content_inner">
 
 				<div class="section_heading">
-					<div class="inner">
+					<div class="inner show_sm">
 						<h1>NEWS</h1>
 						<span>ビジネスマイルストーン</span>
 						<span>一時的な記事</span>
@@ -386,7 +402,7 @@
 				<div class="content">
 					<div class="row">
 					
-						<div class="left_news_heading">
+						<div class="left_news_heading hide_sm">
 							<div class="news_heading_canvas frosted_glass">
 								<div class="inner">
 									<h1>NEWS</h1>

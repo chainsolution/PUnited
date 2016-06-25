@@ -454,7 +454,7 @@ body {
 .site_md_container {
   position: relative;
   width: 86%;
-  padding: 0 6%;
+  padding: 0 7%;
   margin: 0 auto; }
   .site_md_container::after {
     clear: both;
@@ -489,9 +489,15 @@ body {
   .site_header .site_logo {
     float: left;
     width: 20%;
-    padding: 12px 0px; }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%; }
     .site_header .site_logo img {
-      margin: 0px; }
+      margin: 0px;
+      max-width: 100%;
+      vertical-align: bottom;
+      display: block; }
   .site_header .global_nav {
     float: right;
     width: 80%;
@@ -627,6 +633,9 @@ body {
             width: 100%;
             padding: 0 13%;
             box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
             margin: 0 auto;
             display: flex;
             justify-content: center;
@@ -814,16 +823,16 @@ body {
       background: #f7f7f7 url("../img/main/business_domain/main_business_domain_bg_07.png") no-repeat center 70px;
       background-attachment: fixed;
       background-size: cover; }
-      .page_content #business_domain .content .canvas_box_container > .canvas_box {
+      .page_content #business_domain .content .canvas_box_container .canvas_box {
         width: 20%;
         padding: 10px;
         min-height: 220px; }
-      .page_content #business_domain .content .canvas_box_container > .canvas_box.frosted_glass .inner:hover {
+      .page_content #business_domain .content .canvas_box_container .canvas_box.frosted_glass .inner:hover {
         text-decoration: underline; }
-      .page_content #business_domain .content .canvas_box_container > .canvas_box.frosted_glass:after {
+      .page_content #business_domain .content .canvas_box_container .canvas_box.frosted_glass:after {
         background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/main/business_domain/main_business_domain_bg_07.png");
         background-position: center 70px; }
-      .page_content #business_domain .content .canvas_box_container > .canvas_box.frosted_glass:hover:after {
+      .page_content #business_domain .content .canvas_box_container .canvas_box.frosted_glass:hover:after {
         background: rgba(0, 0, 0, 0.1); }
   .page_content #works {
     width: 100%;
@@ -832,10 +841,10 @@ body {
       clear: both;
       content: "";
       display: block; }
-    .page_content #works .canvas_box_container > .canvas_box {
+    .page_content #works .canvas_box_container .canvas_box {
       width: 33.3333333%;
       padding: 15px; }
-      .page_content #works .canvas_box_container > .canvas_box figure {
+      .page_content #works .canvas_box_container .canvas_box figure {
         transform-origin: 50% 50%;
         -webkit-transform-origin: 50% 50%;
         -moz-transform-origin: 50% 50%;
@@ -851,7 +860,7 @@ body {
         -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
         -o-transform: scaleX(1) scaleY(1) scaleZ(1);
         -ms-transform: scaleX(1) scaleY(1) scaleZ(1); }
-        .page_content #works .canvas_box_container > .canvas_box figure:hover {
+        .page_content #works .canvas_box_container .canvas_box figure:hover {
           cursor: pointer;
           transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
           -webkit-transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
@@ -937,7 +946,7 @@ body {
           -o-filter: blur(6px);
           filter: url("#frostedGlass"); }
       .page_content #news .content .canvas_box_container {
-        width: 60% !important;
+        width: 60%;
         float: left;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -1031,7 +1040,7 @@ body {
       .page_content #recruit .left_box figure:hover::after, .page_content #recruit .right_box figure:hover::after {
         background: rgba(0, 0, 0, 0.4); }
   .page_content #recruit .left_box figure img, .page_content #recruit .right_box figure img {
-    max-width: 100%;
+    width: 100%;
     vertical-align: bottom; }
   .page_content #recruit .left_box .box_title, .page_content #recruit .right_box .box_title {
     position: absolute;
@@ -1255,6 +1264,42 @@ body {
   .site_banner .banner_inner {
     height: 600px; } }
 
-@media only screen and (max-width: 888px) {
-  .site_container, .site_banner {
-    width: 888px !important; } }
+@media only screen and (max-width: 1000px) {
+  .site_container, .site_md_container {
+    width: 94%;
+    padding: 0px 3%; } }
+
+@media only screen and (max-width: 960px) {
+  .site_banner .item_title span {
+    font-size: 300% !important; }
+  #news .news_heading_canvas {
+    width: 65% !important; } }
+
+@media only screen and (max-width: 768px) {
+  .hide_sm {
+    display: none !important; }
+  .show_sm {
+    display: inherit !important; }
+  .float_r_sm {
+    float: right !important; }
+  #business_domain .canvas_box_container > .canvas_box,
+  #works .canvas_box_container > .canvas_box {
+    width: 50% !important; }
+  #news .content {
+    padding: 70px 0px; }
+  #news .canvas_box_container {
+    width: 100% !important;
+    padding: 0px 70px; }
+    #news .canvas_box_container .canvas_box {
+      width: 100% !important;
+      padding: 40px 70;
+      margin-bottom: 1px; }
+      #news .canvas_box_container .canvas_box .inner {
+        text-align: left; }
+  #recruit .row {
+    display: inline-block !important; }
+    #recruit .row .left_box, #recruit .row .right_box {
+      width: 100% !important; }
+    #recruit .row .right_box .fb_canvas {
+      position: relative !important;
+      padding: 30px 0px; } }
