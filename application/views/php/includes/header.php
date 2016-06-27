@@ -54,6 +54,32 @@
 				<li class="over_black"><a href="page/contact.php">CONTACT</a></li>
 			</ul>
 		</nav>
+		<div class="toggle_menu">
+			<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav');">&#9776;</button>
+		</div>
 	</div>
 </div>
 <!-- /header -->
+
+<!-- mobile global navigation -->
+<nav id="mobile_global_nav">
+	<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav');">X</button>
+	<ul>
+		<li class="relative"><a onclick="javascript:return(0)" href="">ABOUT US</a>
+			<ul>
+				<li><a href="about-greeting">GREETING</a></li>
+				<li><a href="about-philosophy">PHILOSOPHY</a></li>
+				<li><a href="about-profile">COMPANY PROFILE</a></li>
+				<li><a href="about-history">HISTORY</a></li>
+				<li><a href="about-privacy">PRIVACY &amp; POLICY</a></li>
+				<li><a href="about-en-about_us">ABOUT US (EN)</a></li>
+			</ul>
+		</li>
+		<li><a onclick="PUNITED.useful.SmoothScrollTo('business_domain');" href="#">BUSINESS DOMAIN</a></li>
+		<li><a onclick="PUNITED.useful.SmoothScrollTo('works');" href="#">WORKS</a></li>
+		<li><a onclick="PUNITED.useful.SmoothScrollTo('news');" href="#">NEWS</a></li>
+		<li><a onclick="PUNITED.useful.SmoothScrollTo('recruit');" href="#">RECRUIT</a></li>
+		<li class="over_black"><a href="page/contact.php">CONTACT</a></li>
+	</ul>
+</nav>
+<!-- /mobile global navigation -->

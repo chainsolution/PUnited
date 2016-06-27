@@ -481,27 +481,50 @@ body {
   height: 70px;
   padding: 0px;
   margin: 0px;
-  z-index: 99; }
+  z-index: 10; }
   .site_header::after {
     clear: both;
     content: "";
     display: block; }
-  .site_header .site_logo {
-    float: left;
-    width: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%; }
-    .site_header .site_logo img {
-      margin: 0px;
-      max-width: 100%;
-      vertical-align: bottom;
-      display: block; }
-  .site_header .global_nav {
-    float: right;
-    width: 80%;
-    height: 70px; }
+
+.site_logo {
+  float: left;
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%; }
+  .site_logo img {
+    margin: 0px;
+    max-width: 100%;
+    vertical-align: bottom;
+    display: block; }
+
+.toggle_menu {
+  display: none;
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box; }
+  .toggle_menu button {
+    display: block;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    line-height: 1;
+    padding: 20px; }
+
+.global_nav {
+  float: right;
+  width: 80%;
+  height: 70px; }
 
 .global_nav ul {
   list-style-type: none;
@@ -569,6 +592,77 @@ body {
     .global_nav ul ul a:hover {
       background: #505b62;
       color: white; }
+
+/** Global navigation for tablet and mobile **/
+#mobile_global_nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999; }
+  #mobile_global_nav::after {
+    clear: both;
+    content: "";
+    display: block; }
+  #mobile_global_nav button {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 250%;
+    position: absolute;
+    right: 15px;
+    top: 15px; }
+  #mobile_global_nav ul {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    list-style-type: none; }
+    #mobile_global_nav ul::after {
+      clear: both;
+      content: "";
+      display: block; }
+  #mobile_global_nav li {
+    display: block;
+    width: 100%;
+    float: left; }
+  #mobile_global_nav a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    display: block;
+    font-size: 150%;
+    line-height: 3.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    text-align: center; }
+    #mobile_global_nav a:hover {
+      color: #b3b3b3; }
+  #mobile_global_nav ul ul {
+    position: relative;
+    width: 100%;
+    padding: 20px 0px; }
+    #mobile_global_nav ul ul::after {
+      clear: both;
+      content: "";
+      display: block; }
+    #mobile_global_nav ul ul li {
+      display: block;
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      border: 1px solid #fff; }
 
 /*
  * PAGE : Mian visual;
@@ -1174,7 +1268,7 @@ body {
   -moz-transition: margin-top .4s ease;
   -ms-transition: margin-top .4s ease; }
 
-.site_container a, .site_container .canvas_box.frosted:after {
+a, .canvas_box.frosted:after {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1266,8 +1360,16 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .site_container, .site_md_container {
-    width: 94%;
-    padding: 0px 3%; } }
+    width: 96%;
+    padding: 0px 2%; } }
+
+@media only screen and (max-width: 900px) {
+  .site_logo {
+    width: 12%; }
+  .global_nav {
+    width: 88%; }
+    .global_nav a {
+      font-size: 100% !important; } }
 
 @media only screen and (max-width: 960px) {
   .site_banner .item_title span {
@@ -1282,6 +1384,12 @@ body {
     display: inherit !important; }
   .float_r_sm {
     float: right !important; }
+  .global_nav {
+    display: none; }
+  .site_logo {
+    width: 50%; }
+  .toggle_menu {
+    display: flex; }
   #business_domain .canvas_box_container > .canvas_box,
   #works .canvas_box_container > .canvas_box {
     width: 50% !important; }

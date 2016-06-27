@@ -21,10 +21,13 @@ if (!PUNITED.useful) PUNITED.useful = {};
 	}
 
 	ns.SmoothScrollTo = function(id){
-
 		var top = $('#'+id).offset().top - 70;
 		$('html,body').stop().animate({ scrollTop: top },900,'swing');
 		return false;
+	}
+
+	ns.toggleMenu = function(target){
+		$(target).slideToggle(500);
 	}
 	
 })();

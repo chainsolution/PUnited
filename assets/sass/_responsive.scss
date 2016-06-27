@@ -8,10 +8,22 @@
 
 @media only screen and (max-width: 1000px){
 	.site_container,.site_md_container{
-		width: 94%;
-		padding: 0px 3%;
+		width: 96%;
+		padding: 0px 2%;
 	}
 
+}
+
+@media only screen and (max-width: 900px){
+	.site_logo{
+		width: 12%;
+	}
+	.global_nav{
+		width: 88%;
+		a{
+			font-size: 100% !important;
+		}
+	}
 }
 
 @media only screen and (max-width: 960px){
@@ -27,16 +39,32 @@
 	.hide_sm{
 		display: none !important;
 	}
+
 	.show_sm{
 		display: inherit !important;
 	}
+
 	.float_r_sm{
 		float: right !important;
 	}
+
+	.global_nav{
+		display: none;
+	}
+	
+	.site_logo{
+		width: 50%;
+	}
+
+	.toggle_menu{
+		display: flex;
+	}
+
 	#business_domain .canvas_box_container > .canvas_box,
 	#works .canvas_box_container > .canvas_box{
 		width: 50% !important;
 	}
+
 	#news{
 		.content{
 			padding: 70px 0px;
