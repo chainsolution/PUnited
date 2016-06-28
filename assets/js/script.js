@@ -96,11 +96,12 @@ setNavBarBorder = function(){
       bannerWidth = banner.width();
       bannerHeight = banner.height();
       bannerRatio = 1300 / 600;
+      banner.css("height",(bannerWidth / bannerRatio)+"px");
       $(window).resize(function(){
         winWidth = $(window).width();
         bannerWidth = banner.width();
         if(winWidth < 900){
-          banner.css({"height": (bannerWidth / (bannerRatio * 1.2))+"px"});
+          banner.css({"height": (bannerWidth / (bannerRatio * 1.1))+"px"});
         }else{
           banner.css({"height": (bannerWidth / bannerRatio)+"px"});
         }

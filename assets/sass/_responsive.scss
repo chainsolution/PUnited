@@ -1,11 +1,5 @@
 @import 'plugin/bourbon/_bourbon.scss';
 
-@media only screen and (max-width: 1400px){
-	.site_banner .banner_inner{
-		height: 600px;
-	}
-}
-
 @media only screen and (max-width: 1000px){
 	.site_container,.site_md_container{
 		width: 96%;
@@ -14,38 +8,42 @@
 
 }
 
+@media only screen and (max-width: 960px){
+	.site_banner .item_title span{
+		font-size: 300%;
+	}
+	#news .news_heading_canvas{
+		width: 65%;
+	}
+}
+
 @media only screen and (max-width: 900px){
 	.site_logo{
 		width: 12%;
 	}
 	.global_nav{
 		width: 88%;
-		a{
-			font-size: 100% !important;
+		ul a{
+			font-size: 100%;
 		}
+	}
+	.scroll_bottom span {
+		top: -40%;
 	}
 }
 
-@media only screen and (max-width: 960px){
-	.site_banner .item_title span{
-		font-size: 300% !important;
-	}
-	#news .news_heading_canvas{
-		width: 65% !important;
-	}
-}
 
 @media only screen and (max-width: 768px){
 	.hide_sm{
-		display: none !important;
+		display: none;
 	}
 
 	.show_sm{
-		display: inherit !important;
+		display: inherit;
 	}
 
 	.float_r_sm{
-		float: right !important;
+		float: right;
 	}
 
 	.global_nav{
@@ -57,42 +55,115 @@
 	}
 
 	.toggle_menu{
-		display: flex;
+		@include display-flex();
+		@include justify-content(flex-end);
+		@include align-items();
+	}
+
+	.site_banner .item_title span{
+		font-size: 260%;
 	}
 
 	#business_domain .canvas_box_container > .canvas_box,
 	#works .canvas_box_container > .canvas_box{
-		width: 50% !important;
+		width: 50%;
 	}
 
 	#news{
 		.content{
-			padding: 70px 0px;
+			padding: 5% 0px;
 		}
 		.canvas_box_container{
-			width: 100% !important;
-			padding: 0px 70px;
-			.canvas_box {
-			    width: 100% !important;
-			    padding: 40px 70;
-			    margin-bottom: 1px;
-				.inner{
-					text-align: left;
-				}
+			width: 100%;
+			padding: 0px 5%;
+		}
+
+		.canvas_box {
+		    width: 100%;
+		    padding: 5%;
+		    margin-bottom: 1px;
+			.inner{
+				text-align: left;
 			}
 		}
+
 	}
 
 	#recruit .row{
-		display: inline-block !important;
+		display: inline-block;
 		.left_box, .right_box{
-			width: 100% !important;
+			width: 100%;
 		}
 
 		.right_box .fb_canvas{
-			position: relative !important;
+			position: relative;
 			padding: 30px 0px;
 		}
 	}
 	
+}
+
+@media only screen and (max-width: 640px){
+	.site_banner .item_title span{
+		font-size: 220%;
+	}
+
+	.scroll_bottom{
+		padding-bottom: 30px;
+		span{
+			height: 30px;
+			img{
+				height: 30px;
+				width: 19px;
+			}
+		}
+	}
+
+	#overview{
+		padding-top: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 520px){
+	.site_banner .item_title span{
+		font-size: 160%;
+	}
+
+	#business_domain .content, .canvas_box.frosted_glass::after,
+	#news .content{
+		background-attachment: scroll;
+		background-position: center center;
+	}
+
+	#recruit .box_title{
+		width: 35%;
+		height: 140px;
+		h2{
+			font-size: 20px;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 420px){
+	.site_banner .item_title span{
+		font-size: 120%;
+	}
+
+	.scroll_bottom{
+		padding-bottom: 25px;
+		span{
+			height: 25px;
+			img{
+				height: 25px;
+				width: 14px;
+			}
+		}
+	}
+
+	#news .canvas_box{
+		margin-bottom: 2px;
+	}
+
 }

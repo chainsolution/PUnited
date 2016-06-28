@@ -2,9 +2,10 @@
 <head>
 	<title><?php echo $page_title; ?></title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	<?php 
 		// loop through array keys, value of meta description
 		foreach($meta_content as $name => $content) {
@@ -63,7 +64,9 @@
 
 <!-- mobile global navigation -->
 <nav id="mobile_global_nav">
-	<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav');">X</button>
+	<div class="button_outer">
+		<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav');">X</button>
+	</div>
 	<ul>
 		<li class="relative"><a onclick="javascript:return(0)" href="">ABOUT US</a>
 			<ul>

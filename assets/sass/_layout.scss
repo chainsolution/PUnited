@@ -36,7 +36,7 @@ body{
 	top: 0;
 	left: 0;
 	background: $white;
-	box-sizing: border-box;
+	@include box-sizing(border-box);
 	width: 100%;
 	height: 70px;
 	padding: 0px;
@@ -49,9 +49,9 @@ body{
 .site_logo{
 	float: left;
 	width: 20%;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	@include display-flex();
+	@include justify-content(flex-start);
+	@include align-items();
 	height: 100%;
 
 	img{
@@ -68,12 +68,7 @@ body{
 	float: left;
 	width: 50%;
 	height: 100%;
-	justify-content: flex-end;
-	align-items: center;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
+	@include box-sizing(border-box);
 	button{
 		display: block;
 		background: none;
@@ -145,22 +140,13 @@ body{
 	margin-left: -100px;
 	padding: 0px;
 	z-index: 99;
-	-webkit-transition: height 0.4s ease-in;
-    -moz-transition: height 0.4s ease-in;
-    -o-transition: height 0.4s ease-in;
-    -ms-transition: height 0.4s ease-in;
-    transition: height 0.4s ease-in;
+	@include transition-prefix(height 0.4s ease-in);
 
 	li{
-		background: $slaveBlack;
+		background: $white;
 		float: left;
-		border-bottom: 1px solid #515c63;
-		-webkit-transition: background-color 0.4s ease;
-        -moz-transition: background-color 0.4s ease;
-        -o-transition: background-color 0.4s ease;
-        -ms-transition: background-color 0.4s ease;
-        transition: background-color 0.4s ease;
-        
+		border-top: 1px solid #ddd;
+		@include transition-prefix(background-color 0.4s ease);
 	}
 
 	a{
@@ -168,11 +154,10 @@ body{
 		width: 180px;
 		padding: 10px;
 		float: left;
-		color: $white;
-		font-weight: 500;
+		color: $black;
+		font-weight: 600;
 		&:hover{
-			background: darken(#515c63,0.5%);
-			color: white;
+			background: darken($white,1%);
 		}
 	}
 }
@@ -185,22 +170,31 @@ body{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	justify-content: center;
-	align-items:center;
-	padding: 20px;
+	padding: 0px 20px;
 	background: rgba(0,0,0,0.9);
 	z-index: 999;
+	overflow: scroll;
 	@include clearfix();
+	
+	.button_outer{
+		position: relative;
+		width: 100%;
+		height: 70px;
+		float: left;
+		@include display-flex();
+		@include justify-content(flex-end);
+		@include align-items();
+		
+	}
 
 	button{
 		background: transparent;
 		outline: none;
+		display: block;
+		padding: 0;
 		border: none;
 		color: $white;
 		font-size: 250%;
-		position: absolute;
-		right: 15px;
-		top: 15px;
 	}
 
 	ul{
@@ -224,7 +218,7 @@ body{
 		color: $white;
 		width: 100%;
 		display: block;
-		font-size: 150%;
+		font-size: 100%;
 		line-height: 3.2;
 		font-weight: 500;
 		letter-spacing: -0.5px;
@@ -245,10 +239,7 @@ body{
 			display: block;
 			float: left;
 			width: 50%;
-			box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			-ms-box-sizing: border-box;
+			@include box-sizing(border-box);
 			border: 1px solid $white;
 		}
 
@@ -263,8 +254,8 @@ body{
 .site_banner{
 	position: relative;
 	width: 100%;
-	background-size: cover !important;
-	background-position: center center !important;
+	@include background-size();
+	background-position: center center;
 	@include clearfix();
 
 	.load_banner{
@@ -275,8 +266,7 @@ body{
 		bottom:0;
 		
 		&.loading{
-			background: $white url("../img/common/icons/img_loader_01.gif") no-repeat;
-			background-position: center center;
+			@include background-prefix(#{$white} url("../img/common/icons/img_loader_01.gif") no-repeat center center)
 			z-index:1;
 		}
 	}
@@ -286,89 +276,78 @@ body{
 		margin: 0 auto;
 	    width: 100%;
 	    overflow: hidden;
-	    background-size: cover !important;
+	    @include background-size();
 		background-position: center center !important;
-	    -webkit-box-sizing: border-box;
-	    -moz-box-sizing: border-box;
-	    box-sizing: border-box;
+	    @include box-sizing(border-box);
 		img{
-			width: 100%;
+			max-width: 100%;
 	    	border: 0;
 	    	vertical-align: middle;
 		}
-	    .banner_list{
-	    	visibility: visible;
-	    	width: 100%;
-	    	@include position(absolute,0 0 0 0);
-	    	height: 100%;
-	    	.banner_item{
-	    		width: 100%;
-	    		display: block;
-	    		height: 100%;
-	    		@include position(absolute);
-
-	    		.item_inner{
-	    			width: 100%;
-	    			height: 100%;
-	    			background-size: cover !important;
-					background-position: center center !important;
-	    			@include position(relative);
-	    			.item_title{
-	    				position: absolute;
-					    height: 100%;
-					    width: 100%;
-					    padding: 0 13%;
-					    box-sizing: border-box;
-					    -webkit-box-sizing: border-box;
-					    -moz-box-sizing: border-box;
-					    -ms-box-sizing: border-box;
-					    margin: 0 auto;
-					    display: flex;
-					    justify-content: center;
-					    align-items: center;
-					    z-index: 2;
-					    text-align: center;
-					    background: transparent;
-	    				span{
-	    					display: block;
-	    					position: relative;
-						    width: 100%;
-	    					font-size: 450%;
-	    					color: $white;
-	    				}
-	    			}
-	    			.item_img{
-	    				position: absolute;
-					    z-index: 1;
-					    top: 0;
-					    left: 0;
-					    width: 100%;
-					    background-size: cover !important;
-						background-position: center center !important;
-
-					    transition: all 20s cubic-bezier(0, 0, 1, 1) 0s;
-					    -webkit-transition: all 20s cubic-bezier(0, 0, 1, 1) 0s;
-					    -moz-transition: all 20s cubic-bezier(0, 0, 1, 1) 0s;
-					    -o-transition: all 20s cubic-bezier(0, 0, 1, 1) 0s;
-					    -ms-transition: all 20s cubic-bezier(0, 0, 1, 1) 0s;
-					    transform: scaleX(1) scaleY(1) scaleZ(1);
-					    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
-					    -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
-					    -o-transform: scaleX(1) scaleY(1) scaleZ(1);
-					    -ms-transform: scaleX(1) scaleY(1) scaleZ(1);
-
-	    			}
-	    			.item_img.img_scale{
-	    				transform: scaleX(1.7) scaleY(1.7) scaleZ(1);
-					    -webkit-transform: scaleX(1.7) scaleY(1.7) scaleZ(1);
-					    -moz-transform: scaleX(1.7) scaleY(1.7) scaleZ(1);
-					    -o-transform: scaleX(1.7) scaleY(1.7) scaleZ(1);
-					    -ms-transform: scaleX(1.7) scaleY(1.7) scaleZ(1);
-	    			}
-	    		}
-	    	}
-	    }
 	}
+
+
+    .banner_list{
+    	visibility: visible;
+    	width: 100%;
+    	height: 100%;
+    	@include position(absolute,0 0 0 0);
+    }
+
+    .banner_item{
+		width: 100%;
+		display: block;
+		height: 100%;
+		@include position(absolute);
+	}
+
+    .item_inner{
+		width: 100%;
+		height: 100%;
+		@include background-size();
+		background-position: center center !important;
+		@include position(relative);
+	}
+
+    .item_title{
+		position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    padding: 0 2%;
+	    @include box-sizing(border-box);
+	    margin: 0 auto;
+	    @include display-flex();
+	    @include justify-content();
+	    @include align-items();
+	    z-index: 2;
+	    background: transparent;
+		span{
+			display: block;
+			position: relative;
+		    width: 100%;
+			font-size: 400%;
+			color: $white;
+			text-align: center;
+		}
+	}
+
+	.item_img{
+		position: absolute;
+	    z-index: 1;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    @include background-size();
+		background-position: center center;
+		@include transition-prefix(all 20s cubic-bezier(0, 0, 1, 1) 0s);
+		@include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
+	}
+
+	.item_img.img_scale{
+		@include transform-prefix(scaleX(1.7) scaleY(1.7) scaleZ(1));
+	}
+
+
 }
 
 
@@ -422,81 +401,78 @@ body{
 .canvas_box_container{
 	@include position(relative);
 	width: 100%;
-	@include clearfix();
+	@include clearfix();	
+}
 
-	.canvas_box{
-		visibility: visible;
-		height: auto;
-		overflow: hidden;
+.canvas_box{
+	visibility: visible;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	@include display-flex();
+	@include justify-content();
+	@include align-items();
+	overflow: hidden;
+	@include box-sizing(border-box);
+
+	.inner{
 		position: relative;
+		width: 100%;
+		text-align: center;
+		z-index: 3;
+		@include clearfix();
+	}
+	figure{ /* last added */
+		width: 100%;
 		float: left;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: hidden;
-		box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-o-box-sizing: border-box;
+		position: relative;
+		@include background-size();
+		background-position: center center;
+		display: block;
+	}
+	.title{ /* last added */
+		position: relative;
+		width: 100%;
+		float: left;
+		display: block;
+		margin-top: 10px;
+	}
+}
 
-		.inner{
-			position: relative;
-			width: 100%;
-			text-align: center;
-			z-index: 3;
-			@include clearfix();
-		}
-		figure{ /* last added */
-			width: 100%;
-			float: left;
-			position: relative;
-			background-size: cover;
-			background-position: center center;
-			display: block;
-		}
-		.title{ /* last added */
-			position: relative;
-			width: 100%;
-			float: left;
-			display: block;
-			margin-top: 10px;
-		}
+.canvas_box.frosted_glass{
+	position: relative;
+	background: $white;
+	&:after{
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: "";
+		z-index: 2;
+		opacity: 0.4;
+		@include background-size();
+		background-attachment: fixed;
+		filter: blur(6px);
+		-webkit-filter: blur(6px);
+		-moz-filter: blur(6px);
+		-ms-filter: blur(6px);
+		-o-filter: blur(6px);
+		filter: url("#frostedGlass");
+	}	
+}
+
+.canvas_box.striped{
+	position: relative;
+	background: $white;
+	min-height: 350px;
+	.inner span{
+		padding: 10px;
 	}
 
-	.canvas_box.frosted_glass{
-		position: relative;
-		background: $white;
-		&:after{
-			position: absolute;
-			display: block;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			content: "";
-			z-index: 2;
-			opacity: 0.4;
-			background-size:cover;
-			background-attachment: fixed;
-			filter: blur(6px);
-			-webkit-filter: blur(6px);
-			-moz-filter: blur(6px);
-			-ms-filter: blur(6px);
-			-o-filter: blur(6px);
-			filter: url("#frostedGlass");
-		}	
-	}
-	.canvas_box.striped{
-		position: relative;
-		background: $white;
-		min-height: 350px;
-		.inner span{
-			padding: 10px;
-		}
-
-		&:nth-child(even){ /* last added */
-			background: $whiteGray !important;
-		}
+	&:nth-child(even){ /* last added */
+		background: $whiteGray !important;
 	}
 }

@@ -46,7 +46,10 @@
 			<li class="banner_item active" style="z-index:0;opacity:0;">
 				<div class="item_inner">
 					<div class="item_title">
-						<span>新しい、うれしい、おもしろいを創りつづける</span>
+						<div>
+							<span>新しい、うれしい、おもしろいを</span>
+							<span>創りつづける</span>
+						</div>
 					</div>
 					<div class="item_img">
 						<img src="assets/img/main/banner/main_banner_01.png">
@@ -57,7 +60,10 @@
 			<li class="banner_item" style="z-index:0;opacity:0;">
 				<div class="item_inner">
 					<div class="item_title">
-						<span>新しい、うれしい、おもしろいを創りつづける</span>
+						<div>
+							<span>新しい、うれしい、おもしろいを</span>
+							<span>創りつづける</span>
+						</div>
 					</div>
 					<div class="item_img">
 						<img src="assets/img/main/banner/main_banner_02.png">
@@ -68,7 +74,10 @@
 			<li class="banner_item" style="z-index:0;opacity:0;">
 				<div class="item_inner">
 					<div class="item_title">
-						<span>新しい、うれしい、おもしろいを創りつづける</span>
+						<div>
+							<span>新しい、うれしい、おもしろいを</span>
+							<span>創りつづける</span>
+						</div>
 					</div>
 					<div class="item_img">
 						<img src="assets/img/main/banner/main_banner_03.png">
