@@ -865,13 +865,14 @@ body {
     clear: both;
     content: "";
     display: block; }
-  .page_content .section_heading {
-    width: 100%;
-    position: relative;
-    float: left;
-    background: #fff;
-    padding: 50px 0px;
-    text-align: center; }
+
+.section_heading {
+  width: 100%;
+  position: relative;
+  float: left;
+  background: #fff;
+  padding: 50px 0px;
+  text-align: center; }
 
 /** Page : Main visual **/
 /** Layout for canvas box **/
@@ -1007,15 +1008,20 @@ body {
     background-attachment: fixed; }
   #business_domain .canvas_box {
     width: 20%;
-    padding: 10px;
     min-height: 220px; }
-  #business_domain .canvas_box.frosted_glass .inner:hover {
-    text-decoration: underline; }
+    #business_domain .canvas_box .caption {
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 30px; }
+  #business_domain .canvas_box.frosted_glass .inner {
+    padding: 10px; }
   #business_domain .canvas_box.frosted_glass:after {
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/main/business_domain/main_business_domain_bg_07.png");
     background-position: center 70px; }
-  #business_domain .canvas_box.frosted_glass:hover:after {
-    background: rgba(0, 0, 0, 0.1); }
 
 #works {
   width: 100%;
@@ -1069,7 +1075,9 @@ body {
     -ms-background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
-    padding: 80px 0px; }
+    padding: 80px 0px 0px 0px; }
+  #news .row {
+    padding-bottom: 80px; }
   #news .canvas_box_container {
     width: 60%;
     float: left;
@@ -1464,6 +1472,22 @@ a.more_btn {
   a.more_btn:hover {
     background: #000; }
 
+.full_width_btn {
+  display: none;
+  position: relative;
+  float: left;
+  text-align: center;
+  width: 100%; }
+  .full_width_btn a {
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    font-size: 20px; }
+    .full_width_btn a:hover {
+      background: #000; }
+
 #overview article {
   text-align: center;
   padding: 0px;
@@ -1558,13 +1582,13 @@ a.more_btn {
 
 @media only screen and (max-width: 768px) {
   .hide_sm {
-    display: none; }
+    display: none !important; }
   .show_sm {
-    display: inherit; }
+    display: block !important; }
   .float_r_sm {
-    float: right; }
+    float: right !important; }
   .global_nav {
-    display: none; }
+    display: none !important; }
   .site_logo {
     width: 50%; }
   .toggle_menu {
@@ -1588,7 +1612,9 @@ a.more_btn {
   #works .canvas_box_container > .canvas_box {
     width: 50%; }
   #news .content {
-    padding: 5% 0px; }
+    padding: 5% 0px 0px 0px; }
+  #news .row {
+    padding-bottom: 5%; }
   #news .canvas_box_container {
     width: 100%;
     padding: 0px 5%; }
@@ -1616,12 +1642,18 @@ a.more_btn {
       .scroll_bottom span img {
         height: 30px;
         width: 19px; }
+  .section_heading h1 {
+    font-size: 35px; }
   #overview {
     padding-top: 10px; } }
 
 @media only screen and (max-width: 520px) {
   .site_banner .item_title span {
     font-size: 160%; }
+  .section_heading {
+    padding: 30px 0px; }
+    .section_heading h1 {
+      font-size: 30px; }
   #business_domain .content, .canvas_box.frosted_glass::after,
   #news .content {
     background-attachment: scroll;
@@ -1642,5 +1674,9 @@ a.more_btn {
       .scroll_bottom span img {
         height: 25px;
         width: 14px; }
+  .section_heading h1 {
+    font-size: 25px; }
+  .section_heading span {
+    font-size: 90%; }
   #news .canvas_box {
     margin-bottom: 2px; } }

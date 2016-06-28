@@ -384,16 +384,16 @@ body{
  	width: 100%;
 	position: relative;
 	@include clearfix();
-		.section_heading{
-			width: 100%;
-			position: relative;
-			float: left;
-			background: $white;
-			padding: 50px 0px;
-			text-align: center;
-		}
-
  }
+
+ .section_heading{
+	width: 100%;
+	position: relative;
+	float: left;
+	background: $white;
+	padding: 50px 0px;
+	text-align: center;
+}
 
 /** Page : Main visual **/
 /** Layout for canvas box **/
