@@ -32,24 +32,23 @@
 	}
 }
 
-
 @media only screen and (max-width: 768px){
 	.hide_sm{
-		display: none;
+		display: none !important;
 	}
 
 	.show_sm{
-		display: inherit;
+		display: block!important;
 	}
 
 	.float_r_sm{
-		float: right;
+		float: right !important;
 	}
 
 	.global_nav{
-		display: none;
+		display: none !important;
 	}
-	
+
 	.site_logo{
 		width: 50%;
 	}
@@ -71,8 +70,13 @@
 
 	#news{
 		.content{
-			padding: 5% 0px;
+			padding: 5% 0px 0px 0px;
 		}
+
+		.row{
+			padding-bottom: 5%;
+		}
+
 		.canvas_box_container{
 			width: 100%;
 			padding: 0px 5%;
@@ -119,6 +123,12 @@
 		}
 	}
 
+	.section_heading{
+		h1{
+			font-size: 35px;
+		}
+	}
+
 	#overview{
 		padding-top: 10px;
 	}
@@ -128,6 +138,13 @@
 @media only screen and (max-width: 520px){
 	.site_banner .item_title span{
 		font-size: 160%;
+	}
+
+	.section_heading{
+		padding: 30px 0px;
+		h1{
+			font-size: 30px;
+		}
 	}
 
 	#business_domain .content, .canvas_box.frosted_glass::after,
@@ -159,6 +176,15 @@
 				height: 25px;
 				width: 14px;
 			}
+		}
+	}
+
+	.section_heading{
+		h1{
+			font-size: 25px;
+		}
+		span{
+			font-size: 90%;
 		}
 	}
 

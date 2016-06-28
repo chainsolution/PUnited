@@ -63,6 +63,26 @@ a.more_btn{
 	}
 }
 
+.full_width_btn{
+	display: none;
+	position: relative;
+	float: left;
+	text-align: center;
+	width: 100%;
+
+	a{
+		display: block;
+		padding: 10px 0px;
+		text-decoration: none;
+		background: $lightBlack;
+		color: $white;
+		font-size: 20px;
+		&:hover{
+			background: $black;
+		}
+	}
+}
+
 #overview{
 	article{
 		text-align: center;

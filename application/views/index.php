@@ -135,9 +135,9 @@
 					<!-- first row -->
 					<div class="row">
 						<div class="canvas_box_container">
-
-							<div class="canvas_box frosted_glass">
-								<a href="#" class="inner">
+							
+							<a href="#" class="canvas_box frosted_glass">
+								<div class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_research_04.png">
 									</figure>
@@ -145,29 +145,32 @@
 										<h4>研究</h4>
 										<span>RESEARCH</span>
 									</div>
-								</a>
-							</div>
+									<div class="caption">
+										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
+									</div>
+								</div>
+							</a>
 
-							<div class="canvas_box">
+							<a href="#" class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box hide_sm">
+							<a href="#" class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box">
+							<a href="#" class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box frosted_glass">
-								<a href="#" class="inner">
+							<a href="#" class="canvas_box frosted_glass">
+								<div href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_area_content_06.png">
 									</figure>
@@ -175,17 +178,20 @@
 										<h4>エリアコンテンツ</h4>
 										<span>AREA CONTENT</span>
 									</div>
-								</a>
-							</div>
+									<div class="caption">
+										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
+									</div>
+								</div>
+							</a>
 				
-							<div class="canvas_box hide_sm">
+							<a href="#" class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box frosted_glass">
-								<a href="#" class="inner">
+							<a href="#" class="canvas_box frosted_glass">
+								<div href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_advertising_pr_02.png">
 									</figure>
@@ -193,29 +199,32 @@
 										<h4>広告 - PR</h4>
 										<span>ADVERTISING/PR</span>
 									</div>
-								</a>
-							</div>
+									<div class="caption">
+										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
+									</div>
+								</div>
+							</a>
 
-							<div class="canvas_box">
+							<a href="#" class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box hide_sm">
+							<a href="#" class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box">
+							<a href="#" class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 					
-							<div class="canvas_box frosted_glass">
-								<a href="#" class="inner">
+							<a href="#" class="canvas_box frosted_glass">
+								<div href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_recruit_05.png">
 									</figure>
@@ -223,17 +232,20 @@
 										<h4>リクルート</h4>
 										<span>RECRUIT</span>
 									</div>
-								</a>
-							</div>
+									<div class="caption">
+										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
+									</div>
+								</div>
+							</a>
 
-							<div class="canvas_box hide_sm">
+							<a href="#" class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box frosted_glass">
-								<a href="#" class="inner">
+							<a href="#" class="canvas_box frosted_glass">
+								<div href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_event_01.png">
 									</figure>
@@ -241,17 +253,20 @@
 										<h4>イベント</h4>
 										<span>EVENT</span>
 									</div>
-								</a>
-							</div>
+									<div class="caption">
+										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
+									</div>
+								</div>
+							</a>
 
-							<div class="canvas_box">
+							<a href="#" class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box frosted_glass float_r_sm">
-								<a href="#" class="inner">
+							<a href="#" class="canvas_box frosted_glass float_r_sm">
+								<div href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_internet_03.png">
 									</figure>
@@ -259,8 +274,11 @@
 										<h4>インターネット</h4>
 										<span>INTERNET</span>
 									</div>
-								</a>
-							</div>
+									<div class="caption">
+										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
+									</div>
+								</div>
+							</a>
 
 						</div>
 					</div>
@@ -281,7 +299,7 @@
 					<span>マイルストーンの作品</span>
 					<span>私達は私達の顧客のために行われてきた作品</span>
 					
-					<a href="#" class="more_btn"> > MORE </a>
+					<a href="#" class="more_btn hide_sm"> > MORE </a>
 					
 				</div>
 
@@ -390,8 +408,11 @@
 
 						</div>
 					</div>
+					<div class="full_width_btn show_sm">
+						<a href="#"> > MORE </a>
+					</div>
 				</div>
-
+				
 			</div>
 		</div>
 		<!-- /work -->
@@ -490,8 +511,12 @@
 							</div>
 
 						</div>
-
 					</div>
+
+					<div class="full_width_btn show_sm">
+						<a href="#"> > MORE </a>
+					</div>
+
 				</div>
 
 			</div>
