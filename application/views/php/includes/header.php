@@ -22,8 +22,8 @@
 	<script src="assets/js/useful.js"></script>
 	<script src="assets/js/common.js"></script>
 	<!--[if lt IE 9]>
-	<script src="../../js/html5shiv-printshiv.js"></script>
-	<script src="../../js/selectivizr-min.js"></script>
+	<script src="assets/js/html5shiv-printshiv.js"></script>
+	<script src="assets/js/selectivizr-min.js"></script>
 	<![endif]-->
 </head>
 <body>
@@ -32,7 +32,7 @@
 <div class="site_header">
 	<div class="site_md_container">
 		<div class="site_logo">
-			<div>
+			<div style="margin-bottom:7px;">
 				<a href="index.php"><img src="assets/img/common/logo/site_header_logo.png"></a>
 			</div>
 		</div>

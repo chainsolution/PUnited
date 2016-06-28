@@ -1,9 +1,17 @@
 @import 'plugin/bourbon/_bourbon.scss';
 
 @media only screen and (max-width: 1000px){
-	.site_container,.site_md_container{
-		width: 96%;
-		padding: 0px 2%;
+	.site_md_container{
+		width: 90%;
+		padding: 0px 5%;
+	}
+
+	.global_nav{
+		width: 85%;
+	}
+
+	.site_logo{
+		width: 15%;
 	}
 
 }
@@ -29,6 +37,13 @@
 	}
 	.scroll_bottom span {
 		top: -40%;
+	}
+}
+
+@media only screen and (max-width: 850px){
+	.site_md_container{
+		width: 96%;
+		padding: 0px 2%;
 	}
 }
 
@@ -105,6 +120,27 @@
 			top: 0;
 		}
 	}
+
+	/* all about page */
+
+	.overlay_banner{
+		.overlay_nav{
+			display: none;
+		}
+		.overlay_title{
+			height: 190px;
+		}
+	}
+
+	.greeting{
+		.paragraph{
+			width: 90%;
+			padding: 0 5%;
+		}
+		.profile{
+			width: 100%;
+		}
+	}
 	
 }
 
@@ -146,12 +182,6 @@
 		h1{
 			font-size: 30px;
 		}
-	}
-
-	#business_domain .content, .canvas_box.frosted_glass::after,
-	#news .content{
-		background-attachment: scroll;
-		background-position: center center;
 	}
 
 	#recruit .box_title{

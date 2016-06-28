@@ -448,6 +448,7 @@ body {
   font-family: "Quicksand", san-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   letter-spacing: 0px;
   padding-top: 70px; }
 
@@ -616,8 +617,7 @@ body {
   right: 0;
   padding: 0px 20px;
   background: rgba(0, 0, 0, 0.9);
-  z-index: 999;
-  overflow: scroll; }
+  z-index: 999; }
   #mobile_global_nav::after {
     clear: both;
     content: "";
@@ -961,7 +961,6 @@ body {
     -moz-filter: blur(6px);
     -ms-filter: blur(6px);
     -o-filter: blur(6px);
-    filter: url("#frostedGlass");
     filter: blur(6px); }
 
 .canvas_box.striped {
@@ -981,99 +980,118 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  height: 100%;
+  min-height: 190px;
   position: relative;
   overflow: hidden;
-  background-position: center center !important; }
-  .overlay_banner img {
-    width: 100%;
-    border: 0;
-    vertical-align: middle;
-    margin: 0 auto -17%;
-    -webkit-filter: grayscale(80%) brightness(80%);
-    filter: grayscale(80%) brightness(80%); }
-
-.overlay_nav {
-  list-style-type: none;
-  margin: 3px;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
-  position: relative; }
-  .overlay_nav:after {
+  background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
+  -webkit-background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
+  -moz-background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
+  -ms-background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
+  -o-background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
+  -webkit-filter: grayscale(80%) contrast(90%);
+  filter: grayscale(80%) contrast(90%); }
+  .overlay_banner .overlay_nav {
     position: absolute;
+    background: rgba(0, 0, 0, 0.6);
     bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    margin-left: -5px;
-    vertical-align: middle;
-    content: " ";
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #fff;
-    border-left: 10px solid transparent; }
-
-.overlay_nav li {
-  display: inline; }
-
-.overlay_nav a {
-  display: inline-block;
-  padding: 16px 25px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff; }
-
-.overlay_navigation {
-  margin: 0 auto;
-  padding: 0;
-  height: 60px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  background: #000;
-  overflow: hidden;
-  top: 69%;
-  background-position: center center !important;
-  opacity: 0.5;
-  -webkit-filter: alpha(opacity=50);
-  filter: alpha(opacity=50); }
-
-.overlay_title {
-  position: absolute;
-  height: auto;
-  width: 100%;
-  padding: 0 2%;
-  top: 25%;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: -webkit-box;
-  display: -moz-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  align-items: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  z-index: 2;
-  background: transparent; }
-  .overlay_title span {
-    display: block;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 3; }
+    .overlay_banner .overlay_nav ul {
+      list-style-type: none;
+      position: relative;
+      float: left;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      display: -webkit-flex;
+      display: -webkit-box;
+      display: -moz-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center; }
+    .overlay_banner .overlay_nav li {
+      display: inline-block;
+      float: left;
+      position: relative; }
+      .overlay_banner .overlay_nav li a {
+        display: block;
+        float: left;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1;
+        text-decoration: none;
+        padding: 22px 30px; }
+        .overlay_banner .overlay_nav li a:hover {
+          background: #000; }
+    .overlay_banner .overlay_nav li.active:after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid white;
+      border-left: 10px solid transparent;
+      bottom: 0;
+      left: 50%;
+      margin-left: -10px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box; }
+  .overlay_banner .overlay_title {
     position: relative;
+    background: transparent;
+    height: 130px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center; }
+    .overlay_banner .overlay_title span {
+      font-size: 260%;
+      color: #fff; }
+
+/** PAGE : about => Greeting **/
+/*************************/
+.greeting .paragraph {
+  position: relative;
+  width: 65%;
+  float: left;
+  display: block;
+  padding-right: 5%; }
+  .greeting .paragraph p {
+    margin: 0 0 25px 0;
+    line-height: 2;
+    color: #000;
+    font-weight: 300; }
+
+.greeting .profile {
+  position: relative;
+  float: left;
+  width: 30%; }
+  .greeting .profile img {
     width: 100%;
-    font-size: 250%;
-    color: #fff;
-    text-align: center; }
+    max-width: 100%; }
 
 /** Company overview **/
 #overview {
@@ -1219,7 +1237,16 @@ body {
         cursor: pointer;
         text-decoration: underline; }
   #news .canvas_box.frosted_glass:after {
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/main/news/main_news_bg_01.png"); }
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/main/news/main_news_bg_01.png) no-repeat center center;
+    -webkit-background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/main/news/main_news_bg_01.png) no-repeat center center;
+    -moz-background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/main/news/main_news_bg_01.png) no-repeat center center;
+    -ms-background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/main/news/main_news_bg_01.png) no-repeat center center;
+    -o-background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/main/news/main_news_bg_01.png) no-repeat center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed; }
   #news .news_heading_canvas.frosted_glass {
     top: 0;
     left: 0;
@@ -1237,7 +1264,11 @@ body {
       content: "";
       z-index: 2;
       opacity: 0.4;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/main/news/main_news_bg_01.png") no-repeat center center;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/main/news/main_news_bg_01.png) no-repeat center center;
+      -webkit-background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/main/news/main_news_bg_01.png) no-repeat center center;
+      -moz-background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/main/news/main_news_bg_01.png) no-repeat center center;
+      -ms-background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/main/news/main_news_bg_01.png) no-repeat center center;
+      -o-background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/main/news/main_news_bg_01.png) no-repeat center center;
       background-size: cover;
       -moz-background-size: cover;
       -ms-background-size: cover;
@@ -1247,7 +1278,6 @@ body {
       -moz-filter: blur(6px);
       -ms-filter: blur(6px);
       -o-filter: blur(6px);
-      filter: url("#frostedGlass");
       filter: blur(6px); }
   #news .left_news_heading {
     width: 40%;
@@ -1661,9 +1691,13 @@ a.more_btn {
     zoom: 1; } }
 
 @media only screen and (max-width: 1000px) {
-  .site_container, .site_md_container {
-    width: 96%;
-    padding: 0px 2%; } }
+  .site_md_container {
+    width: 90%;
+    padding: 0px 5%; }
+  .global_nav {
+    width: 85%; }
+  .site_logo {
+    width: 15%; } }
 
 @media only screen and (max-width: 960px) {
   .site_banner .item_title span {
@@ -1680,6 +1714,11 @@ a.more_btn {
       font-size: 100%; }
   .scroll_bottom span {
     top: -40%; } }
+
+@media only screen and (max-width: 850px) {
+  .site_md_container {
+    width: 96%;
+    padding: 0px 2%; } }
 
 @media only screen and (max-width: 768px) {
   .hide_sm {
@@ -1732,7 +1771,17 @@ a.more_btn {
     #recruit .row .right_box .fb_canvas {
       position: relative;
       padding: 30px 0px;
-      top: 0; } }
+      top: 0; }
+  /* all about page */
+  .overlay_banner .overlay_nav {
+    display: none; }
+  .overlay_banner .overlay_title {
+    height: 190px; }
+  .greeting .paragraph {
+    width: 90%;
+    padding: 0 5%; }
+  .greeting .profile {
+    width: 100%; } }
 
 @media only screen and (max-width: 640px) {
   .site_banner .item_title span {
@@ -1756,10 +1805,6 @@ a.more_btn {
     padding: 30px 0px; }
     .section_heading h1 {
       font-size: 30px; }
-  #business_domain .content, .canvas_box.frosted_glass::after,
-  #news .content {
-    background-attachment: scroll;
-    background-position: center center; }
   #recruit .box_title {
     width: 35%;
     height: 140px; }

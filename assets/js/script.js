@@ -85,31 +85,45 @@ setNavBarBorder = function(){
 
 /** Resize the height of banner slide, when window width get resize smaller **/
   /***********************************************************************/
-  var resizeBannerHeight;
-  resizeBannerHeight = function(){
-    var banner, bannerWidth, bannerHeight, bannerRatio, winWidth;
+var resizeBannerHeight;
+resizeBannerHeight = function(){
+  var banner, bannerWidth, bannerHeight, bannerRatio, winWidth;
 
-    banner = $('.banner_inner');
-    /* Function to resize the height of banner to the right aspect ratio */ 
-    (function(){
-      
+  banner = $('.banner_inner');
+  /* Function to resize the height of banner to the right aspect ratio */ 
+  (function(){
+    
+    bannerWidth = banner.width();
+    bannerHeight = banner.height();
+    bannerRatio = 1300 / 600;
+    banner.css("height",(bannerWidth / bannerRatio)+"px");
+    $(window).resize(function(){
+      winWidth = $(window).width();
       bannerWidth = banner.width();
-      bannerHeight = banner.height();
-      bannerRatio = 1300 / 600;
-      banner.css("height",(bannerWidth / bannerRatio)+"px");
-      $(window).resize(function(){
-        winWidth = $(window).width();
-        bannerWidth = banner.width();
-        if(winWidth < 900){
-          banner.css({"height": (bannerWidth / (bannerRatio * 1.1))+"px"});
-        }else{
-          banner.css({"height": (bannerWidth / bannerRatio)+"px"});
-        }
-        
-      });
-    })();
+      if(winWidth < 900){
+        banner.css({"height": (bannerWidth / (bannerRatio * 1.1))+"px"});
+      }else{
+        banner.css({"height": (bannerWidth / bannerRatio)+"px"});
+      }
+      
+    });
+  })();
 
+}
+
+/** Check user-agent : mobile or computer **/
+  /**************************************/
+
+var checkUserAgent = function(){
+  if(navigator.userAgent.match(/Mobi/)){
+    $('head').append('<link rel="stylesheet" type="text/css" href="assets/css/mobile.css">');
+    return ('ontouchstart' in document.documentElement);
   }
+}
+
+$(window).load(function(){
+  checkUserAgent();
+});
 
 $(document).ready(function(){
   bannerInitialize();

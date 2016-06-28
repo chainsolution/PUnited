@@ -140,7 +140,9 @@
 
 	.canvas_box.frosted_glass{
 		&:after{
-			background-image: (linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url($news_bg));
+			@include background-prefix((linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url(#{$news_bg})) no-repeat center center);
+			@include background-size();
+			background-attachment: fixed;
 		}
 	}
 
@@ -161,14 +163,13 @@
 			content: "";
 			z-index: 2;
 			opacity: 0.4;
-			background: (linear-gradient(0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)),url($news_bg)) no-repeat center center;
+			@include background-prefix((linear-gradient(0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)),url(#{$news_bg})) no-repeat center center);
 			@include background-size();
 			background-attachment: fixed;
 			-webkit-filter: blur(6px);
 			-moz-filter: blur(6px);
 			-ms-filter: blur(6px);
 			-o-filter: blur(6px);
-			filter: url("#frostedGlass");
 			filter: blur(6px);
 		}
 	}
