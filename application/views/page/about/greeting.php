@@ -29,8 +29,22 @@
 	include(dirname(dirname(__DIR__)).'/php/includes/header.php');
 ?>
 
-<div>
-	
+<div class="site_container">
+	<div class="overlay_banner">
+		<img src="assets/img/about_us/banner/about_us_clear_banner_01.png">
+		<div class="overlay_navigation">
+			<ul class="overlay_nav">
+				<li><a href="#">ごあいさつ</a></li>
+				<li><a href="#">企業理念</a></li>
+				<li><a href="#">会社概要</a></li>
+				<li><a href="#">沿革</a></li>
+				<li><a href="#">プライバシーポリシー</a></li>
+			</ul>
+		</div>
+		<div class="overlay_title">
+			<span>ABOUT US</span>
+		</div>
+	</div>
 </div>
 
 <?php include(dirname(dirname(__DIR__)).'/php/includes/footer.php'); ?>

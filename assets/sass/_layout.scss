@@ -267,7 +267,7 @@ body{
 		
 		&.loading{
 			@include background-prefix(#{$white} url("../img/common/icons/img_loader_01.gif") no-repeat center center)
-			z-index:1;
+			z-index: 1;
 		}
 	}
 
@@ -476,3 +476,93 @@ body{
 		background: $whiteGray !important;
 	}
 }
+
+/** Page : Main visual **/
+/** Layout for overlay banner **/
+ /************************/
+
+.overlay_banner{
+	margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+	background-position: center center !important;
+	img{
+		max-width: 100%;
+	    border: 0;
+	    vertical-align: middle;
+		margin: 0 auto -17%;
+		-webkit-filter: grayscale(80%) brightness(80%);
+		filter: grayscale(80%) brightness(80%);
+	}
+}
+.overlay_nav{
+	list-style-type: none;
+	margin: 3px;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	&:after{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 0;
+		height: 0;
+		margin-left: -5px;
+		vertical-align: middle;
+		content: " ";
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid $white;
+		border-left: 10px solid transparent;
+	}
+}
+.overlay_nav li{
+	display: inline;
+}
+.overlay_nav a{
+	display: inline-block;
+	padding: 16px 25px;
+	text-align: center;
+	text-decoration: none;
+	color: $white;
+}
+.overlay_navigation{
+	margin: 0 auto;
+	padding: 0;
+	height: 60px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	background: $black;
+	overflow: hidden;
+	top: 69%;
+	background-position: center center !important;
+	opacity: 0.5;
+	-webkit-filter: alpha(opacity=50);
+	filter: alpha(opacity=50);
+}
+.overlay_title{
+		position: absolute;
+	    height: auto;
+	    width: 100%;
+	    padding: 0 2%;
+		top: 25%;
+	    @include box-sizing(border-box);
+	    margin: 0 auto;
+	    @include display-flex();
+	    @include justify-content();
+	    @include align-items();
+	    z-index: 2;
+	    background: transparent;
+		span{
+			display: block;
+			position: relative;
+		    width: 100%;
+			font-size: 250%;
+			color: $white;
+			text-align: center;
+		}
+	}
