@@ -43,7 +43,7 @@
 	@include transform-prefix(translateX(-50%));
 }
 
-a,.canvas_box.frosted:after{
+a,.canvas_box.frosted_glass:after{
 	@include transition-prefix(all 0.3s ease-in-out);
 }
 

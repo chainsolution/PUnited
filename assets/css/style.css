@@ -957,12 +957,12 @@ body {
     -ms-background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
-    filter: blur(6px);
     -webkit-filter: blur(6px);
     -moz-filter: blur(6px);
     -ms-filter: blur(6px);
     -o-filter: blur(6px);
-    filter: url("#frostedGlass"); }
+    filter: url("#frostedGlass");
+    filter: blur(6px); }
 
 .canvas_box.striped {
   position: relative;
@@ -1242,12 +1242,12 @@ body {
       -ms-background-size: cover;
       -o-background-size: cover;
       background-attachment: fixed;
-      filter: blur(6px);
       -webkit-filter: blur(6px);
       -moz-filter: blur(6px);
       -ms-filter: blur(6px);
       -o-filter: blur(6px);
-      filter: url("#frostedGlass"); }
+      filter: url("#frostedGlass");
+      filter: blur(6px); }
   #news .left_news_heading {
     width: 40%;
     position: relative;
@@ -1551,7 +1551,7 @@ body {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%); }
 
-a, .canvas_box.frosted:after {
+a, .canvas_box.frosted_glass:after {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1730,7 +1730,8 @@ a.more_btn {
       width: 100%; }
     #recruit .row .right_box .fb_canvas {
       position: relative;
-      padding: 30px 0px; } }
+      padding: 30px 0px;
+      top: 0; } }
 
 @media only screen and (max-width: 640px) {
   .site_banner .item_title span {

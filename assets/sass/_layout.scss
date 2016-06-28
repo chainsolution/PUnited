@@ -455,12 +455,12 @@ body{
 		opacity: 0.4;
 		@include background-size();
 		background-attachment: fixed;
-		filter: blur(6px);
 		-webkit-filter: blur(6px);
 		-moz-filter: blur(6px);
 		-ms-filter: blur(6px);
 		-o-filter: blur(6px);
 		filter: url("#frostedGlass");
+		filter: blur(6px);
 	}	
 }
 

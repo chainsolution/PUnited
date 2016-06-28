@@ -164,12 +164,12 @@
 			background: (linear-gradient(0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)),url($news_bg)) no-repeat center center;
 			@include background-size();
 			background-attachment: fixed;
-			filter: blur(6px);
 			-webkit-filter: blur(6px);
 			-moz-filter: blur(6px);
 			-ms-filter: blur(6px);
 			-o-filter: blur(6px);
 			filter: url("#frostedGlass");
+			filter: blur(6px);
 		}
 	}
 
