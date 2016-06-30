@@ -32,7 +32,7 @@
 <div class="site_header">
 	<div class="site_md_container">
 		<div class="site_logo">
-			<div style="margin-bottom:7px;">
+			<div class="logo_inner">
 				<a href="index.php"><img src="assets/img/common/logo/site_header_logo.png"></a>
 			</div>
 		</div>
@@ -40,12 +40,12 @@
 			<ul>
 				<li class="relative"><a href="about_us">ABOUT US</a>
 					<ul>
-						<li><a href="about-greeting">GREETING</a></li>
-						<li><a href="about-philosophy">PHILOSOPHY</a></li>
-						<li><a href="about-profile">COMPANY PROFILE</a></li>
-						<li><a href="about-history">HISTORY</a></li>
-						<li><a href="about-privacy">PRIVACY &amp; POLICY</a></li>
-						<li><a href="about-en-about_us">ABOUT US (EN)</a></li>
+						<li><a href="greeting">GREETING</a></li>
+						<li><a href="philosophy">PHILOSOPHY</a></li>
+						<li><a href="profile">COMPANY PROFILE</a></li>
+						<li><a href="history">HISTORY</a></li>
+						<li><a href="privacy">PRIVACY &amp; POLICY</a></li>
+						<li><a href="about_us_en">ABOUT US (EN)</a></li>
 					</ul>
 				</li>
 				<li><a onclick="PUNITED.useful.SmoothScrollTo('business_domain');" href="#">BUSINESS DOMAIN</a></li>

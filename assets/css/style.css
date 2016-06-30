@@ -452,6 +452,16 @@ body {
   letter-spacing: 0px;
   padding-top: 70px; }
 
+.site_sm_container {
+  position: relative;
+  width: 72%;
+  padding: 0 14%;
+  margin: 0 auto; }
+  .site_sm_container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
 .site_md_container {
   position: relative;
   width: 86%;
@@ -515,6 +525,8 @@ body {
     max-width: 100%;
     vertical-align: bottom;
     display: block; }
+  .site_logo .logo_inner {
+    margin-bottom: 7px; }
 
 .toggle_menu {
   display: none;
@@ -1033,8 +1045,9 @@ body {
         padding: 22px 30px; }
         .overlay_banner .overlay_nav li a:hover {
           background: #000; }
-    .overlay_banner .overlay_nav li.active:after {
+    .overlay_banner .overlay_nav li:after {
       position: absolute;
+      display: none;
       content: "";
       width: 20px;
       height: 20px;
@@ -1049,6 +1062,10 @@ body {
       -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
       -o-box-sizing: border-box; }
+    .overlay_banner .overlay_nav li:hover:after {
+      display: block; }
+    .overlay_banner .overlay_nav li.active:after {
+      display: block; }
   .overlay_banner .overlay_title {
     position: relative;
     background: transparent;
@@ -1073,25 +1090,188 @@ body {
 
 /** PAGE : about => Greeting **/
 /*************************/
-.greeting .paragraph {
+.greeting {
   position: relative;
-  width: 65%;
-  float: left;
-  display: block;
-  padding-right: 5%; }
-  .greeting .paragraph p {
-    margin: 0 0 25px 0;
-    line-height: 2;
-    color: #000;
-    font-weight: 300; }
+  width: 100%; }
+  .greeting::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .greeting .paragraph {
+    position: relative;
+    width: 65%;
+    float: left;
+    display: block;
+    padding-right: 5%; }
+    .greeting .paragraph p {
+      margin: 0 0 25px 0;
+      line-height: 2;
+      color: #000;
+      font-weight: 300; }
+  .greeting .profile {
+    position: relative;
+    float: left;
+    width: 30%; }
+    .greeting .profile img {
+      width: 100%;
+      max-width: 100%; }
 
-.greeting .profile {
+/** PAGE: about => philosophy **/
+/*************************/
+.philosophy {
+  position: relative;
+  width: 100%; }
+  .philosophy::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .philosophy .section {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+  .philosophy .row {
+    position: relative;
+    width: 100%; }
+    .philosophy .row::after {
+      clear: both;
+      content: "";
+      display: block; }
+  .philosophy .left_section, .philosophy .right_section {
+    position: relative;
+    width: 48%;
+    float: left; }
+  .philosophy .left_section {
+    margin-right: 2%; }
+  .philosophy .right_section {
+    margin-left: 2%; }
+  .philosophy .section_title {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 40px;
+    background: #bbbbbb; }
+    .philosophy .section_title h3 {
+      margin: 0px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1; }
+  .philosophy .company_logo {
+    height: 143px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center; }
+    .philosophy .company_logo img {
+      max-width: 100%;
+      vertical-align: middle; }
+  .philosophy article {
+    width: 100%; }
+  .philosophy .article_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px #999; }
+  .philosophy .vertical_divider {
+    position: absolute;
+    left: 50%;
+    top: 80;
+    bottom: 0;
+    width: 1px;
+    background: #d9d9d9; }
+  .philosophy ul {
+    margin-left: 20px; }
+    .philosophy ul li {
+      line-height: 2.2;
+      font-size: 20px;
+      color: #333;
+      text-shadow: 0px 1px 0px #999; }
+  .philosophy p {
+    text-align: center;
+    line-height: 2.2;
+    color: #333;
+    text-shadow: 0px 1px 1px #999; }
+    .philosophy p.text_lg {
+      font-size: 30px; }
+
+/** PAGE: about => history **/
+/***********************/
+.history ul {
+  position: relative;
+  list-style-type: none;
+  width: 100%;
+  display: block; }
+  .history ul::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.history li.history_record {
+  position: relative;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  float: left;
+  margin: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+  .history li.history_record::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.history .history_date, .history .history_milestone {
+  display: inline-block;
   position: relative;
   float: left;
-  width: 30%; }
-  .greeting .profile img {
-    width: 100%;
-    max-width: 100%; }
+  vertical-align: top;
+  line-height: 2;
+  text-shadow: 0px 0px 1px #777;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+.history .history_date {
+  width: 20%;
+  padding: 20px 30px 20px 10px;
+  float: left;
+  font-size: 16px;
+  text-align: right;
+  background: #bbbbbb;
+  color: #fff; }
+
+.history .history_milestone {
+  width: 80%;
+  padding: 20px 10px 20px 30px;
+  float: left;
+  text-align: left; }
+  .history .history_milestone p {
+    color: #666;
+    letter-spacing: 1.5px; }
 
 /** Company overview **/
 #overview {
@@ -1619,6 +1799,9 @@ a.more_btn {
     .full_width_btn a:hover {
       background: #000; }
 
+.text_center {
+  text-align: center !important; }
+
 #overview article {
   text-align: center;
   padding: 0px;
@@ -1703,7 +1886,11 @@ a.more_btn {
   .site_banner .item_title span {
     font-size: 300%; }
   #news .news_heading_canvas {
-    width: 65%; } }
+    width: 65%; }
+  .history .history_date {
+    width: 27%; }
+  .history .history_milestone {
+    width: 73%; } }
 
 @media only screen and (max-width: 900px) {
   .site_logo {
@@ -1731,6 +1918,8 @@ a.more_btn {
     display: none !important; }
   .site_logo {
     width: 50%; }
+    .site_logo .logo_inner {
+      margin-left: 20px; }
   .toggle_menu {
     display: -webkit-flex;
     display: -webkit-box;
@@ -1748,6 +1937,9 @@ a.more_btn {
     -ms-align-items: center; }
   .site_banner .item_title span {
     font-size: 260%; }
+  .site_sm_container {
+    width: 80%;
+    padding: 0px 10%; }
   #business_domain .canvas_box_container > .canvas_box,
   #works .canvas_box_container > .canvas_box {
     width: 50%; }
@@ -1781,7 +1973,38 @@ a.more_btn {
     width: 90%;
     padding: 0 5%; }
   .greeting .profile {
-    width: 100%; } }
+    width: 100%; }
+  .philosophy .left_section, .philosophy .right_section {
+    width: 100%;
+    margin: 50px 0 0 0; }
+  .philosophy .vertical_divider {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 40px; }
+  .history li.history_record {
+    display: block;
+    padding: 12px 20px; }
+    .history li.history_record:nth-child(odd) {
+      background: #f5f5f5; }
+    .history li.history_record:nth-child(even) {
+      background: #fff; }
+  .history .history_date, .history .history_milestone {
+    width: 100%;
+    padding: 0px;
+    background: transparent;
+    text-align: left; }
+  .history .history_date {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500; }
+  .history .history_milestone p {
+    color: #666; } }
 
 @media only screen and (max-width: 640px) {
   .site_banner .item_title span {
@@ -1809,7 +2032,10 @@ a.more_btn {
     width: 35%;
     height: 140px; }
     #recruit .box_title h2 {
-      font-size: 20px; } }
+      font-size: 20px; }
+  .site_sm_container {
+    width: 96%;
+    padding: 0px 2%; } }
 
 @media only screen and (max-width: 420px) {
   .site_banner .item_title span {

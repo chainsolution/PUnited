@@ -16,8 +16,12 @@ body{
 	padding-top: 70px;
 }
 
-body:before {
-
+.site_sm_container{
+	position: relative;
+	width: $site_sm_container;
+	padding: 0 $site_sm_container_padding;
+	margin: 0 auto;
+	@include clearfix;
 }
 
 .site_md_container{
@@ -64,6 +68,9 @@ body:before {
 		max-width: 100%;
 		vertical-align: bottom;
 		display: block;
+	}
+	.logo_inner{
+		margin-bottom: 7px;
 	}
 }
 
@@ -533,9 +540,10 @@ body:before {
 			}
 		}
 
-		li.active{
+		li{
 			&:after{
 				position: absolute;
+				display: none;
 				content: "";
 				width: 20px;
 				height: 20px;
@@ -546,6 +554,16 @@ body:before {
 				left: 50%;
 				margin-left: -10px;
 				@include box-sizing(border-box);
+			}
+		}
+		li{
+			&:hover{
+				&:after{
+					display: block;
+				}
+			}
+			&.active:after{
+				display: block;
 			}
 		}
 	}
@@ -570,6 +588,9 @@ body:before {
   /*************************/
 
 .greeting{
+	position: relative;
+	width: 100%;
+	@include clearfix();
 	.paragraph{
 		position: relative;
 		width: 65%;
@@ -591,6 +612,167 @@ body:before {
 		img{
 			width: 100%;
 			max-width: 100%;
+		}
+	}
+}
+
+/** PAGE: about => philosophy **/
+  /*************************/
+
+.philosophy{
+	position: relative;
+	width: 100%;
+	@include clearfix();
+	.section{
+		position: relative;
+		width: 100%;
+		float: left;
+		margin-top: 20px;
+		margin-bottom: 30px;
+
+	}
+
+	.row{
+		position: relative;
+		width: 100%;
+		@include clearfix();
+	}
+	
+	.left_section, .right_section{
+		position: relative;
+		width: 48%;
+		float: left;
+
+	}
+	.left_section{
+		margin-right: 2%;
+	}
+	.right_section{
+		margin-left: 2%;
+	}
+
+	.section_title{
+		position: relative;
+		text-align: center;
+		width: 100%;
+		padding: 10px 0px;
+		margin-bottom: 40px;
+		background: $heavyGray;
+		h3{
+			margin: 0px;
+			color: $white;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1;
+		}
+	}
+
+	.company_logo{
+		height: 143px;
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+		img{
+			max-width: 100%;
+			vertical-align: middle;
+		}
+	}
+
+	article{
+		width: 100%;
+	}
+	
+	.article_title{
+		margin-top: 30px;
+		margin-bottom: 20px;
+		font-size: 18px;
+		color: #000;
+		font-weight: 500;
+		text-shadow: 0px 1px 1px #999;
+	}
+	
+	.vertical_divider{
+		position: absolute;
+		left: 50%;
+		top: 80;
+		bottom: 0;
+		width: 1px;
+		background: lighten(#999,25%);
+	}
+
+	ul{
+		margin-left: 20px;
+		li{
+			line-height: 2.2;
+			font-size: 20px;
+			color: #333;
+			text-shadow: 0px 1px 0px #999;
+		}
+	}
+
+	p{
+		text-align: center;
+		line-height: 2.2;
+		color: #333;
+		text-shadow: 0px 1px 1px #999;
+		&.text_lg{
+			font-size: 30px;
+		}
+	}
+}
+
+/** PAGE: about => history **/
+  /***********************/
+
+.history{
+	ul{
+		position: relative;
+		list-style-type: none;
+		width: 100%;
+		display: block;
+		@include clearfix();
+	}
+
+	li.history_record{
+		position: relative;
+		@include display-flex();
+		width: 100%;
+		float: left;
+		margin: 0px;
+		@include box-sizing(border-box);
+		@include clearfix();
+		
+	}
+
+	.history_date,.history_milestone{
+		display: inline-block;
+		position: relative;
+		float: left;
+		vertical-align: top;
+		line-height: 2;
+		text-shadow: 0px 0px 1px #777;
+		@include box-sizing(border-box);
+	}
+
+	.history_date{
+		width: 20%;
+		padding: 20px 30px 20px 10px;
+		float: left;
+		font-size: 16px;
+		text-align: right;
+		background: $heavyGray;
+		color: $white;
+
+	}
+
+	.history_milestone{
+		width: 80%;
+		padding: 20px 10px 20px 30px;
+		float: left;
+		text-align: left;
+		p{
+			color: #666;
+			letter-spacing: 1.5px;
 		}
 	}
 }
