@@ -211,6 +211,18 @@
 			}
 		}
 	}
+
+	.privacy{
+		.row{
+			display: block;
+		}
+		.content_title,.content_paragraph{
+			display: block;
+			width: 100%;
+			text-align: left;
+			padding: 5px  20px;
+		}
+	}
 	
 }
 

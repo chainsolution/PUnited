@@ -777,4 +777,103 @@ body{
 	}
 }
 
+/** PAGE: about => privacy and policy **/
+  /**********************************/
+
+.privacy{
+	.row{
+		@include display-flex();
+		position: relative;
+		width: 100%;
+		margin-bottom: 50px;
+		@include clearfix();
+	}
+
+	.content_title{
+		position: relative;
+		width: 30%;
+		padding: 0px 40px 0px 10px;
+		float: left;
+		text-align: right;
+		@include box-sizing(border-box);
+		p{
+			font-size: 17px;
+			font-weight: 500;
+			color: #222;
+			text-shadow: 0px 0px 1px #666;
+			line-height: 2.2;
+		}
+	}
+
+	.content_paragraph{
+		position: relative;
+		width: 70%;
+		padding: 0px 10px 0px 40px;
+		float: left;
+		@include box-sizing(border-box);
+		p{
+			font-size: 16px;
+			color: #444;
+			text-shadow: 0px 0px 1px #999;
+			line-height: 2.1;
+		}
+
+		h4{
+			font-size: 17px;
+			font-weight: 500;
+			margin: 20px 0px;
+			color: #222;
+			text-shadow: 0px 0px 1px #666;
+			line-height: 2.1;
+		}
+	}
+
+	.vertical_divider{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 1px;
+		background: lighten(#999,25%);
+	}
+
+	ul{
+		list-style-type: decimal;
+		margin-left: 20px;
+		font-size: 16px;
+		color: #444;
+		text-shadow: 0px 0px 1px #999;
+		line-height: 2.1;
+		li{
+			margin-bottom: 20px;
+		}
+		ul{
+			list-style-type: circle;
+			margin-left: 20px;
+			li{
+				margin-bottom: 0px;
+				font-size: 15px;
+			}
+		}
+	}
+	
+	ul.info{
+		list-style-type: none;
+		li{
+			@include display-flex();
+			font-size: 15px;
+		}
+		span{
+			width: 20%;
+			color: #222;
+			text-shadow: 0px 0px 1px #222;
+		}
+		p{
+			font-size: 15px;
+			margin-top: 10px;
+		}
+	}
+
+}
+
 
