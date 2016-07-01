@@ -95,10 +95,11 @@ a.more_btn{
 		width: 100%;
 		margin: 0px;
 		h4{
-			font-size: 180%;
-			font-weight: 300 !important;
+			font-size: 160%;
+			font-weight: 300;
 			margin: 20px 0px;
-			color: $headingColor;
+			color: $heading_color;
+			text-shadow: $heading_text_shadow;
 		}
 
 		p{
@@ -106,7 +107,8 @@ a.more_btn{
 			line-height: 35px;
 			margin-bottom: 10px;
 			font-size: 110%;
-			color: $paragraphColor;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
 		}
 	}
 }
@@ -114,16 +116,18 @@ a.more_btn{
 /* style for all section heading */
 .section_heading{
 	h1{
+		font-family: "Dosis", san-serif;
 		font-size: 40px;
-		font-weight: 500;
+		font-weight: 300;
+		color: #333;
 		margin:0 0 10px 0 !important;
-		letter-spacing: -3px;
+		
 	}
 	span{
 		display: block;
 		font-size: 105%;
 		font-weight: 100;
-		color: $paragraphColor;
+		color: $paragraph_color;
 	}
 
 }
@@ -141,25 +145,8 @@ a.more_btn{
 }
 
 .canvas_box{
-	.title{
-		h4{
-			font-size: 18px;
-			font-weight: 500;
-			line-height: 18px;
-			color: $headingColor;
-			margin: 10px 0px 5px 0px;
-		}
-		span{
-			display: block;
-			line-height: 14px;
-			letter-spacing: -1px;
-			color: $paragraphColor;
-		}
-	}
-
 	figure > img{
 		max-width: 100%;
 		vertical-align: middle;
 	}
-	
 }

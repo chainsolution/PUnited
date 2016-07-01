@@ -11,7 +11,7 @@
 /* float clear
 ------------------------------------------------- */
 /*for modern browser*/
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700);
 .clear_fix:after {
   content: ".";
   display: block;
@@ -73,6 +73,7 @@ usage:
   ----------------------------------------- */
 /* Text color
  ----------------------------------------- */
+/* Text shadow */
 /* Image url / directory path
  ------------------------------------------ */
 /* Library color */
@@ -445,8 +446,9 @@ th {
  */
 body {
   background: #fff;
-  font-family: "Quicksand", san-serif;
+  font-family: arial,'ヒラギノ角ゴ ProN W3','Hiragino Kaku GothicProN','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳＰゴシック',sans-serif;
   font-size: 14px;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   letter-spacing: 0px;
@@ -569,13 +571,14 @@ body {
       background: #000;
       color: #e6e6e6; }
   .global_nav ul a {
+    font-family: "Dosis", san-serif;
     text-decoration: none;
-    padding: 27px 17px;
+    padding: 25px 17px;
     color: #000;
     font-size: 108%;
     line-height: 70px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
     text-align: center; }
     .global_nav ul a:hover {
       color: #b3b3b3; }
@@ -1373,6 +1376,176 @@ body {
     font-size: 15px;
     margin-top: 10px; }
 
+.profile .left_content, .profile .right_content {
+  position: relative;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+  .profile .left_content::after, .profile .right_content::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.profile ul {
+  list-style-type: none;
+  width: 100%;
+  position: relative; }
+  .profile ul::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.profile .left_content li {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: baseline;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline; }
+
+.profile .right_content .content_paragraph {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  padding-left: 0px; }
+
+.profile .content_title {
+  width: 25%;
+  float: left;
+  padding: 15px 30px 15px 0px;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+  .profile .content_title p {
+    text-align: right;
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+    text-shadow: 0px 0px 0.5px #999;
+    line-height: 2.1; }
+
+.profile .content_paragraph {
+  width: 75%;
+  float: left;
+  padding: 15px 0px 15px 30px;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+  .profile .content_paragraph p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 2.1;
+    color: #222; }
+
+.profile .link_underline {
+  display: inline-block;
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid #888; }
+  .profile .link_underline:hover {
+    color: #666; }
+
+.profile .depart_contact {
+  margin-bottom: 15px;
+  width: 100%; }
+  .profile .depart_contact h4 {
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+    text-shadow: 0px 0px 0.5px #999; }
+
+.profile .head_title {
+  position: relative;
+  float: left;
+  display: block;
+  width: 40%;
+  padding-right: 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+  .profile .head_title p {
+    color: #fff;
+    text-align: center;
+    background: #333; }
+    .profile .head_title p:after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 50%;
+      right: 0;
+      width: 20px;
+      height: 1px;
+      background: #d9d9d9; }
+
+.profile .vertical_line {
+  position: absolute;
+  left: 0px;
+  top: 28px;
+  bottom: 71px;
+  width: 1px;
+  background: #999; }
+
+.profile .diagram_lists {
+  position: relative;
+  float: left;
+  display: block;
+  width: 60%;
+  padding-left: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+  .profile .diagram_lists .list {
+    position: relative;
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    margin: 10px 0px; }
+    .profile .diagram_lists .list:before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 50%;
+      left: -20px;
+      height: 1px;
+      width: 12px;
+      background: #d9d9d9; }
+    .profile .diagram_lists .list:last-child:before {
+      display: none; }
+  .profile .diagram_lists a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 5px;
+    background: #dddddd;
+    display: block;
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 2px; }
+    .profile .diagram_lists a:hover {
+      background: #c4c4c4; }
+
 /** Company overview **/
 #overview {
   position: relative;
@@ -1405,6 +1578,15 @@ body {
     -ms-background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed; }
+  #business_domain .title span {
+    font-family: "Dosis", san-serif;
+    letter-spacing: 0px;
+    color: #222; }
+  #business_domain .title h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin: 7px 0px 2px 0px; }
   #business_domain .canvas_box {
     width: 20%;
     min-height: 220px; }
@@ -1909,29 +2091,32 @@ a.more_btn {
   width: 100%;
   margin: 0px; }
   #overview article h4 {
-    font-size: 180%;
-    font-weight: 300 !important;
+    font-size: 160%;
+    font-weight: 300;
     margin: 20px 0px;
-    color: #222; }
+    color: #333;
+    text-shadow: 0px 0px 0.5px #999; }
   #overview article p {
     text-align: center;
     line-height: 35px;
     margin-bottom: 10px;
     font-size: 110%;
-    color: #111; }
+    color: #222;
+    text-shadow: 0px 0px 0.3px #999; }
 
 /* style for all section heading */
 .section_heading h1 {
+  font-family: "Dosis", san-serif;
   font-size: 40px;
-  font-weight: 500;
-  margin: 0 0 10px 0 !important;
-  letter-spacing: -3px; }
+  font-weight: 300;
+  color: #333;
+  margin: 0 0 10px 0 !important; }
 
 .section_heading span {
   display: block;
   font-size: 105%;
   font-weight: 100;
-  color: #111; }
+  color: #222; }
 
 #works a.more_btn {
   position: absolute;
@@ -1942,19 +2127,6 @@ a.more_btn {
 #news a.more_btn {
   position: relative;
   margin: 10px auto; }
-
-.canvas_box .title h4 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 18px;
-  color: #222;
-  margin: 10px 0px 5px 0px; }
-
-.canvas_box .title span {
-  display: block;
-  line-height: 14px;
-  letter-spacing: -1px;
-  color: #111; }
 
 .canvas_box figure > img {
   max-width: 100%;
@@ -2111,7 +2283,9 @@ a.more_btn {
     display: block;
     width: 100%;
     text-align: left;
-    padding: 5px  20px; } }
+    padding: 5px  20px; }
+  .profile .left_content, .profile .right_content {
+    width: 100%; } }
 
 @media only screen and (max-width: 640px) {
   .site_banner .item_title span {
@@ -2142,7 +2316,11 @@ a.more_btn {
       font-size: 20px; }
   .site_sm_container {
     width: 96%;
-    padding: 0px 2%; } }
+    padding: 0px 2%; }
+  .profile .content_title {
+    padding: 10px 15px 10px 0px; }
+  .profile .content_paragraph {
+    padding: 10px 0px 10px 15px; } }
 
 @media only screen and (max-width: 420px) {
   .site_banner .item_title span {

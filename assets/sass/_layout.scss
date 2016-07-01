@@ -4,12 +4,13 @@
  * SECTION : Header navigation
  */
 
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700);
 
 body{
 	background: $white;
-	font-family: "Quicksand", san-serif;
+	font-family: arial,'ヒラギノ角ゴ ProN W3','Hiragino Kaku GothicProN','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳＰゴシック',sans-serif;
 	font-size: 14px;
+	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	letter-spacing: 0px;
@@ -119,14 +120,15 @@ body{
 			color: darken($white,10%);
 		}
 	}
-	a{
+	a{	
+		font-family: "Dosis", san-serif;
 		text-decoration: none;
-		padding: 27px 17px;
+		padding: 25px 17px;
 		color: $black;
 		font-size: 108%;
 		line-height: 70px;
-		font-weight: 700;
-		letter-spacing: -0.5px;
+		font-weight: 500;
+		letter-spacing: 1px;
 		text-align: center;
 		
 		&:hover{
@@ -875,5 +877,171 @@ body{
 	}
 
 }
+
+.profile{
+	.left_content,.right_content{
+		position: relative;
+		width: 50%;
+		float: left;
+		@include box-sizing(border-box);
+		@include clearfix();
+	}
+
+	ul{
+		list-style-type: none;
+		width: 100%;
+		position: relative;
+		@include clearfix();
+	}
+
+	.left_content li{
+		display: flex;
+		width: 100%;
+		position: relative;
+		@include align-items(baseline);
+	}
+
+	.right_content{
+		.content_paragraph{
+			@include display-flex();
+			@include align-items();
+			padding-left: 0px;
+		}
+	}
+
+	.content_title{
+		width: 25%;
+		float: left;
+		padding: 15px 30px 15px 0px; 
+		position: relative;
+		@include box-sizing(border-box);
+		p{
+			text-align: right;
+			font-size: 17px;
+			color: $heading_color;
+			font-weight: 600;
+			text-shadow: $heading_text_shadow;
+			line-height: 2.1;
+		}
+	}
+	
+	.content_paragraph{
+		width: 75%;
+		float: left;
+		padding: 15px 0px 15px 30px;
+		position: relative;
+		@include box-sizing(border-box);
+		p{
+			font-size: 17px;
+			font-weight: 400;
+			line-height: 2.1;
+			color: $paragraph_color;
+			
+		}
+
+	}
+
+	.link_underline{
+		display: inline-block;
+		color: $paragraph_color;
+		text-decoration: none;
+		border-bottom: 1px solid #888;
+		&:hover{
+			color: #666;
+		}
+	}
+
+	.depart_contact{
+		margin-bottom: 15px;
+		width: 100%;
+		h4{
+			font-size: 17px;
+			color: $heading_color;
+			font-weight: 600;
+			text-shadow: $heading_text_shadow;
+		}
+	}
+
+	.head_title{
+		position: relative;
+		float: left;
+		display: block;
+		width: 40%;
+		padding-right: 30px;
+		@include box-sizing(border-box);
+		p{
+			color: $white;
+			text-align: center;
+			background: $lightBlack;
+			&:after{
+				position: absolute;
+				content: "";
+				display: block;
+				top: 50%;
+				right: 0;
+				width: 20px;
+				height: 1px;
+				background: lighten(#999,25%);
+			}
+		}
+	}
+
+	.vertical_line{
+		position: absolute;
+		left: 0px;
+		top: 28px;
+		bottom: 71px;
+		width: 1px;
+		background: #999;
+	}
+
+	.diagram_lists{
+		position: relative;
+		float: left;
+		display: block;
+		width: 60%;
+		padding-left: 20px;
+		@include box-sizing(border-box);
+		.list{
+			position: relative;
+			list-style-type: none;
+			display: block;
+			width: 100%;
+			margin: 10px 0px;
+			&:before{
+				position: absolute;
+				content: "";
+				display: block;
+				top: 50%;
+				left: -20px;
+				height: 1px;
+				width: 12px;
+				background: lighten(#999,25%);
+			}
+			&:last-child:before{
+				display: none;
+			}
+		}
+
+		a{
+			text-decoration: none;
+			color: $lightBlack;
+			padding: 10px 5px;
+			background: $lightGray;
+			display: block;
+			font-size: 15px;
+			line-height: 1;
+			text-align: center;
+			letter-spacing: 2px;
+			&:hover{
+				background: darken($lightGray,10%);
+			}
+		}
+
+	}
+
+}
+
+
 
 

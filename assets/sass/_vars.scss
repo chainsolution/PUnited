@@ -44,8 +44,13 @@ $slaveBlack: #333F48;
 /* Text color
  ----------------------------------------- */
 
- $paragraphColor: #111;
- $headingColor: #222;
+ $paragraph_color: #222;
+ $heading_color: #333;
+ $section_heading_color:#333;
+
+/* Text shadow */
+$heading_text_shadow: 0px 0px 0.5px #999;
+$paragraph_text_shadow: 0px 0px 0.3px #999;
 
 /* Image url / directory path
  ------------------------------------------ */

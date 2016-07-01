@@ -223,6 +223,12 @@
 			padding: 5px  20px;
 		}
 	}
+
+	.profile{
+		.left_content,.right_content{
+			width: 100%;
+		}
+	}
 	
 }
 
@@ -277,6 +283,15 @@
 	.site_sm_container{
 		width: 96%;
 		padding: 0px 2%;
+	}
+
+	.profile{
+		.content_title{
+			padding: 10px 15px 10px 0px;
+		}
+		.content_paragraph{
+			padding: 10px 0px 10px 15px;
+		}
 	}
 
 }

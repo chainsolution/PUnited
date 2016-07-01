@@ -31,7 +31,7 @@ class MetaDescription
 			'profile' => 'profile',
 			'privacy' => 'privacy',
 		);
-		public $aboutus = array(
+		public $aboutUs = array(
 			'title' => 'about us',
 			'keyword' => '',
 			'description' => '',
