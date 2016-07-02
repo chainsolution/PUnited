@@ -4,7 +4,7 @@
  * SECTION : Header navigation
  */
 
-@import url(https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Dosis:100,300,400,500,600,700);
 
 body{
 	background: $white;
@@ -586,6 +586,47 @@ body{
 
 }
 
+/** banner in about page with no navbar **/
+  /***********************************/
+
+.banner_no_navbar{
+	position: relative;
+	width: 100%;
+	@include background-size();
+	background-position: center center;
+	img{
+		display: block;
+		width:100%;
+		vertical-align: top;
+	}
+	.overlay_title{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 2;
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+		span{
+			display: block;
+			color: $white;
+			font-family: "Dosis", san-serif;
+			font-size: 500%;
+			font-weight: 100;
+		}
+		sup{
+			position: absolute;
+			top: 50%;
+			left: 48%;
+			display: block;
+			font-size: 1000%;
+			color: $white;
+		}
+	}
+}
+
 /** PAGE : about => Greeting **/
   /*************************/
 
@@ -1037,6 +1078,144 @@ body{
 				background: darken($lightGray,10%);
 			}
 		}
+
+	}
+
+}
+
+/** PAGE: about => english version **/
+  /*******************************/
+.about_jp{
+	position: relative;
+	width: 100%;
+	.top_content{
+		position: relative;
+		width: 100%;
+		@include clearfix();
+	}
+	
+	article{
+		position: relative;
+		float: left;
+		display: block;
+		width: 65%;
+		padding: 40px 0px;
+		@include box-sizing(border-box);
+		h1{
+			color: $heading_color;
+			font-size: 22px;
+			font-weight: 400;
+			margin-bottom: 40px;
+			text-shadow: $heading_text_shadow;
+		}
+
+		p{
+			font-size: 15px;
+			text-shadow: $paragraph_text_shadow;
+			color: $paragraph_color;
+			margin-bottom: 15px;
+			line-height: 2.1;
+			letter-spacing: 1.5px;
+		}
+	}
+
+	.business_domain_nav{
+		position: relative;
+		float: left;
+		display: block;
+		width: 35%;
+		@include box-sizing(border-box);
+	}
+
+	.about_page_nav{
+		position: relative;
+		float: left;
+		display: block;
+		width: 100%;
+		@include clearfix();
+	}
+
+	.page_nav{
+		position: relative;
+		float: left;
+		width: 50%;
+		background-position: center center;
+		@include background-size();
+		overflow: hidden;
+		@include clearfix();
+		@include box-sizing(border-box);
+
+		a{
+			display: block;
+			position: relative;
+			width: 100%;
+			float: left;
+			@include transform-origin(50% 50%);
+		    @include transition-prefix(all .3s cubic-bezier(0, 0, 1, 1) 0s);
+		    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
+			@include box-sizing(border-box);
+			@include clearfix();
+			&:after{
+				position: absolute;
+				content: "";
+				display: block;
+				top:0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				background: transparent;
+				@include transition-prefix(all 0.3s ease-out);
+			}
+			&:hover{
+				&:after{
+					background: rgba(0,0,0,0.3);
+				}
+				@include transform-prefix(scaleX(1.2) scaleY(1.2) scaleZ(1));
+			}
+		}
+
+		img{
+			width: 100%;
+			display: block;
+			vertical-align: top;
+		}
+
+	}
+
+	.caption{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+		h3{
+			display: block;
+			color: $white;
+			font-size: 30px;
+			font-weight: 500;
+		}
+
+		span{
+			text-align: center;
+			display: block;
+			color: $white;
+		}
+	}
+
+	.greeting_nav{
+		h3{
+			
+		}
+
+		span{
+			
+		}
+	}
+
+	.caption.text_left{
 
 	}
 

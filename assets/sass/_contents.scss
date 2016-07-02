@@ -257,6 +257,7 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
+			@include transition-prefix(all 0.3s ease-out);
 		}
 	}
 	.left_box figure, .right_box figure{
@@ -267,9 +268,9 @@
 	    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
 	    &:hover{
 	    	&::after{
-	    		background: rgba(0,0,0,0.4);
+	    		background: rgba(0,0,0,0.3);
 	    	}
-	    	@include transform-prefix(scaleX(1.2) scaleY(1.2) scaleZ(1));
+	    	@include transform-prefix(scaleX(1.1) scaleY(1.1) scaleZ(1));
 	    }
 		
 	}

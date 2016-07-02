@@ -38,7 +38,7 @@
 		</div>
 		<nav class="global_nav">
 			<ul>
-				<li class="relative"><a href="about_us">ABOUT US</a>
+				<li class="relative"><a href="about_jp">ABOUT US</a>
 					<ul>
 						<li><a href="greeting">GREETING</a></li>
 						<li><a href="philosophy">PHILOSOPHY</a></li>
@@ -68,7 +68,7 @@
 		<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav');">X</button>
 	</div>
 	<ul>
-		<li class="relative"><a onclick="javascript:return(0)" href="">ABOUT US</a>
+		<li class="relative"><a onclick="javascript:return(0)" href="about_jp">ABOUT US</a>
 			<ul>
 				<li><a href="greeting">GREETING</a></li>
 				<li><a href="philosophy">PHILOSOPHY</a></li>
