@@ -39,16 +39,18 @@
 	</div>
 </div>
 
+<div class="site_md_container">
+	<div class="language_options">
+		<a class="active" href="about_jp">Japanese</a>
+		<a href="about_en">English</a>
+	</div>
+</div>
+
 <div class="site_container">
 
 	<div class="page_content">
 		<div class="about_en">
 			<div class="top_content">
-
-				<div class="language_options">
-					<a class="active" href="about_jp">Japanese</a>
-					<a href="about_en">English</a>
-				</div>
 				
 				<div class="impression_sentence">
 					<article>
@@ -99,8 +101,8 @@
 						</div>
 						<div class="profile_bio">
 							<div class="profile_name">
-								<h2>Masayoshi Maesaka <span class="kanji_name">(DUMMY TEXT)</span></h2>
-								<span class="position">Chairman Of The Board</span>
+								<h2>Masayoshi Maesaka <span class="kanji_name">(会社概要)</span></h2>
+								<span class="position_title">Chairman Of The Board</span>
 							</div>
 							<div class="topic_title">
 								<h4>Public Position</h4>
@@ -123,7 +125,7 @@
 								<h4>Member of JCMA</h4>
 							</div>
 							<p>
-								<img src="assets/img/about_us/en/about_us_en_JCMA_logo_02.png"> Head of Convention Section, OkayamaHead of Convention Section, OkayamaHead of Convention Section, Okayama
+								<img class="jmca_logo" src="assets/img/about_us/en/about_us_en_JCMA_logo_02.png"> Head of Convention Section, OkayamaHead of Convention Section, OkayamaHead of Convention Section, Okayama
 								Head of Convention Section, OkayamaHead of Convention Section, OkayamaHead of Convention Section, Okayama
 								Head of Convention Section, OkayamaHead of Convention Section, OkayamaHead of Convention Section, Okayama
 								Head of Convention Section, OkayamaHead of Convention Section, OkayamaHead of Convention Section, Okayama
@@ -139,8 +141,8 @@
 						</div>
 						<div class="profile_bio">
 							<div class="profile_name">
-								<h2>Daisuke Yoshida <span class="kanji_name">(DUMMY TEXT)</span></h2>
-								<span class="position">CEO</span>
+								<h2>Daisuke Yoshida <span class="kanji_name">(会社概要)</span></h2>
+								<span class="position_title">CEO</span>
 							</div>
 							<div class="topic_title">
 								<h4>Public Position</h4>
@@ -215,12 +217,17 @@
 					</div>
 
 					<div class="summary">
-						<div class="topic_title"></div>
-						<li><span>Since</span> September, 1934</li>
-						<li><span>Establishment</span> May, 1950</li>
-						<li><span>Capital</span> Yen 30,000,000</li>
-						<li><span>Representative</span> Chairman Masayoshi Maesaka</li>
-						<li><span>Employee</span> The group total 128 employee</li>
+						<div class="topic_title">
+							<h4>Company Summary</h4>
+						</div>
+						<ul>
+							<li><span>Since</span> September, 1934</li>
+							<li><span>Establishment</span> May, 1950</li>
+							<li><span>Capital</span> Yen 30,000,000</li>
+							<li><span>Representative</span> Chairman Masayoshi Maesaka</li>
+							<li><span>Employee</span> The group total 128 employee</li>
+						</ul>
+						
 					</div>
 
 				</div>

@@ -1234,8 +1234,18 @@ body{
 		}
 	}
 
-	p,h1,h2,h3,h4{
+	p,h1,h2,h3,h4,span,li{
 		font-family: "Dosis", san-serif;
+	}
+
+	p, li{
+		font-size: 16px;
+		line-height: 1.5;
+		color: $paragraph_color;
+	}
+
+	p{
+		margin-bottom: 20px;
 	}
 	
 	.impression_sentence{
@@ -1285,17 +1295,154 @@ body{
 			margin-bottom: 50px;
 		}
 
-		p{
-			font-size: 17px;
-			line-height: 1.5;
-			color: $paragraph_color;
-			text-shadow: $paragraph_text_shadow;
-		}
+		
 	}
 
 	.board_of_director{
+		width: 100%;
+		float: left;
+		position: relative;
 		background: #f5f5f5;
 		padding: 70px 80px;
+		@include clearfix();
+		@include box-sizing(border-box);
+		h1{
+			font-size: 40px;
+			font-weight: 500;
+			color: #333;
+		    margin: 0px;
+		    line-height: 1;
+			text-align: center;
+		}
+	}
+
+	.chairman_profile,.ceo_profile{
+		width: 100%;
+		float: left;
+		position: relative;
+		padding-top: 70px;
+		display: inline-block;
+		@include clearfix();
+		img{
+			max-width: 100%;
+		}
+	}
+
+    .profile_pic{
+		position: relative;
+		width: 25%;
+		float: left;
+	}
+
+	.profile_bio{
+		position: relative;
+		width: 75%;
+		padding-left: 40px;
+		float: left;
+		@include box-sizing(border-box);
+		
+	}
+
+	.profile_name{
+		h2{
+			font-size: 25px;
+			color: #333;
+			font-weight: 500;
+			line-height: 1;
+		}
+		.kanji_name{
+			font-size: 14px;
+			font-family: arial,'ヒラギノ角ゴ ProN W3','Hiragino Kaku GothicProN','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳＰゴシック',sans-serif;
+			color: #666;
+			text-shadow: $paragraph_text_shadow;
+			letter-spacing: 1.5px;
+		}
+		.position_title{
+			color: #888;
+			font-size: 15px;
+			display: block;
+			font-family: "Dosis", san-serif;
+			text-shadow: 0px 0px 0.5px #999;
+			margin-top: 5px;
+			margin-bottom: 30px;
+		}
+	}
+	
+	.topic_title{
+		display: block;
+		width: 100%;
+		padding: 5px 0px;
+		margin: 0px 0px 20px 0px;
+		background: lighten(#999,15%);
+		h4{
+			color: $white;
+			font-size: 18px;
+			font-weight: 400;
+			margin-left: 10px;
+			line-height: 1;
+		}
+	}
+
+	.jmca_logo{
+		display: inline;
+		padding: 20px;
+		margin-right: 20px;
+		float: left;
+		background: $white;
+	}
+
+	.company_description{
+		position: relative;
+		width: 100%;
+		float: left;
+		@include clearfix();
+		h1{
+			padding: 50px 0px;
+			font-size: 45px;
+			color: #333;
+			font-weight: 400;
+			text-align: center;
+		}
+
+		.description{
+			position: relative;
+			width: 64%;
+			float: left;
+			padding-right: 6%;
+			ul{
+				margin-left: 20px;
+				li{
+					line-height: 2;
+				}
+			}
+		}
+
+		.summary{
+			position: relative;
+			width: 30%;
+			float: left;
+			ul{
+				list-style-type: none;
+				li{
+					display: flex;
+					padding: 25px 0px;
+				}
+				span{
+					font-size: 17px;
+					font-weight: 600;
+					color: #333;
+					width: 30%;
+					text-align: right;
+					padding-right: 20%
+				}
+			}
+		}
+
+		h2{
+			font-size: 17px;
+			color: #333;
+			margin-bottom: 20px;
+		}
 	}
 
 }
