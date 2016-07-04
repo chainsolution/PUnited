@@ -41,8 +41,8 @@
 
 <div class="site_md_container">
 	<div class="language_options">
-		<a class="active" href="about_jp">Japanese</a>
-		<a href="about_en">English</a>
+		<a href="about_jp">Japanese</a>
+		<a class="active" href="about_en">English</a>
 	</div>
 </div>
 

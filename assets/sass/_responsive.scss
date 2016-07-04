@@ -243,6 +243,17 @@
 		}
 	}
 
+	.banner_no_navbar{
+		.overlay_title{
+			sup{
+				font-size: 600%;
+			}
+			span{
+				font-size: 300%;
+			}
+		}
+	}
+
 	.about_jp{
 
 		article{
@@ -255,6 +266,36 @@
 
 		.page_nav{
 			width: 100%;
+		}
+	}
+
+	.about_en{
+		.company_info, .chairman_profile, 
+		.ceo_profile{
+			padding: 0px;
+			display: block;
+		}
+		.company_airport_map, .geo_location_desc,
+		.profile_pic, .profile_bio, .description,
+		.summary{
+			width: 100%;
+			padding: 0px;
+		}
+
+		.summary{
+			margin-top: 30px;
+		}
+
+		.profile_name,.profile_pic{
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.board_of_director{
+			margin-top: 20px;
+			h1{
+				margin-bottom: 20px;
+			}
 		}
 	}
 	

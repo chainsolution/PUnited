@@ -1262,6 +1262,17 @@ body{
 		}
 	}
 
+	.company_map{
+		position: relative;
+		width: 100%;
+		float: left;
+		img{
+			width: 100%;
+			vertical-align: top;
+			display: block;
+		}
+	}
+
 	.company_info{
 		width: 100%;
 		float: left;
@@ -1404,44 +1415,44 @@ body{
 			text-align: center;
 		}
 
-		.description{
-			position: relative;
-			width: 64%;
-			float: left;
-			padding-right: 6%;
-			ul{
-				margin-left: 20px;
-				li{
-					line-height: 2;
-				}
-			}
-		}
-
-		.summary{
-			position: relative;
-			width: 30%;
-			float: left;
-			ul{
-				list-style-type: none;
-				li{
-					display: flex;
-					padding: 25px 0px;
-				}
-				span{
-					font-size: 17px;
-					font-weight: 600;
-					color: #333;
-					width: 30%;
-					text-align: right;
-					padding-right: 20%
-				}
-			}
-		}
-
 		h2{
 			font-size: 17px;
 			color: #333;
 			margin-bottom: 20px;
+		}
+	}
+
+	.description{
+		position: relative;
+		width: 64%;
+		float: left;
+		padding-right: 6%;
+		ul{
+			margin-left: 20px;
+			li{
+				line-height: 2;
+			}
+		}
+	}
+
+	.summary{
+		position: relative;
+		width: 30%;
+		float: left;
+		ul{
+			list-style-type: none;
+			li{
+				display: flex;
+				padding: 25px 0px;
+			}
+			span{
+				font-size: 17px;
+				font-weight: 600;
+				color: #333;
+				width: 30%;
+				text-align: right;
+				padding-right: 20%
+			}
 		}
 	}
 

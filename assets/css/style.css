@@ -1783,6 +1783,14 @@ body {
       font-size: 25px;
       font-weight: 500;
       color: #444; }
+  .about_en .company_map {
+    position: relative;
+    width: 100%;
+    float: left; }
+    .about_en .company_map img {
+      width: 100%;
+      vertical-align: top;
+      display: block; }
   .about_en .company_info {
     width: 100%;
     float: left;
@@ -1919,35 +1927,35 @@ body {
       color: #333;
       font-weight: 400;
       text-align: center; }
-    .about_en .company_description .description {
-      position: relative;
-      width: 64%;
-      float: left;
-      padding-right: 6%; }
-      .about_en .company_description .description ul {
-        margin-left: 20px; }
-        .about_en .company_description .description ul li {
-          line-height: 2; }
-    .about_en .company_description .summary {
-      position: relative;
-      width: 30%;
-      float: left; }
-      .about_en .company_description .summary ul {
-        list-style-type: none; }
-        .about_en .company_description .summary ul li {
-          display: flex;
-          padding: 25px 0px; }
-        .about_en .company_description .summary ul span {
-          font-size: 17px;
-          font-weight: 600;
-          color: #333;
-          width: 30%;
-          text-align: right;
-          padding-right: 20%; }
     .about_en .company_description h2 {
       font-size: 17px;
       color: #333;
       margin-bottom: 20px; }
+  .about_en .description {
+    position: relative;
+    width: 64%;
+    float: left;
+    padding-right: 6%; }
+    .about_en .description ul {
+      margin-left: 20px; }
+      .about_en .description ul li {
+        line-height: 2; }
+  .about_en .summary {
+    position: relative;
+    width: 30%;
+    float: left; }
+    .about_en .summary ul {
+      list-style-type: none; }
+      .about_en .summary ul li {
+        display: flex;
+        padding: 25px 0px; }
+      .about_en .summary ul span {
+        font-size: 17px;
+        font-weight: 600;
+        color: #333;
+        width: 30%;
+        text-align: right;
+        padding-right: 20%; }
 
 /** Company overview **/
 #overview {
@@ -2721,12 +2729,34 @@ a.more_btn {
     padding: 5px  20px; }
   .profile .left_content, .profile .right_content {
     width: 100%; }
+  .banner_no_navbar .overlay_title sup {
+    font-size: 600%; }
+  .banner_no_navbar .overlay_title span {
+    font-size: 300%; }
   .about_jp article {
     width: 100%; }
   .about_jp .business_domain_nav {
     width: 100%; }
   .about_jp .page_nav {
-    width: 100%; } }
+    width: 100%; }
+  .about_en .company_info, .about_en .chairman_profile,
+  .about_en .ceo_profile {
+    padding: 0px;
+    display: block; }
+  .about_en .company_airport_map, .about_en .geo_location_desc,
+  .about_en .profile_pic, .about_en .profile_bio, .about_en .description,
+  .about_en .summary {
+    width: 100%;
+    padding: 0px; }
+  .about_en .summary {
+    margin-top: 30px; }
+  .about_en .profile_name, .about_en .profile_pic {
+    text-align: center;
+    margin-top: 20px; }
+  .about_en .board_of_director {
+    margin-top: 20px; }
+    .about_en .board_of_director h1 {
+      margin-bottom: 20px; } }
 
 @media only screen and (max-width: 640px) {
   .site_banner .item_title span {
