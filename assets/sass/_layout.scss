@@ -1221,6 +1221,85 @@ body{
 
 }
 
+.about_en{
+	position: relative;
+	width: 100%;
+	float: left;
+	@include clearfix();
+	article{
+		display: block;
+		width: 100%;
+		img{
+
+		}
+	}
+
+	p,h1,h2,h3,h4{
+		font-family: "Dosis", san-serif;
+	}
+	
+	.impression_sentence{
+		width: 100%;
+		position: relative;
+		float: left;
+		margin: 50px 0px;
+
+		p{
+			text-align: center;
+			font-size: 25px;
+			font-weight: 500;
+			color: #444;
+		}
+	}
+
+	.company_info{
+		width: 100%;
+		float: left;
+		position: relative;
+		padding: 0px 8%;
+		@include box-sizing(border-box);
+		@include display-flex();
+		@include align-items();
+
+	}
+
+	.company_airport_map{
+		position: relative;
+		width: 60%;
+		float: left;
+		img{
+			max-width: 100%;
+			vertical-align: top;
+			display: block;
+		}
+	}
+
+	.geo_location_desc{
+		position: relative;
+		width: 40%;
+		float: left;
+		h1{
+			font-size: 25px;
+			font-weight: 500;
+			color: #444;
+			margin-bottom: 50px;
+		}
+
+		p{
+			font-size: 17px;
+			line-height: 1.5;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
+		}
+	}
+
+	.board_of_director{
+		background: #f5f5f5;
+		padding: 70px 80px;
+	}
+
+}
+
 
 
 
