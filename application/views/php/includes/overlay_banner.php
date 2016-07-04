@@ -3,6 +3,7 @@
 <div class="site_container">
 	<div class="overlay_banner">
 		<div class="overlay_title">
+			<sup>`</sup>
 			<span>ABOUT US</span>
 		</div>
 		<div class="overlay_nav">

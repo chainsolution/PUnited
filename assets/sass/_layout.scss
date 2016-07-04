@@ -578,7 +578,17 @@ body{
 		@include justify-content();
 		@include align-items();
 		span{
+			font-family: "Dosis", san-serif;
 			font-size: 260%;
+			font-weight: 100;
+			color: $white;
+		}
+		sup{
+			position: absolute;
+			top: 50%;
+			left: 48%;
+			display: block;
+			font-size: 700%;
 			color: $white;
 		}
 
@@ -643,8 +653,10 @@ body{
 		p{
 			margin: 0 0 25px 0;
     		line-height: 2;
-    		color: $black;
+    		color: $paragraph_color;
+    		font-size: $text_font_size;
     		font-weight: 300;
+    		text-shadow: $paragraph_text_shadow;
 		}
 	}
 
@@ -700,7 +712,7 @@ body{
 		width: 100%;
 		padding: 10px 0px;
 		margin-bottom: 40px;
-		background: $heavyGray;
+		background: lighten(#999,15%);
 		h3{
 			margin: 0px;
 			color: $white;
@@ -729,9 +741,9 @@ body{
 		margin-top: 30px;
 		margin-bottom: 20px;
 		font-size: 18px;
-		color: #000;
+		color: $paragraph_color;
 		font-weight: 500;
-		text-shadow: 0px 1px 1px #999;
+		text-shadow: $heading_text_shadow;
 	}
 	
 	.vertical_divider{
@@ -747,17 +759,18 @@ body{
 		margin-left: 20px;
 		li{
 			line-height: 2.2;
-			font-size: 20px;
-			color: #333;
-			text-shadow: 0px 1px 0px #999;
+			font-size: 18px;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
 		}
 	}
 
 	p{
+		font-size: $text_small;
 		text-align: center;
 		line-height: 2.2;
-		color: #333;
-		text-shadow: 0px 1px 1px #999;
+		color: $paragraph_color;
+		text-shadow: $paragraph_text_shadow;
 		&.text_lg{
 			font-size: 30px;
 		}
@@ -958,7 +971,7 @@ body{
 		@include box-sizing(border-box);
 		p{
 			text-align: right;
-			font-size: 17px;
+			font-size: $text_title;
 			color: $heading_color;
 			font-weight: 600;
 			text-shadow: $heading_text_shadow;
@@ -973,10 +986,11 @@ body{
 		position: relative;
 		@include box-sizing(border-box);
 		p{
-			font-size: 17px;
+			font-size: $text_font_size;
 			font-weight: 400;
 			line-height: 2.1;
 			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
 			
 		}
 
@@ -1199,6 +1213,7 @@ body{
 		}
 
 		span{
+			font-family: "Dosis", sans-serif;
 			text-align: center;
 			display: block;
 			color: $white;

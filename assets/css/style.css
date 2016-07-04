@@ -71,6 +71,7 @@ usage:
  ----------------------------------------- */
 /* Section padding & margin
   ----------------------------------------- */
+/* Font */
 /* Text color
  ----------------------------------------- */
 /* Text shadow */
@@ -1088,7 +1089,16 @@ body {
     -moz-align-items: center;
     -ms-align-items: center; }
     .overlay_banner .overlay_title span {
+      font-family: "Dosis", san-serif;
       font-size: 260%;
+      font-weight: 100;
+      color: #fff; }
+    .overlay_banner .overlay_title sup {
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      display: block;
+      font-size: 700%;
       color: #fff; }
 
 /** banner in about page with no navbar **/
@@ -1158,8 +1168,10 @@ body {
     .greeting .paragraph p {
       margin: 0 0 25px 0;
       line-height: 2;
-      color: #000;
-      font-weight: 300; }
+      color: #333;
+      font-size: 16px;
+      font-weight: 300;
+      text-shadow: 0px 0px 0.3px #999; }
   .greeting .profile {
     position: relative;
     float: left;
@@ -1204,7 +1216,7 @@ body {
     width: 100%;
     padding: 10px 0px;
     margin-bottom: 40px;
-    background: #bbbbbb; }
+    background: #bfbfbf; }
     .philosophy .section_title h3 {
       margin: 0px;
       color: #fff;
@@ -1236,9 +1248,9 @@ body {
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 18px;
-    color: #000;
+    color: #333;
     font-weight: 500;
-    text-shadow: 0px 1px 1px #999; }
+    text-shadow: 0px 0px 0.5px #999; }
   .philosophy .vertical_divider {
     position: absolute;
     left: 50%;
@@ -1250,14 +1262,15 @@ body {
     margin-left: 20px; }
     .philosophy ul li {
       line-height: 2.2;
-      font-size: 20px;
+      font-size: 18px;
       color: #333;
-      text-shadow: 0px 1px 0px #999; }
+      text-shadow: 0px 0px 0.3px #999; }
   .philosophy p {
+    font-size: 15px;
     text-align: center;
     line-height: 2.2;
     color: #333;
-    text-shadow: 0px 1px 1px #999; }
+    text-shadow: 0px 0px 0.3px #999; }
     .philosophy p.text_lg {
       font-size: 30px; }
 
@@ -1482,7 +1495,7 @@ body {
   -o-box-sizing: border-box; }
   .profile .content_title p {
     text-align: right;
-    font-size: 17px;
+    font-size: 18px;
     color: #333;
     font-weight: 600;
     text-shadow: 0px 0px 0.5px #999;
@@ -1499,14 +1512,15 @@ body {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box; }
   .profile .content_paragraph p {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 2.1;
-    color: #222; }
+    color: #333;
+    text-shadow: 0px 0px 0.3px #999; }
 
 .profile .link_underline {
   display: inline-block;
-  color: #222;
+  color: #333;
   text-decoration: none;
   border-bottom: 1px solid #888; }
   .profile .link_underline:hover {
@@ -1627,7 +1641,7 @@ body {
     .about_jp article p {
       font-size: 15px;
       text-shadow: 0px 0px 0.3px #999;
-      color: #222;
+      color: #333;
       margin-bottom: 15px;
       line-height: 2.1;
       letter-spacing: 1.5px; }
@@ -1750,6 +1764,7 @@ body {
       font-size: 30px;
       font-weight: 500; }
     .about_jp .caption span {
+      font-family: "Dosis", sans-serif;
       text-align: center;
       display: block;
       color: #fff; }
@@ -1770,7 +1785,7 @@ body {
   .about_en p, .about_en li {
     font-size: 16px;
     line-height: 1.5;
-    color: #222; }
+    color: #333; }
   .about_en p {
     margin-bottom: 20px; }
   .about_en .impression_sentence {
@@ -1992,7 +2007,7 @@ body {
   #business_domain .title span {
     font-family: "Dosis", san-serif;
     letter-spacing: 0px;
-    color: #222; }
+    color: #333; }
   #business_domain .title h4 {
     font-size: 20px;
     font-weight: 500;
@@ -2512,7 +2527,7 @@ a.more_btn {
   .language_options a {
     display: inline-block;
     text-decoration: none;
-    color: #222;
+    color: #333;
     padding: 5px 0px;
     font-family: "Dosis", san-serif;
     font-size: 15px;
@@ -2540,7 +2555,7 @@ a.more_btn {
     line-height: 35px;
     margin-bottom: 10px;
     font-size: 110%;
-    color: #222;
+    color: #333;
     text-shadow: 0px 0px 0.3px #999; }
 
 /* style for all section heading */
@@ -2552,10 +2567,11 @@ a.more_btn {
   margin: 0 0 10px 0 !important; }
 
 .section_heading span {
+  font-family: "Dosis", san-serif;
   display: block;
   font-size: 105%;
   font-weight: 100;
-  color: #222; }
+  color: #333; }
 
 #works a.more_btn {
   position: absolute;
