@@ -35,44 +35,44 @@
 		<div class="philosophy">
 			<div class="content_inner">
 				<div class="section_heading">
-					<h1>企業哲学</h1>
+					<h1>企業理念</h1>
 					<span>PHILOSOPHY</span>
 				</div>
 
 				<div class="content">
 					<div class="section">
 						<div class="section_title">
-							<h3>企業哲学</h3>
+							<h3>企業理念</h3>
 						</div>
 						<article>
-							<p class="text_lg">ここでは企業理念の詳細情報があります</p>
+							<p class="text_lg">情報文化の創造を通じて、社会を豊かに楽しくする。</p>
 						</article>
 					</div>
 
 					<div class="section">
 						<div class="left_section">
 							<div class="section_title">
-								<h3>企業哲学</h3>
+								<h3>経営方針</h3>
 							</div>
 							<article>
 								<ul>
-									<li>ここでは企業理念の詳細情報があります。</li>
-									<li>ここでは企業理念があります。</li>
-									<li>ここでは企業理念情報があります。</li>
+									<li>私たちは、お客様から学ぶ姿勢を基本とする。</li>
+									<li>私たちは、新鮮であり続ける。</li>
+									<li>私たちは、人と環境を大切にする。</li>
 								</ul>
 							</article>
 						</div>
 
 						<div class="right_section">
 							<div class="section_title">
-								<h3>企業哲学</h3>
+								<h3>行動指針</h3>
 							</div>
 							<article>
 								<ul>
-									<li>詳細報がます。</li>
-									<li>ここではす。</li>
-									<li>ここでは。</li>
-									<li>ここでは企す。</li>
+									<li>的確であろう。</li>
+									<li>誇りを持とう。</li>
+									<li>快活であろう。</li>
+									<li>継続しよう。</li>
 								</ul>
 							</article>
 						</div>
@@ -80,7 +80,7 @@
 
 					<div class="section text_center">
 						<div class="section_title">
-							<h3>ここでは企業理念であります</h3>
+							<h3>コーポレート・アイデンティティ</h3>
 						</div>
 						<div class="row">
 							<div class="left_section">
@@ -91,15 +91,15 @@
 
 								<article>
 									<h2 class="article_title">
-										ここでは企すここでは企す。
+										テーマ「人と情報のネットワーク」
 									</h2>
 									<p>
-										あなたが私を愛している限り。<br>
-										私たちはホームレスかもしれない、飢えすることができ<br>
-										我々は破産である可能性があります。<br>
-										あなたが私を愛している限り。<br>
-										私たちはホームレスかもしれない、飢えすることができ、<br>
-										我々は破産である可能性があります。<br>
+										「ビ・ザ・ビ」は、フランス語で<br>
+										「お互いが顔を向け合い、見つめ合うこと」を意味します。<br>
+										顔を合わせ、言葉を交わし、心を通わせることが、<br>
+										コミュニケーションのはじまりです。<br>
+										この原点を大切にしながら、人と情報の交流と<br>
+										ネットワークを拡げていきたいと思います。<br>
 									</p>
 								</article>
 
@@ -113,15 +113,15 @@
 
 								<article>
 									<h2 class="article_title">
-										ここでは企すここでは企す。
+										テーマ「365日のビューティフル」
 									</h2>
 									<p>
-										あなたが私を愛している限り。<br>
-										私たちはホームレスかもしれない、飢えすることができ<br>
-										我々は破産である可能性があります。<br>
-										あなたが私を愛している限り。<br>
-										私たちはホームレスかもしれない、飢えすることができ、<br>
-										我々は破産である可能性があります。<br>
+										企業は生きものであり、ドラマがあります。<br>
+										私たちが「ビ・ザ・ビ」に込めたイメージは<br>
+										出会いの感動と豊かな彩り、<br>
+										表現テーマは「365日のビューティフル」です。<br>
+										喜び、楽しさ、遊び心、夢、新鮮、広がり、愛、地球、<br>
+										コミュニケーション。<br>
 									</p>
 								</article>
 								

@@ -44,65 +44,66 @@
 						<ul>
 							<li>
 								<div class="content_title">
-									<p>概要</p>
+									<p>創業</p>
 								</div>
 								<div class="content_paragraph">
-									<p>会社9会9会</p>
+									<p>昭和9年9月</p>
 								</div>
 							</li>
 
 							<li>
 								<div class="content_title">
-									<p>要会</p>
+									<p>設立</p>
 								</div>
 								<div class="content_paragraph">
-									<p>会社9会9会</p>
+									<p>昭和25年5月</p>
 								</div>
 							</li>
 
 							<li>
 								<div class="content_title">
-									<p>概要会</p>
+									<p>資本金</p>
 								</div>
 								<div class="content_paragraph">
-									<p>3,000要会</p>
+									<p>3,000万円</p>
 								</div>
 							</li>
 
 							<li>
 								<div class="content_title">
-									<p>概要会</p>
+									<p>代表者</p>
 								</div>
 								<div class="content_paragraph">
 									<p>
-										ヘッドのタイトル ヘッドの<br>
-										ヘッドのタイトル ヘッドの<br>
+										代表取締役会長　前坂匡紀<br>
+										代表取締役社長　吉田大助<br>
 									</p>
 								</div>
 							</li>
 
 							<li>
 								<div class="content_title">
-									<p>概要概要</p>
+									<p>従業員数</p>
 								</div>
 								<div class="content_paragraph">
 									<p>
-										128会 (会社9会9会会社9会9会)
+										128名（平成28年1月1日現在）
 									</p>
 								</div>
 							</li>
 
 							<li>
 								<div class="content_title">
-									<p>概要概要</p>
+									<p>関連組織</p>
 								</div>
 								<div class="content_paragraph">
 									<p>
-										<a href="" class="link_underline">時的なコンテンツ時的な</a><br>
-										<a href="" class="link_underline">時的なコンテンツ時的なコンテン</a><br>
-										<a href="" class="link_underline">時的なコンテンツ時</a><br>
-										<a href="" class="link_underline">時的なコン</a><br>
-										<a href="" class="link_underline">時的なコンテンツ時的なコンテンツ</a><br>
+										<a href="" class="link_underline">協同組合 岡山情報文化研究所</a><br>
+										<a href="" class="link_underline">特定非営利活動法人 あしたり岡山</a><br>
+										<a href="" class="link_underline">毎日広告社ネットワーク</a><br>
+										<a href="" class="link_underline">JLAA日本地域広告会社協会</a><br>
+										<a href="" class="link_underline">（株）マイナビ</a><br>
+										<a href="" class="link_underline">（株）タウン情報全国ネットワーク</a><br>
 									</p>
 								</div>
 							</li>
@@ -189,19 +190,19 @@
 
 						<div class="content_paragraph">
 							<div class="head_title">
-								<p>ッドのタ</p>
+								<p>ビザビ</p>
 							</div>
 							<div class="diagram_lists">
 								<div class="vertical_line"></div>
-								<li class="list"><a href="">概概概概要概</a></li>
-								<li class="list"><a href="">概概概概要概</a></li>
-								<li class="list"><a href="">概概概概要概</a></li>
-								<li class="list"><a href="">概概概概要概</a></li>
-								<li class="list"><a href="">概概概概要概</a></li>
-								<li class="list"><a href="">概概概概要概</a></li>
-								<li class="list"><a href="">概概概概要概</a></li>
-								<li class="list"><a href="">概概概概要概</a></li>
-								<li class="list"><a href="">概概概概要概</a></li>
+								<li class="list"><a href="">経営統括局</a></li>
+								<li class="list"><a href="">クリエイティブ局</a></li>
+								<li class="list"><a href="">コミュニケーション局</a></li>
+								<li class="list"><a href="">リレーション局</a></li>
+								<li class="list"><a href="">ヒューマンリソース局</a></li>
+								<li class="list"><a href="">倉敷支社</a></li>
+								<li class="list"><a href="">津山支社</a></li>
+								<li class="list"><a href="">四国支社</a></li>
+								<li class="list"><a href="">協同組合 岡山情報文化研究所</a></li>
 							</div>
 						</div>
 					</div>

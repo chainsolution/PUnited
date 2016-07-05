@@ -52,17 +52,13 @@
 
 				<article>
 					<h1>
-						このウェブサイトの約ページ内の記事のタイトルのためだけのダミーコンテンツである、
-						会社の会議は2016年6月9日に開催されました
+						株式会社ビザビは2016年4月に1社体制となりました。
+						グループ各社が持っていた専門能力を一つに集中させ、 人と人とをつなぐコミュニケーションのお手伝いをしています。
 					</h1>
 					<p>
-						事業の成長のの将来の技術革新について議論します。
-					</p>
-					<p>
-						このウェブサイトの約ページ内の記事のタイトルのためだけのダミーコンテンツである、
-						会社の会議は6月9日、2016年の会社の将来についての会議の話に開催し、
-						事業の成長のpotentailの将来の技術革新について議論します。
-						すべてのスタッフが参加する場合には参考になります事業の成長のの将来の技術革新について議論します。
+						ビザビは、昭和9年の創業からこれまでの間、岡山を中心とした地域の皆様とともに歩んでまいりました。
+						調査、広告・PR、地域コンテンツ、人材・採用、イベント、インターネットという、それぞれに専門的な能力を持っています。
+						広告の制作やイベントの開催だけではではなく、調査×広告や、イベント×インターネットなど、各専門領域を複合的に組み合わせた新しい価値や、ビジネスの問題解決に必要な多様な領域を、ワンストップでご提供いたします。
 					</p>
 				</article>
 
@@ -77,7 +73,7 @@
 							<img src="assets/img/about_us/jp/about_us_title_greeting_01.png">
 							<div class="caption text_left">
 								<div>
-									<h3>会社の挨拶</h3>
+									<h3>ごあいさつ</h3>
 									<span>GREETING</span>
 								</div>
 							</div>
@@ -89,7 +85,7 @@
 							<img src="assets/img/about_us/jp/about_us_title_philosophy_02.png">
 							<div class="caption text_left">
 								<div>
-									<h3>企業哲学</h3>
+									<h3>企業理念</h3>
 									<span>PHILOSOPHY</span>
 								</div>
 							</div>
@@ -114,7 +110,7 @@
 							<img src="assets/img/about_us/jp/about_us_title_history_04.png">
 							<div class="caption text_left">
 								<div>
-									<h3>会社の歴史</h3>
+									<h3>沿革</h3>
 									<span>HISTORY</span>
 								</div>
 							</div>
@@ -126,7 +122,7 @@
 							<img src="assets/img/about_us/jp/about_us_title_privacypolicy_05.png">
 							<div class="caption text_left">
 								<div>
-									<h3>個人情報保護方針</h3>
+									<h3>プライバシーポリシー</h3>
 									<span>PRIVACY POLICY</span>
 								</div>
 							</div>

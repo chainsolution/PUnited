@@ -36,7 +36,7 @@
 			<div class="content_inner">
 
 				<div class="section_heading">
-					<h1>会社の歴史</h1>
+					<h1>沿革</h1>
 					<span>HISTORY</span>
 				</div>
 				
@@ -46,7 +46,7 @@
 							<div class="history_date">昭和9年9月</div>
 							<div class="history_milestone">
 								<p>
-									前坂正一（現会長の実父）が毎日新聞岡山支局にて創業。 毎日新聞の広告取材活動を始める
+									前坂正一（現会長の実父）が毎日新聞岡山支局にて創業。毎日新聞の広告取材活動を始める。
 								</p>
 							</div>
 						</li>
@@ -64,7 +64,7 @@
 							<div class="history_date">昭和25年5月</div>
 							<div class="history_milestone">
 								<p>
-									現地法人として有限会社毎日新聞広告取扱所を登記。 代表取締役所長 前坂正一
+									現地法人として有限会社毎日新聞広告取扱所を登記。代表取締役所長 前坂正一
 								</p>
 							</div>
 						</li>
