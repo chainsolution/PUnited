@@ -10,9 +10,9 @@
 
 				<nav class="local_nav">
 					<ul>
-						<li><a href="">このウブこのウブ</a></li>
-						<li><a href="">このウブこ</a></li>
-						<li><a href="">このウブこの</a></li>
+						<li><a href="">プライバシーポリシー</a></li>
+						<li><a href="">サイトマップ</a></li>
+						<li><a href="">お問い合わせ</a></li>
 					</ul>
 				</nav>
 				

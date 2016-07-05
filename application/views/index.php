@@ -335,7 +335,7 @@
 										<img src="assets/img/main/works/main_works_img_03.png">
 									</figure>
 									<div class="title">
-										<span>例えば、タイトルコンテンツの No.71</span>
+										<span>月刊タウン情報おかやま 2016年2月号</span>
 									</div>
 								</div>
 							</div>
@@ -346,7 +346,7 @@
 										<img src="assets/img/main/works/main_works_img_04.png">
 									</figure>
 									<div class="title">
-										<span>例えば、タイトルコンテンツの No.71</span>
+										<span>月刊タウン情報おかやま 2016年1月号</span>
 									</div>
 								</div>
 							</div>
@@ -357,7 +357,7 @@
 										<img src="assets/img/main/works/main_works_img_05.png">
 									</figure>
 									<div class="title">
-										<span>例えば、タイトルコンテンツの No.71</span>
+										<span>Osera  No79 初春号</span>
 									</div>
 								</div>
 							</div>
@@ -368,7 +368,7 @@
 										<img src="assets/img/main/works/main_works_img_06.png">
 									</figure>
 									<div class="title">
-										<span>例えば、タイトルコンテンツの No.71</span>
+										<span>日刊Webタウン情報おかやま</span>
 									</div>
 								</div>
 							</div>
@@ -379,7 +379,7 @@
 										<img src="assets/img/main/works/main_works_img_07.png">
 									</figure>
 									<div class="title">
-										<span>例えば、タイトルコンテンツの No.71</span>
+										<span>岡山学芸館清秀中学校・高等部</span>
 									</div>
 								</div>
 							</div>
@@ -390,7 +390,7 @@
 										<img src="assets/img/main/works/main_works_img_08.png">
 									</figure>
 									<div class="title">
-										<span>例えば、タイトルコンテンツの No.71</span>
+										<span>月刊タウン情報おかやま 2015年12月号</span>
 									</div>
 								</div>
 							</div>
@@ -401,7 +401,7 @@
 										<img src="assets/img/main/works/main_works_img_09.png">
 									</figure>
 									<div class="title">
-										<span>例えば、タイトルコンテンツの No.71</span>
+										<span>ランチパスポート vol.8</span>
 									</div>
 								</div>
 							</div>
@@ -424,8 +424,8 @@
 				<div class="section_heading">
 					<div class="inner show_sm">
 						<h1>NEWS</h1>
-						<span>ビジネスマイルストーン</span>
-						<span>一時的な記事</span>
+						<span>ビザビグループの活動や</span>
+						<span>企業情報を発信</span>
 					</div>
 				</div>
 
@@ -436,8 +436,8 @@
 							<div class="news_heading_canvas frosted_glass">
 								<div class="inner">
 									<h1>NEWS</h1>
-									<span>ビジネスマイルストーン</span>
-									<span>一時的な記事</span>
+									<span>ビザビグループの活動や</span>
+									<span>企業情報を発信</span>
 									<a href="#" class="more_btn">> MORE</a>
 								</div>
 							</div>
@@ -447,10 +447,10 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
 									</div>
 									<p class="news_paragraph">
-										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+										『月刊タウン情報おかやま』 2月号の特集は 『パスタ&ラーメン　半額・ワンコイン』
 									</p>
 								</div>
 							</div>
@@ -458,10 +458,10 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
 									</div>
 									<p class="news_paragraph">
-										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+										『月刊タウン情報おかやま』1月号の特集は 「冬に行きたい おこもりカフェ」
 									</p>
 								</div>
 							</div>
@@ -469,10 +469,10 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
 									</div>
 									<p class="news_paragraph">
-										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+										『Osera』No.79初春号の特集は「2015年、お目見えした　集いの場と新しき店」
 									</p>
 								</div>
 							</div>
@@ -480,10 +480,10 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
 									</div>
 									<p class="news_paragraph">
-										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+										「LUNCH PASSPORT vol.8」 岡山市・倉敷市・総社市版 発刊のお知らせ
 									</p>
 								</div>
 							</div>
@@ -491,10 +491,10 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
 									</div>
 									<p class="news_paragraph">
-										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+										『月刊タウン情報おかやま』 12月号の特集は 『編集者が選んだ 2015年おいしい店 流行った店』
 									</p>
 								</div>
 							</div>
@@ -502,10 +502,10 @@
 							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">サンプルタイトル</span></p>
+										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
 									</div>
 									<p class="news_paragraph">
-										これは、このウェブサイトのニュースセクションのためだけの一時的なコンテンツの段落があった。
+										『Osera』　No.78晩秋号は、秋から冬へと移りゆくこの時季におすすめしたい、 大人のランチ...
 									</p>
 								</div>
 							</div>
@@ -528,7 +528,7 @@
 			<div class="content_inner">
 				<div class="section_heading">
 					<h1>RECRUIT</h1>
-					<span>これは、このウェブサイトのニュ</span>
+					<span>僕らの力は、街をも変える。</span>
 				</div>
 
 				<div class="content">
@@ -539,7 +539,7 @@
 									<img src="assets/img/main/recruit/main_recruit_man_img_01.png">
 								</figure>
 								<div class="box_title">
-									<h2>このウサ</h2>
+									<h2>中途採用</h2>
 								</div>
 							</div>
 						</div>
@@ -550,13 +550,13 @@
 										<img src="assets/img/main/recruit/main_recruit_woman_img_02.png">
 									</figure>
 									<div class="box_title">
-										<h2>このウブ</h2>
+										<h2>新卒採用</h2>
 									</div>
 								</div>
 								
 								<a href="http://facebook.com" class="fb_canvas">
 									<div>
-										<h2 class="kanji">このウブ</h2>
+										<h2 class="kanji">新卒採用</h2>
 										<h2 class="en">Facebook</h2>
 									</div>
 								</a>
