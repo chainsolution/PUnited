@@ -125,7 +125,7 @@
 				<!-- headring title -->
 				<div class="section_heading">
 					<h1>BUSINESS DOMAIN</h1>
-					<span>現代のビジネスコンセプト</span>
+					<span>人と人をつなぐコミュニケーションのお手伝い</span>
 				</div>
 				<!-- /headring title -->
 
@@ -142,7 +142,7 @@
 										<img src="assets/img/common/icons/icon_research_04.png">
 									</figure>
 									<div class="title">
-										<h4>研究</h4>
+										<h4>調査</h4>
 										<span>RESEARCH</span>
 									</div>
 									<div class="caption">
@@ -175,7 +175,7 @@
 										<img src="assets/img/common/icons/icon_area_content_06.png">
 									</figure>
 									<div class="title">
-										<h4>エリアコンテンツ</h4>
+										<h4>地域コンテンツ</h4>
 										<span>AREA CONTENT</span>
 									</div>
 									<div class="caption">
@@ -196,7 +196,7 @@
 										<img src="assets/img/common/icons/icon_advertising_pr_02.png">
 									</figure>
 									<div class="title">
-										<h4>広告 - PR</h4>
+										<h4>広告・PR</h4>
 										<span>ADVERTISING/PR</span>
 									</div>
 									<div class="caption">
@@ -229,7 +229,7 @@
 										<img src="assets/img/common/icons/icon_recruit_05.png">
 									</figure>
 									<div class="title">
-										<h4>リクルート</h4>
+										<h4>人材・採用</h4>
 										<span>RECRUIT</span>
 									</div>
 									<div class="caption">
@@ -296,8 +296,8 @@
 
 				<div class="section_heading">
 					<h1>WORKS</h1>
-					<span>マイルストーンの作品</span>
-					<span>私達は私達の顧客のために行われてきた作品</span>
+					<span>地域生活情報を通して</span>
+					<span>街、企業、お店と生活者とのコミュニケーションを創出</span>
 					
 					<a href="#" class="more_btn hide_sm"> > MORE </a>
 					
@@ -313,7 +313,7 @@
 										<img src="assets/img/main/works/main_works_img_01.png">
 									</figure>
 									<div class="title">
-										<span>例えば、タイトルコンテンツの No.71</span>
+										<span>Osera  No80 陽春号</span>
 									</div>
 								</div>
 							</div>
@@ -324,7 +324,7 @@
 										<img src="assets/img/main/works/main_works_img_02.png">
 									</figure>
 									<div class="title">
-										<span>例えば、タイトルコンテンツの No.71</span>
+										<span>月刊タウン情報おかやま 2016年3月号</span>
 									</div>
 								</div>
 							</div>

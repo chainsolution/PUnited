@@ -71,6 +71,7 @@ usage:
  ----------------------------------------- */
 /* Section padding & margin
   ----------------------------------------- */
+/* Font */
 /* Text color
  ----------------------------------------- */
 /* Text shadow */
@@ -1088,7 +1089,16 @@ body {
     -moz-align-items: center;
     -ms-align-items: center; }
     .overlay_banner .overlay_title span {
+      font-family: "Dosis", san-serif;
       font-size: 260%;
+      font-weight: 100;
+      color: #fff; }
+    .overlay_banner .overlay_title sup {
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      display: block;
+      font-size: 700%;
       color: #fff; }
 
 /** banner in about page with no navbar **/
@@ -1158,8 +1168,10 @@ body {
     .greeting .paragraph p {
       margin: 0 0 25px 0;
       line-height: 2;
-      color: #000;
-      font-weight: 300; }
+      color: #333;
+      font-size: 16px;
+      font-weight: 300;
+      text-shadow: 0px 0px 0.3px #999; }
   .greeting .profile {
     position: relative;
     float: left;
@@ -1204,7 +1216,7 @@ body {
     width: 100%;
     padding: 10px 0px;
     margin-bottom: 40px;
-    background: #bbbbbb; }
+    background: #bfbfbf; }
     .philosophy .section_title h3 {
       margin: 0px;
       color: #fff;
@@ -1236,9 +1248,9 @@ body {
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 18px;
-    color: #000;
+    color: #333;
     font-weight: 500;
-    text-shadow: 0px 1px 1px #999; }
+    text-shadow: 0px 0px 0.5px #999; }
   .philosophy .vertical_divider {
     position: absolute;
     left: 50%;
@@ -1250,14 +1262,15 @@ body {
     margin-left: 20px; }
     .philosophy ul li {
       line-height: 2.2;
-      font-size: 20px;
+      font-size: 18px;
       color: #333;
-      text-shadow: 0px 1px 0px #999; }
+      text-shadow: 0px 0px 0.3px #999; }
   .philosophy p {
+    font-size: 15px;
     text-align: center;
     line-height: 2.2;
     color: #333;
-    text-shadow: 0px 1px 1px #999; }
+    text-shadow: 0px 0px 0.3px #999; }
     .philosophy p.text_lg {
       font-size: 30px; }
 
@@ -1482,7 +1495,7 @@ body {
   -o-box-sizing: border-box; }
   .profile .content_title p {
     text-align: right;
-    font-size: 17px;
+    font-size: 18px;
     color: #333;
     font-weight: 600;
     text-shadow: 0px 0px 0.5px #999;
@@ -1499,14 +1512,15 @@ body {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box; }
   .profile .content_paragraph p {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 2.1;
-    color: #222; }
+    color: #333;
+    text-shadow: 0px 0px 0.3px #999; }
 
 .profile .link_underline {
   display: inline-block;
-  color: #222;
+  color: #333;
   text-decoration: none;
   border-bottom: 1px solid #888; }
   .profile .link_underline:hover {
@@ -1627,7 +1641,7 @@ body {
     .about_jp article p {
       font-size: 15px;
       text-shadow: 0px 0px 0.3px #999;
-      color: #222;
+      color: #333;
       margin-bottom: 15px;
       line-height: 2.1;
       letter-spacing: 1.5px; }
@@ -1750,6 +1764,7 @@ body {
       font-size: 30px;
       font-weight: 500; }
     .about_jp .caption span {
+      font-family: "Dosis", sans-serif;
       text-align: center;
       display: block;
       color: #fff; }
@@ -1765,8 +1780,14 @@ body {
   .about_en article {
     display: block;
     width: 100%; }
-  .about_en p, .about_en h1, .about_en h2, .about_en h3, .about_en h4 {
+  .about_en p, .about_en h1, .about_en h2, .about_en h3, .about_en h4, .about_en span, .about_en li {
     font-family: "Dosis", san-serif; }
+  .about_en p, .about_en li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; }
+  .about_en p {
+    margin-bottom: 20px; }
   .about_en .impression_sentence {
     width: 100%;
     position: relative;
@@ -1777,6 +1798,14 @@ body {
       font-size: 25px;
       font-weight: 500;
       color: #444; }
+  .about_en .company_map {
+    position: relative;
+    width: 100%;
+    float: left; }
+    .about_en .company_map img {
+      width: 100%;
+      vertical-align: top;
+      display: block; }
   .about_en .company_info {
     width: 100%;
     float: left;
@@ -1814,14 +1843,134 @@ body {
       font-weight: 500;
       color: #444;
       margin-bottom: 50px; }
-    .about_en .geo_location_desc p {
-      font-size: 17px;
-      line-height: 1.5;
-      color: #222;
-      text-shadow: 0px 0px 0.3px #999; }
   .about_en .board_of_director {
+    width: 100%;
+    float: left;
+    position: relative;
     background: #f5f5f5;
-    padding: 70px 80px; }
+    padding: 70px 80px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box; }
+    .about_en .board_of_director::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .about_en .board_of_director h1 {
+      font-size: 40px;
+      font-weight: 500;
+      color: #333;
+      margin: 0px;
+      line-height: 1;
+      text-align: center; }
+  .about_en .chairman_profile, .about_en .ceo_profile {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-top: 70px;
+    display: inline-block; }
+    .about_en .chairman_profile::after, .about_en .ceo_profile::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .about_en .chairman_profile img, .about_en .ceo_profile img {
+      max-width: 100%; }
+  .about_en .profile_pic {
+    position: relative;
+    width: 25%;
+    float: left; }
+  .about_en .profile_bio {
+    position: relative;
+    width: 75%;
+    padding-left: 40px;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box; }
+  .about_en .profile_name h2 {
+    font-size: 25px;
+    color: #333;
+    font-weight: 500;
+    line-height: 1; }
+  .about_en .profile_name .kanji_name {
+    font-size: 14px;
+    font-family: arial,'ヒラギノ角ゴ ProN W3','Hiragino Kaku GothicProN','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳＰゴシック',sans-serif;
+    color: #666;
+    text-shadow: 0px 0px 0.3px #999;
+    letter-spacing: 1.5px; }
+  .about_en .profile_name .position_title {
+    color: #888;
+    font-size: 15px;
+    display: block;
+    font-family: "Dosis", san-serif;
+    text-shadow: 0px 0px 0.5px #999;
+    margin-top: 5px;
+    margin-bottom: 30px; }
+  .about_en .topic_title {
+    display: block;
+    width: 100%;
+    padding: 5px 0px;
+    margin: 0px 0px 20px 0px;
+    background: #bfbfbf; }
+    .about_en .topic_title h4 {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      margin-left: 10px;
+      line-height: 1; }
+  .about_en .jmca_logo {
+    display: inline;
+    padding: 20px;
+    margin-right: 20px;
+    float: left;
+    background: #fff; }
+  .about_en .company_description {
+    position: relative;
+    width: 100%;
+    float: left; }
+    .about_en .company_description::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .about_en .company_description h1 {
+      padding: 50px 0px;
+      font-size: 45px;
+      color: #333;
+      font-weight: 400;
+      text-align: center; }
+    .about_en .company_description h2 {
+      font-size: 17px;
+      color: #333;
+      margin-bottom: 20px; }
+  .about_en .description {
+    position: relative;
+    width: 64%;
+    float: left;
+    padding-right: 6%; }
+    .about_en .description ul {
+      margin-left: 20px; }
+      .about_en .description ul li {
+        line-height: 2; }
+  .about_en .summary {
+    position: relative;
+    width: 30%;
+    float: left; }
+    .about_en .summary ul {
+      list-style-type: none; }
+      .about_en .summary ul li {
+        display: flex;
+        padding: 25px 0px; }
+      .about_en .summary ul span {
+        font-size: 17px;
+        font-weight: 600;
+        color: #333;
+        width: 30%;
+        text-align: right;
+        padding-right: 20%; }
 
 /** Company overview **/
 #overview {
@@ -1858,7 +2007,7 @@ body {
   #business_domain .title span {
     font-family: "Dosis", san-serif;
     letter-spacing: 0px;
-    color: #222; }
+    color: #333; }
   #business_domain .title h4 {
     font-size: 20px;
     font-weight: 500;
@@ -2378,7 +2527,7 @@ a.more_btn {
   .language_options a {
     display: inline-block;
     text-decoration: none;
-    color: #222;
+    color: #333;
     padding: 5px 0px;
     font-family: "Dosis", san-serif;
     font-size: 15px;
@@ -2406,7 +2555,7 @@ a.more_btn {
     line-height: 35px;
     margin-bottom: 10px;
     font-size: 110%;
-    color: #222;
+    color: #333;
     text-shadow: 0px 0px 0.3px #999; }
 
 /* style for all section heading */
@@ -2418,10 +2567,11 @@ a.more_btn {
   margin: 0 0 10px 0 !important; }
 
 .section_heading span {
+  font-family: "Dosis", san-serif;
   display: block;
   font-size: 105%;
   font-weight: 100;
-  color: #222; }
+  color: #333; }
 
 #works a.more_btn {
   position: absolute;
@@ -2595,12 +2745,34 @@ a.more_btn {
     padding: 5px  20px; }
   .profile .left_content, .profile .right_content {
     width: 100%; }
+  .banner_no_navbar .overlay_title sup {
+    font-size: 600%; }
+  .banner_no_navbar .overlay_title span {
+    font-size: 300%; }
   .about_jp article {
     width: 100%; }
   .about_jp .business_domain_nav {
     width: 100%; }
   .about_jp .page_nav {
-    width: 100%; } }
+    width: 100%; }
+  .about_en .company_info, .about_en .chairman_profile,
+  .about_en .ceo_profile {
+    padding: 0px;
+    display: block; }
+  .about_en .company_airport_map, .about_en .geo_location_desc,
+  .about_en .profile_pic, .about_en .profile_bio, .about_en .description,
+  .about_en .summary {
+    width: 100%;
+    padding: 0px; }
+  .about_en .summary {
+    margin-top: 30px; }
+  .about_en .profile_name, .about_en .profile_pic {
+    text-align: center;
+    margin-top: 20px; }
+  .about_en .board_of_director {
+    margin-top: 20px; }
+    .about_en .board_of_director h1 {
+      margin-bottom: 20px; } }
 
 @media only screen and (max-width: 640px) {
   .site_banner .item_title span {
