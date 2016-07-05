@@ -120,14 +120,20 @@
 
 		<!-- business domain -->
 		<div id="business_domain">
-			
+
+			<!-- Triangle Moving Object -->
+			<div class="object_moving">
+				<img src="assets/img/common/objects/object3.png">
+			</div>
+			<!-- Triangle Moving Object -->
+
 			<div class="content_inner">
-				<!-- headring title -->
+				<!-- heading title -->
 				<div class="section_heading">
 					<h1 class="lang_en">BUSINESS DOMAIN</h1>
 					<span class="lang_jp">人と人をつなぐコミュニケーションのお手伝い</span>
 				</div>
-				<!-- /headring title -->
+				<!-- /heading title -->
 
 				<!-- business content -->
 				<div class="content">
