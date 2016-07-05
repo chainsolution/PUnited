@@ -130,8 +130,8 @@
 			<div class="content_inner">
 				<!-- heading title -->
 				<div class="section_heading">
-					<h1>BUSINESS DOMAIN</h1>
-					<span>人と人をつなぐコミュニケーションのお手伝い</span>
+					<h1 class="lang_en">BUSINESS DOMAIN</h1>
+					<span class="lang_jp">人と人をつなぐコミュニケーションのお手伝い</span>
 				</div>
 				<!-- /heading title -->
 
@@ -301,9 +301,9 @@
 			<div class="content_inner">
 
 				<div class="section_heading">
-					<h1>WORKS</h1>
-					<span>地域生活情報を通して</span>
-					<span>街、企業、お店と生活者とのコミュニケーションを創出</span>
+					<h1 class="lang_en">WORKS</h1>
+					<span class="lang_jp">地域生活情報を通して</span>
+					<span class="lang_jp">街、企業、お店と生活者とのコミュニケーションを創出</span>
 					
 					<a href="#" class="more_btn hide_sm"> > MORE </a>
 					
@@ -429,9 +429,9 @@
 
 				<div class="section_heading">
 					<div class="inner show_sm">
-						<h1>NEWS</h1>
-						<span>ビジネスマイルストーン</span>
-						<span>一時的な記事</span>
+						<h1 class="lang_en">NEWS</h1>
+						<span class="lang_jp">ビジネスマイルストーン</span>
+						<span class="lang_jp">一時的な記事</span>
 					</div>
 				</div>
 
@@ -441,9 +441,9 @@
 						<div class="left_news_heading hide_sm">
 							<div class="news_heading_canvas frosted_glass">
 								<div class="inner">
-									<h1>NEWS</h1>
-									<span>ビジネスマイルストーン</span>
-									<span>一時的な記事</span>
+									<h1 class="lang_en">NEWS</h1>
+									<span class="lang_jp">ビジネスマイルストーン</span>
+									<span class="lang_jp">一時的な記事</span>
 									<a href="#" class="more_btn">> MORE</a>
 								</div>
 							</div>
@@ -533,8 +533,8 @@
 		<div id="recruit">
 			<div class="content_inner">
 				<div class="section_heading">
-					<h1>RECRUIT</h1>
-					<span>これは、このウェブサイトのニュ</span>
+					<h1 class="lang_en">RECRUIT</h1>
+					<span class="lang_jp">これは、このウェブサイトのニュ</span>
 				</div>
 
 				<div class="content">

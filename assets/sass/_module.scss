@@ -52,6 +52,7 @@ a.more_btn{
 	display: block;
 	padding: 7px;
 	background: $lightBlack;
+	font-family: $font_en;
 	color: $white;
 	font-size: 12px;
 	font-weight: 500;
@@ -87,6 +88,14 @@ a.more_btn{
 	text-align: center !important;
 }
 
+.lang_jp{
+	font-family: $font_jp;
+}
+
+.lang_en{
+	font-family: $font_en;
+}
+
 .language_options{
 	position: relative;
 	width: 100%;
@@ -98,7 +107,7 @@ a.more_btn{
 		text-decoration: none;
 		color: $paragraph_color;
 		padding: 5px 0px;
-		font-family: "Dosis", san-serif;
+		font-family: $font_en;
 		font-size: 15px;
 		margin-right: 15px;
 		line-height: 1;
@@ -142,19 +151,18 @@ a.more_btn{
 /* style for all section heading */
 .section_heading{
 	h1{
-		font-family: "Dosis", san-serif;
 		font-size: 40px;
 		font-weight: 300;
 		color: #333;
 		margin:0 0 10px 0 !important;
-		
 	}
+
 	span{
-		font-family: "Dosis", san-serif;
 		display: block;
 		font-size: 105%;
 		font-weight: 100;
 		color: $paragraph_color;
+		text-shadow: $paragraph_text_shadow;
 	}
 
 }

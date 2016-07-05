@@ -121,7 +121,7 @@ body{
 		}
 	}
 	a{	
-		font-family: "Dosis", san-serif;
+		font-family: $font_en;
 		text-decoration: none;
 		padding: 25px 17px;
 		color: $black;
@@ -482,7 +482,11 @@ body{
 	background: $white;
 	min-height: 350px;
 	.inner span{
-		padding: 10px;
+		display: block;
+		font-size: 13px;
+		color: $paragraph_color;
+		text-shadow: $paragraph_text_shadow;
+		padding: 20px 10px;
 	}
 
 	&:nth-child(even){ /* last added */
@@ -578,7 +582,7 @@ body{
 		@include justify-content();
 		@include align-items();
 		span{
-			font-family: "Dosis", san-serif;
+			font-family: $font_en;
 			font-size: 260%;
 			font-weight: 100;
 			color: $white;
@@ -622,7 +626,7 @@ body{
 		span{
 			display: block;
 			color: $white;
-			font-family: "Dosis", san-serif;
+			font-family: $font_en;
 			font-size: 500%;
 			font-weight: 100;
 		}
@@ -806,7 +810,7 @@ body{
 		float: left;
 		vertical-align: top;
 		line-height: 2;
-		text-shadow: 0px 0px 1px #777;
+		text-shadow: $paragraph_text_shadow;
 		@include box-sizing(border-box);
 	}
 
@@ -827,7 +831,7 @@ body{
 		float: left;
 		text-align: left;
 		p{
-			color: #666;
+			color: $paragraph_color;
 			letter-spacing: 1.5px;
 		}
 	}
@@ -853,10 +857,10 @@ body{
 		text-align: right;
 		@include box-sizing(border-box);
 		p{
-			font-size: 17px;
-			font-weight: 500;
-			color: #222;
-			text-shadow: 0px 0px 1px #666;
+			font-size: $text_title;
+			font-weight: 600;
+			color: $heading_color;
+			text-shadow: $heading_text_shadow;
 			line-height: 2.2;
 		}
 	}
@@ -869,17 +873,17 @@ body{
 		@include box-sizing(border-box);
 		p{
 			font-size: 16px;
-			color: #444;
-			text-shadow: 0px 0px 1px #999;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
 			line-height: 2.1;
 		}
 
 		h4{
-			font-size: 17px;
-			font-weight: 500;
+			font-size: $text_title;
+			font-weight: 600;
 			margin: 20px 0px;
-			color: #222;
-			text-shadow: 0px 0px 1px #666;
+			color: $heading_color;
+			text-shadow: $heading_text_shadow;
 			line-height: 2.1;
 		}
 	}
@@ -973,7 +977,7 @@ body{
 			text-align: right;
 			font-size: $text_title;
 			color: $heading_color;
-			font-weight: 600;
+			font-weight: 500;
 			text-shadow: $heading_text_shadow;
 			line-height: 2.1;
 		}
@@ -991,7 +995,6 @@ body{
 			line-height: 2.1;
 			color: $paragraph_color;
 			text-shadow: $paragraph_text_shadow;
-			
 		}
 
 	}
@@ -1124,7 +1127,7 @@ body{
 		}
 
 		p{
-			font-size: 15px;
+			font-size: $text_font_size;
 			text-shadow: $paragraph_text_shadow;
 			color: $paragraph_color;
 			margin-bottom: 15px;
@@ -1213,7 +1216,6 @@ body{
 		}
 
 		span{
-			font-family: "Dosis", sans-serif;
 			text-align: center;
 			display: block;
 			color: $white;
@@ -1250,7 +1252,7 @@ body{
 	}
 
 	p,h1,h2,h3,h4,span,li{
-		font-family: "Dosis", san-serif;
+		font-family: $font_en;
 	}
 
 	p, li{
@@ -1378,7 +1380,7 @@ body{
 		}
 		.kanji_name{
 			font-size: 14px;
-			font-family: arial,'ヒラギノ角ゴ ProN W3','Hiragino Kaku GothicProN','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳＰゴシック',sans-serif;
+			font-family: $font_jp;
 			color: #666;
 			text-shadow: $paragraph_text_shadow;
 			letter-spacing: 1.5px;
@@ -1387,7 +1389,7 @@ body{
 			color: #888;
 			font-size: 15px;
 			display: block;
-			font-family: "Dosis", san-serif;
+			font-family: $font_en;
 			text-shadow: 0px 0px 0.5px #999;
 			margin-top: 5px;
 			margin-bottom: 30px;

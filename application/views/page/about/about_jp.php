@@ -73,8 +73,8 @@
 							<img src="assets/img/about_us/jp/about_us_title_greeting_01.png">
 							<div class="caption text_left">
 								<div>
-									<h3>ごあいさつ</h3>
-									<span>GREETING</span>
+									<h3 class="lang_jp">ごあいさつ</h3>
+									<span class="lang_en">GREETING</span>
 								</div>
 							</div>
 						</a>
@@ -85,8 +85,8 @@
 							<img src="assets/img/about_us/jp/about_us_title_philosophy_02.png">
 							<div class="caption text_left">
 								<div>
-									<h3>企業理念</h3>
-									<span>PHILOSOPHY</span>
+									<h3 class="lang_jp">企業理念</h3>
+									<span class="lang_en">PHILOSOPHY</span>
 								</div>
 							</div>
 						</a>
@@ -95,8 +95,8 @@
 							<img src="assets/img/about_us/jp/about_us_title_profile_03.png">
 							<div class="caption text_left">
 								<div>
-									<h3>会社概要</h3>
-									<span>PROFILE</span>
+									<h3 class="lang_jp">会社概要</h3>
+									<span class="lang_en">PROFILE</span>
 								</div>
 							</div>
 						</a>
@@ -110,8 +110,8 @@
 							<img src="assets/img/about_us/jp/about_us_title_history_04.png">
 							<div class="caption text_left">
 								<div>
-									<h3>沿革</h3>
-									<span>HISTORY</span>
+									<h3 class="lang_jp">沿革</h3>
+									<span class="lang_en">HISTORY</span>
 								</div>
 							</div>
 						</a>
@@ -122,8 +122,8 @@
 							<img src="assets/img/about_us/jp/about_us_title_privacypolicy_05.png">
 							<div class="caption text_left">
 								<div>
-									<h3>プライバシーポリシー</h3>
-									<span>PRIVACY POLICY</span>
+									<h3 class="lang_jp">プライバシーポリシー</h3>
+									<span class="lang_en">PRIVACY POLICY</span>
 								</div>
 							</div>
 						</a>

@@ -37,7 +37,7 @@
 			<div class="content_inner">
 				<div class="section_heading">
 					<h1>ごあいさつ</h1>
-					<span>GREETING</span>
+					<span class="lang_en">GREETING</span>
 				</div>
 				<div class="content">
 					<article>
