@@ -36,7 +36,7 @@
 			<div class="content_inner">
 				<div class="section_heading">
 					<h1>プライバシーポリシー</h1>
-					<span>PRIVACY POLICY</span>
+					<span class="lang_en">PRIVACY POLICY</span>
 				</div>
 
 				<div class="content">

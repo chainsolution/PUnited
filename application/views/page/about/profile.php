@@ -36,7 +36,7 @@
 			<div class="content_inner">
 				<div class="section_heading">
 					<h1>会社概要</h1>
-					<span>PROFILE</span>
+					<span class="lang_en">PROFILE</span>
 				</div>
 
 				<div class="content">
