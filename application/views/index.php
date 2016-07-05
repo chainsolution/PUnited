@@ -142,7 +142,7 @@
 					<div class="row">
 						<div class="canvas_box_container">
 							
-							<a href="#" class="canvas_box frosted_glass">
+							<div class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_research_04.png">
@@ -151,31 +151,31 @@
 										<h4>調査</h4>
 										<span>RESEARCH</span>
 									</div>
-									<div class="caption">
-										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
-									</div>
 								</div>
-							</a>
+								<div class="caption">
+									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+								</div>
+							</div>
 
-							<a href="#" class="canvas_box">
+							<div class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</a>
+							</div>
 
-							<a href="#" class="canvas_box hide_sm">
+							<div class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</a>
+							</div>
 
-							<a href="#" class="canvas_box">
+							<div class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</a>
+							</div>
 
-							<a href="#" class="canvas_box frosted_glass">
+							<div class="canvas_box frosted_glass">
 								<div href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_area_content_06.png">
@@ -184,19 +184,19 @@
 										<h4>地域コンテンツ</h4>
 										<span>AREA CONTENT</span>
 									</div>
-									<div class="caption">
-										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
-									</div>
 								</div>
-							</a>
+								<div class="caption">
+									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+								</div>
+							</div>
 				
-							<a href="#" class="canvas_box hide_sm">
+							<div class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</a>
+							</div>
 
-							<a href="#" class="canvas_box frosted_glass">
+							<div class="canvas_box frosted_glass">
 								<div href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_advertising_pr_02.png">
@@ -205,31 +205,31 @@
 										<h4>広告・PR</h4>
 										<span>ADVERTISING/PR</span>
 									</div>
-									<div class="caption">
-										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
-									</div>
 								</div>
-							</a>
+								<div class="caption">
+									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+								</div>
+							</div>
 
-							<a href="#" class="canvas_box">
+							<div class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</a>
+							</div>
 
-							<a href="#" class="canvas_box hide_sm">
+							<div class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</a>
+							</div>
 
-							<a href="#" class="canvas_box">
+							<div class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</a>
+							</div>
 					
-							<a href="#" class="canvas_box frosted_glass">
+							<div class="canvas_box frosted_glass">
 								<div href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_recruit_05.png">
@@ -238,19 +238,19 @@
 										<h4>人材・採用</h4>
 										<span>RECRUIT</span>
 									</div>
-									<div class="caption">
-										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
-									</div>
 								</div>
-							</a>
+								<div class="caption">
+									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+								</div>
+							</div>
 
-							<a href="#" class="canvas_box hide_sm">
+							<div class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</a>
+							</div>
 
-							<a href="#" class="canvas_box frosted_glass">
+							<div class="canvas_box frosted_glass">
 								<div href="#" class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_event_01.png">
@@ -259,20 +259,20 @@
 										<h4>イベント</h4>
 										<span>EVENT</span>
 									</div>
-									<div class="caption">
-										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
-									</div>
 								</div>
-							</a>
+								<div class="caption">
+									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+								</div>
+							</div>
 
-							<a href="#" class="canvas_box">
+							<div class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</a>
+							</div>
 
-							<a href="#" class="canvas_box frosted_glass float_r_sm">
-								<div href="#" class="inner">
+							<div class="canvas_box frosted_glass float_r_sm">
+								<div class="inner">
 									<figure>
 										<img src="assets/img/common/icons/icon_internet_03.png">
 									</figure>
@@ -280,11 +280,11 @@
 										<h4>インターネット</h4>
 										<span>INTERNET</span>
 									</div>
-									<div class="caption">
-										<p>現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</p>
-									</div>
 								</div>
-							</a>
+								<div class="caption">
+									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+								</div>
+							</div>
 
 						</div>
 					</div>
@@ -415,7 +415,7 @@
 						</div>
 					</div>
 					<div class="full_width_btn show_sm">
-						<a href="#"> > MORE </a>
+						<a class="lang_en" href="#"> > MORE </a>
 					</div>
 				</div>
 				
@@ -449,78 +449,83 @@
 							</div>
 						</div>
 
-						<div class="canvas_box_container">
-							<div class="canvas_box frosted_glass">
-								<div class="inner">
-									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
+						<div class="right_news_box">
+							<div class="canvas_box_container">
+								<div class="canvas_box frosted_glass">
+									<div class="inner">
+										<div class="heading text_left">
+											<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
+										</div>
+										<p class="news_paragraph">
+											『月刊タウン情報おかやま』 2月号の特集は 『パスタ&ラーメン　半額・ワンコイン』
+										</p>
 									</div>
-									<p class="news_paragraph">
-										『月刊タウン情報おかやま』 2月号の特集は 『パスタ&ラーメン　半額・ワンコイン』
-									</p>
+								</div>
+
+								<div class="canvas_box frosted_glass">
+									<div class="inner text_left">
+										<div class="heading">
+											<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
+										</div>
+										<p class="news_paragraph">
+											『月刊タウン情報おかやま』1月号の特集は 「冬に行きたい おこもりカフェ」
+										</p>
+									</div>
+								</div>
+
+								<div class="canvas_box frosted_glass">
+									<div class="inner text_left">
+										<div class="heading">
+											<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
+										</div>
+										<p class="news_paragraph">
+											『Osera』No.79初春号の特集は「2015年、お目見えした　集いの場と新しき店」
+										</p>
+									</div>
 								</div>
 							</div>
 
-							<div class="canvas_box frosted_glass">
-								<div class="inner">
-									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
+							<div class="canvas_box_container">
+								<div class="canvas_box frosted_glass">
+									<div class="inner text_left">
+										<div class="heading">
+											<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
+										</div>
+										<p class="news_paragraph">
+											「LUNCH PASSPORT vol.8」 岡山市・倉敷市・総社市版 発刊のお知らせ
+										</p>
 									</div>
-									<p class="news_paragraph">
-										『月刊タウン情報おかやま』1月号の特集は 「冬に行きたい おこもりカフェ」
-									</p>
 								</div>
-							</div>
 
-							<div class="canvas_box frosted_glass">
-								<div class="inner">
-									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
+								<div class="canvas_box frosted_glass">
+									<div class="inner text_left">
+										<div class="heading">
+											<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
+										</div>
+										<p class="news_paragraph">
+											『月刊タウン情報おかやま』 12月号の特集は 『編集者が選んだ 2015年おいしい店 流行った店』
+										</p>
 									</div>
-									<p class="news_paragraph">
-										『Osera』No.79初春号の特集は「2015年、お目見えした　集いの場と新しき店」
-									</p>
 								</div>
-							</div>
 
-							<div class="canvas_box frosted_glass">
-								<div class="inner">
-									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
+								<div class="canvas_box frosted_glass">
+									<div class="inner text_left">
+										<div class="heading">
+											<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
+										</div>
+										<p class="news_paragraph">
+											『Osera』　No.78晩秋号は、秋から冬へと移りゆくこの時季におすすめしたい、 大人のランチ...
+										</p>
 									</div>
-									<p class="news_paragraph">
-										「LUNCH PASSPORT vol.8」 岡山市・倉敷市・総社市版 発刊のお知らせ
-									</p>
 								</div>
-							</div>
 
-							<div class="canvas_box frosted_glass">
-								<div class="inner">
-									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
-									</div>
-									<p class="news_paragraph">
-										『月刊タウン情報おかやま』 12月号の特集は 『編集者が選んだ 2015年おいしい店 流行った店』
-									</p>
-								</div>
 							</div>
-
-							<div class="canvas_box frosted_glass">
-								<div class="inner">
-									<div class="heading">
-										<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
-									</div>
-									<p class="news_paragraph">
-										『Osera』　No.78晩秋号は、秋から冬へと移りゆくこの時季におすすめしたい、 大人のランチ...
-									</p>
-								</div>
-							</div>
-
 						</div>
+
 					</div>
 
 					<div class="full_width_btn show_sm">
-						<a href="#"> > MORE </a>
+						<a class="lang_en" href="#"> > MORE </a>
 					</div>
 
 				</div>
