@@ -36,7 +36,7 @@
 			<div class="content_inner">
 				<div class="section_heading">
 					<h1>企業理念</h1>
-					<span>PHILOSOPHY</span>
+					<span class="lang_en">PHILOSOPHY</span>
 				</div>
 
 				<div class="content">

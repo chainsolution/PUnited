@@ -24,7 +24,7 @@
 
 	.title{
 		span{
-			font-family: "Dosis", san-serif;
+			font-family: $font_en;
 			letter-spacing: 0px;
 			color: $paragraph_color;
 		}
@@ -130,6 +130,7 @@
 			display: block;
 			margin-bottom: 15px;
 			.date{
+				font-family: $font_en;
 				font-size: 18px;
 				margin-right: 10px;
 				vertical-align: middle;
@@ -144,6 +145,7 @@
 		}
 		.news_paragraph{
 			font-size: 16px;
+			color: $paragraph_color;
 			line-height: 1.7;
 			&:hover{
 				cursor: pointer;
@@ -212,8 +214,9 @@
 			width: 100%;
 			z-index: 3;
 			h1{
+				font-family: $font_en;
 				display: block;
-				font-weight: 500;
+				font-weight: 300;
 				font-size: 40px;
 			}
 			span{
@@ -334,12 +337,13 @@
 			margin: 0px;
 		}
 		.kanji{
-			font-size: 200%;
+			font-size: 25px;
 			font-weight: 400;
 		}
 		.en{
-			font-size: 270%;
-			letter-spacing: -2px;
+			font-size: 35px;
+			font-weight: 700;
+			letter-spacing: 0px;
 		}
 		
 	}
@@ -363,6 +367,9 @@ padding: 30px 0px 0px;
 		position: relative;
 		width: 100%;
 		padding: 10px 0px;
+		p{
+			font-family: $font_en;
+		}
 	}
 
 	.local_nav{
@@ -388,8 +395,7 @@ padding: 30px 0px 0px;
 			font-weight: 300;
 
 			&:hover{
-				text-decoration: underline;
-				color: lighten($black,30%);
+				color: lighten($black,70%);
 			}
 		}
 

@@ -37,7 +37,7 @@
 
 				<div class="section_heading">
 					<h1>沿革</h1>
-					<span>HISTORY</span>
+					<span class="lang_en">HISTORY</span>
 				</div>
 				
 				<div class="content">
