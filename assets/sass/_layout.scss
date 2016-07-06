@@ -15,6 +15,8 @@ body{
 	font-smoothing: antialiased;
 	letter-spacing: 0px;
 	padding-top: 70px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 .site_sm_container{
@@ -470,11 +472,11 @@ body{
 		opacity: 0.4;
 		@include background-size();
 		background-attachment: fixed;
-		-webkit-filter: blur(6px);
-		-moz-filter: blur(6px);
-		-ms-filter: blur(6px);
-		-o-filter: blur(6px);
-		filter: blur(6px);
+		-webkit-filter: blur(5px);
+		-moz-filter: blur(5px);
+		-ms-filter: blur(5px);
+		-o-filter: blur(5px);
+		filter: blur(5px);
 	}	
 }
 
@@ -1116,14 +1118,15 @@ body{
 		position: relative;
 		float: left;
 		display: block;
-		width: 65%;
-		padding: 40px 0px;
+		width: 60%;
+		margin-bottom: 40px;
 		@include box-sizing(border-box);
 		h1{
 			color: $heading_color;
 			font-size: 22px;
 			font-weight: 400;
 			margin-bottom: 40px;
+			margin-top: 40px;
 			text-shadow: $heading_text_shadow;
 		}
 
@@ -1141,8 +1144,151 @@ body{
 		position: relative;
 		float: left;
 		display: block;
-		width: 35%;
+		width: 40%;
+		margin-bottom: 40px;
+
+		.wrap_content{
+			position: relative;
+			width: 100%;
+			float: left;
+			@include clearfix();
+		}
+
 		@include box-sizing(border-box);
+		@include clearfix();
+		.research, .advertising, .area_content,
+		.recruit, .event, .internet{
+			position: absolute;
+			width: 90px;
+			height: 90px;
+			border-radius: 45px;
+			background: rgba(0,0,0,0.2);
+			z-index: 2;
+			
+			&:after{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform-origin: 0% 0%;
+				content: "";
+				display: block;
+				width: 145px;
+				height: 1px;
+				z-index: 0;
+				background: lighten(#999,30%);
+			}
+
+			.inner{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				border-radius: 40px;
+				padding: 10px;
+				@include display-flex();
+				@include justify-content();
+				@include align-items();
+				@include box-sizing(border-box);
+				color: $white;
+				z-index: 3;
+			}
+
+			figure{
+				position: relative;
+				width: 50%;
+				height: 50%;
+				display: block;
+				margin: 0 auto;
+				img{
+					max-width: 100%;
+					width: 100%;
+					display: block;
+					vertical-align: bottom;
+				}
+			}
+
+			span{
+				position: relative;
+				padding-top: 5px;
+				display: block;
+				font-size: 10px;
+				text-align: center;
+			}
+
+		}
+
+		.vis_a_vis_logo{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			@include display-flex();
+			@include justify-content();
+			@include align-items();
+
+			.inner{
+				position: relative;
+				width: 110px;
+			}
+
+			img{
+				max-width: 100%;
+				vertical-align: bottom;
+			}
+		}
+
+		.research{
+			top: 40px;
+			left: 120px;
+			&:after{
+				transform: rotate(-15deg);
+			}
+		}
+
+		.advertising{
+			top: 0px;
+			left: 260px;
+			&:after{
+				transform: rotate(45deg);
+			}
+		}
+
+		.area_content{
+			top: 105px;
+			left: 370px;
+			&:after{
+				transform: rotate(105deg);
+			}
+		}
+
+		.recruit{
+			top: 240px;
+			left: 330px;
+			&:after{
+				transform: rotate(165deg);
+			}
+		}
+
+		.event{
+			top: 280px;
+			left: 190px;
+			&:after{
+				transform: rotate(220deg);
+			}
+		}
+
+		.internet{
+			top: 180px;
+			left: 80px;
+			&:after{
+				transform: rotate(-75deg);
+			}
+		}
+
+		.vis_a_vis_logo{
+
+		}
+
 	}
 
 	.about_page_nav{

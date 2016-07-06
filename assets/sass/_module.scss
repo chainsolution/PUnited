@@ -88,6 +88,14 @@ a.more_btn{
 	text-align: center !important;
 }
 
+.text_left{
+	text-align: left !important;
+}
+
+.text_right{
+	text-align: right !important;
+}
+
 .lang_jp{
 	font-family: $font_jp;
 }
@@ -101,6 +109,7 @@ a.more_btn{
 	width: 100%;
 	float: left;
 	margin-top: 10px;
+	margin-bottom: 20px;
 	@include clearfix();
 	a{
 		display: inline-block;
