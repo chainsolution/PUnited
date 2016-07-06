@@ -118,14 +118,20 @@
 		</div>
 		<!-- /overview -->
 
+		<!-- Triangle Moving Object -->
+		<div id="triangle_object">
+			<img src="assets/img/common/objects/object3.png">
+		</div>
+		<!-- Triangle Moving Object -->
+
 		<!-- business domain -->
 		<div id="business_domain">
 
-			<!-- Triangle Moving Object -->
-			<div class="object_moving">
-				<img src="assets/img/common/objects/object3.png">
+			<!-- Circle Moving Object -->
+			<div id="circle_object">
+				<img src="assets/img/common/objects/object6.png">
 			</div>
-			<!-- Triangle Moving Object -->
+			<!-- Circle Moving Object -->
 
 			<div class="content_inner">
 				<!-- heading title -->
@@ -298,8 +304,20 @@
 		<!-- works -->
 		<!-- last added -->
 		<div id="works">
-			<div class="content_inner">
 
+			<!-- Big Circle Moving -->
+			<div id="cricle_bottom">
+				<img src="assets/img/common/objects/object6.png">
+			</div>
+			<!-- Big Circle Moving -->
+
+			<!-- Blue Shape Moving -->
+			<div id="blue_shape">
+				<img src="assets/img/common/objects/object5.png">
+			</div>
+			<!-- Blue Shape Moving -->
+
+			<div class="content_inner">
 				<div class="section_heading">
 					<h1 class="lang_en">WORKS</h1>
 					<span class="lang_jp">地域生活情報を通して</span>
@@ -310,6 +328,11 @@
 				</div>
 
 				<div class="content">
+					<!-- Stick Moving Object -->
+						<div id="stick_object">
+							<img src="assets/img/common/objects/object1.png">
+						</div>
+					<!-- stick Moving Object -->
 					<div class="row">
 						<div class="canvas_box_container">
 
@@ -573,6 +596,11 @@
 			</div>
 		</div>
 		<!-- /Recruit -->
+		<!-- Round Moving Object -->
+		<div id="round_object">
+			<img src="assets/img/common/objects/object2.png">
+		</div>
+		<!-- Round Moving Object -->
 
 	</div>
 	<!-- /page content -->
