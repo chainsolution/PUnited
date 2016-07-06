@@ -21,7 +21,6 @@ var animateSlide;
       // Query the document to get the first,next image
       current = $(".site_banner .banner_item.active");
       next = current.next();
-      console.log(next.length);
 
       // check whether it's the last image.
       if(!next.length){

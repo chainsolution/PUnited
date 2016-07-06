@@ -138,7 +138,7 @@ body{
 		}
 	}
 	li:hover > ul{
-		height: 250px;
+		height: 247px;
 	}
 	li > ul:hover .global_nav > ul > li:has(ul) > a{
 		color: lighten($black,70%);
@@ -156,24 +156,27 @@ body{
 	margin-left: -100px;
 	padding: 0px;
 	z-index: 99;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
 	@include transition-prefix(height 0.4s ease-in);
 
 	li{
-		background: $white;
 		float: left;
 		border-top: 1px solid #ddd;
 		@include transition-prefix(background-color 0.4s ease);
 	}
 
 	a{
+		font-family: $font_jp;
 		line-height: 20px;
 		width: 180px;
 		padding: 10px;
 		float: left;
-		color: $black;
-		font-weight: 600;
+		color: $paragraph_color;
+		font-weight: 400;
+		background: $white;
 		&:hover{
-			background: darken($white,1%);
+			background: #f1f1f1;
+			color: lighten($black,40%);
 		}
 	}
 }
@@ -1112,6 +1115,13 @@ body{
 		width: 100%;
 		@include clearfix();
 	}
+
+	.row_flex{
+		position: relative;
+		width: 100%;
+		float: left;
+		@include display-flex();
+	}
 	
 	article{
 		position: relative;
@@ -1142,14 +1152,12 @@ body{
 	.business_domain_nav{
 		position: relative;
 		float: left;
-		display: block;
 		width: 40%;
 		margin-bottom: 40px;
-
 		.wrap_content{
 			position: relative;
 			width: 100%;
-			float: left;
+			height: 450px;
 			@include clearfix();
 		}
 
@@ -1160,7 +1168,7 @@ body{
 			position: absolute;
 			width: 90px;
 			height: 90px;
-			border-radius: 45px;
+			display: inline-block;
 			background: rgba(0,0,0,0.2);
 			z-index: 2;
 			
@@ -1171,14 +1179,15 @@ body{
 				transform-origin: 0% 0%;
 				content: "";
 				display: block;
-				width: 145px;
+				width: 151px;
 				height: 1px;
 				z-index: 0;
-				background: lighten(#999,30%);
+				background: #000;
 			}
 
 			.inner{
 				position: relative;
+				display: block;
 				width: 100%;
 				height: 100%;
 				border-radius: 40px;
@@ -1188,7 +1197,7 @@ body{
 				@include align-items();
 				@include box-sizing(border-box);
 				color: $white;
-				z-index: 3;
+				z-index: 3;				
 			}
 
 			figure{
@@ -1216,16 +1225,13 @@ body{
 		}
 
 		.vis_a_vis_logo{
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
+			position: relative;
+			top: 50%;
+			transform: translateY(-20px);
 			@include display-flex();
 			@include justify-content();
 			@include align-items();
-
-			.inner{
+			.inner{		
 				position: relative;
 				width: 110px;
 			}
@@ -1238,54 +1244,51 @@ body{
 
 		.research{
 			top: 40px;
-			left: 120px;
+			left: 88px;
 			&:after{
-				transform: rotate(-15deg);
+				transform: rotate();
 			}
 		}
 
 		.advertising{
 			top: 0px;
-			left: 260px;
+			left: 202px;
 			&:after{
-				transform: rotate(45deg);
+				transform: rotate();
 			}
 		}
 
 		.area_content{
-			top: 105px;
-			left: 370px;
+			top: 90px;
+			left: 360px;
 			&:after{
-				transform: rotate(105deg);
+				transform: rotate();
 			}
 		}
 
 		.recruit{
-			top: 240px;
-			left: 330px;
+			top: 260px;
+			left: 315px;
+			
 			&:after{
-				transform: rotate(165deg);
+				transform: rotate();
 			}
 		}
 
 		.event{
-			top: 280px;
-			left: 190px;
+			top: 360px;
+			left: 158px;
 			&:after{
-				transform: rotate(220deg);
+				transform: rotate();
 			}
 		}
 
 		.internet{
-			top: 180px;
-			left: 80px;
+			top: 260px;
+			left: 45px;
 			&:after{
-				transform: rotate(-75deg);
+				transform: rotate();
 			}
-		}
-
-		.vis_a_vis_logo{
-
 		}
 
 	}

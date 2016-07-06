@@ -1,19 +1,10 @@
 #business_domain .content, #news .content{
-	background-attachment: scroll; !important;
-	background-position: center center !important;
-	background-size: cover !important;
-	-webkit-background-size: cover !important;
-	-moz-background-size: cover !important;
-	-ms-background-size: cover !important;
-	-o-background-size: cover !important;
+	background-attachment: fixed; !important;
+
 }
 
 #business_domain .content .canvas_box.frosted_glass:after,
 #news .content .canvas_box.frosted_glass:after{
-	background-size: cover !important;
-	-webkit-background-size: cover !important;
-	-moz-background-size: cover !important;
-	-ms-background-size: cover !important;
-	-o-background-size: cover !important;
-	background-position: center center !important;
+	background-attachment: fixed; !important;
+
 }

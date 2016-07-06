@@ -40,12 +40,13 @@
 			<ul>
 				<li class="relative"><a href="about_jp">ABOUT US</a>
 					<ul>
-						<li><a href="greeting">GREETING</a></li>
-						<li><a href="philosophy">PHILOSOPHY</a></li>
-						<li><a href="profile">COMPANY PROFILE</a></li>
-						<li><a href="history">HISTORY</a></li>
-						<li><a href="privacy">PRIVACY &amp; POLICY</a></li>
-						<li><a href="about_en">ABOUT US (EN)</a></li>
+						<li><a href="about_en">ABOUT US トップ</a></li>
+						<li><a href="greeting">ごあいさつ</a></li>
+						<li><a href="philosophy">企業理念</a></li>
+						<li><a href="profile">会社概要</a></li>
+						<li><a href="history">沿革</a></li>
+						<li><a href="privacy">プライバシーポリシー</a></li>
+						
 					</ul>
 				</li>
 				<li><a onclick="PUNITED.useful.SmoothScrollTo('business_domain');" href="#">BUSINESS DOMAIN</a></li>
@@ -70,12 +71,12 @@
 	<ul>
 		<li class="relative"><a onclick="javascript:return(0)" href="about_jp">ABOUT US</a>
 			<ul>
-				<li><a href="greeting">GREETING</a></li>
-				<li><a href="philosophy">PHILOSOPHY</a></li>
-				<li><a href="profile">COMPANY PROFILE</a></li>
-				<li><a href="history">HISTORY</a></li>
-				<li><a href="privacy">PRIVACY &amp; POLICY</a></li>
-				<li><a href="about_en">ABOUT US (EN)</a></li>
+				<li><a href="about_en">ABOUT US トップ</a></li>
+				<li><a href="greeting">ごあいさつ</a></li>
+				<li><a href="philosophy">企業理念</a></li>
+				<li><a href="profile">会社概要</a></li>
+				<li><a href="history">沿革</a></li>
+				<li><a href="privacy">プライバシーポリシー</a></li>
 			</ul>
 		</li>
 		<li><a onclick="PUNITED.useful.SmoothScrollTo('business_domain');" href="#">BUSINESS DOMAIN</a></li>
