@@ -88,6 +88,9 @@ mouseSynchronize = function() {
 
         $('#triangle_object').css('margin-top', '' + scrollTop + 'px');
         $('#circle_object').css('margin-top', '' + scrollTop + 'px');
+        $('#cricle_bottom').css('margin-top', '' + scrollTop + 'px');
+        $('#blue_shape').css('margin-top', '' + scrollTop + 'px');
+        $('#stick_object').css('margin-top', '' + scrollTop + 'px');
     });
 }
 

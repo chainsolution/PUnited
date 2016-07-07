@@ -316,6 +316,11 @@
 				<img src="assets/img/common/objects/object5.png">
 			</div>
 			<!-- Blue Shape Moving -->
+			<!-- Stick Moving Object -->
+				<div id="stick_object">
+					<img src="assets/img/common/objects/object1.png">
+				</div>
+			<!-- stick Moving Object -->
 
 			<div class="content_inner">
 				<div class="section_heading">
@@ -328,11 +333,6 @@
 				</div>
 
 				<div class="content">
-					<!-- Stick Moving Object -->
-						<div id="stick_object">
-							<img src="assets/img/common/objects/object1.png">
-						</div>
-					<!-- stick Moving Object -->
 					<div class="row">
 						<div class="canvas_box_container">
 

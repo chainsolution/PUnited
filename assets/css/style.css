@@ -2184,7 +2184,7 @@ body {
   height: 100%;
   left: 10px;
   z-index: 99;
-  transform: translateY(-300px); }
+  transform: translateY(-600px); }
   #cricle_bottom img {
     animation-name: spin;
     -webkit-animation-name: spin;
@@ -2211,10 +2211,10 @@ body {
   position: absolute;
   display: block;
   height: 100%;
-  z-index: 99;
+  z-index: 100;
   right: 0;
   top: 20%;
-  transform: translateY(-300px); }
+  transform: translateY(-700px); }
   #blue_shape img {
     animation-name: spin;
     -webkit-animation-name: spin;
@@ -2240,7 +2240,7 @@ body {
 #stick_object {
   position: absolute;
   display: block;
-  z-index: 90;
+  z-index: 100;
   bottom: 10%;
   left: 0;
   margin-left: -20px; }
