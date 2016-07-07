@@ -8,7 +8,7 @@
 					<span onclick="PUNITED.useful.jumpToPageTop();"><img src="assets/img/common/icons/icon_scroll_to_top_07.png"></span>
 				</div>
 
-				<nav class="local_nav">
+				<nav class="footer_nav">
 					<ul>
 						<li><a href="">プライバシーポリシー</a></li>
 						<li><a href="">サイトマップ</a></li>

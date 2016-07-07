@@ -384,57 +384,916 @@
 		
 	}
 }
-/** /Recruit section **/
 
-.site_footer{
-width: 100%;
-position: relative;
-padding: 30px 0px 0px;
-@include clearfix();
 
-	.local_nav, .footer_copyright{
+/** Greeting page **/
+  /**************/
+.greeting{
+	.paragraph{
 		position: relative;
-		width: 100%;
-		@include display-flex();
-		@include justify-content();
+		width: 65%;
+		float: left;
+		display: block;
+		padding-right: 5%;
+		p{
+			margin: 0 0 25px 0;
+    		line-height: 2;
+    		color: $paragraph_color;
+    		font-size: $text_font_size;
+    		font-weight: 300;
+    		text-shadow: $paragraph_text_shadow;
+		}
 	}
 
-	.footer_copyright{
+	.profile{
 		position: relative;
+		float: left;
+		width: 30%;
+		img{
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+
+/** Philosophy page **/
+  /****************/
+.philosophy{
+	.section_title{
+		position: relative;
+		text-align: center;
 		width: 100%;
 		padding: 10px 0px;
-		p{
-			font-family: $font_en;
+		margin-bottom: 40px;
+		background: lighten(#999,15%);
+		h3{
+			margin: 0px;
+			color: $white;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1;
 		}
 	}
 
-	.local_nav{
-		border-top: 1px solid $lightGray;
-		border-bottom: 1px solid $lightGray;
+	.company_logo{
+		height: 143px;
+		@include display-flex();
+		@include justify-content();
 		@include align-items();
-
-		ul{
-			list-style-type: none;
+		img{
+			max-width: 100%;
+			vertical-align: middle;
 		}
-		
+	}
+
+	article{
+		width: 100%;
+	}
+	
+	.article_title{
+		margin-top: 30px;
+		margin-bottom: 20px;
+		font-size: 18px;
+		color: $paragraph_color;
+		font-weight: 500;
+		text-shadow: $heading_text_shadow;
+	}
+	
+	.vertical_divider{
+		position: absolute;
+		left: 50%;
+		top: 80;
+		bottom: 0;
+		width: 1px;
+		background: lighten(#999,25%);
+	}
+
+	ul{
+		margin-left: 20px;
 		li{
-			display: inline-block;
+			line-height: 2.2;
+			font-size: 18px;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
+		}
+	}
+
+	p{
+		font-size: $text_small;
+		text-align: center;
+		line-height: 2.2;
+		color: $paragraph_color;
+		text-shadow: $paragraph_text_shadow;
+		&.text_lg{
+			font-size: 30px;
+		}
+	}
+}
+
+
+/** History milestone **/
+  /******************/
+.history{
+	ul{
+		position: relative;
+		list-style-type: none;
+		width: 100%;
+		display: block;
+		@include clearfix();
+	}
+
+	li.history_record{
+		position: relative;
+		@include display-flex();
+		width: 100%;
+		float: left;
+		margin: 0px;
+		@include box-sizing(border-box);
+		@include clearfix();
+		
+	}
+
+	.history_date,.history_milestone{
+		display: inline-block;
+		position: relative;
+		float: left;
+		vertical-align: top;
+		line-height: 2;
+		text-shadow: $paragraph_text_shadow;
+		@include box-sizing(border-box);
+	}
+
+	.history_date{
+		width: 20%;
+		padding: 20px 30px 20px 10px;
+		float: left;
+		font-size: 16px;
+		text-align: right;
+		background: $heavyGray;
+		color: $white;
+
+	}
+
+	.history_milestone{
+		width: 80%;
+		padding: 20px 10px 20px 30px;
+		float: left;
+		text-align: left;
+		p{
+			color: $paragraph_color;
+			letter-spacing: 1.5px;
+		}
+	}
+}
+
+
+/** Privacy page **/
+  /*************/
+.privacy{
+	.content_title{
+		position: relative;
+		width: 30%;
+		padding: 0px 40px 0px 10px;
+		float: left;
+		text-align: right;
+		@include box-sizing(border-box);
+		p{
+			font-size: $text_title;
+			font-weight: 600;
+			color: $heading_color;
+			text-shadow: $heading_text_shadow;
+			line-height: 2.2;
+		}
+	}
+
+	.content_paragraph{
+		position: relative;
+		width: 70%;
+		padding: 0px 10px 0px 40px;
+		float: left;
+		@include box-sizing(border-box);
+		p{
+			font-size: 16px;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
+			line-height: 2.1;
 		}
 
-		a{  
-			position: relative;
-			text-decoration: none;
-			color: $black;
-			display: inline-block;
-			padding: 18px 10px;
-			font-size: 80%;
-			font-weight: 300;
+		h4{
+			font-size: $text_title;
+			font-weight: 600;
+			margin: 20px 0px;
+			color: $heading_color;
+			text-shadow: $heading_text_shadow;
+			line-height: 2.1;
+		}
+	}
 
+	.vertical_divider{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 1px;
+		background: lighten(#999,25%);
+	}
+
+	ul{
+		list-style-type: decimal;
+		margin-left: 20px;
+		font-size: 16px;
+		color: #444;
+		text-shadow: 0px 0px 1px #999;
+		line-height: 2.1;
+		li{
+			margin-bottom: 20px;
+		}
+		ul{
+			list-style-type: circle;
+			margin-left: 20px;
+			li{
+				margin-bottom: 0px;
+				font-size: 15px;
+			}
+		}
+	}
+	
+	ul.info{
+		list-style-type: none;
+		li{
+			@include display-flex();
+			font-size: 15px;
+		}
+		span{
+			width: 20%;
+			color: #222;
+			text-shadow: 0px 0px 1px #222;
+		}
+		p{
+			font-size: 15px;
+			margin-top: 10px;
+		}
+	}
+}
+
+
+/** Profile page **/
+  /*************/
+.profile{
+	ul{
+		list-style-type: none;
+		width: 100%;
+		position: relative;
+		@include clearfix();
+	}
+
+	.left_content li{
+		display: flex;
+		width: 100%;
+		position: relative;
+		@include align-items(baseline);
+	}
+
+	.right_content{
+		.content_paragraph{
+			@include display-flex();
+			@include align-items();
+			padding-left: 0px;
+		}
+	}
+
+	.content_title{
+		width: 25%;
+		float: left;
+		padding: 15px 30px 15px 0px; 
+		position: relative;
+		@include box-sizing(border-box);
+		p{
+			text-align: right;
+			font-size: $text_title;
+			color: $heading_color;
+			font-weight: 500;
+			text-shadow: $heading_text_shadow;
+			line-height: 2.1;
+		}
+	}
+	
+	.content_paragraph{
+		width: 75%;
+		float: left;
+		padding: 15px 0px 15px 30px;
+		position: relative;
+		@include box-sizing(border-box);
+		p{
+			font-size: $text_font_size;
+			font-weight: 400;
+			line-height: 2.1;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
+		}
+
+	}
+
+	.link_underline{
+		display: inline-block;
+		color: $paragraph_color;
+		text-decoration: none;
+		border-bottom: 1px solid #888;
+		&:hover{
+			color: #666;
+		}
+	}
+
+	.depart_contact{
+		margin-bottom: 15px;
+		width: 100%;
+		h4{
+			font-size: 17px;
+			color: $heading_color;
+			font-weight: 600;
+			text-shadow: $heading_text_shadow;
+		}
+	}
+
+	.head_title{
+		position: relative;
+		float: left;
+		display: block;
+		width: 40%;
+		padding-right: 30px;
+		@include box-sizing(border-box);
+		p{
+			color: $white;
+			text-align: center;
+			background: $lightBlack;
+			&:after{
+				position: absolute;
+				content: "";
+				display: block;
+				top: 50%;
+				right: 0;
+				width: 20px;
+				height: 1px;
+				background: lighten(#999,25%);
+			}
+		}
+	}
+
+	.vertical_line{
+		position: absolute;
+		left: 0px;
+		top: 28px;
+		bottom: 71px;
+		width: 1px;
+		background: #999;
+	}
+
+	.diagram_lists{
+		position: relative;
+		float: left;
+		display: block;
+		width: 60%;
+		padding-left: 20px;
+		@include box-sizing(border-box);
+		.list{
+			position: relative;
+			list-style-type: none;
+			display: block;
+			width: 100%;
+			margin: 10px 0px;
+			&:before{
+				position: absolute;
+				content: "";
+				display: block;
+				top: 50%;
+				left: -20px;
+				height: 1px;
+				width: 12px;
+				background: lighten(#999,25%);
+			}
+			&:last-child:before{
+				display: none;
+			}
+		}
+
+		a{
+			text-decoration: none;
+			color: $lightBlack;
+			padding: 10px 5px;
+			background: $lightGray;
+			display: block;
+			font-size: 15px;
+			line-height: 1;
+			text-align: center;
+			letter-spacing: 2px;
 			&:hover{
-				color: lighten($black,70%);
+				background: darken($lightGray,10%);
 			}
 		}
 
 	}
+}
+
+
+/** About us japanese **/
+  /******************/
+.about_jp{
+	article{
+		position: relative;
+		float: left;
+		display: block;
+		width: 60%;
+		margin-bottom: 40px;
+		@include box-sizing(border-box);
+		h1{
+			color: $heading_color;
+			font-size: 22px;
+			font-weight: 400;
+			margin-bottom: 40px;
+			margin-top: 40px;
+			text-shadow: $heading_text_shadow;
+		}
+
+		p{
+			font-size: $text_font_size;
+			text-shadow: $paragraph_text_shadow;
+			color: $paragraph_color;
+			margin-bottom: 15px;
+			line-height: 2.1;
+			letter-spacing: 1.5px;
+		}
+	}
+
+	.business_domain_nav{
+		position: relative;
+		float: left;
+		width: 40%;
+		margin-bottom: 40px;
+		.wrap_content{
+			position: relative;
+			width: 100%;
+			height: 450px;
+			@include clearfix();
+		}
+
+		@include box-sizing(border-box);
+		@include clearfix();
+		.research, .advertising, .area_content,
+		.recruit, .event, .internet{
+			position: absolute;
+			width: 90px;
+			height: 90px;
+			display: inline-block;
+			background: rgba(0,0,0,0.2);
+			z-index: 2;
+			
+			&:after{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform-origin: 0% 0%;
+				content: "";
+				display: block;
+				width: 151px;
+				height: 1px;
+				z-index: 0;
+				background: #000;
+			}
+
+			.inner{
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 40px;
+				padding: 10px;
+				@include display-flex();
+				@include justify-content();
+				@include align-items();
+				@include box-sizing(border-box);
+				color: $white;
+				z-index: 3;				
+			}
+
+			figure{
+				position: relative;
+				width: 50%;
+				height: 50%;
+				display: block;
+				margin: 0 auto;
+				img{
+					max-width: 100%;
+					width: 100%;
+					display: block;
+					vertical-align: bottom;
+				}
+			}
+
+			span{
+				position: relative;
+				padding-top: 5px;
+				display: block;
+				font-size: 10px;
+				text-align: center;
+			}
+
+		}
+
+		.vis_a_vis_logo{
+			position: relative;
+			top: 50%;
+			transform: translateY(-20px);
+			@include display-flex();
+			@include justify-content();
+			@include align-items();
+			.inner{		
+				position: relative;
+				width: 110px;
+			}
+
+			img{
+				max-width: 100%;
+				vertical-align: bottom;
+			}
+		}
+
+		.research{
+			top: 40px;
+			left: 88px;
+			&:after{
+				transform: rotate();
+			}
+		}
+
+		.advertising{
+			top: 0px;
+			left: 202px;
+			&:after{
+				transform: rotate();
+			}
+		}
+
+		.area_content{
+			top: 90px;
+			left: 360px;
+			&:after{
+				transform: rotate();
+			}
+		}
+
+		.recruit{
+			top: 260px;
+			left: 315px;
+			
+			&:after{
+				transform: rotate();
+			}
+		}
+
+		.event{
+			top: 360px;
+			left: 158px;
+			&:after{
+				transform: rotate();
+			}
+		}
+
+		.internet{
+			top: 260px;
+			left: 45px;
+			&:after{
+				transform: rotate();
+			}
+		}
+
+	}
+
+	.about_page_nav{
+		position: relative;
+		float: left;
+		display: block;
+		width: 100%;
+		@include clearfix();
+	}
+
+	.page_nav{
+		position: relative;
+		float: left;
+		width: 50%;
+		background-position: center center;
+		@include background-size();
+		overflow: hidden;
+		@include clearfix();
+		@include box-sizing(border-box);
+
+		a{
+			display: block;
+			position: relative;
+			width: 100%;
+			float: left;
+			@include transform-origin(50% 50%);
+		    @include transition-prefix(all .3s cubic-bezier(0, 0, 1, 1) 0s);
+		    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
+			@include box-sizing(border-box);
+			@include clearfix();
+			&:after{
+				position: absolute;
+				content: "";
+				display: block;
+				top:0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				background: transparent;
+				@include transition-prefix(all 0.3s ease-out);
+			}
+			&:hover{
+				&:after{
+					background: rgba(0,0,0,0.3);
+				}
+				@include transform-prefix(scaleX(1.2) scaleY(1.2) scaleZ(1));
+			}
+		}
+
+		img{
+			width: 100%;
+			display: block;
+			vertical-align: top;
+		}
+
+	}
+
+	.caption{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+		h3{
+			display: block;
+			color: $white;
+			font-size: 30px;
+			font-weight: 500;
+		}
+
+		span{
+			text-align: center;
+			display: block;
+			color: $white;
+		}
+	}
+
+	.greeting_nav{
+		h3{
+			
+		}
+
+		span{
+			
+		}
+	}
+
+	.caption.text_left{
+
+	}
+}
+
+
+/** About us english **/
+  /*****************/
+.about_en{
+article{
+		display: block;
+		width: 100%;
+		img{
+
+		}
+	}
+
+	p,h1,h2,h3,h4,span,li{
+		font-family: $font_en;
+	}
+
+	p, li{
+		font-size: 16px;
+		line-height: 1.5;
+		color: $paragraph_color;
+	}
+
+	p{
+		margin-bottom: 20px;
+	}
+	
+	.impression_sentence{
+		width: 100%;
+		position: relative;
+		float: left;
+		margin: 50px 0px;
+
+		p{
+			text-align: center;
+			font-size: 25px;
+			font-weight: 500;
+			color: #444;
+		}
+	}
+
+	.company_map{
+		position: relative;
+		width: 100%;
+		float: left;
+		img{
+			width: 100%;
+			vertical-align: top;
+			display: block;
+		}
+	}
+
+	.company_info{
+		width: 100%;
+		float: left;
+		position: relative;
+		padding: 0px 8%;
+		@include box-sizing(border-box);
+		@include display-flex();
+		@include align-items();
+
+	}
+
+	.company_airport_map{
+		position: relative;
+		width: 60%;
+		float: left;
+		img{
+			max-width: 100%;
+			vertical-align: top;
+			display: block;
+		}
+	}
+
+	.geo_location_desc{
+		position: relative;
+		width: 40%;
+		float: left;
+		h1{
+			font-size: 25px;
+			font-weight: 500;
+			color: #444;
+			margin-bottom: 50px;
+		}
+
+		
+	}
+
+	.board_of_director{
+		width: 100%;
+		float: left;
+		position: relative;
+		background: #f5f5f5;
+		padding: 70px 80px;
+		@include clearfix();
+		@include box-sizing(border-box);
+		h1{
+			font-size: 40px;
+			font-weight: 500;
+			color: #333;
+		    margin: 0px;
+		    line-height: 1;
+			text-align: center;
+		}
+	}
+
+	.chairman_profile,.ceo_profile{
+		width: 100%;
+		float: left;
+		position: relative;
+		padding-top: 70px;
+		display: inline-block;
+		@include clearfix();
+		img{
+			max-width: 100%;
+		}
+	}
+
+    .profile_pic{
+		position: relative;
+		width: 25%;
+		float: left;
+	}
+
+	.profile_bio{
+		position: relative;
+		width: 75%;
+		padding-left: 40px;
+		float: left;
+		@include box-sizing(border-box);
+		
+	}
+
+	.profile_name{
+		h2{
+			font-size: 25px;
+			color: #333;
+			font-weight: 500;
+			line-height: 1;
+		}
+		.kanji_name{
+			font-size: 14px;
+			font-family: $font_jp;
+			color: #666;
+			text-shadow: $paragraph_text_shadow;
+			letter-spacing: 1.5px;
+		}
+		.position_title{
+			color: #888;
+			font-size: 15px;
+			display: block;
+			font-family: $font_en;
+			text-shadow: 0px 0px 0.5px #999;
+			margin-top: 5px;
+			margin-bottom: 30px;
+		}
+	}
+	
+	.topic_title{
+		display: block;
+		width: 100%;
+		padding: 5px 0px;
+		margin: 0px 0px 20px 0px;
+		background: lighten(#999,15%);
+		h4{
+			color: $white;
+			font-size: 18px;
+			font-weight: 400;
+			margin-left: 10px;
+			line-height: 1;
+		}
+	}
+
+	.jmca_logo{
+		display: inline;
+		padding: 20px;
+		margin-right: 20px;
+		float: left;
+		background: $white;
+	}
+
+	.company_description{
+		position: relative;
+		width: 100%;
+		float: left;
+		@include clearfix();
+		h1{
+			padding: 50px 0px;
+			font-size: 45px;
+			color: #333;
+			font-weight: 400;
+			text-align: center;
+		}
+
+		h2{
+			font-size: 17px;
+			color: #333;
+			margin-bottom: 20px;
+		}
+	}
+
+	.description{
+		position: relative;
+		width: 64%;
+		float: left;
+		padding-right: 6%;
+		ul{
+			margin-left: 20px;
+			li{
+				line-height: 2;
+			}
+		}
+	}
+
+	.summary{
+		position: relative;
+		width: 30%;
+		float: left;
+		ul{
+			list-style-type: none;
+			li{
+				display: flex;
+				padding: 25px 0px;
+			}
+			span{
+				font-size: 17px;
+				font-weight: 600;
+				color: #333;
+				width: 30%;
+				text-align: right;
+				padding-right: 20%
+			}
+		}
+	}	
 }
 

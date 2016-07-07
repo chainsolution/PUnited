@@ -31,15 +31,22 @@
 ?>
 
 <div class="site_sm_container">
+
+	<!-- Page content -->
 	<div class="page_content">
+
+		<!-- History page content -->
 		<div class="history">
 			<div class="content_inner">
-
+				
+				<!-- Page heading title -->
 				<div class="section_heading">
 					<h1>沿革</h1>
 					<span class="lang_en">HISTORY</span>
 				</div>
-				
+				<!-- /Page heading title -->
+
+				<!-- History milestone records -->
 				<div class="content">
 					<ul>
 						<li class="history_record">
@@ -383,10 +390,12 @@
 
 					</ul>
 				</div>		
-
+				<!-- /History milestone records -->
 			</div>
 		</div>
+		<!-- /History page content -->
 	</div>
+	<!-- /Page content -->
 </div>
 
 

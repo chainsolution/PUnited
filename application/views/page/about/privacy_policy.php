@@ -31,14 +31,22 @@
 ?>
 
 <div class="site_md_container">
+
+	<!-- Page content -->
 	<div class="page_content">
+
+		<!-- Privacy page content -->
 		<div class="privacy">
 			<div class="content_inner">
+
+				<!-- Page title heading -->
 				<div class="section_heading">
 					<h1>プライバシーポリシー</h1>
 					<span class="lang_en">PRIVACY POLICY</span>
 				</div>
+				<!-- /Page title heading -->
 
+				<!-- Privacy statement -->
 				<div class="content">
 					<div class="row">
 						<div class="content_title">
@@ -117,9 +125,12 @@
 						</div>
 					</div>
 				</div>
+				<!-- /Privacy statement -->
 			</div>
 		</div>
+		<!-- /Privacy page content -->
 	</div>
+	<!-- /Page content -->
 </div>
 
 <?php include(dirname(dirname(__DIR__)).'/php/includes/footer.php'); ?>

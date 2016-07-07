@@ -84,25 +84,6 @@ a.more_btn{
 	}
 }
 
-.text_center{
-	text-align: center !important;
-}
-
-.text_left{
-	text-align: left !important;
-}
-
-.text_right{
-	text-align: right !important;
-}
-
-.lang_jp{
-	font-family: $font_jp;
-}
-
-.lang_en{
-	font-family: $font_en;
-}
 
 .language_options{
 	position: relative;
@@ -131,6 +112,138 @@ a.more_btn{
 	}
 }
 
+.global_nav ul{
+
+	li{
+		float: left;
+		vertical-align: middle;
+	}
+
+	li.relative{
+		position: relative;
+	}
+
+	li.over_black a{
+		background: $lightBlack;
+		color: $white;
+		&:hover{
+			background: $black;
+			color: darken($white,10%);
+		}
+	}
+
+	a{	
+		font-family: $font_en;
+		text-decoration: none;
+		padding: 25px 17px;
+		color: $black;
+		font-size: 108%;
+		line-height: 70px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-align: center;
+		
+		&:hover{
+			color: lighten($black,70%);
+		}
+	}
+
+	li:hover > ul{
+		height: 247px;
+	}
+
+	li > ul:hover .global_nav > ul > li:has(ul) > a{
+		color: lighten($black,70%);
+	}
+	
+	ul{
+		li{
+			float: left;
+			border-top: 1px solid #ddd;
+			@include transition-prefix(background-color 0.4s ease);
+		}
+
+		a{
+			font-family: $font_jp;
+			line-height: 20px;
+			width: 180px;
+			padding: 10px;
+			float: left;
+			color: $paragraph_color;
+			font-weight: 400;
+			background: $white;
+			&:hover{
+				background: #f1f1f1;
+				color: lighten($black,40%);
+			}
+		}
+
+	}
+}
+
+
+#mobile_global_nav{
+
+	button{
+		background: transparent;
+		outline: none;
+		display: block;
+		padding: 0;
+		border: none;
+		color: $white;
+		font-size: 250%;
+	}
+
+	ul{
+		display: block;
+		position: relative;
+		float: left;
+		width: 100%;
+		text-align: center;
+		list-style-type: none;
+		@include clearfix();
+	}
+	
+	li{
+		display: block;
+		width: 100%;
+		float: left;
+	}
+
+	a{
+		text-decoration: none;
+		color: $white;
+		width: 100%;
+		display: block;
+		font-size: 100%;
+		line-height: 3.2;
+		font-weight: 500;
+		letter-spacing: -0.5px;
+		text-align: center;
+		
+		&:hover{
+			color: lighten($black,70%);
+		}
+	}
+
+	ul ul{
+		position: relative;
+		width: 100%;
+		padding: 20px 0px;
+		@include clearfix();
+
+		li{
+			display: block;
+			float: left;
+			width: 50%;
+			@include box-sizing(border-box);
+			border: 1px solid $white;
+		}
+
+	}
+}
+
+
 #overview{
 	article{
 		text-align: center;
@@ -138,6 +251,8 @@ a.more_btn{
 		margin: 0 auto !important;
 		width: 100%;
 		margin: 0px;
+		z-index: 2;
+		background: transparent;
 		h4{
 			font-size: 160%;
 			font-weight: 300;
@@ -192,5 +307,238 @@ a.more_btn{
 	figure > img{
 		max-width: 100%;
 		vertical-align: middle;
+	}
+}
+
+.footer_nav{
+	ul{
+		list-style-type: none;
+	}
+	
+	li{
+		display: inline-block;
+	}
+
+	a{  
+		position: relative;
+		text-decoration: none;
+		color: $black;
+		display: inline-block;
+		padding: 18px 10px;
+		font-size: 80%;
+		font-weight: 300;
+
+		&:hover{
+			color: lighten($black,70%);
+		}
+	}
+}
+
+.footer_copyright{
+	p{
+		font-family: $font_en;
+	}
+}
+
+/** Banner with navbar in about page **/
+  /*********************************/
+.overlay_banner{
+	.overlay_nav{
+		ul{
+			list-style-type: none;
+			position: relative;
+			float: left;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			@include display-flex();
+			@include justify-content();
+			@include align-items();
+		}
+		li{
+			display: inline-block;
+			float: left;
+			position: relative;
+			a{
+				display: block;
+				float: left;
+				color: $white;
+				font-size: 16px;
+				line-height: 1;
+				text-decoration: none;
+				padding: 22px 30px;
+				&:hover{
+					background: $black;
+				}
+			}
+		}
+
+		li{
+			&:after{
+				position: absolute;
+				display: none;
+				content: "";
+				width: 20px;
+				height: 20px;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid rgba(255,255,255,1);
+				border-left: 10px solid transparent;
+				bottom: 0;
+				left: 50%;
+				margin-left: -10px;
+				@include box-sizing(border-box);
+			}
+		}
+		li{
+			&:hover{
+				&:after{
+					display: block;
+				}
+			}
+			&.active:after{
+				display: block;
+			}
+		}
+	}
+
+	.overlay_title{
+		span{
+			font-family: $font_en;
+			font-size: 260%;
+			font-weight: 100;
+			color: $white;
+		}
+		sup{
+			position: absolute;
+			top: 50%;
+			left: 48%;
+			display: block;
+			font-size: 700%;
+			color: $white;
+		}
+	}
+}
+
+/** Banner no navbar in about page **/
+  /*******************************/
+.banner_no_navbar{
+	
+	img{
+		display: block;
+		width:100%;
+		vertical-align: top;
+	}
+
+	.overlay_title{
+		span{
+			display: block;
+			color: $white;
+			font-family: $font_en;
+			font-size: 500%;
+			font-weight: 100;
+		}
+		sup{
+			position: absolute;
+			top: 50%;
+			left: 48%;
+			display: block;
+			font-size: 1000%;
+			color: $white;
+		}
+	}
+}
+
+/** Animate object **/
+  /***************/
+@include keyframe(spin);
+
+#triangle_object{
+	position: absolute;
+	top: 40%;
+	left: 20px;
+	z-index: 1;
+	img{
+		position: relative;
+		vertical-align: bottom;
+		max-width: 100%;
+		@include animation-name(spin);
+		@include animation-duration(30s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(linear);
+	}
+}
+
+#circle_object{
+	position: absolute;
+	z-index: 1;
+	right: 20px;
+	top: 8%;
+	img{
+		position: relative;
+		vertical-align: bottom;
+		max-width: 100%;
+		@include animation-name(spin);
+		@include animation-duration(30s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(linear);
+	}
+}
+#cricle_bottom{
+	position: absolute;
+	left: 10px;
+	z-index: 1;
+	img{
+		position: relative;
+		vertical-align: bottom;
+		max-width: 100%;
+		@include animation-name(spin);
+		@include animation-duration(30s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(linear);
+	}
+}
+#blue_shape{
+	position: absolute;
+	z-index: 1;
+	left: 90%;
+	top: 20%;
+	img{
+		position: relative;
+		vertical-align: bottom;
+		max-width: 100%;
+		@include animation-name(spin);
+		@include animation-duration(30s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(linear);
+	}
+}
+#stick_object{
+	position: absolute;
+	z-index: 1;
+	bottom: 10%;
+	left: 0;
+	img{
+		position: relative;
+		vertical-align: bottom;
+		max-width: 100%;
+		@include animation-name(spin);
+		@include animation-duration(30s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(linear);
+	}
+
+}
+#round_object{
+	position: absolute;
+	bottom: 0;
+	z-index: 0;
+	img{
+		position: relative;
+		vertical-align: bottom;
+		max-width: 100%;
+		@include animation-name(spin);
+		@include animation-duration(30s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(linear);
 	}
 }

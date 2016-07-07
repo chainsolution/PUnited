@@ -20,6 +20,14 @@ if (!PUNITED.useful) PUNITED.useful = {};
 		return false;
 	}
 
+	/** Smooth scroll to anchor in page **/
+	  /********************************/
+	/* 
+		#usage : calling function => 
+		PUNITED.useful.SmoothScrollTo("element id");
+		use with event onClick(), onMouseover() etc.
+	*/
+
 	ns.SmoothScrollTo = function(id){
 		var top = $('#'+id).offset().top - 60;
 		$('#mobile_global_nav').slideUp();
@@ -27,6 +35,13 @@ if (!PUNITED.useful) PUNITED.useful = {};
 		return false;
 	}
 
+	/** Toggle navigation bar in mobile or smaller screen **/
+	  /**************************************************/
+	/* 
+		#usage : calling function => 
+		PUNITED.useful.toggleMenu("class/id name with . or #");
+		use with event onClick(), onMouseover() etc.
+	*/
 	ns.toggleMenu = function(target){
 		$(target).slideToggle(500);
 	}

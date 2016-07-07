@@ -8,3 +8,10 @@
 	background-attachment: fixed; !important;
 
 }
+
+/** Hide all the floating objects in mobile **/
+  /****************************************/
+#round_object, #stick_object, #blue_shape,
+#cricle_bottom, #circle_object, #triangle_object{
+	display: none !important;
+}

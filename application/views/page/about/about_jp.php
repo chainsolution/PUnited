@@ -40,7 +40,8 @@
 </div>
 
 <div class="site_md_container">
-
+	
+	<!-- Page content -->
 	<div class="page_content">
 		<div class="about_jp">
 			<div class="top_content">
@@ -49,7 +50,8 @@
 					<a class="active" href="about_jp">Japanese</a>
 					<a href="about_en">English</a>
 				</div>
-
+				
+				<!-- Top first row -->
 				<div class="row_flex">
 
 					<article>
@@ -160,7 +162,9 @@
 					</div>
 
 				</div>
-				
+				<!-- /Top first row -->
+
+				<!-- Navigation images / Row 1 -->
 				<div class="about_page_nav">
 
 					<div class="page_nav">
@@ -198,7 +202,9 @@
 					</div>
 
 				</div>
+				<!-- /Navigation images / Row 1-->
 				
+				<!-- Navigation images / Row 2 -->
 				<div class="about_page_nav">
 					<div class="page_nav">
 						<a href="history" class="history_nav">
@@ -224,10 +230,13 @@
 						</a>
 					</div>
 				</div>
+				<!-- /Navigation images / Row 2 -->
 
 			</div>
 		</div>
 	</div>
+	<!-- Page content -->
+
 </div>
 
 <?php include(dirname(dirname(__DIR__)).'/php/includes/footer.php'); ?>

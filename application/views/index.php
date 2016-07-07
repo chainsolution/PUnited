@@ -32,7 +32,7 @@
 	<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
 	  <defs>
 	    <filter id="frostedGlass">
-	      <feGaussianBlur stdDeviation="10" />
+	      <feGaussianBlur stdDeviation="6" />
 	    </filter>
 	  </defs>
 	</svg>
@@ -42,7 +42,7 @@
 <div class="site_banner">
 	<div class="banner_inner">
 		<ul class="banner_list">
-
+			
 			<li class="banner_item active" style="z-index:0;opacity:0;">
 				<div class="item_inner">
 					<div class="item_title">
@@ -115,25 +115,25 @@
 				<p>どうぞ新生ビザビにご期待ください。</p>
 				
 			</article>
+			<!-- Triangle Moving Object -->
+			<div id="triangle_object">
+				<img src="assets/img/common/objects/object3.png">
+			</div>
+			<!-- Triangle Moving Object -->
 		</div>
 		<!-- /overview -->
-
-		<!-- Triangle Moving Object -->
-		<div id="triangle_object">
-			<img src="assets/img/common/objects/object3.png">
-		</div>
-		<!-- Triangle Moving Object -->
 
 		<!-- business domain -->
 		<div id="business_domain">
 
-			<!-- Circle Moving Object -->
-			<div id="circle_object">
-				<img src="assets/img/common/objects/object6.png">
-			</div>
-			<!-- Circle Moving Object -->
-
 			<div class="content_inner">
+
+				<!-- Circle Moving Object -->
+				<div id="circle_object">
+					<img src="assets/img/common/objects/object6.png">
+				</div>
+				<!-- Circle Moving Object -->
+
 				<!-- heading title -->
 				<div class="section_heading">
 					<h1 class="lang_en">BUSINESS DOMAIN</h1>
@@ -305,24 +305,25 @@
 		<!-- last added -->
 		<div id="works">
 
-			<!-- Big Circle Moving -->
-			<div id="cricle_bottom">
-				<img src="assets/img/common/objects/object6.png">
-			</div>
-			<!-- Big Circle Moving -->
+			<div class="content_inner">
+				
+				<!-- Big Circle Moving -->
+				<div id="cricle_bottom">
+					<img src="assets/img/common/objects/object6.png">
+				</div>
+				<!-- Big Circle Moving -->
 
-			<!-- Blue Shape Moving -->
-			<div id="blue_shape">
-				<img src="assets/img/common/objects/object5.png">
-			</div>
-			<!-- Blue Shape Moving -->
-			<!-- Stick Moving Object -->
+				<!-- Blue Shape Moving -->
+				<div id="blue_shape">
+					<img src="assets/img/common/objects/object5.png">
+				</div>
+				<!-- Blue Shape Moving -->
+				<!-- Stick Moving Object -->
 				<div id="stick_object">
 					<img src="assets/img/common/objects/object1.png">
 				</div>
-			<!-- stick Moving Object -->
+				<!-- stick Moving Object -->
 
-			<div class="content_inner">
 				<div class="section_heading">
 					<h1 class="lang_en">WORKS</h1>
 					<span class="lang_jp">地域生活情報を通して</span>
@@ -560,6 +561,13 @@
 		<!-- Recruit -->
 		<div id="recruit">
 			<div class="content_inner">
+				
+				<!-- Round Moving Object -->
+				<div id="round_object">
+					<img src="assets/img/common/objects/object2.png">
+				</div>
+				<!-- Round Moving Object -->
+
 				<div class="section_heading">
 					<h1 class="lang_en">RECRUIT</h1>
 					<span class="lang_jp">僕らの力は、街をも変える。</span>
@@ -601,11 +609,6 @@
 			</div>
 		</div>
 		<!-- /Recruit -->
-		<!-- Round Moving Object -->
-		<div id="round_object">
-			<img src="assets/img/common/objects/object2.png">
-		</div>
-		<!-- Round Moving Object -->
 
 	</div>
 	<!-- /page content -->

@@ -47,11 +47,12 @@
 </div>
 
 <div class="site_container">
-
+	<!-- page content -->
 	<div class="page_content">
 		<div class="about_en">
 			<div class="top_content">
 				
+				<!-- top sentence -->
 				<div class="impression_sentence">
 					<article>
 						<p>
@@ -60,13 +61,17 @@
 						</p>
 					</article>
 				</div>
+				<!-- /top sentence -->
 
+				<!-- comapny map image -->
 				<div class="company_map">
 					<div class="inner">
 						<img src="assets/img/about_us/en/about_us_en_company_map_05.png">
 					</div>
 				</div>
+				<!-- /comapny map image -->
 
+				<!-- overview about company and airport mapping -->
 				<div class="company_info">
 					<div class="company_airport_map">
 						<div class="inner">
@@ -91,7 +96,9 @@
 					</article>
 					</div>
 				</div>
+				<!-- /overview about company and airport mapping -->
 
+				<!-- overview about board of director -->
 				<div class="board_of_director">
 					<h1>MY PROFILE</h1>
 
@@ -140,7 +147,9 @@
 					</div>
 
 				</div>
+				<!-- /overview about board of director -->
 
+				<!-- Company objective -->
 				<div class="company_description">
 					<h1>What is VIS-A-VIS?</h1>
 					<div class="description">
@@ -177,15 +186,14 @@
 							<li><span>Representative</span> Chairman Masayoshi Maesaka</li>
 							<li><span>Employee</span> The group total 128 employee</li>
 						</ul>
-						
 					</div>
-
 				</div>
-				
+				<!-- /Company objective -->
+
 			</div>
 		</div>
 	</div>
-
+	<!-- /page content -->
 </div>
 
 <?php include(dirname(dirname(__DIR__)).'/php/includes/footer.php'); ?>

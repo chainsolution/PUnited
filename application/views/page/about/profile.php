@@ -31,14 +31,20 @@
 ?>
 
 <div class="site_md_container">
+
+	<!-- Page content -->
 	<div class="page_content">
+
+		<!-- Profile page content -->
 		<div class="profile">
 			<div class="content_inner">
+
+				<!-- Page heading title -->
 				<div class="section_heading">
 					<h1>会社概要</h1>
 					<span class="lang_en">PROFILE</span>
 				</div>
-
+				<!-- /Page heading title -->
 				<div class="content">
 					<div class="left_content">
 						<ul>
@@ -209,7 +215,9 @@
 				</div>
 			</div>
 		</div>
+		<!-- /Profile page content -->
 	</div>
+	<!-- /Page content -->
 </div>
 
 <?php include(dirname(dirname(__DIR__)).'/php/includes/footer.php'); ?>

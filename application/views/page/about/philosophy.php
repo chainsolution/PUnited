@@ -31,14 +31,22 @@
 ?>
 
 <div class="site_md_container">
+
+	<!-- Page content -->
 	<div class="page_content">
+
+		<!-- Philosophy page content -->
 		<div class="philosophy">
 			<div class="content_inner">
+
+				<!-- Page heading title -->
 				<div class="section_heading">
 					<h1>企業理念</h1>
 					<span class="lang_en">PHILOSOPHY</span>
 				</div>
+				<!-- /Page heading title -->
 
+				<!-- Philosophy content -->
 				<div class="content">
 					<div class="section">
 						<div class="section_title">
@@ -129,9 +137,12 @@
 						</div>
 					</div>
 				</div>
+				<!-- /Philosophy content -->
 			</div>
 		</div>
+		<!-- /Philosophy page content -->
 	</div>
+	<!-- /Page content -->
 </div>
 
 <?php include(dirname(dirname(__DIR__)).'/php/includes/footer.php'); ?>

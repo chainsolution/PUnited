@@ -50,6 +50,32 @@
 	display:inline;
 }
 
+/* text align
+-------------------------------------------------- */
+
+.text_center{
+	text-align: center !important;
+}
+
+.text_left{
+	text-align: left !important;
+}
+
+.text_right{
+	text-align: right !important;
+}
+
+
+/* font family
+----------------------------------------------------- */
+.lang_jp{
+	font-family: $font_jp;
+}
+
+.lang_en{
+	font-family: $font_en;
+}
+
 /* グリッドレイアウト用mixin (IE8以上)
 usage:
 ■12分割で間隔が20pxのグリッドのクラスを作る場合

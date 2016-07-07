@@ -78,37 +78,67 @@ bannerInitialize = function() {
     $('.site_banner .load_banner').addClass('loading');
 }
 
-/** Synchronize mouse scroll with moving object */
-/****************************************************/
-var mouseSynchronize;
-mouseSynchronize = function() {
-    $(window).on('scroll', function() {
-        var scrollTop = $(window).scrollTop() / 3;
-        console.log(scrollTop);
+/** Synchronize mouse scroll with moving object **/
+/***********************************************/
+var windowScroll;
+windowScroll = function() {
 
-        $('#triangle_object').css('margin-top', '' + scrollTop + 'px');
-        $('#circle_object').css('margin-top', '' + scrollTop + 'px');
-        $('#cricle_bottom').css('margin-top', '' + scrollTop + 'px');
-        $('#blue_shape').css('margin-top', '' + scrollTop + 'px');
-        $('#stick_object').css('margin-top', '' + scrollTop + 'px');
-    });
-}
-
-
-/** Set border bottom for global nav when scroll down, and remove when at the top **/
-/*****************************************************************************/
-var setNavBarBorder;
-setNavBarBorder = function() {
+    /* Query for header */
     var headbar = $('.site_header');
+
+    /* Query for all objects from doc */
+    var tr_obj = $('#triangle_object');
+    var cir_obj1 = $('#circle_object');
+    var cir_obj2 = $('#cricle_bottom');
+    var blue_obj = $('#blue_shape');
+    var stick_obj = $('#stick_object');
+
+    /* Find the offset top of each objects */
+    var tr_obj_top = tr_obj.offset().top;
+    var cir_obj1_top = cir_obj1.offset().top;
+    var cir_obj2_top = cir_obj2.offset().top;
+    var blue_obj_top = blue_obj.offset().top;
+    var stick_obj_top = stick_obj.offset().top;
+
+    /**/
     $(window).scroll(function() {
-        var scrolltop = $(window).scrollTop();
-        if (scrolltop > 0) {
+        var scrollTop = $(window).scrollTop();
+        var Winheight = $(window).height;
+
+        /** Working with moving objects **/
+          /****************************/
+        if(scrollTop > (tr_obj_top / 2)){
+          tr_obj.css('top', (scrollTop / 2) + 'px');
+        }
+
+        if(scrollTop > (stick_obj_top / 2 )){
+          stick_obj.css('top', (scrollTop / 2) + 'px');
+        }
+
+        if(scrollTop > (cir_obj1_top / 2)){
+          cir_obj1.css('top', (scrollTop / 2) + 'px');
+        }
+
+        if(scrollTop > (cir_obj2_top / 2)){
+          cir_obj2.css('top', (scrollTop / 2) + 'px');
+        }
+
+        if(scrollTop > (blue_obj_top / 2)){
+          blue_obj.css('top', (scrollTop / 2) + 'px');
+        }
+
+        /** Set border bottom of header when scroll, and remove when scroll top = 0 **/
+          /************************************************************************/
+
+        if (scrollTop > 0) {
             headbar.css("border-bottom", "1px solid #f5f5f5");
         } else {
             headbar.css("border-bottom", "0px");
         }
+
     });
 }
+
 
 /** Resize the height of banner slide, when window width get resize smaller **/
 /***********************************************************************/
@@ -144,6 +174,9 @@ resizeBannerHeight = function() {
 
 /** Check user-agent : mobile or computer **/
 /**************************************/
+/*
+    #Benefit : do somthing for only mobile
+*/
 
 var checkUserAgent = function() {
     if (navigator.userAgent.match(/Mobi/)) {
@@ -157,9 +190,8 @@ $(window).load(function() {
 });
 
 $(document).ready(function() {
-    mouseSynchronize();
     bannerInitialize();
     animateSlide();
-    setNavBarBorder();
+    windowScroll();
     resizeBannerHeight();
 });

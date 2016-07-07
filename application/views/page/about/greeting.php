@@ -32,13 +32,22 @@
 
 
 <div class="site_md_container">
+	
+	<!-- Page content -->
 	<div class="page_content">
+
+		<!-- Greeting page content wrapper -->
 		<div class="greeting">
 			<div class="content_inner">
+
+				<!-- Page heading title -->
 				<div class="section_heading">
 					<h1>ごあいさつ</h1>
 					<span class="lang_en">GREETING</span>
 				</div>
+				<!-- /Page heading title -->
+
+				<!-- Greeting message -->
 				<div class="content">
 					<article>
 						<div class="paragraph">
@@ -66,9 +75,13 @@
 						</div>
 					</article>
 				</div>
+				<!-- /Greeting message -->
 			</div>
 		</div>
+		<!-- /Greeting page content wrapper -->
 	</div>
+	<!-- /Page content -->
+
 </div>
 
 <?php include(dirname(dirname(__DIR__)).'/php/includes/footer.php'); ?>
