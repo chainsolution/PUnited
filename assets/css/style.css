@@ -587,7 +587,7 @@ body {
     .global_nav ul a:hover {
       color: #b3b3b3; }
   .global_nav ul li:hover > ul {
-    height: 250px; }
+    height: 247px; }
   .global_nav ul li > ul:hover .global_nav > ul > li:has(ul) > a {
     color: #b3b3b3; }
 
@@ -602,13 +602,13 @@ body {
   margin-left: -100px;
   padding: 0px;
   z-index: 99;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: height 0.4s ease-in;
   -moz-transition: height 0.4s ease-in;
   -o-transition: height 0.4s ease-in;
   -ms-transition: height 0.4s ease-in;
   transition: height 0.4s ease-in; }
   .global_nav ul ul li {
-    background: #fff;
     float: left;
     border-top: 1px solid #ddd;
     -webkit-transition: background-color 0.4s ease;
@@ -617,14 +617,17 @@ body {
     -ms-transition: background-color 0.4s ease;
     transition: background-color 0.4s ease; }
   .global_nav ul ul a {
+    font-family: arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku GothicProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳＰゴシック", sans-serif !important;
     line-height: 20px;
     width: 180px;
     padding: 10px;
     float: left;
-    color: #000;
-    font-weight: 600; }
+    color: #333;
+    font-weight: 400;
+    background: #fff; }
     .global_nav ul ul a:hover {
-      background: #fcfcfc; }
+      background: #f1f1f1;
+      color: #666666; }
 
 /** Global navigation for tablet and mobile **/
 #mobile_global_nav {
@@ -1629,6 +1632,16 @@ body {
       clear: both;
       content: "";
       display: block; }
+  .about_jp .row_flex {
+    position: relative;
+    width: 100%;
+    float: left;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
   .about_jp article {
     position: relative;
     float: left;
@@ -1657,7 +1670,6 @@ body {
   .about_jp .business_domain_nav {
     position: relative;
     float: left;
-    display: block;
     width: 40%;
     margin-bottom: 40px;
     box-sizing: border-box;
@@ -1668,7 +1680,7 @@ body {
     .about_jp .business_domain_nav .wrap_content {
       position: relative;
       width: 100%;
-      float: left; }
+      height: 450px; }
       .about_jp .business_domain_nav .wrap_content::after {
         clear: both;
         content: "";
@@ -1682,7 +1694,7 @@ body {
       position: absolute;
       width: 90px;
       height: 90px;
-      border-radius: 45px;
+      display: inline-block;
       background: rgba(0, 0, 0, 0.2);
       z-index: 2; }
       .about_jp .business_domain_nav .research:after, .about_jp .business_domain_nav .advertising:after, .about_jp .business_domain_nav .area_content:after,
@@ -1693,13 +1705,14 @@ body {
         transform-origin: 0% 0%;
         content: "";
         display: block;
-        width: 145px;
+        width: 151px;
         height: 1px;
         z-index: 0;
-        background: #e6e6e6; }
+        background: #000; }
       .about_jp .business_domain_nav .research .inner, .about_jp .business_domain_nav .advertising .inner, .about_jp .business_domain_nav .area_content .inner,
       .about_jp .business_domain_nav .recruit .inner, .about_jp .business_domain_nav .event .inner, .about_jp .business_domain_nav .internet .inner {
         position: relative;
+        display: block;
         width: 100%;
         height: 100%;
         border-radius: 40px;
@@ -1746,11 +1759,9 @@ body {
         font-size: 10px;
         text-align: center; }
     .about_jp .business_domain_nav .vis_a_vis_logo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      position: relative;
+      top: 50%;
+      transform: translateY(-20px);
       display: -webkit-flex;
       display: -webkit-box;
       display: -moz-flex;
@@ -1773,34 +1784,34 @@ body {
         vertical-align: bottom; }
     .about_jp .business_domain_nav .research {
       top: 40px;
-      left: 120px; }
+      left: 88px; }
       .about_jp .business_domain_nav .research:after {
-        transform: rotate(-15deg); }
+        transform: rotate(); }
     .about_jp .business_domain_nav .advertising {
       top: 0px;
-      left: 260px; }
+      left: 202px; }
       .about_jp .business_domain_nav .advertising:after {
-        transform: rotate(45deg); }
+        transform: rotate(); }
     .about_jp .business_domain_nav .area_content {
-      top: 105px;
-      left: 370px; }
+      top: 90px;
+      left: 360px; }
       .about_jp .business_domain_nav .area_content:after {
-        transform: rotate(105deg); }
+        transform: rotate(); }
     .about_jp .business_domain_nav .recruit {
-      top: 240px;
-      left: 330px; }
+      top: 260px;
+      left: 315px; }
       .about_jp .business_domain_nav .recruit:after {
-        transform: rotate(165deg); }
+        transform: rotate(); }
     .about_jp .business_domain_nav .event {
-      top: 280px;
-      left: 190px; }
+      top: 360px;
+      left: 158px; }
       .about_jp .business_domain_nav .event:after {
-        transform: rotate(220deg); }
+        transform: rotate(); }
     .about_jp .business_domain_nav .internet {
-      top: 180px;
-      left: 80px; }
+      top: 260px;
+      left: 45px; }
       .about_jp .business_domain_nav .internet:after {
-        transform: rotate(-75deg); }
+        transform: rotate(); }
   .about_jp .about_page_nav {
     position: relative;
     float: left;
@@ -2487,7 +2498,7 @@ body {
     display: flex; }
   #news .canvas_box {
     width: 33.3333333%;
-    padding: 50px 20px; }
+    padding: 45px 20px; }
     #news .canvas_box .inner {
       position: relative; }
       #news .canvas_box .inner::after {
@@ -2535,7 +2546,15 @@ body {
     right: 0;
     bottom: 0;
     position: absolute;
-    background: #444; }
+    background: #444;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center; }
     #news .news_heading_canvas.frosted_glass:after {
       position: absolute;
       display: block;
@@ -3190,7 +3209,8 @@ a.more_btn {
     text-align: center;
     margin-top: 20px; }
   .about_en .board_of_director {
-    margin-top: 20px; }
+    margin-top: 20px;
+    padding: 40px 20px; }
     .about_en .board_of_director h1 {
       margin-bottom: 20px; } }
 

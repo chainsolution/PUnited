@@ -25,11 +25,11 @@
 	-ms-align-items: $align;
 }
 
-@mixin background-size(){
-	background-size: cover;
-	-moz-background-size: cover;
-	-ms-background-size: cover;
-	-o-background-size: cover;
+@mixin background-size($val: cover){
+	background-size: $val;
+	-moz-background-size: $val;
+	-ms-background-size: $val;
+	-o-background-size: $val;
 }
 
 @mixin background-prefix($val){

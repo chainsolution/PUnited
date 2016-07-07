@@ -144,7 +144,7 @@
 
 	.canvas_box{
 		width: 33.3333333%;
-		padding: 50px 20px;
+		padding: 45px 20px;
 
 		.inner{
 			position: relative;
@@ -197,6 +197,8 @@
 		bottom: 0;
 		position: absolute;
 		background: #444;
+		@include justify-content();
+		@include align-items();
 		&:after{
 			position: absolute;
 			display: block;

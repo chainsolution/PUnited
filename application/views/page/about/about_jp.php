@@ -50,110 +50,117 @@
 					<a href="about_en">English</a>
 				</div>
 
-				<article>
-					<h1>
-						株式会社ビザビは2016年4月に1社体制となりました。
-						グループ各社が持っていた専門能力を一つに集中させ、 人と人とをつなぐコミュニケーションのお手伝いをしています。
-					</h1>
-					<p>
-						ビザビは、昭和9年の創業からこれまでの間、岡山を中心とした地域の皆様とともに歩んでまいりました。
-						調査、広告・PR、地域コンテンツ、人材・採用、イベント、インターネットという、それぞれに専門的な能力を持っています。
-						広告の制作やイベントの開催だけではではなく、調査×広告や、イベント×インターネットなど、各専門領域を複合的に組み合わせた新しい価値や、ビジネスの問題解決に必要な多様な領域を、ワンストップでご提供いたします。
-					</p>
-				</article>
+				<div class="row_flex">
 
-				<div class="business_domain_nav">
+					<article>
+						<h1>
+							株式会社ビザビは2016年4月に1社体制となりました。
+							グループ各社が持っていた専門能力を一つに集中させ、 人と人とをつなぐコミュニケーションのお手伝いをしています。
+						</h1>
+						<p>
+							ビザビは、昭和9年の創業からこれまでの間、岡山を中心とした地域の皆様とともに歩んでまいりました。
+							調査、広告・PR、地域コンテンツ、人材・採用、イベント、インターネットという、それぞれに専門的な能力を持っています。
+							広告の制作やイベントの開催だけではではなく、調査×広告や、イベント×インターネットなど、各専門領域を複合的に組み合わせた新しい価値や、ビジネスの問題解決に必要な多様な領域を、ワンストップでご提供いたします。
+						</p>
+					</article>
 
-					<div class="wrap_content">
-						<div class="research">
-							<div class="inner">
-								<div>
-									<figure>
-										<img src="assets/img/common/icons/icon_research_04.png">
-									</figure>
-									<span class="lang_en">
-										RESEARCH
-									</span>
-								</div>
-							</div>
+					<div class="business_domain_nav">
+
+						<div class="wrap_content">
+
+	                        <div class="research">
+	                            <div class="inner">
+	                                <div>
+	                                    <figure>
+	                                        <img src="assets/img/common/icons/icon_research_04.png">
+	                                    </figure>
+	                                    <span class="lang_en">
+	                                        RESEARCH
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                        <div class="advertising">
+	                            <div class="inner">
+	                                <div>
+	                                    <figure>
+	                                        <img src="assets/img/common/icons/icon_advertising_pr_02.png">
+	                                    </figure>
+	                                    <span class="lang_en">
+	                                        ADVERTISING/PR
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                        <div class="area_content">
+	                            <div class="inner">
+	                                <div>
+	                                    <figure>
+	                                        <img src="assets/img/common/icons/icon_area_content_06.png">
+	                                    </figure>
+	                                    <span class="lang_en">
+	                                        AREA CONTENT
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                        <div class="recruit">
+	                            <div class="inner">
+	                                <div>
+	                                    <figure>
+	                                        <img src="assets/img/common/icons/icon_recruit_05.png">
+	                                    </figure>
+	                                    <span class="lang_en">
+	                                        RECRUIT
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                        <div class="event">
+	                            <div class="inner">
+	                                <div>
+	                                    <figure>
+	                                        <img src="assets/img/common/icons/icon_event_01.png">
+	                                    </figure>
+	                                    <span class="lang_en">
+	                                        EVENT
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                        <div class="internet">
+	                            <div class="inner">
+	                                <div>
+	                                    <figure>
+	                                        <img src="assets/img/common/icons/icon_internet_03.png">
+	                                    </figure>
+	                                    <span class="lang_en">
+	                                        INTERNET
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                        <div class="vis_a_vis_logo">
+	                            <div class="inner">
+	                                <figure>
+	                                    <img src="assets/img/about_us/philosophy/about_us_site_logo_text_01.png">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+
 						</div>
 
-						<div class="advertising">
-							<div class="inner">
-								<div>
-									<figure>
-										<img src="assets/img/common/icons/icon_advertising_pr_02.png">
-									</figure>
-									<span class="lang_en">
-										ADVERTISING/PR
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="area_content">
-							<div class="inner">
-								<div>
-									<figure>
-										<img src="assets/img/common/icons/icon_area_content_06.png">
-									</figure>
-									<span class="lang_en">
-										AREA CONTENT
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="recruit">
-							<div class="inner">
-								<div>
-									<figure>
-										<img src="assets/img/common/icons/icon_recruit_05.png">
-									</figure>
-									<span class="lang_en">
-										RECRUIT
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="event">
-							<div class="inner">
-								<div>
-									<figure>
-										<img src="assets/img/common/icons/icon_event_01.png">
-									</figure>
-									<span class="lang_en">
-										EVENT
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="internet">
-							<div class="inner">
-								<div>
-									<figure>
-										<img src="assets/img/common/icons/icon_internet_03.png">
-									</figure>
-									<span class="lang_en">
-										INTERNET
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="vis_a_vis_logo">
-							<div class="inner">
-								<figure>
-									<img src="assets/img/about_us/philosophy/about_us_site_logo_text_01.png">
-								</figure>
-							</div>
-						</div>
 					</div>
 
 				</div>
-
+				
 				<div class="about_page_nav">
 
 					<div class="page_nav">
