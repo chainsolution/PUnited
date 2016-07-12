@@ -477,6 +477,21 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word; }
 
+body.mobile_nav_open {
+  overflow: hidden; }
+
+/** Full width container **/
+/********************/
+.fluid_container {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .fluid_container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
 /** Small container **/
 /****************/
 .site_sm_container {
@@ -946,6 +961,10 @@ body {
   -o-background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
   -webkit-filter: grayscale(80%) contrast(90%);
   filter: grayscale(80%) contrast(90%); }
+  .overlay_banner img {
+    display: block;
+    width: 100%;
+    vertical-align: middle; }
   .overlay_banner .overlay_nav {
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
@@ -983,6 +1002,10 @@ body {
   -ms-background-size: cover;
   -o-background-size: cover;
   background-position: center center; }
+  .banner_no_navbar img {
+    display: block;
+    vertical-align: top;
+    width: 100%; }
   .banner_no_navbar .overlay_title {
     position: absolute;
     top: 0;
@@ -1109,16 +1132,10 @@ body {
       clear: both;
       content: "";
       display: block; }
-  .about_jp .row_flex {
+  .about_jp .row {
     position: relative;
     width: 100%;
-    float: left;
-    display: -webkit-flex;
-    display: -webkit-box;
-    display: -moz-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex; }
+    float: left; }
 
 .about_en {
   position: relative;
@@ -1342,6 +1359,7 @@ a.more_btn {
   outline: none;
   display: block;
   padding: 0;
+  margin-right: 15px;
   border: none;
   color: #fff;
   font-size: 250%; }
@@ -1417,6 +1435,12 @@ a.more_btn {
     font-size: 110%;
     color: #333;
     text-shadow: 0px 0px 0.3px #999; }
+
+#overview img.signature {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  float: right; }
 
 /* style for all section heading */
 .section_heading h1 {
@@ -1503,11 +1527,12 @@ a.more_btn {
     text-decoration: none;
     padding: 22px 30px; }
     .overlay_banner .overlay_nav li a:hover {
-      background: #000; }
+      color: #b3b3b3; }
 
 .overlay_banner .overlay_nav li:after {
   position: absolute;
-  display: none;
+  display: block;
+  opacity: 0;
   content: "";
   width: 20px;
   height: 20px;
@@ -1521,13 +1546,18 @@ a.more_btn {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  -o-box-sizing: border-box; }
+  -o-box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .overlay_banner .overlay_nav li:hover:after {
-  display: block; }
+  opacity: 1; }
 
 .overlay_banner .overlay_nav li.active:after {
-  display: block; }
+  opacity: 1; }
 
 .overlay_banner .overlay_title span {
   font-family: "Dosis", sans-serif !important;
@@ -1635,6 +1665,54 @@ a.more_btn {
     transform: rotate(360deg);
     top: -200px; } }
 
+@-ms-keyframes moveupdown {
+  0% {
+    top: -200px; }
+  25% {
+    top: 0px; }
+  50% {
+    top: 200px; }
+  75% {
+    top: 0px; }
+  100% {
+    top: -200px; } }
+
+@-moz-keyframes moveupdown {
+  0% {
+    top: -200px; }
+  25% {
+    top: 0px; }
+  50% {
+    top: 200px; }
+  75% {
+    top: 0px; }
+  100% {
+    top: -200px; } }
+
+@-webkit-keyframes moveupdown {
+  0% {
+    top: -200px; }
+  25% {
+    top: 0px; }
+  50% {
+    top: 200px; }
+  75% {
+    top: 0px; }
+  100% {
+    top: -200px; } }
+
+@keyframes moveupdown {
+  0% {
+    top: -200px; }
+  25% {
+    top: 0px; }
+  50% {
+    top: 200px; }
+  75% {
+    top: 0px; }
+  100% {
+    top: -200px; } }
+
 #triangle_object {
   position: absolute;
   top: 40%;
@@ -1733,11 +1811,11 @@ a.more_btn {
     position: relative;
     vertical-align: bottom;
     max-width: 100%;
-    animation-name: spin;
-    -webkit-animation-name: spin;
-    -moz-animation-name: spin;
-    -o-animation-name: spin;
-    -ms-animation-name: spin;
+    animation-name: moveupdown;
+    -webkit-animation-name: moveupdown;
+    -moz-animation-name: moveupdown;
+    -o-animation-name: moveupdown;
+    -ms-animation-name: moveupdown;
     animation-duration: 30s;
     -webkit-animation-duration: 30s;
     -moz-animation-duration: 30s;
@@ -1864,25 +1942,29 @@ a.more_btn {
     left: 0;
     right: 0;
     bottom: 0;
-    display: -webkit-flex;
-    display: -webkit-box;
-    display: -moz-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
     transform-origin: 50% 50%;
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%; }
+    #business_domain .caption .flex_inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: -webkit-flex;
+      display: -webkit-box;
+      display: -moz-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center; }
     #business_domain .caption:after {
       position: absolute;
       content: "";
@@ -2717,96 +2799,18 @@ a.more_btn {
   float: left;
   width: 40%;
   margin-bottom: 40px;
+  padding-left: 5%;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box; }
-  .about_jp .business_domain_nav .wrap_content {
-    position: relative;
-    width: 100%;
-    height: 450px; }
-    .about_jp .business_domain_nav .wrap_content::after {
-      clear: both;
-      content: "";
-      display: block; }
   .about_jp .business_domain_nav::after {
     clear: both;
     content: "";
     display: block; }
-  .about_jp .business_domain_nav .research, .about_jp .business_domain_nav .advertising, .about_jp .business_domain_nav .area_content,
-  .about_jp .business_domain_nav .recruit, .about_jp .business_domain_nav .event, .about_jp .business_domain_nav .internet {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 2; }
-    .about_jp .business_domain_nav .research:after, .about_jp .business_domain_nav .advertising:after, .about_jp .business_domain_nav .area_content:after,
-    .about_jp .business_domain_nav .recruit:after, .about_jp .business_domain_nav .event:after, .about_jp .business_domain_nav .internet:after {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform-origin: 0% 0%;
-      content: "";
-      display: block;
-      width: 151px;
-      height: 1px;
-      z-index: 0;
-      background: #000; }
-    .about_jp .business_domain_nav .research .inner, .about_jp .business_domain_nav .advertising .inner, .about_jp .business_domain_nav .area_content .inner,
-    .about_jp .business_domain_nav .recruit .inner, .about_jp .business_domain_nav .event .inner, .about_jp .business_domain_nav .internet .inner {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: 100%;
-      border-radius: 40px;
-      padding: 10px;
-      display: -webkit-flex;
-      display: -webkit-box;
-      display: -moz-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      justify-content: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      -ms-justify-content: center;
-      align-items: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      -ms-align-items: center;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-      -o-box-sizing: border-box;
-      color: #fff;
-      z-index: 3; }
-    .about_jp .business_domain_nav .research figure, .about_jp .business_domain_nav .advertising figure, .about_jp .business_domain_nav .area_content figure,
-    .about_jp .business_domain_nav .recruit figure, .about_jp .business_domain_nav .event figure, .about_jp .business_domain_nav .internet figure {
-      position: relative;
-      width: 50%;
-      height: 50%;
-      display: block;
-      margin: 0 auto; }
-      .about_jp .business_domain_nav .research figure img, .about_jp .business_domain_nav .advertising figure img, .about_jp .business_domain_nav .area_content figure img,
-      .about_jp .business_domain_nav .recruit figure img, .about_jp .business_domain_nav .event figure img, .about_jp .business_domain_nav .internet figure img {
-        max-width: 100%;
-        width: 100%;
-        display: block;
-        vertical-align: bottom; }
-    .about_jp .business_domain_nav .research span, .about_jp .business_domain_nav .advertising span, .about_jp .business_domain_nav .area_content span,
-    .about_jp .business_domain_nav .recruit span, .about_jp .business_domain_nav .event span, .about_jp .business_domain_nav .internet span {
-      position: relative;
-      padding-top: 5px;
-      display: block;
-      font-size: 10px;
-      text-align: center; }
-  .about_jp .business_domain_nav .vis_a_vis_logo {
+  .about_jp .business_domain_nav .wrap_content {
     position: relative;
-    top: 50%;
-    transform: translateY(-20px);
     display: -webkit-flex;
     display: -webkit-box;
     display: -moz-flex;
@@ -2821,42 +2825,10 @@ a.more_btn {
     -webkit-align-items: center;
     -moz-align-items: center;
     -ms-align-items: center; }
-    .about_jp .business_domain_nav .vis_a_vis_logo .inner {
-      position: relative;
-      width: 110px; }
-    .about_jp .business_domain_nav .vis_a_vis_logo img {
-      max-width: 100%;
-      vertical-align: bottom; }
-  .about_jp .business_domain_nav .research {
-    top: 40px;
-    left: 88px; }
-    .about_jp .business_domain_nav .research:after {
-      transform: rotate(); }
-  .about_jp .business_domain_nav .advertising {
-    top: 0px;
-    left: 202px; }
-    .about_jp .business_domain_nav .advertising:after {
-      transform: rotate(); }
-  .about_jp .business_domain_nav .area_content {
-    top: 90px;
-    left: 360px; }
-    .about_jp .business_domain_nav .area_content:after {
-      transform: rotate(); }
-  .about_jp .business_domain_nav .recruit {
-    top: 260px;
-    left: 315px; }
-    .about_jp .business_domain_nav .recruit:after {
-      transform: rotate(); }
-  .about_jp .business_domain_nav .event {
-    top: 360px;
-    left: 158px; }
-    .about_jp .business_domain_nav .event:after {
-      transform: rotate(); }
-  .about_jp .business_domain_nav .internet {
-    top: 260px;
-    left: 45px; }
-    .about_jp .business_domain_nav .internet:after {
-      transform: rotate(); }
+  .about_jp .business_domain_nav img {
+    vertical-align: top;
+    display: block;
+    max-width: 100%; }
 
 .about_jp .about_page_nav {
   position: relative;

@@ -104,7 +104,7 @@
 	-ms-animation-timing-function: $val;
 }
 
-@mixin keyframe($animation-name){
+@mixin keyframe_spin(){
 	@-ms-keyframes spin {
     	0% { 
 			top: -200px;
@@ -194,3 +194,77 @@
     	}
 	}
 }
+
+
+@mixin keyframe_moveupdown(){
+    @-ms-keyframes moveupdown {
+        0% { 
+            top: -200px;
+        }
+        25% {
+            top: 0px;
+        }
+        50% {
+            top: 200px;
+        }
+        75% {
+            top: 0px;
+        }
+        100% { 
+            top: -200px;
+        }
+    }
+    @-moz-keyframes moveupdown {
+        0% { 
+            top: -200px;
+        }
+        25% {
+            top: 0px;
+        }
+        50% {
+            top: 200px;
+        }
+        75% {
+            top: 0px;
+        }
+        100% { 
+            top: -200px;
+        }
+    }
+    @-webkit-keyframes moveupdown {
+        0% { 
+            top: -200px;
+        }
+        25% {
+            top: 0px;
+        }
+        50% {
+            top: 200px;
+        }
+        75% {
+            top: 0px;
+        }
+        100% { 
+            top: -200px;
+        }
+    }
+    @keyframes moveupdown {
+        0% { 
+            top: -200px;
+        }
+        25% {
+            top: 0px;
+        }
+        50% {
+            top: 200px;
+        }
+        75% {
+            top: 0px;
+        }
+        100% { 
+            top: -200px;
+        }
+    }
+}
+
+

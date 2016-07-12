@@ -189,6 +189,7 @@ a.more_btn{
 		outline: none;
 		display: block;
 		padding: 0;
+		margin-right: 15px;
 		border: none;
 		color: $white;
 		font-size: 250%;
@@ -268,6 +269,12 @@ a.more_btn{
 			color: $paragraph_color;
 			text-shadow: $paragraph_text_shadow;
 		}
+	}
+	img.signature{
+		position: relative;
+		display: block;
+		max-width: 100%;
+		float: right;
 	}
 }
 
@@ -367,7 +374,7 @@ a.more_btn{
 				text-decoration: none;
 				padding: 22px 30px;
 				&:hover{
-					background: $black;
+					color: lighten($black,70%);
 				}
 			}
 		}
@@ -375,7 +382,8 @@ a.more_btn{
 		li{
 			&:after{
 				position: absolute;
-				display: none;
+				display: block;
+				opacity: 0;
 				content: "";
 				width: 20px;
 				height: 20px;
@@ -386,16 +394,19 @@ a.more_btn{
 				left: 50%;
 				margin-left: -10px;
 				@include box-sizing(border-box);
+				@include transition-prefix(all .3s);
 			}
 		}
+	
 		li{
 			&:hover{
 				&:after{
-					display: block;
+					opacity: 1;
 				}
 			}
+			
 			&.active:after{
-				display: block;
+				opacity: 1;
 			}
 		}
 	}
@@ -449,7 +460,8 @@ a.more_btn{
 
 /** Animate object **/
   /***************/
-@include keyframe(spin);
+@include keyframe_spin();
+@include keyframe_moveupdown();
 
 #triangle_object{
 	position: absolute;
@@ -505,7 +517,7 @@ a.more_btn{
 		position: relative;
 		vertical-align: bottom;
 		max-width: 100%;
-		@include animation-name(spin);
+		@include animation-name(moveupdown);
 		@include animation-duration(30s);
 		@include animation-iteration-count(infinite);
 		@include animation-timing-function(linear);

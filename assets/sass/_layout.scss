@@ -19,6 +19,20 @@ body{
 	overflow-wrap: break-word;
 }
 
+body.mobile_nav_open{
+	overflow: hidden;
+}
+
+/** Full width container **/
+  /********************/
+.fluid_container{
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	@include clearfix();
+}
+
 /** Small container **/
   /****************/
 .site_sm_container{
@@ -410,7 +424,11 @@ body{
     @include background-prefix(#f5f5f5 url($about_page_banner) no-repeat top center/cover);
     -webkit-filter: grayscale(80%) contrast(90%);
 	filter: grayscale(80%) contrast(90%);
-
+	img{
+		display: block;
+		width: 100%;
+		vertical-align: middle;
+	}
 	.overlay_nav{
 		position: absolute;
 		background: rgba(0,0,0,0.6);
@@ -440,7 +458,11 @@ body{
 	width: 100%;
 	@include background-size();
 	background-position: center center;
-	
+	img{
+		display: block;
+		vertical-align: top;
+		width: 100%;
+	}
 	.overlay_title{
 		position: absolute;
 		top: 0;
@@ -552,11 +574,10 @@ body{
 		@include clearfix();
 	}
 
-	.row_flex{
+	.row{
 		position: relative;
 		width: 100%;
 		float: left;
-		@include display-flex();
 	}
 }
 

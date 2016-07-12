@@ -22,14 +22,14 @@ class MetaDescription
 		public $page = "";
 
 		public $pageTitle = array(
-			'home' => 'home page',
-			'about' => 'about us',
-			'philosophy' => 'philosophy',
-			'history' => 'history',
-			'greeting' => 'greeting',
-			'contact' => 'contact',
-			'profile' => 'profile',
-			'privacy' => 'privacy',
+			'home' => 'VIS-A-VIS comapany',
+			'about' => 'VIS-A-VIS comapany | about us page',
+			'philosophy' => 'VIS-A-VIS comapany | philosophy page',
+			'history' => 'VIS-A-VIS comapany | history page',
+			'greeting' => 'VIS-A-VIS comapany | greeting page',
+			'contact' => 'VIS-A-VIS comapany | contact page',
+			'profile' => 'VIS-A-VIS comapany | profile page',
+			'privacy' => 'VIS-A-VIS comapany | privacy page',
 		);
 		public $aboutUs = array(
 			'title' => 'about us',

@@ -29,7 +29,7 @@
 	include(dirname(dirname(__DIR__)).'/php/includes/header.php');
 ?>
 
-<div class="site_container">
+<div class="fluid_container">
 	<div class="banner_no_navbar">
 		<img src="assets/img/about_us/banner/about_us_clear_banner_01.png">
 		<div class="overlay_title">

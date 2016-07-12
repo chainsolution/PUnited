@@ -29,7 +29,7 @@
 	include(dirname(dirname(__DIR__)).'/php/includes/header.php');
 ?>
 
-<div class="site_container">
+<div class="fluid_container">
 	<div class="banner_no_navbar">
 		<img src="assets/img/about_us/banner/about_us_clear_banner_01.png">
 		<div class="overlay_title">
@@ -52,7 +52,7 @@
 				</div>
 				
 				<!-- Top first row -->
-				<div class="row_flex">
+				<div class="row">
 
 					<article>
 						<h1>
@@ -69,94 +69,7 @@
 					<div class="business_domain_nav">
 
 						<div class="wrap_content">
-
-	                        <div class="research">
-	                            <div class="inner">
-	                                <div>
-	                                    <figure>
-	                                        <img src="assets/img/common/icons/icon_research_04.png">
-	                                    </figure>
-	                                    <span class="lang_en">
-	                                        RESEARCH
-	                                    </span>
-	                                </div>
-	                            </div>
-	                        </div>
-
-	                        <div class="advertising">
-	                            <div class="inner">
-	                                <div>
-	                                    <figure>
-	                                        <img src="assets/img/common/icons/icon_advertising_pr_02.png">
-	                                    </figure>
-	                                    <span class="lang_en">
-	                                        ADVERTISING/PR
-	                                    </span>
-	                                </div>
-	                            </div>
-	                        </div>
-
-	                        <div class="area_content">
-	                            <div class="inner">
-	                                <div>
-	                                    <figure>
-	                                        <img src="assets/img/common/icons/icon_area_content_06.png">
-	                                    </figure>
-	                                    <span class="lang_en">
-	                                        AREA CONTENT
-	                                    </span>
-	                                </div>
-	                            </div>
-	                        </div>
-
-	                        <div class="recruit">
-	                            <div class="inner">
-	                                <div>
-	                                    <figure>
-	                                        <img src="assets/img/common/icons/icon_recruit_05.png">
-	                                    </figure>
-	                                    <span class="lang_en">
-	                                        RECRUIT
-	                                    </span>
-	                                </div>
-	                            </div>
-	                        </div>
-
-	                        <div class="event">
-	                            <div class="inner">
-	                                <div>
-	                                    <figure>
-	                                        <img src="assets/img/common/icons/icon_event_01.png">
-	                                    </figure>
-	                                    <span class="lang_en">
-	                                        EVENT
-	                                    </span>
-	                                </div>
-	                            </div>
-	                        </div>
-
-	                        <div class="internet">
-	                            <div class="inner">
-	                                <div>
-	                                    <figure>
-	                                        <img src="assets/img/common/icons/icon_internet_03.png">
-	                                    </figure>
-	                                    <span class="lang_en">
-	                                        INTERNET
-	                                    </span>
-	                                </div>
-	                            </div>
-	                        </div>
-
-	                        <div class="vis_a_vis_logo">
-	                            <div class="inner">
-	                                <figure>
-	                                    <img src="assets/img/about_us/philosophy/about_us_site_logo_text_01.png">
-	                                </figure>
-	                            </div>
-	                        </div>
-
-
+							<img src="assets/img/about_us/jp/about_us_jp_business_domain_nav.png">
 						</div>
 
 					</div>

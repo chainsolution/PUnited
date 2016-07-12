@@ -12,9 +12,13 @@
 			echo '<meta name="'.$name.'" content="'.$content.'">';
 		} 
 	?>
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="index" href="../[SITE_MAP_PATH]">
-	<link rel="start" href="../[SITE_URL]" title="Home">
+	
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="assets/img/favicon/manifest.json">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="assets/js-src/libs/jquery3.min.js"><\/script>')</script>

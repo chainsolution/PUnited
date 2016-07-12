@@ -1,6 +1,6 @@
 
 <!-- top banner in all about page -->
-<div class="site_container">
+<div class="fluid_container">
 	<div class="overlay_banner">
 		<div class="overlay_title">
 			<sup>`</sup>
@@ -8,11 +8,11 @@
 		</div>
 		<div class="overlay_nav">
 			<ul>
-				<li class="active"><a href="#">ごあいさつ</a></li>
-				<li><a href="#">企業理念</a></li>
-				<li><a href="#">会社概要</a></li>
-				<li><a href="#">沿革</a></li>
-				<li><a href="#">プライバシーポリシー</a></li>
+				<li class="<?php if($meta->page == 'greeting'){ echo "active"; } ?>"><a href="greeting">ごあいさつ</a></li>
+				<li class="<?php if($meta->page == 'philosophy'){ echo "active"; } ?>"><a href="philosophy">企業理念</a></li>
+				<li class="<?php if($meta->page == 'profile'){ echo "active"; } ?>"><a href="profile">会社概要</a></li>
+				<li class="<?php if($meta->page == 'history'){ echo "active"; } ?>"><a href="history">沿革</a></li>
+				<li class="<?php if($meta->page == 'privacy'){ echo "active"; } ?>"><a href="privacy">プライバシーポリシー</a></li>
 			</ul>
 		</div>
 	</div>

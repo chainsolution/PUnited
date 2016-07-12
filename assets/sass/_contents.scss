@@ -48,10 +48,17 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		@include display-flex();
-		@include justify-content();
-		@include align-items();
 		@include transform-origin(50% 50%);
+
+		.flex_inner{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			@include display-flex();
+			@include justify-content();
+			@include align-items();
+		}
+
 	    &:after{
 	    	position: absolute;
 	    	content: "";
@@ -830,143 +837,20 @@
 		float: left;
 		width: 40%;
 		margin-bottom: 40px;
-		.wrap_content{
-			position: relative;
-			width: 100%;
-			height: 450px;
-			@include clearfix();
-		}
-
+		padding-left: 5%;
 		@include box-sizing(border-box);
 		@include clearfix();
-		.research, .advertising, .area_content,
-		.recruit, .event, .internet{
-			position: absolute;
-			width: 90px;
-			height: 90px;
-			display: inline-block;
-			background: rgba(0,0,0,0.2);
-			z-index: 2;
-			
-			&:after{
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform-origin: 0% 0%;
-				content: "";
-				display: block;
-				width: 151px;
-				height: 1px;
-				z-index: 0;
-				background: #000;
-			}
-
-			.inner{
-				position: relative;
-				display: block;
-				width: 100%;
-				height: 100%;
-				border-radius: 40px;
-				padding: 10px;
-				@include display-flex();
-				@include justify-content();
-				@include align-items();
-				@include box-sizing(border-box);
-				color: $white;
-				z-index: 3;				
-			}
-
-			figure{
-				position: relative;
-				width: 50%;
-				height: 50%;
-				display: block;
-				margin: 0 auto;
-				img{
-					max-width: 100%;
-					width: 100%;
-					display: block;
-					vertical-align: bottom;
-				}
-			}
-
-			span{
-				position: relative;
-				padding-top: 5px;
-				display: block;
-				font-size: 10px;
-				text-align: center;
-			}
-
-		}
-
-		.vis_a_vis_logo{
+		.wrap_content{
 			position: relative;
-			top: 50%;
-			transform: translateY(-20px);
 			@include display-flex();
 			@include justify-content();
 			@include align-items();
-			.inner{		
-				position: relative;
-				width: 110px;
-			}
-
-			img{
-				max-width: 100%;
-				vertical-align: bottom;
-			}
 		}
-
-		.research{
-			top: 40px;
-			left: 88px;
-			&:after{
-				transform: rotate();
-			}
+		img{
+			vertical-align: top;
+			display: block;
+			max-width: 100%;
 		}
-
-		.advertising{
-			top: 0px;
-			left: 202px;
-			&:after{
-				transform: rotate();
-			}
-		}
-
-		.area_content{
-			top: 90px;
-			left: 360px;
-			&:after{
-				transform: rotate();
-			}
-		}
-
-		.recruit{
-			top: 260px;
-			left: 315px;
-			
-			&:after{
-				transform: rotate();
-			}
-		}
-
-		.event{
-			top: 360px;
-			left: 158px;
-			&:after{
-				transform: rotate();
-			}
-		}
-
-		.internet{
-			top: 260px;
-			left: 45px;
-			&:after{
-				transform: rotate();
-			}
-		}
-
 	}
 
 	.about_page_nav{

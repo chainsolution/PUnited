@@ -113,8 +113,8 @@
 				<p>と言っていただける存在であり続けるために、ビザビ全員で前向きに歩みつづけます。</p>
 				<p>ビザビ一人ひとりの成長がお客様の発展につながり地域の元気になる。このような心意気で努力してまいります。</p>
 				<p>どうぞ新生ビザビにご期待ください。</p>
-				
 			</article>
+			<img class="signature" src="assets/img/main/overview/main_overview_signature_01.png">
 			<!-- Triangle Moving Object -->
 			<div id="triangle_object">
 				<img src="assets/img/common/objects/object3.png">
@@ -159,7 +159,9 @@
 									</div>
 								</div>
 								<div class="caption">
-									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									<div class="flex_inner">
+										<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									</div>
 								</div>
 							</div>
 
@@ -192,7 +194,9 @@
 									</div>
 								</div>
 								<div class="caption">
-									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									<div class="flex_inner">
+										<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									</div>
 								</div>
 							</div>
 				
@@ -213,7 +217,9 @@
 									</div>
 								</div>
 								<div class="caption">
-									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									<div class="flex_inner">
+										<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									</div>
 								</div>
 							</div>
 
@@ -246,7 +252,9 @@
 									</div>
 								</div>
 								<div class="caption">
-									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									<div class="flex_inner">
+										<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									</div>
 								</div>
 							</div>
 
@@ -267,7 +275,9 @@
 									</div>
 								</div>
 								<div class="caption">
-									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									<div class="flex_inner">
+										<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									</div>
 								</div>
 							</div>
 
@@ -288,7 +298,9 @@
 									</div>
 								</div>
 								<div class="caption">
-									<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									<div class="flex_inner">
+										<a href="">現代のビジネスコンセプト現代のビジネスコンセプト現代のビジネスコンセプト</a>
+									</div>
 								</div>
 							</div>
 

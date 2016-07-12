@@ -20,7 +20,6 @@ animateSlide = function() {
         // Query the document to get the first,next image
         current = $(".site_banner .banner_item.active");
         next = current.next();
-        console.log(next.length);
 
         // check whether it's the last image.
         if (!next.length) {
@@ -90,15 +89,15 @@ windowScroll = function() {
     var tr_obj = $('#triangle_object');
     var cir_obj1 = $('#circle_object');
     var cir_obj2 = $('#cricle_bottom');
-    var blue_obj = $('#blue_shape');
     var stick_obj = $('#stick_object');
+    var blue_shape = $('#blue_shape');
 
     /* Find the offset top of each objects */
-    var tr_obj_top = tr_obj.offset().top;
-    var cir_obj1_top = cir_obj1.offset().top;
-    var cir_obj2_top = cir_obj2.offset().top;
-    var blue_obj_top = blue_obj.offset().top;
-    var stick_obj_top = stick_obj.offset().top;
+    var tr_obj_top = ($(tr_obj).offset() || { "top": NaN }).top;
+    var cir_obj1_top = ($(cir_obj1).offset() || { "top": NaN }).top;
+    var cir_obj2_top = ($(cir_obj2).offset() || { "top": NaN }).top;
+    var stick_obj_top = ($(stick_obj).offset() || { "top": NaN }).top;
+    var blue_shape_top = ($(blue_shape).offset() || { "top": NaN }).top;
 
     /**/
     $(window).scroll(function() {
@@ -107,24 +106,35 @@ windowScroll = function() {
 
         /** Working with moving objects **/
           /****************************/
-        if(scrollTop > (tr_obj_top / 2)){
-          tr_obj.css('top', (scrollTop / 2) + 'px');
+        if(!(isNaN(tr_obj_top))){
+            if(scrollTop > (tr_obj_top / 2)){
+              tr_obj.css('top', (scrollTop / 1.5) + 'px');
+            }
         }
 
-        if(scrollTop > (stick_obj_top / 2 )){
-          stick_obj.css('top', (scrollTop / 2) + 'px');
+        if(!(isNaN(cir_obj1_top))){
+            if(scrollTop > (cir_obj1_top / 2)){
+              cir_obj1.css('top', (scrollTop / 1.5) + 'px');
+            }
         }
 
-        if(scrollTop > (cir_obj1_top / 2)){
-          cir_obj1.css('top', (scrollTop / 2) + 'px');
+        if(!(isNaN(cir_obj2_top))){
+            if(scrollTop > (cir_obj2_top / 2)){
+              cir_obj2.css('top', (scrollTop / 1.5) + 'px');
+            }
         }
 
-        if(scrollTop > (cir_obj2_top / 2)){
-          cir_obj2.css('top', (scrollTop / 2) + 'px');
+
+        if(!(isNaN(stick_obj_top))){
+            if(scrollTop > (stick_obj_top / 2 )){
+              stick_obj.css('top', (scrollTop / 1.5) + 'px');
+            }
         }
 
-        if(scrollTop > (blue_obj_top / 2)){
-          blue_obj.css('top', (scrollTop / 2) + 'px');
+        if(!(isNaN(blue_shape_top))){
+            if(scrollTop > (blue_shape_top / 2 )){
+              stick_obj.css('top', (scrollTop / 1.5) + 'px');
+            }
         }
 
         /** Set border bottom of header when scroll, and remove when scroll top = 0 **/
@@ -182,9 +192,7 @@ resizeBannerHeight = function() {
   /****************************/
 var overlayAnimation;
 overlayAnimation = function(){
-    $('#business_domain .frosted_glass')
-
-    .mouseenter(function(){
+    $('#business_domain .frosted_glass').mouseenter(function(){
         $(this).find('.caption').slideDown(300);
         $(this).find('.inner').fadeOut(200);
     })
@@ -194,6 +202,7 @@ overlayAnimation = function(){
         $(this).find('.inner').fadeIn(200);
     });
 }
+
 
 /** Check user-agent : mobile or computer **/
 /**************************************/
@@ -215,7 +224,7 @@ $(window).load(function() {
 $(document).ready(function() {
     bannerInitialize();
     animateSlide();
-    windowScroll();
     resizeBannerHeight();
     overlayAnimation();
+    windowScroll();
 });

@@ -48,6 +48,7 @@ if (!PUNITED.useful) PUNITED.useful = {};
 			$(extra).fadeOut(100);
 		};
 		$(target).slideToggle(500);
+		$('body').toggleClass('mobile_nav_open');
 	}
 	
 })();
