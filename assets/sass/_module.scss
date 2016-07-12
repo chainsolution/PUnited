@@ -149,7 +149,7 @@ a.more_btn{
 	}
 
 	li:hover > ul{
-		height: 247px;
+		height: 227px;
 	}
 
 	li > ul:hover .global_nav > ul > li:has(ul) > a{
@@ -165,7 +165,7 @@ a.more_btn{
 
 		a{
 			font-family: $font_jp;
-			line-height: 20px;
+			line-height: 1.6;
 			width: 180px;
 			padding: 10px;
 			float: left;
@@ -204,13 +204,11 @@ a.more_btn{
 		@include clearfix();
 	}
 	
-	li{
-		display: block;
-		width: 100%;
-		float: left;
+	.toggle_about_nav img{
+		vertical-align: middle;
+		margin-left: 10px;
 	}
-
-	a{
+	.toggle_about_nav,a{
 		text-decoration: none;
 		color: $white;
 		width: 100%;
@@ -220,14 +218,15 @@ a.more_btn{
 		font-weight: 500;
 		letter-spacing: -0.5px;
 		text-align: center;
-		
-		&:hover{
-			color: lighten($black,70%);
-		}
+		cursor: pointer;
+	}
+
+	a:hover{
+		color: lighten($black,70%);
 	}
 
 	ul ul{
-		position: relative;
+		display: none;
 		width: 100%;
 		padding: 20px 0px;
 		@include clearfix();

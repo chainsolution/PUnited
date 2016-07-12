@@ -40,7 +40,6 @@
 			<ul>
 				<li class="relative"><a href="about_jp">ABOUT US</a>
 					<ul>
-						<li><a href="about_en">ABOUT US トップ</a></li>
 						<li><a href="greeting">ごあいさつ</a></li>
 						<li><a href="philosophy">企業理念</a></li>
 						<li><a href="profile">会社概要</a></li>
@@ -66,12 +65,13 @@
 <!-- mobile global navigation -->
 <nav id="mobile_global_nav">
 	<div class="button_outer">
-		<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav');">X</button>
+		<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav','#dropdown_ul');">X</button>
 	</div>
 	<ul>
-		<li class="relative"><a onclick="javascript:return(0)" href="about_jp">ABOUT US</a>
-			<ul>
-				<li><a href="about_en">ABOUT US トップ</a></li>
+		<li class="toggle_about_nav" onclick="PUNITED.useful.toggleMenu('#dropdown_ul');">ABOUT US <span><img src="assets/img/common/icons/icon_arrow_down_10.png"></span></li>
+		<li>
+			<ul id="dropdown_ul">
+				<li><a href="about_jp">ABOUT US トップ</a></li>
 				<li><a href="greeting">ごあいさつ</a></li>
 				<li><a href="philosophy">企業理念</a></li>
 				<li><a href="profile">会社概要</a></li>

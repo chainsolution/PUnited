@@ -167,9 +167,32 @@ resizeBannerHeight = function() {
                 });
             }
 
+            /** when window resize => always slideup the mobile navigation **/
+            if(winWidth > 768){
+               $('#mobile_global_nav').fadeOut(300);
+               $('#dropdown_ul').fadeOut(300);
+            }
+
         });
     })();
 
+}
+
+/** Animation for overlay hover **/
+  /****************************/
+var overlayAnimation;
+overlayAnimation = function(){
+    $('#business_domain .frosted_glass')
+
+    .mouseenter(function(){
+        $(this).find('.caption').slideDown(300);
+        $(this).find('.inner').fadeOut(200);
+    })
+
+    .mouseleave(function(){
+        $(this).find('.caption').slideUp(300);
+        $(this).find('.inner').fadeIn(200);
+    });
 }
 
 /** Check user-agent : mobile or computer **/
@@ -194,4 +217,5 @@ $(document).ready(function() {
     animateSlide();
     windowScroll();
     resizeBannerHeight();
+    overlayAnimation();
 });

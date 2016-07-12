@@ -42,16 +42,26 @@
 	}
 
 	.caption{
-		visibility: hidden;
+		display: none;
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(0,0,0,0.3);
 		@include display-flex();
 		@include justify-content();
 		@include align-items();
+		@include transform-origin(50% 50%);
+	    &:after{
+	    	position: absolute;
+	    	content: "";
+	    	display: block;
+	    	top: 0;
+	    	left: 0;
+	    	right: 0;
+	    	bottom: 0;
+	    	background: rgba(0,0,0,0.5);
+	    }
 		a{
 			display: block;
 			text-decoration: none;
@@ -60,7 +70,7 @@
 			text-align: center;
 			line-height: 2;
 			z-index: 5;
-			@include transition-prefix(none !important);
+			@include transition-prefix(color 0.3s);
 			&:hover{
 				text-decoration: underline;
 			}
@@ -68,7 +78,6 @@
 	}
 
 	.canvas_box.frosted_glass{
-		@include transition-prefix(all .2s ease-out);
 		.inner{
 			padding: 10px;
 		}
@@ -76,15 +85,6 @@
 		&:after{
 			background-image: (linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url($business_domain_bg));
 			background-position: center 70px;
-		}
-
-		&:hover{
-			.inner{
-				visibility: hidden;
-			}
-			.caption{
-				visibility: visible;
-			}
 		}
 
 	}
@@ -287,6 +287,19 @@
 
 	}
 	.left_box figure, .right_box figure{
+
+		@include background-size();
+		background-position: center center;
+		@include transform-origin(50% 50%);
+	    @include transition-prefix(all .3s cubic-bezier(0, 0, 1, 1) 0s);
+	    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
+	    &:hover{
+	    	&::after{
+	    		background: rgba(0,0,0,0.3);
+	    	}
+	    	@include transform-prefix(scaleX(1.1) scaleY(1.1) scaleZ(1));
+	    }
+
 		&::after{
 			position: absolute;
 			content: "";
@@ -299,20 +312,7 @@
 			@include transition-prefix(all 0.3s ease-out);
 		}
 	}
-	.left_box figure, .right_box figure{
-		@include background-size();
-		background-position: center center;
-		@include transform-origin(50% 50%);
-	    @include transition-prefix(all .3s cubic-bezier(0, 0, 1, 1) 0s);
-	    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
-	    &:hover{
-	    	&::after{
-	    		background: rgba(0,0,0,0.3);
-	    	}
-	    	@include transform-prefix(scaleX(1.1) scaleY(1.1) scaleZ(1));
-	    }
-		
-	}
+
 	.left_box img,.right_box img{
 		width: 100%;
 		vertical-align: bottom;

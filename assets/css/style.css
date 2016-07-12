@@ -625,7 +625,7 @@ body {
   right: 0;
   padding: 0px 20px;
   background: rgba(0, 0, 0, 0.9);
-  z-index: 999; }
+  z-index: 1100; }
   #mobile_global_nav::after {
     clear: both;
     content: "";
@@ -1310,7 +1310,7 @@ a.more_btn {
     color: #b3b3b3; }
 
 .global_nav ul li:hover > ul {
-  height: 247px; }
+  height: 227px; }
 
 .global_nav ul li > ul:hover .global_nav > ul > li:has(ul) > a {
   color: #b3b3b3; }
@@ -1326,7 +1326,7 @@ a.more_btn {
 
 .global_nav ul ul a {
   font-family: arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku GothicProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳＰゴシック", sans-serif !important;
-  line-height: 20px;
+  line-height: 1.6;
   width: 180px;
   padding: 10px;
   float: left;
@@ -1358,12 +1358,11 @@ a.more_btn {
     content: "";
     display: block; }
 
-#mobile_global_nav li {
-  display: block;
-  width: 100%;
-  float: left; }
+#mobile_global_nav .toggle_about_nav img {
+  vertical-align: middle;
+  margin-left: 10px; }
 
-#mobile_global_nav a {
+#mobile_global_nav .toggle_about_nav, #mobile_global_nav a {
   text-decoration: none;
   color: #fff;
   width: 100%;
@@ -1372,12 +1371,14 @@ a.more_btn {
   line-height: 3.2;
   font-weight: 500;
   letter-spacing: -0.5px;
-  text-align: center; }
-  #mobile_global_nav a:hover {
-    color: #b3b3b3; }
+  text-align: center;
+  cursor: pointer; }
+
+#mobile_global_nav a:hover {
+  color: #b3b3b3; }
 
 #mobile_global_nav ul ul {
-  position: relative;
+  display: none;
   width: 100%;
   padding: 20px 0px; }
   #mobile_global_nav ul ul::after {
@@ -1857,13 +1858,12 @@ a.more_btn {
     width: 20%;
     min-height: 220px; }
   #business_domain .caption {
-    visibility: hidden;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
     display: -webkit-flex;
     display: -webkit-box;
     display: -moz-flex;
@@ -1877,7 +1877,21 @@ a.more_btn {
     align-items: center;
     -webkit-align-items: center;
     -moz-align-items: center;
-    -ms-align-items: center; }
+    -ms-align-items: center;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%; }
+    #business_domain .caption:after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); }
     #business_domain .caption a {
       display: block;
       text-decoration: none;
@@ -1886,28 +1900,18 @@ a.more_btn {
       text-align: center;
       line-height: 2;
       z-index: 5;
-      -webkit-transition: none !important;
-      -moz-transition: none !important;
-      -o-transition: none !important;
-      -ms-transition: none !important;
-      transition: none !important; }
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      -o-transition: color 0.3s;
+      -ms-transition: color 0.3s;
+      transition: color 0.3s; }
       #business_domain .caption a:hover {
         text-decoration: underline; }
-  #business_domain .canvas_box.frosted_glass {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out; }
-    #business_domain .canvas_box.frosted_glass .inner {
-      padding: 10px; }
-    #business_domain .canvas_box.frosted_glass:after {
-      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/main/business_domain/main_business_domain_bg_07.png");
-      background-position: center 70px; }
-    #business_domain .canvas_box.frosted_glass:hover .inner {
-      visibility: hidden; }
-    #business_domain .canvas_box.frosted_glass:hover .caption {
-      visibility: visible; }
+  #business_domain .canvas_box.frosted_glass .inner {
+    padding: 10px; }
+  #business_domain .canvas_box.frosted_glass:after {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/main/business_domain/main_business_domain_bg_07.png");
+    background-position: center 70px; }
 
 #works {
   width: 100%;
@@ -2147,20 +2151,6 @@ a.more_btn {
   #recruit .left_box .inner, #recruit .right_box .inner {
     position: relative;
     width: 100%; }
-  #recruit .left_box figure::after, #recruit .right_box figure::after {
-    position: absolute;
-    content: "";
-    background: transparent;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out; }
   #recruit .left_box figure, #recruit .right_box figure {
     background-size: cover;
     -moz-background-size: cover;
@@ -2190,6 +2180,20 @@ a.more_btn {
       -o-transform: scaleX(1.1) scaleY(1.1) scaleZ(1); }
       #recruit .left_box figure:hover::after, #recruit .right_box figure:hover::after {
         background: rgba(0, 0, 0, 0.3); }
+    #recruit .left_box figure::after, #recruit .right_box figure::after {
+      position: absolute;
+      content: "";
+      background: transparent;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
   #recruit .left_box img, #recruit .right_box img {
     width: 100%;
     vertical-align: bottom; }

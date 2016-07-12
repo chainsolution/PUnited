@@ -42,7 +42,11 @@ if (!PUNITED.useful) PUNITED.useful = {};
 		PUNITED.useful.toggleMenu("class/id name with . or #");
 		use with event onClick(), onMouseover() etc.
 	*/
-	ns.toggleMenu = function(target){
+	ns.toggleMenu = function(target, extra){
+		var extra = typeof extra !== 'undefined' ? extra : false;
+		if(extra !== false){
+			$(extra).fadeOut(100);
+		};
 		$(target).slideToggle(500);
 	}
 	
