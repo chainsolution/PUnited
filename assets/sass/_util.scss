@@ -76,6 +76,11 @@
 	font-family: $font_en;
 }
 
+/* Text underline */
+.underline{
+	border-bottom: 1px solid #999;
+}
+
 /* グリッドレイアウト用mixin (IE8以上)
 usage:
 ■12分割で間隔が20pxのグリッドのクラスを作る場合

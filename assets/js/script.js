@@ -99,41 +99,48 @@ windowScroll = function() {
     var stick_obj_top = ($(stick_obj).offset() || { "top": NaN }).top;
     var blue_shape_top = ($(blue_shape).offset() || { "top": NaN }).top;
 
+    console.log("trangle: "+tr_obj_top);
+    console.log("circle 1: "+cir_obj1_top);
+    console.log("circle 2: "+cir_obj2_top);
+    console.log("stick: "+stick_obj_top);
+    console.log("blue shape: "+blue_shape_top);
     /**/
     $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
+        console.log(scrollTop);
         var Winheight = $(window).height;
+
 
         /** Working with moving objects **/
           /****************************/
         if(!(isNaN(tr_obj_top))){
             if(scrollTop > (tr_obj_top / 2)){
-              tr_obj.css('top', (scrollTop / 1.5) + 'px');
+              tr_obj.css('top', (scrollTop / 2.3) + 'px');
             }
         }
 
         if(!(isNaN(cir_obj1_top))){
             if(scrollTop > (cir_obj1_top / 2)){
-              cir_obj1.css('top', (scrollTop / 1.5) + 'px');
+              cir_obj1.css('top', (scrollTop / 9) + 'px');
             }
         }
 
         if(!(isNaN(cir_obj2_top))){
             if(scrollTop > (cir_obj2_top / 2)){
-              cir_obj2.css('top', (scrollTop / 1.5) + 'px');
+              cir_obj2.css('top', (scrollTop / 2.1) + 'px');
             }
         }
 
 
         if(!(isNaN(stick_obj_top))){
-            if(scrollTop > (stick_obj_top / 2 )){
-              stick_obj.css('top', (scrollTop / 1.5) + 'px');
+            if(scrollTop > (stick_obj_top / 1.4 )){
+              stick_obj.css('top', (scrollTop / 2.6)+ 'px');
             }
         }
 
         if(!(isNaN(blue_shape_top))){
-            if(scrollTop > (blue_shape_top / 2 )){
-              stick_obj.css('top', (scrollTop / 1.5) + 'px');
+            if(scrollTop > (blue_shape_top / 1.7 )){
+              blue_shape.css('top', ((scrollTop / 2.5) * 0.6) + 'px');
             }
         }
 
@@ -193,12 +200,22 @@ resizeBannerHeight = function() {
 var overlayAnimation;
 overlayAnimation = function(){
     $('#business_domain .frosted_glass').mouseenter(function(){
-        $(this).find('.caption').slideDown(300);
+        $(this).find('.overlay_caption').slideDown(300);
         $(this).find('.inner').fadeOut(200);
     })
 
     .mouseleave(function(){
-        $(this).find('.caption').slideUp(300);
+        $(this).find('.overlay_caption').slideUp(300);
+        $(this).find('.inner').fadeIn(200);
+    });
+
+    $('#works .canvas_box').mouseenter(function(){
+        $(this).find('.overlay_caption').slideDown(300);
+        $(this).find('.inner').fadeOut(200);
+    })
+
+    .mouseleave(function(){
+        $(this).find('.overlay_caption').slideUp(300);
         $(this).find('.inner').fadeIn(200);
     });
 }

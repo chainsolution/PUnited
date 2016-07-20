@@ -458,6 +458,52 @@ a.more_btn{
 	}
 }
 
+/** Overlay title in business domain & works **/
+  /*****************************************/
+.overlay_caption{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	@include transform-origin(50% 50%);
+
+	.flex_inner{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+	}
+
+    &:after{
+    	position: absolute;
+    	content: "";
+    	display: block;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	background: rgba(0,0,0,0.5);
+    }
+	a{
+		display: block;
+		text-decoration: none;
+		padding:20px;
+		color: $black;
+		text-align: center;
+		line-height: 2;
+		z-index: 5;
+		@include transition-prefix(color 0.3s);
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+
 /** Animate object **/
   /***************/
 @include keyframe_spin();
@@ -467,13 +513,12 @@ a.more_btn{
 	position: absolute;
 	top: 40%;
 	left: 20px;
-	z-index: 1;
+	z-index: -1;
 	img{
-		position: relative;
 		vertical-align: bottom;
 		max-width: 100%;
 		@include animation-name(spin);
-		@include animation-duration(30s);
+		@include animation-duration(20s);
 		@include animation-iteration-count(infinite);
 		@include animation-timing-function(linear);
 	}
@@ -481,15 +526,14 @@ a.more_btn{
 
 #circle_object{
 	position: absolute;
-	z-index: 1;
+	z-index: 10;
 	right: 20px;
 	top: 8%;
 	img{
-		position: relative;
 		vertical-align: bottom;
 		max-width: 100%;
 		@include animation-name(spin);
-		@include animation-duration(30s);
+		@include animation-duration(20s);
 		@include animation-iteration-count(infinite);
 		@include animation-timing-function(linear);
 	}
@@ -497,43 +541,41 @@ a.more_btn{
 #cricle_bottom{
 	position: absolute;
 	left: 10px;
-	z-index: 1;
+	top: 100%;
+	z-index: 10;
 	img{
-		position: relative;
 		vertical-align: bottom;
 		max-width: 100%;
 		@include animation-name(spin);
-		@include animation-duration(30s);
+		@include animation-duration(20s);
 		@include animation-iteration-count(infinite);
 		@include animation-timing-function(linear);
 	}
 }
 #blue_shape{
 	position: absolute;
-	z-index: 1;
-	left: 90%;
-	top: 20%;
+	z-index: 101;
+	right: 0%;
+	top: 0%;
 	img{
-		position: relative;
 		vertical-align: bottom;
 		max-width: 100%;
 		@include animation-name(moveupdown);
-		@include animation-duration(30s);
+		@include animation-duration(8s);
 		@include animation-iteration-count(infinite);
 		@include animation-timing-function(linear);
 	}
 }
 #stick_object{
 	position: absolute;
-	z-index: 1;
-	bottom: 10%;
+	z-index: 101;
+	top: 20%;
 	left: 0;
 	img{
-		position: relative;
 		vertical-align: bottom;
 		max-width: 100%;
 		@include animation-name(spin);
-		@include animation-duration(30s);
+		@include animation-duration(20s);
 		@include animation-iteration-count(infinite);
 		@include animation-timing-function(linear);
 	}
@@ -541,14 +583,14 @@ a.more_btn{
 }
 #round_object{
 	position: absolute;
-	bottom: 0;
-	z-index: 0;
+	top: 92%;
+	left: 50px;
+	z-index: 10;
 	img{
-		position: relative;
 		vertical-align: bottom;
 		max-width: 100%;
-		@include animation-name(spin);
-		@include animation-duration(30s);
+		@include animation-name(moveupdown);
+		@include animation-duration(10s);
 		@include animation-iteration-count(infinite);
 		@include animation-timing-function(linear);
 	}

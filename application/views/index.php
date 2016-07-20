@@ -117,7 +117,7 @@
 			<img class="signature" src="assets/img/main/overview/main_overview_signature_01.png">
 			<!-- Triangle Moving Object -->
 			<div id="triangle_object">
-				<img src="assets/img/common/objects/object3.png">
+				<img src="assets/img/common/objects/floating_triangle_object_04.png">
 			</div>
 			<!-- Triangle Moving Object -->
 		</div>
@@ -130,9 +130,15 @@
 
 				<!-- Circle Moving Object -->
 				<div id="circle_object">
-					<img src="assets/img/common/objects/object6.png">
+					<img src="assets/img/common/objects/floating_small_yellow_squere_object_02.png">
 				</div>
 				<!-- Circle Moving Object -->
+
+				<!-- Big squere Moving -->
+				<div id="cricle_bottom">
+					<img src="assets/img/common/objects/floating_large_yellow_squere_object_01.png">
+				</div>
+				<!-- Big squere Moving -->
 
 				<!-- heading title -->
 				<div class="section_heading">
@@ -158,7 +164,7 @@
 										<span>RESEARCH</span>
 									</div>
 								</div>
-								<div class="caption">
+								<div class="overlay_caption">
 									<div class="flex_inner">
 										<a href="">独自のリサーチ&データ管理から地域活性化事業のご提案まで、数多くのデータを分析・検証・加工し、有益な情報として提供します。</a>
 									</div>
@@ -193,7 +199,7 @@
 										<span>AREA CONTENT</span>
 									</div>
 								</div>
-								<div class="caption">
+								<div class="overlay_caption">
 									<div class="flex_inner">
 										<a href="">岡山を元気にする”をキーワードに、独自の媒体、独自の企画をアグレッシブに展開しています。</a>
 									</div>
@@ -216,7 +222,7 @@
 										<span>ADVERTISING/PR</span>
 									</div>
 								</div>
-								<div class="caption">
+								<div class="overlay_caption">
 									<div class="flex_inner">
 										<a href="">企画から構成、運営、広告展開まで、トータルなプロモーションで高い成果をあげています。</a>
 									</div>
@@ -251,7 +257,7 @@
 										<span>RECRUIT</span>
 									</div>
 								</div>
-								<div class="caption">
+								<div class="overlay_caption">
 									<div class="flex_inner">
 										<a href="">私たちがご提案したいのは、人材活用のためのトータルソリューションです。</a>
 									</div>
@@ -274,7 +280,7 @@
 										<span>EVENT</span>
 									</div>
 								</div>
-								<div class="caption">
+								<div class="overlay_caption">
 									<div class="flex_inner">
 										<a href="">確固たるコンセプトを構築し、あらゆる要件を充たしたインパクトあるイベントを実現します。</a>
 									</div>
@@ -297,7 +303,7 @@
 										<span>INTERNET</span>
 									</div>
 								</div>
-								<div class="caption">
+								<div class="overlay_caption">
 									<div class="flex_inner">
 										<a href="">ICTを活かす。それがこれからのコミュニケーションだと考えます。</a>
 									</div>
@@ -318,21 +324,15 @@
 		<div id="works">
 
 			<div class="content_inner">
-				
-				<!-- Big Circle Moving -->
-				<div id="cricle_bottom">
-					<img src="assets/img/common/objects/object6.png">
-				</div>
-				<!-- Big Circle Moving -->
 
 				<!-- Blue Shape Moving -->
 				<div id="blue_shape">
-					<img src="assets/img/common/objects/object5.png">
+					<img src="assets/img/common/objects/floating_blue_object_05.png">
 				</div>
 				<!-- Blue Shape Moving -->
 				<!-- Stick Moving Object -->
 				<div id="stick_object">
-					<img src="assets/img/common/objects/object1.png">
+					<img src="assets/img/common/objects/floating_stick_object_06.png">
 				</div>
 				<!-- stick Moving Object -->
 
@@ -358,6 +358,11 @@
 										<span>Osera  No80 陽春号</span>
 									</div>
 								</div>
+								<div class="overlay_caption">
+									<div class="flex_inner">
+										<a href="">これは単なる一時的な内容です。</a>
+									</div>
+								</div>
 							</div>
 
 							<div class="canvas_box striped">
@@ -367,6 +372,11 @@
 									</figure>
 									<div class="title">
 										<span>月刊タウン情報おかやま 2016年3月号</span>
+									</div>
+								</div>
+								<div class="overlay_caption">
+									<div class="flex_inner">
+										<a href="">これは単なる一時的な内容です。</a>
 									</div>
 								</div>
 							</div>
@@ -380,6 +390,11 @@
 										<span>月刊タウン情報おかやま 2016年2月号</span>
 									</div>
 								</div>
+								<div class="overlay_caption">
+									<div class="flex_inner">
+										<a href="">これは単なる一時的な内容です。</a>
+									</div>
+								</div>
 							</div>
 
 							<div class="canvas_box striped">
@@ -389,6 +404,11 @@
 									</figure>
 									<div class="title">
 										<span>月刊タウン情報おかやま 2016年1月号</span>
+									</div>
+								</div>
+								<div class="overlay_caption">
+									<div class="flex_inner">
+										<a href="">これは単なる一時的な内容です。</a>
 									</div>
 								</div>
 							</div>
@@ -402,6 +422,11 @@
 										<span>Osera  No79 初春号</span>
 									</div>
 								</div>
+								<div class="overlay_caption">
+									<div class="flex_inner">
+										<a href="">これは単なる一時的な内容です。</a>
+									</div>
+								</div>
 							</div>
 
 							<div class="canvas_box striped">
@@ -411,6 +436,11 @@
 									</figure>
 									<div class="title">
 										<span>日刊Webタウン情報おかやま</span>
+									</div>
+								</div>
+								<div class="overlay_caption">
+									<div class="flex_inner">
+										<a href="">これは単なる一時的な内容です。</a>
 									</div>
 								</div>
 							</div>
@@ -424,6 +454,11 @@
 										<span>岡山学芸館清秀中学校・高等部</span>
 									</div>
 								</div>
+								<div class="overlay_caption">
+									<div class="flex_inner">
+										<a href="">これは単なる一時的な内容です。</a>
+									</div>
+								</div>
 							</div>
 
 							<div class="canvas_box striped">
@@ -435,6 +470,11 @@
 										<span>月刊タウン情報おかやま 2015年12月号</span>
 									</div>
 								</div>
+								<div class="overlay_caption">
+									<div class="flex_inner">
+										<a href="">これは単なる一時的な内容です。</a>
+									</div>
+								</div>
 							</div>
 
 							<div class="canvas_box striped hide_sm">
@@ -444,6 +484,11 @@
 									</figure>
 									<div class="title">
 										<span>ランチパスポート vol.8</span>
+									</div>
+								</div>
+								<div class="overlay_caption">
+									<div class="flex_inner">
+										<a href="">これは単なる一時的な内容です。</a>
 									</div>
 								</div>
 							</div>
@@ -576,7 +621,7 @@
 				
 				<!-- Round Moving Object -->
 				<div id="round_object">
-					<img src="assets/img/common/objects/object2.png">
+					<img src="assets/img/common/objects/floating_large_circle_object_03.png">
 				</div>
 				<!-- Round Moving Object -->
 

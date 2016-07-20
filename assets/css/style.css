@@ -449,6 +449,10 @@ th {
 .lang_en {
   font-family: "Dosis", sans-serif !important; }
 
+/* Text underline */
+.underline {
+  border-bottom: 1px solid #999; }
+
 /* グリッドレイアウト用mixin (IE8以上)
 usage:
 ■12分割で間隔が20pxのグリッドのクラスを作る場合
@@ -523,7 +527,7 @@ body.mobile_nav_open {
   width: 96%;
   padding: 0 2%;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: visible; }
   .site_container::after {
     clear: both;
     content: "";
@@ -1595,131 +1599,171 @@ a.more_btn {
   font-size: 1000%;
   color: #fff; }
 
+/** Overlay title in business domain & works **/
+/*****************************************/
+.overlay_caption {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%; }
+  .overlay_caption .flex_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center; }
+  .overlay_caption:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); }
+  .overlay_caption a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    line-height: 2;
+    z-index: 5;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    transition: color 0.3s; }
+    .overlay_caption a:hover {
+      text-decoration: underline; }
+
 /** Animate object **/
 /***************/
 @-ms-keyframes spin {
   0% {
-    top: -200px;
+    transform: translateY(-40px);
     transform: rotate(0deg); }
   25% {
-    top: 0px;
+    transform: translateY(-20px);
     transform: rotate(90deg); }
   50% {
-    top: 200px;
+    transform: translateY(20px);
     transform: rotate(180deg); }
   75% {
-    top: 0px;
+    transform: translateY(40px);
     transform: rotate(270deg); }
   100% {
-    transform: rotate(360deg);
-    top: -200px; } }
+    transform: translateY(-40px);
+    transform: rotate(360deg); } }
 
 @-moz-keyframes spin {
   0% {
-    top: -200px;
+    transform: translateY(-40px);
     transform: rotate(0deg); }
   25% {
-    top: 0px;
+    transform: translateY(-20px);
     transform: rotate(90deg); }
   50% {
-    top: 200px;
+    transform: translateY(20px);
     transform: rotate(180deg); }
   75% {
-    top: 0px;
+    transform: translateY(40px);
     transform: rotate(270deg); }
   100% {
-    transform: rotate(360deg);
-    top: -200px; } }
+    transform: translateY(-40px);
+    transform: rotate(360deg); } }
 
 @-webkit-keyframes spin {
   0% {
-    top: -200px;
+    transform: translateY(-40px);
     transform: rotate(0deg); }
   25% {
-    top: 0px;
+    transform: translateY(-20px);
     transform: rotate(90deg); }
   50% {
-    top: 200px;
+    transform: translateY(20px);
     transform: rotate(180deg); }
   75% {
-    top: 0px;
+    transform: translateY(40px);
     transform: rotate(270deg); }
   100% {
-    transform: rotate(360deg);
-    top: -200px; } }
+    transform: translateY(-40px);
+    transform: rotate(360deg); } }
 
 @keyframes spin {
   0% {
-    top: -200px;
+    transform: translateY(-40px);
     transform: rotate(0deg); }
   25% {
-    top: 0px;
+    transform: translateY(-20px);
     transform: rotate(90deg); }
   50% {
-    top: 200px;
+    transform: translateY(20px);
     transform: rotate(180deg); }
   75% {
-    top: 0px;
+    transform: translateY(40px);
     transform: rotate(270deg); }
   100% {
-    transform: rotate(360deg);
-    top: -200px; } }
+    transform: translateY(-40px);
+    transform: rotate(360deg); } }
 
 @-ms-keyframes moveupdown {
   0% {
-    top: -200px; }
-  25% {
-    top: 0px; }
+    transform: translateY(0px); }
   50% {
-    top: 200px; }
-  75% {
-    top: 0px; }
+    transform: translateY(40px); }
   100% {
-    top: -200px; } }
+    transform: translateY(0px); } }
 
 @-moz-keyframes moveupdown {
   0% {
-    top: -200px; }
-  25% {
-    top: 0px; }
+    transform: translateY(0px); }
   50% {
-    top: 200px; }
-  75% {
-    top: 0px; }
+    transform: translateY(40px); }
   100% {
-    top: -200px; } }
+    transform: translateY(0px); } }
 
 @-webkit-keyframes moveupdown {
   0% {
-    top: -200px; }
-  25% {
-    top: 0px; }
+    transform: translateY(0px); }
   50% {
-    top: 200px; }
-  75% {
-    top: 0px; }
+    transform: translateY(40px); }
   100% {
-    top: -200px; } }
+    transform: translateY(0px); } }
 
 @keyframes moveupdown {
   0% {
-    top: -200px; }
-  25% {
-    top: 0px; }
+    transform: translateY(0px); }
   50% {
-    top: 200px; }
-  75% {
-    top: 0px; }
+    transform: translateY(40px); }
   100% {
-    top: -200px; } }
+    transform: translateY(0px); } }
 
 #triangle_object {
   position: absolute;
   top: 40%;
   left: 20px;
-  z-index: 1; }
+  z-index: -1; }
   #triangle_object img {
-    position: relative;
     vertical-align: bottom;
     max-width: 100%;
     animation-name: spin;
@@ -1727,11 +1771,11 @@ a.more_btn {
     -moz-animation-name: spin;
     -o-animation-name: spin;
     -ms-animation-name: spin;
-    animation-duration: 30s;
-    -webkit-animation-duration: 30s;
-    -moz-animation-duration: 30s;
-    -o-animation-duration: 30s;
-    -ms-animation-duration: 30s;
+    animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    -ms-animation-duration: 20s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -1745,11 +1789,10 @@ a.more_btn {
 
 #circle_object {
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   right: 20px;
   top: 8%; }
   #circle_object img {
-    position: relative;
     vertical-align: bottom;
     max-width: 100%;
     animation-name: spin;
@@ -1757,11 +1800,11 @@ a.more_btn {
     -moz-animation-name: spin;
     -o-animation-name: spin;
     -ms-animation-name: spin;
-    animation-duration: 30s;
-    -webkit-animation-duration: 30s;
-    -moz-animation-duration: 30s;
-    -o-animation-duration: 30s;
-    -ms-animation-duration: 30s;
+    animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    -ms-animation-duration: 20s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -1776,9 +1819,9 @@ a.more_btn {
 #cricle_bottom {
   position: absolute;
   left: 10px;
-  z-index: 1; }
+  top: 100%;
+  z-index: 10; }
   #cricle_bottom img {
-    position: relative;
     vertical-align: bottom;
     max-width: 100%;
     animation-name: spin;
@@ -1786,11 +1829,11 @@ a.more_btn {
     -moz-animation-name: spin;
     -o-animation-name: spin;
     -ms-animation-name: spin;
-    animation-duration: 30s;
-    -webkit-animation-duration: 30s;
-    -moz-animation-duration: 30s;
-    -o-animation-duration: 30s;
-    -ms-animation-duration: 30s;
+    animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    -ms-animation-duration: 20s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -1804,11 +1847,10 @@ a.more_btn {
 
 #blue_shape {
   position: absolute;
-  z-index: 1;
-  left: 90%;
-  top: 20%; }
+  z-index: 101;
+  right: 0%;
+  top: 0%; }
   #blue_shape img {
-    position: relative;
     vertical-align: bottom;
     max-width: 100%;
     animation-name: moveupdown;
@@ -1816,11 +1858,11 @@ a.more_btn {
     -moz-animation-name: moveupdown;
     -o-animation-name: moveupdown;
     -ms-animation-name: moveupdown;
-    animation-duration: 30s;
-    -webkit-animation-duration: 30s;
-    -moz-animation-duration: 30s;
-    -o-animation-duration: 30s;
-    -ms-animation-duration: 30s;
+    animation-duration: 8s;
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    -o-animation-duration: 8s;
+    -ms-animation-duration: 8s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -1834,11 +1876,10 @@ a.more_btn {
 
 #stick_object {
   position: absolute;
-  z-index: 1;
-  bottom: 10%;
+  z-index: 101;
+  top: 20%;
   left: 0; }
   #stick_object img {
-    position: relative;
     vertical-align: bottom;
     max-width: 100%;
     animation-name: spin;
@@ -1846,11 +1887,11 @@ a.more_btn {
     -moz-animation-name: spin;
     -o-animation-name: spin;
     -ms-animation-name: spin;
-    animation-duration: 30s;
-    -webkit-animation-duration: 30s;
-    -moz-animation-duration: 30s;
-    -o-animation-duration: 30s;
-    -ms-animation-duration: 30s;
+    animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    -ms-animation-duration: 20s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -1864,22 +1905,22 @@ a.more_btn {
 
 #round_object {
   position: absolute;
-  bottom: 0;
-  z-index: 0; }
+  top: 92%;
+  left: 50px;
+  z-index: 10; }
   #round_object img {
-    position: relative;
     vertical-align: bottom;
     max-width: 100%;
-    animation-name: spin;
-    -webkit-animation-name: spin;
-    -moz-animation-name: spin;
-    -o-animation-name: spin;
-    -ms-animation-name: spin;
-    animation-duration: 30s;
-    -webkit-animation-duration: 30s;
-    -moz-animation-duration: 30s;
-    -o-animation-duration: 30s;
-    -ms-animation-duration: 30s;
+    animation-name: moveupdown;
+    -webkit-animation-name: moveupdown;
+    -moz-animation-name: moveupdown;
+    -o-animation-name: moveupdown;
+    -ms-animation-name: moveupdown;
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    -o-animation-duration: 10s;
+    -ms-animation-duration: 10s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -1897,7 +1938,8 @@ a.more_btn {
   float: left;
   padding: 30px 0px;
   width: 100%;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #dddddd;
+  z-index: 5; }
   #overview::after {
     clear: both;
     content: "";
@@ -1935,60 +1977,6 @@ a.more_btn {
   #business_domain .canvas_box {
     width: 20%;
     min-height: 220px; }
-  #business_domain .caption {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform-origin: 50% 50%;
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%; }
-    #business_domain .caption .flex_inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: -webkit-flex;
-      display: -webkit-box;
-      display: -moz-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      justify-content: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      -ms-justify-content: center;
-      align-items: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      -ms-align-items: center; }
-    #business_domain .caption:after {
-      position: absolute;
-      content: "";
-      display: block;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5); }
-    #business_domain .caption a {
-      display: block;
-      text-decoration: none;
-      padding: 20px;
-      color: #000;
-      text-align: center;
-      line-height: 2;
-      z-index: 5;
-      -webkit-transition: color 0.3s;
-      -moz-transition: color 0.3s;
-      -o-transition: color 0.3s;
-      -ms-transition: color 0.3s;
-      transition: color 0.3s; }
-      #business_domain .caption a:hover {
-        text-decoration: underline; }
   #business_domain .canvas_box.frosted_glass .inner {
     padding: 10px; }
   #business_domain .canvas_box.frosted_glass:after {
@@ -2606,6 +2594,15 @@ a.more_btn {
   .privacy ul.info p {
     font-size: 15px;
     margin-top: 10px; }
+  .privacy ul.info a {
+    font-size: 16px;
+    color: #333;
+    text-shadow: 0px 0px 0.3px #999;
+    line-height: 2.1;
+    text-decoration: none; }
+    .privacy ul.info a:hover {
+      color: #bfbfbf;
+      border: none; }
 
 /** Profile page **/
 /*************/

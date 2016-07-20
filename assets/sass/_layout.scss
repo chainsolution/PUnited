@@ -60,7 +60,7 @@ body.mobile_nav_open{
 	width: $site_container_width;
 	padding: 0 $site_container_padding;
 	margin: 0 auto;
-	overflow: hidden;
+	overflow: visible;
 	@include clearfix;
 }
 

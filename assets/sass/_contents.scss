@@ -6,6 +6,7 @@
 	padding: $section-padding 0px;
 	width: 100%;
 	border-bottom: 1px solid $lightGray;
+	z-index: 5;
 	@include clearfix();
 }
 
@@ -39,49 +40,6 @@
 	.canvas_box{
 		width: 20%;
 		min-height: 220px;
-	}
-
-	.caption{
-		display: none;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		@include transform-origin(50% 50%);
-
-		.flex_inner{
-			position: relative;
-			width: 100%;
-			height: 100%;
-			@include display-flex();
-			@include justify-content();
-			@include align-items();
-		}
-
-	    &:after{
-	    	position: absolute;
-	    	content: "";
-	    	display: block;
-	    	top: 0;
-	    	left: 0;
-	    	right: 0;
-	    	bottom: 0;
-	    	background: rgba(0,0,0,0.5);
-	    }
-		a{
-			display: block;
-			text-decoration: none;
-			padding:20px;
-			color: $black;
-			text-align: center;
-			line-height: 2;
-			z-index: 5;
-			@include transition-prefix(color 0.3s);
-			&:hover{
-				text-decoration: underline;
-			}
-		}
 	}
 
 	.canvas_box.frosted_glass{
@@ -640,6 +598,17 @@
 		p{
 			font-size: 15px;
 			margin-top: 10px;
+		}
+		a{
+			font-size: 16px;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
+			line-height: 2.1;
+			text-decoration: none;
+			&:hover{
+				color: lighten(#999,15%);
+				border: none;
+			}
 		}
 	}
 }

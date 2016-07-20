@@ -108,7 +108,7 @@
 										<li><span>名称</span> 株式会社ビザビ　個人情報管理統括責任者</li>
 										<li><span>電話</span> 086-224-7172</li>
 										<li><span>FAX</span> 086-224-1584</li>
-										<li><span>E-MAIL</span> お問い合わせフォーム</li>
+										<li><span>E-MAIL</span> <a href="" class="underline">お問い合わせフォーム</a></li>
 										<p>受付時間は9時30分から18時までとなります。（土・日・祝祭日・年末年始を除く</p>
 									</ul>
 								</li>
