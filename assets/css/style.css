@@ -565,6 +565,7 @@ body.mobile_nav_open {
   display: -moz-flex;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flexbox;
   display: flex;
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
@@ -659,6 +660,7 @@ body.mobile_nav_open {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
@@ -757,6 +759,7 @@ body.mobile_nav_open {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     justify-content: center;
     -webkit-justify-content: center;
@@ -867,6 +870,7 @@ body.mobile_nav_open {
   display: -moz-flex;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flexbox;
   display: flex;
   justify-content: center;
   -webkit-justify-content: center;
@@ -986,6 +990,7 @@ body.mobile_nav_open {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     justify-content: center;
     -webkit-justify-content: center;
@@ -1022,6 +1027,7 @@ body.mobile_nav_open {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     justify-content: center;
     -webkit-justify-content: center;
@@ -1104,6 +1110,7 @@ body.mobile_nav_open {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex; }
     .privacy .row::after {
       clear: both;
@@ -1169,6 +1176,7 @@ body.mobile_nav_open {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     justify-content: center;
     -webkit-justify-content: center;
@@ -1197,6 +1205,7 @@ body.mobile_nav_open {
   display: -moz-flex;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flexbox;
   display: flex;
   justify-content: center;
   -webkit-justify-content: center;
@@ -1463,7 +1472,7 @@ a.more_btn {
 #works a.more_btn {
   position: absolute;
   top: 50%;
-  right: 70px;
+  right: 0px;
   margin-top: -7px; }
 
 #news a.more_btn {
@@ -1508,6 +1517,7 @@ a.more_btn {
   display: -moz-flex;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flexbox;
   display: flex;
   justify-content: center;
   -webkit-justify-content: center;
@@ -1622,6 +1632,7 @@ a.more_btn {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     justify-content: center;
     -webkit-justify-content: center;
@@ -1991,6 +2002,23 @@ a.more_btn {
     clear: both;
     content: "";
     display: block; }
+  #works .content_inner {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 5.2%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box; }
+    #works .content_inner::after {
+      clear: both;
+      content: "";
+      display: block; }
   #works .canvas_box {
     width: 33.3333333%;
     padding: 15px; }
@@ -2051,6 +2079,7 @@ a.more_btn {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex; }
   #news .canvas_box {
     width: 33.3333333%;
@@ -2161,6 +2190,7 @@ a.more_btn {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     background-size: cover;
     -moz-background-size: cover;
@@ -2203,6 +2233,7 @@ a.more_btn {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     background-size: cover;
     -moz-background-size: cover;
@@ -2278,6 +2309,7 @@ a.more_btn {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     justify-content: center;
     -webkit-justify-content: center;
@@ -2322,6 +2354,7 @@ a.more_btn {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     justify-content: center;
     -webkit-justify-content: center;
@@ -2397,6 +2430,7 @@ a.more_btn {
   display: -moz-flex;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flexbox;
   display: flex;
   justify-content: center;
   -webkit-justify-content: center;
@@ -2465,6 +2499,7 @@ a.more_btn {
   display: -moz-flex;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flexbox;
   display: flex;
   width: 100%;
   float: left;
@@ -2585,6 +2620,7 @@ a.more_btn {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     font-size: 15px; }
   .privacy ul.info span {
@@ -2630,6 +2666,7 @@ a.more_btn {
   display: -moz-flex;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flexbox;
   display: flex;
   align-items: center;
   -webkit-align-items: center;
@@ -2813,6 +2850,7 @@ a.more_btn {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     justify-content: center;
     -webkit-justify-content: center;
@@ -2923,6 +2961,7 @@ a.more_btn {
   display: -moz-flex;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flexbox;
   display: flex;
   justify-content: center;
   -webkit-justify-content: center;
@@ -2994,6 +3033,7 @@ a.more_btn {
   display: -moz-flex;
   display: -moz-box;
   display: -ms-flexbox;
+  display: flexbox;
   display: flex;
   align-items: center;
   -webkit-align-items: center;
@@ -3216,6 +3256,7 @@ a.more_btn {
     display: -moz-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: flexbox;
     display: flex;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;

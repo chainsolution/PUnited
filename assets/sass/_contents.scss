@@ -63,6 +63,18 @@
 	float: left;
 	@include clearfix();
 
+	.content_inner{
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 5.2%;
+		@include box-sizing(border-box);
+		@include clearfix();
+	}
+
 	.canvas_box{
 		width: 33.3333333%;
 		padding: 15px;

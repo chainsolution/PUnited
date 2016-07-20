@@ -139,8 +139,8 @@ windowScroll = function() {
         }
 
         if(!(isNaN(blue_shape_top))){
-            if(scrollTop > (blue_shape_top / 1.7 )){
-              blue_shape.css('top', ((scrollTop / 2.5) * 0.6) + 'px');
+            if(scrollTop > (blue_shape_top / 1.1 )){
+              blue_shape.css('top', ((scrollTop / 3.5) * 0.5) + 'px');
             }
         }
 
@@ -200,23 +200,23 @@ resizeBannerHeight = function() {
 var overlayAnimation;
 overlayAnimation = function(){
     $('#business_domain .frosted_glass').mouseenter(function(){
-        $(this).find('.overlay_caption').slideDown(300);
+        $(this).find('.overlay_caption').fadeIn(400);
         $(this).find('.inner').fadeOut(200);
     })
 
     .mouseleave(function(){
-        $(this).find('.overlay_caption').slideUp(300);
-        $(this).find('.inner').fadeIn(200);
+        $(this).find('.overlay_caption').fadeOut(200);
+        $(this).find('.inner').fadeIn(400);
     });
 
     $('#works .canvas_box').mouseenter(function(){
-        $(this).find('.overlay_caption').slideDown(300);
+        $(this).find('.overlay_caption').fadeIn(400);
         $(this).find('.inner').fadeOut(200);
     })
 
     .mouseleave(function(){
-        $(this).find('.overlay_caption').slideUp(300);
-        $(this).find('.inner').fadeIn(200);
+        $(this).find('.overlay_caption').fadeOut(200);
+        $(this).find('.inner').fadeIn(400);
     });
 }
 
