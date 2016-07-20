@@ -1,11 +1,11 @@
 #business_domain .content, #news .content{
-	background-attachment: fixed; !important;
+	background-attachment: scroll !important;
 
 }
 
 #business_domain .content .canvas_box.frosted_glass:after,
 #news .content .canvas_box.frosted_glass:after{
-	background-attachment: fixed; !important;
+	background-attachment: scroll !important;
 
 }
 
