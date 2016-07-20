@@ -60,7 +60,7 @@
 			</ul>
 		</nav>
 		<div class="toggle_menu">
-			<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav');">&#9776;</button>
+			<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav','noscroll');">&#9776;</button>
 		</div>
 	</div>
 </div>

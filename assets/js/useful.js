@@ -45,10 +45,15 @@ if (!PUNITED.useful) PUNITED.useful = {};
 	ns.toggleMenu = function(target, extra){
 		var extra = typeof extra !== 'undefined' ? extra : false;
 		if(extra !== false){
-			$(extra).fadeOut(100);
-		};
+			if(extra=='noscroll'){
+				$('body').toggleClass('mobile_nav_open');
+			}else{
+				$(extra).fadeOut(100);
+				$('body').toggleClass('mobile_nav_open');
+			}
+		}
+
 		$(target).slideToggle(500);
-		$('body').toggleClass('mobile_nav_open');
 	}
 	
 })();

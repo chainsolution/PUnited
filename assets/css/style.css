@@ -3274,6 +3274,8 @@ a.more_btn {
   #business_domain .canvas_box_container > .canvas_box,
   #works .canvas_box_container > .canvas_box {
     width: 50%; }
+  #works .content_inner {
+    padding: 0px; }
   #news .content {
     padding: 5% 0px 0px 0px; }
   #news .row {
