@@ -72,7 +72,7 @@
 		<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav','#dropdown_ul');">X</button>
 	</div>
 	<ul>
-		<li class="toggle_about_nav" onclick="PUNITED.useful.toggleMenu('#dropdown_ul');">ABOUT US <span><img src="assets/img/common/icons/icon_arrow_down_10.png"></span></li>
+		<li class="toggle_about_nav" onclick="PUNITED.useful.toggleMenu('#dropdown_ul');">ABOUT US </li>
 		<li>
 			<ul id="dropdown_ul">
 				<li><a href="about_jp">ABOUT US トップ</a></li>
