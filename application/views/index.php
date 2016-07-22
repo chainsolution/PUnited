@@ -293,6 +293,12 @@
 								</div>
 							</div>
 
+							<div class="canvas_box show_sm">
+								<div class="inner">
+									
+								</div>
+							</div>
+
 							<div class="canvas_box frosted_glass float_r_sm">
 								<div class="inner">
 									<figure>

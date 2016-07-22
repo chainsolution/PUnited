@@ -81,6 +81,12 @@
 	border-bottom: 1px solid #999;
 }
 
+/* visibility of element */
+.show_sm{
+	display: none !important;
+	visibility: hidden !important;
+}
+
 /* グリッドレイアウト用mixin (IE8以上)
 usage:
 ■12分割で間隔が20pxのグリッドのクラスを作る場合

@@ -47,6 +47,8 @@ if (!PUNITED.useful) PUNITED.useful = {};
 		if(extra !== false){
 			if(extra=='noscroll'){
 				$('body').toggleClass('mobile_nav_open');
+			}else if(extra=='toggleicon'){
+				$('.dropdown_icon').toggleClass('hide');
 			}else{
 				$(extra).fadeOut(100);
 				$('body').toggleClass('mobile_nav_open');

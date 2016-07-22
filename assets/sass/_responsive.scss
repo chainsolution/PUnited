@@ -76,6 +76,7 @@
 
 	.show_sm{
 		display: block!important;
+		visibility: visible !important
 	}
 
 	.float_r_sm{
@@ -113,8 +114,18 @@
 		width: 50%;
 	}
 
-	#works .content_inner{
-		padding: 0px;
+	#works{
+		.content_inner{
+			padding: 0px;
+		}
+
+		.canvas_box{
+
+			.title{
+				display: none;
+			}
+		}
+		
 	}
 
 
@@ -399,8 +410,36 @@
 		}
 	}
 
+	.overlay_caption {
+		a{
+			font-size: 12px;
+		}
+	}
+
+	#business_domain{
+		.canvas_box{
+			padding: 10px;
+		}
+		
+		.title{
+			h4{
+				font-size: 15px;
+			}
+			span{
+				font-size: 12px;
+			}
+		}
+	}
+
 	#news .canvas_box{
 		margin-bottom: 2px;
 	}
 
+}
+
+@media only screen and (max-width: 340px){
+	.footer_nav a{
+		padding: 10px 5px;
+		font-size: 70%;
+	}
 }
