@@ -93,11 +93,21 @@ windowScroll = function() {
     var blue_shape = $('#blue_shape');
 
     /* Find the offset top of each objects */
-    var tr_obj_top = ($(tr_obj).offset() || { "top": NaN }).top;
-    var cir_obj1_top = ($(cir_obj1).offset() || { "top": NaN }).top;
-    var cir_obj2_top = ($(cir_obj2).offset() || { "top": NaN }).top;
-    var stick_obj_top = ($(stick_obj).offset() || { "top": NaN }).top;
-    var blue_shape_top = ($(blue_shape).offset() || { "top": NaN }).top;
+    var tr_obj_top = ($(tr_obj).offset() || {
+        "top": NaN
+    }).top;
+    var cir_obj1_top = ($(cir_obj1).offset() || {
+        "top": NaN
+    }).top;
+    var cir_obj2_top = ($(cir_obj2).offset() || {
+        "top": NaN
+    }).top;
+    var stick_obj_top = ($(stick_obj).offset() || {
+        "top": NaN
+    }).top;
+    var blue_shape_top = ($(blue_shape).offset() || {
+        "top": NaN
+    }).top;
 
     /**/
     $(window).scroll(function() {
@@ -106,40 +116,40 @@ windowScroll = function() {
 
 
         /** Working with moving objects **/
-          /****************************/
-        if(!(isNaN(tr_obj_top))){
-            if(scrollTop > (tr_obj_top / 2)){
-              tr_obj.css('top', (scrollTop / 2.3) + 'px');
+        /****************************/
+        if (!(isNaN(tr_obj_top))) {
+            if (scrollTop > (tr_obj_top / 2)) {
+                tr_obj.css('top', (scrollTop / 2.3) + 'px');
             }
         }
 
-        if(!(isNaN(cir_obj1_top))){
-            if(scrollTop > (cir_obj1_top / 2)){
-              cir_obj1.css('top', (scrollTop / 9) + 'px');
+        if (!(isNaN(cir_obj1_top))) {
+            if (scrollTop > (cir_obj1_top / 2)) {
+                cir_obj1.css('top', (scrollTop / 9) + 'px');
             }
         }
 
-        if(!(isNaN(cir_obj2_top))){
-            if(scrollTop > (cir_obj2_top / 2)){
-              cir_obj2.css('top', (scrollTop / 2.1) + 'px');
+        if (!(isNaN(cir_obj2_top))) {
+            if (scrollTop > (cir_obj2_top / 2)) {
+                cir_obj2.css('top', (scrollTop / 2.1) + 'px');
             }
         }
 
 
-        if(!(isNaN(stick_obj_top))){
-            if(scrollTop > (stick_obj_top / 1.4 )){
-              stick_obj.css('top', (scrollTop / 2.6)+ 'px');
+        if (!(isNaN(stick_obj_top))) {
+            if (scrollTop > (stick_obj_top / 1.4)) {
+                stick_obj.css('top', (scrollTop / 2.6) + 'px');
             }
         }
 
-        if(!(isNaN(blue_shape_top))){
-            if(scrollTop > (blue_shape_top / 1.1 )){
-              blue_shape.css('top', ((scrollTop / 3.5) * 0.5) + 'px');
+        if (!(isNaN(blue_shape_top))) {
+            if (scrollTop > (blue_shape_top / 1.1)) {
+                blue_shape.css('top', ((scrollTop / 3.5) * 0.5) + 'px');
             }
         }
 
         /** Set border bottom of header when scroll, and remove when scroll top = 0 **/
-          /************************************************************************/
+        /************************************************************************/
 
         if (scrollTop > 0) {
             headbar.css("border-bottom", "1px solid #f5f5f5");
@@ -179,9 +189,9 @@ resizeBannerHeight = function() {
             }
 
             /** when window resize => always slideup the mobile navigation **/
-            if(winWidth > 768){
-               $('#mobile_global_nav').fadeOut(300);
-               $('#dropdown_ul').fadeOut(300);
+            if (winWidth > 768) {
+                $('#mobile_global_nav').fadeOut(300);
+                $('#dropdown_ul').fadeOut(300);
             }
 
         });
@@ -190,25 +200,27 @@ resizeBannerHeight = function() {
 }
 
 /** Animation for overlay hover **/
-  /****************************/
+/****************************/
 var overlayAnimation;
-overlayAnimation = function(){
-    $('#business_domain .frosted_glass').mouseenter(function(){
+overlayAnimation = function() {
+    $('#business_domain .frosted_glass').mouseenter(function() {
         $(this).find('.overlay_caption').fadeIn(180);
         $(this).find('figure').addClass('img_scale');
     })
 
-    .mouseleave(function(){
+    .mouseleave(function() {
         $(this).find('.overlay_caption').fadeOut(180);
         $(this).find('figure').removeClass('img_scale');
     });
 
-    $('#works .canvas_box').mouseenter(function(){
-        $(this).find('.overlay_caption').fadeIn(400);
+    $('#works .canvas_box').mouseenter(function() {
+        $(this).find('.overlay_caption').fadeIn(180);
+        $(this).find('figure').addClass('img_scale');
     })
 
-    .mouseleave(function(){
-        $(this).find('.overlay_caption').fadeOut(200);
+    .mouseleave(function() {
+        $(this).find('.overlay_caption').fadeOut(180);
+        $(this).find('figure').removeClass('img_scale');
     });
 }
 

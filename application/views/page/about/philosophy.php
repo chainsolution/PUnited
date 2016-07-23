@@ -58,7 +58,7 @@
 					</div>
 
 					<div class="section">
-						<div class="left_section">
+						<div class="left_section full">
 							<div class="section_title">
 								<h3>経営方針</h3>
 							</div>
@@ -71,7 +71,7 @@
 							</article>
 						</div>
 
-						<div class="right_section">
+						<div class="right_section full">
 							<div class="section_title">
 								<h3>行動指針</h3>
 							</div>
