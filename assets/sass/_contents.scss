@@ -576,7 +576,7 @@
 		float: left;
 		@include box-sizing(border-box);
 		p{
-			font-size: 16px;
+			font-size: $text_font_size;
 			color: $paragraph_color;
 			text-shadow: $paragraph_text_shadow;
 			line-height: 2.1;
@@ -604,9 +604,9 @@
 	ul{
 		list-style-type: decimal;
 		margin-left: 20px;
-		font-size: 16px;
-		color: #444;
-		text-shadow: 0px 0px 1px #999;
+		font-size: $text_font_size;
+		color: $paragraph_color;
+		text-shadow: $paragraph_text_shadow;
 		line-height: 2.1;
 		li{
 			margin-bottom: 20px;
@@ -616,7 +616,7 @@
 			margin-left: 20px;
 			li{
 				margin-bottom: 0px;
-				font-size: 15px;
+				font-size: $text_font_size;
 			}
 		}
 	}
@@ -796,7 +796,7 @@
 			padding: 10px 5px;
 			background: $lightGray;
 			display: block;
-			font-size: 15px;
+			font-size: $text_font_size;
 			line-height: 1;
 			text-align: center;
 			letter-spacing: 2px;
