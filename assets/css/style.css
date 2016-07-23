@@ -586,7 +586,8 @@ body.mobile_nav_open {
     vertical-align: bottom;
     display: block; }
   .site_logo .logo_inner {
-    margin-bottom: 7px; }
+    margin-bottom: 7px;
+    margin-top: 10px; }
 
 /** Toggle menu button**/
 /******************/
