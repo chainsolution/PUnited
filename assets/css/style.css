@@ -2974,12 +2974,81 @@ a.more_btn {
     display: block;
     vertical-align: top; }
 
-.about_jp .caption {
+.about_jp .caption_top {
   position: absolute;
-  top: 0;
+  top: 26%;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 99;
+  width: auto;
+  height: 0;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center; }
+  .about_jp .caption_top h3 {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500; }
+  .about_jp .caption_top span {
+    text-align: center;
+    display: block;
+    color: #fff; }
+
+.about_jp .caption_bottom {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: auto;
+  height: 0;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center; }
+  .about_jp .caption_bottom h3 {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500; }
+  .about_jp .caption_bottom span {
+    text-align: center;
+    display: block;
+    color: #fff; }
+
+.about_jp .caption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: auto;
+  height: 0;
   display: -webkit-flex;
   display: -webkit-box;
   display: -moz-flex;
@@ -3342,6 +3411,8 @@ a.more_btn {
   .philosophy .left_section, .philosophy .right_section {
     width: 100%;
     margin: 50px 0 0 0; }
+  .philosophy .content .row {
+    display: block; }
   .philosophy .vertical_divider {
     position: relative;
     float: left;

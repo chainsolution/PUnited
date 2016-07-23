@@ -914,12 +914,67 @@
 
 	}
 
-	.caption{
+	.caption_top{
 		position: absolute;
-		top: 0;
+		top: 26%;
 		left: 0;
 		right: 0;
 		bottom: 0;
+		z-index: 99;
+		width: auto;
+		height: 0;
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+		h3{
+			display: block;
+			color: $white;
+			font-size: 30px;
+			font-weight: 500;
+		}
+
+		span{
+			text-align: center;
+			display: block;
+			color: $white;
+		}
+	}
+
+	.caption_bottom{
+		position: absolute;
+		top: 75%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		width: auto;
+		height: 0;
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+		h3{
+			display: block;
+			color: $white;
+			font-size: 30px;
+			font-weight: 500;
+		}
+
+		span{
+			text-align: center;
+			display: block;
+			color: $white;
+		}
+	}
+
+	.caption{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		width: auto;
+		height: 0;
 		@include display-flex();
 		@include justify-content();
 		@include align-items();
