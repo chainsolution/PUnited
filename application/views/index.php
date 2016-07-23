@@ -95,6 +95,7 @@
 <!-- /banner -->
 
 <div class="site_container">
+
 	<!-- page content -->
 	<div class="page_content">
 

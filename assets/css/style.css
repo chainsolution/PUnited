@@ -1338,9 +1338,6 @@ a.more_btn {
 .global_nav ul li:hover > ul {
   height: 227px; }
 
-.global_nav ul li > ul:hover .global_nav > ul > li:has(ul) > a {
-  color: #b3b3b3; }
-
 .global_nav ul ul li {
   float: left;
   border-top: 1px solid #ddd;
@@ -2487,7 +2484,7 @@ a.more_btn {
 .philosophy .vertical_divider {
   position: absolute;
   left: 50%;
-  top: 80;
+  top: 80px;
   bottom: 0;
   width: 1px;
   background: #d9d9d9; }

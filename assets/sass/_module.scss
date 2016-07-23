@@ -151,10 +151,6 @@ a.more_btn{
 	li:hover > ul{
 		height: 227px;
 	}
-
-	li > ul:hover .global_nav > ul > li:has(ul) > a{
-		color: lighten($black,70%);
-	}
 	
 	ul{
 		li{
