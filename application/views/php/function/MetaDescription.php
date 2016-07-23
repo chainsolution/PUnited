@@ -42,6 +42,8 @@ class MetaDescription
 			'og:type' => ''
 		);
 
+
+
 		public $homePage = array(
 			'title' => 'home page',
 			'keyword' => '',
@@ -53,6 +55,8 @@ class MetaDescription
 			'og:type' => ''
 		);
 
+		
+
 		public $history = array(
 			'title' => 'history',
 			'keyword' => '',
@@ -63,7 +67,7 @@ class MetaDescription
 			'og:url' => '',
 			'og:type' => ''
 		);
-	
+
 		public $greeting = array(
 			'title' => 'greeting',
 			'keyword' => '',
