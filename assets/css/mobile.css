@@ -1,12 +1,13 @@
 #business_domain .content, #news .content{
-	background-attachment: scroll !important;
-
+	background-attachment: scroll;
+	background-position: top;
 }
 
 #business_domain .content .canvas_box.frosted_glass:after,
 #news .content .canvas_box.frosted_glass:after{
-	background-attachment: scroll !important;
-
+	background-attachment: scroll;
+	background-position: top;
+	background-size: cover;
 }
 
 /** Hide all the floating objects in mobile **/

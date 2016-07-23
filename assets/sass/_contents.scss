@@ -17,6 +17,11 @@
 	position: relative;
 	@include clearfix();
 	
+	.canvas_box_container{
+		@include display-flex();
+		flex-wrap: wrap;
+	}
+
 	.content{
 		@include background-prefix(#{$defaultBg} url($business_domain_bg) no-repeat center 70px);
 		@include background-size();
@@ -39,12 +44,21 @@
 
 	.canvas_box{
 		width: 20%;
-		min-height: 220px;
+		padding:40px 10px;
 	}
 
 	.canvas_box.frosted_glass{
 		.inner{
 			padding: 10px;
+		}
+
+		figure{
+			@include transition-prefix(all 0.1s cubic-bezier(0, 0, 1, 1) 0s);
+			@include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
+		}
+
+		figure.img_scale{
+			@include transform-prefix(scaleX(1.7) scaleY(1.7) scaleZ(1));
 		}
 
 		&:after{
@@ -63,6 +77,13 @@
 	float: left;
 	@include clearfix();
 
+	.canvas_box_container{
+		position: relative;
+		width: 100%;
+		@include display-flex();
+		flex-wrap: wrap;
+	}
+
 	.content_inner{
 		width: 100%;
 		position: relative;
@@ -78,6 +99,10 @@
 	.canvas_box{
 		width: 33.3333333%;
 		padding: 15px;
+
+		.inner{
+			width: 60%;
+		}
 
 		figure{
 		    @include transform-origin(50% 50%);

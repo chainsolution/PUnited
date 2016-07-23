@@ -99,15 +99,9 @@ windowScroll = function() {
     var stick_obj_top = ($(stick_obj).offset() || { "top": NaN }).top;
     var blue_shape_top = ($(blue_shape).offset() || { "top": NaN }).top;
 
-    console.log("trangle: "+tr_obj_top);
-    console.log("circle 1: "+cir_obj1_top);
-    console.log("circle 2: "+cir_obj2_top);
-    console.log("stick: "+stick_obj_top);
-    console.log("blue shape: "+blue_shape_top);
     /**/
     $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
-        console.log(scrollTop);
         var Winheight = $(window).height;
 
 
@@ -200,23 +194,21 @@ resizeBannerHeight = function() {
 var overlayAnimation;
 overlayAnimation = function(){
     $('#business_domain .frosted_glass').mouseenter(function(){
-        $(this).find('.overlay_caption').fadeIn(400);
-        $(this).find('.inner').fadeOut(200);
+        $(this).find('.overlay_caption').fadeIn(180);
+        $(this).find('figure').addClass('img_scale');
     })
 
     .mouseleave(function(){
-        $(this).find('.overlay_caption').fadeOut(200);
-        $(this).find('.inner').fadeIn(400);
+        $(this).find('.overlay_caption').fadeOut(180);
+        $(this).find('figure').removeClass('img_scale');
     });
 
     $('#works .canvas_box').mouseenter(function(){
         $(this).find('.overlay_caption').fadeIn(400);
-        $(this).find('.inner').fadeOut(200);
     })
 
     .mouseleave(function(){
         $(this).find('.overlay_caption').fadeOut(200);
-        $(this).find('.inner').fadeIn(400);
     });
 }
 
