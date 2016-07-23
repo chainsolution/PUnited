@@ -505,6 +505,7 @@ body.mobile_nav_open{
 	.row{
 		position: relative;
 		width: 100%;
+		display: block;
 		@include clearfix();
 	}
 	
