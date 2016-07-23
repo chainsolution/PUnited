@@ -191,7 +191,7 @@
 
 					<div class="right_content">
 						<div class="content_title">
-							<p>概概要概</p>
+							<p>組織図</p>
 						</div>
 
 						<div class="content_paragraph">
