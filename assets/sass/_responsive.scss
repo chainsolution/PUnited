@@ -1,5 +1,13 @@
 @import 'plugin/bourbon/_bourbon.scss';
 
+@media only screen and (max-width: 1160px){
+	#business_domain{
+		.canvas_box{
+			padding: 10px 10px;
+		}
+	}
+}
+
 @media only screen and (max-width: 1000px){
 	.site_md_container{
 		width: 90%;
@@ -13,13 +21,13 @@
 	.site_logo{
 		width: 15%;
 	}
-
 }
 
 @media only screen and (max-width: 960px){
 	.site_banner .item_title span{
 		font-size: 300%;
 	}
+
 	#news .news_heading_canvas{
 		width: 65%;
 	}
