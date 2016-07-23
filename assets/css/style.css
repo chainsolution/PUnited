@@ -1328,7 +1328,7 @@ a.more_btn {
   text-decoration: none;
   padding: 25px 17px;
   color: #000;
-  font-size: 108%;
+  font-size: 15px;
   line-height: 70px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -1458,7 +1458,7 @@ a.more_btn {
 
 .section_heading span {
   display: block;
-  font-size: 105%;
+  font-size: 14px;
   font-weight: 100;
   color: #333;
   text-shadow: 0px 0px 0.3px #999; }
@@ -1650,7 +1650,7 @@ a.more_btn {
     padding: 20px;
     color: #fff;
     text-align: center;
-    line-height: 2;
+    line-height: 1.7;
     z-index: 5;
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
@@ -1991,7 +1991,7 @@ a.more_btn {
     margin: 7px 0px 2px 0px; }
   #business_domain .canvas_box {
     width: 20%;
-    padding: 40px 10px; }
+    padding: 30px 10px; }
   #business_domain .canvas_box.frosted_glass .inner {
     padding: 10px; }
   #business_domain .canvas_box.frosted_glass figure {
@@ -2505,7 +2505,7 @@ a.more_btn {
   color: #333;
   text-shadow: 0px 0px 0.3px #999; }
   .philosophy p.text_lg {
-    font-size: 30px; }
+    font-size: 23px; }
 
 /** History milestone **/
 /******************/
@@ -2839,7 +2839,7 @@ a.more_btn {
   -o-box-sizing: border-box; }
   .about_jp article h1 {
     color: #333;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 40px;
     margin-top: 40px;
@@ -2922,21 +2922,6 @@ a.more_btn {
     position: relative;
     width: 100%;
     float: left;
-    transform-origin: 50% 50%;
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    -webkit-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
-    -moz-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
-    -o-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
-    -ms-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
-    transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
-    transform: scaleX(1) scaleY(1) scaleZ(1);
-    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
-    -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
-    -ms-transform: scaleX(1) scaleY(1) scaleZ(1);
-    -o-transform: scaleX(1) scaleY(1) scaleZ(1);
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -2960,84 +2945,35 @@ a.more_btn {
       -o-transition: all 0.3s ease-out;
       -ms-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; }
-    .about_jp .page_nav a:hover {
+    .about_jp .page_nav a:hover:after {
+      background: rgba(0, 0, 0, 0.3); }
+    .about_jp .page_nav a:hover img {
       transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
       -webkit-transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
       -moz-transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
       -ms-transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
       -o-transform: scaleX(1.2) scaleY(1.2) scaleZ(1); }
-      .about_jp .page_nav a:hover:after {
-        background: rgba(0, 0, 0, 0.3); }
+  .about_jp .page_nav figure {
+    overflow: hidden; }
   .about_jp .page_nav img {
     width: 100%;
     display: block;
-    vertical-align: top; }
-
-.about_jp .caption_top {
-  position: absolute;
-  top: 26%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  width: auto;
-  height: 0;
-  display: -webkit-flex;
-  display: -webkit-box;
-  display: -moz-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  align-items: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center; }
-  .about_jp .caption_top h3 {
-    display: block;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 500; }
-  .about_jp .caption_top span {
-    text-align: center;
-    display: block;
-    color: #fff; }
-
-.about_jp .caption_bottom {
-  position: absolute;
-  top: 75%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  width: auto;
-  height: 0;
-  display: -webkit-flex;
-  display: -webkit-box;
-  display: -moz-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  align-items: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center; }
-  .about_jp .caption_bottom h3 {
-    display: block;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 500; }
-  .about_jp .caption_bottom span {
-    text-align: center;
-    display: block;
-    color: #fff; }
+    vertical-align: bottom;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -webkit-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+    -o-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+    -ms-transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+    transition: all 0.3s cubic-bezier(0, 0, 1, 1) 0s;
+    transform: scaleX(1) scaleY(1) scaleZ(1);
+    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+    -moz-transform: scaleX(1) scaleY(1) scaleZ(1);
+    -ms-transform: scaleX(1) scaleY(1) scaleZ(1);
+    -o-transform: scaleX(1) scaleY(1) scaleZ(1); }
 
 .about_jp .caption {
   position: absolute;
@@ -3258,7 +3194,7 @@ a.more_btn {
     content: "";
     display: block; }
   .about_en .company_description h1 {
-    padding: 50px 0px;
+    padding: 20px 0px;
     font-size: 45px;
     color: #333;
     font-weight: 400;
@@ -3311,6 +3247,10 @@ a.more_btn {
 @media only screen and (max-width: 960px) {
   .site_banner .item_title span {
     font-size: 300%; }
+  #business_domain .title h4 {
+    font-size: 14px; }
+  #business_domain .title span {
+    font-size: 12px; }
   #news .news_heading_canvas {
     width: 65%; }
   .history .history_date {
@@ -3330,7 +3270,9 @@ a.more_btn {
     .global_nav ul a {
       font-size: 100%; }
   .scroll_bottom span {
-    top: -40%; } }
+    top: -40%; }
+  #business_domain .canvas_box .title {
+    margin-top: 0px; } }
 
 @media only screen and (max-width: 850px) {
   .site_md_container {
@@ -3480,7 +3422,9 @@ a.more_btn {
   .about_en .board_of_director {
     margin-top: 20px; }
     .about_en .board_of_director h1 {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  .about_en .company_description h1 {
+    font-size: 40px; } }
 
 @media only screen and (max-width: 640px) {
   .site_banner .item_title span {
@@ -3515,7 +3459,10 @@ a.more_btn {
   .profile .content_title {
     padding: 10px 15px 10px 0px; }
   .profile .content_paragraph {
-    padding: 10px 0px 10px 15px; } }
+    padding: 10px 0px 10px 15px; }
+  .overlay_caption a {
+    padding: 10px;
+    font-size: 13px; } }
 
 @media only screen and (max-width: 420px) {
   .site_banner .item_title span {
@@ -3540,12 +3487,23 @@ a.more_btn {
   #business_domain .title span {
     font-size: 12px; }
   #news .canvas_box {
-    margin-bottom: 2px; } }
+    margin-bottom: 2px; }
+  .about_en .company_description h1 {
+    font-size: 30px;
+    padding: 10px 0px; } }
 
 @media only screen and (max-width: 340px) {
   .footer_nav a {
     padding: 10px 5px;
-    font-size: 70%; } }
+    font-size: 70%; }
+  #business_domain .canvas_box {
+    padding: 10px; }
+  #business_domain .title h4 {
+    font-size: 13px; }
+  #business_domain .title span {
+    font-size: 11px; }
+  .about_en .company_description h1 {
+    font-size: 27px; } }
 
 /* -------------------------------------------------------------------------
 		print.scss

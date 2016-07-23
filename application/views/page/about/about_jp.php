@@ -80,36 +80,42 @@
 				<!-- Navigation images / Row 1 -->
 				<div class="about_page_nav">
 					<div class="page_nav">
-						<div class="caption text_left">
-							<div>
-								<h3 class="lang_jp">ごあいさつ</h3>
-								<span class="lang_en">GREETING</span>
-							</div>
-						</div>
 						<a href="greeting" class="greeting_nav">
-							<img src="assets/img/about_us/jp/about_us_title_greeting_01.png">
+							<figure>
+								<img src="assets/img/about_us/jp/about_us_title_greeting_01.png">
+							</figure>
+							<div class="caption text_left">
+								<div>
+									<h3 class="lang_jp">ごあいさつ</h3>
+									<span class="lang_en">GREETING</span>
+								</div>
+							</div>
 						</a>
 					</div>
 
 					<div class="page_nav">
-						<div class="caption_top text_left">
-							<div>
-								<h3 class="lang_jp">企業理念</h3>
-								<span class="lang_en">PHILOSOPHY</span>
-							</div>
-						</div>
 						<a href="philosophy" class="philosophy_nav">
-							<img src="assets/img/about_us/jp/about_us_title_philosophy_02.png">
+							<figure>
+								<img src="assets/img/about_us/jp/about_us_title_philosophy_02.png">
+							</figure>
+							<div class="caption text_left">
+								<div>
+									<h3 class="lang_jp">企業理念</h3>
+									<span class="lang_en">PHILOSOPHY</span>
+								</div>
+							</div>
 						</a>
 
-						<div class="caption_bottom text_left">
-							<div>
-								<h3 class="lang_jp">会社概要</h3>
-								<span class="lang_en">PROFILE</span>
-							</div>
-						</div>
 						<a href="profile" class="profile_nav">
-							<img src="assets/img/about_us/jp/about_us_title_profile_03.png">
+							<figure>
+								<img src="assets/img/about_us/jp/about_us_title_profile_03.png">
+							</figure>
+							<div class="caption text_left">
+								<div>
+									<h3 class="lang_jp">会社概要</h3>
+									<span class="lang_en">PROFILE</span>
+								</div>
+							</div>
 						</a>
 					</div>
 
@@ -119,26 +125,32 @@
 				<!-- Navigation images / Row 2 -->
 				<div class="about_page_nav">
 					<div class="page_nav">
-						<div class="caption text_left">
-							<div>
-								<h3 class="lang_jp">沿革</h3>
-								<span class="lang_en">HISTORY</span>
-							</div>
-						</div>
+						
 						<a href="history" class="history_nav">
-							<img src="assets/img/about_us/jp/about_us_title_history_04.png">
+							<figure>
+								<img src="assets/img/about_us/jp/about_us_title_history_04.png">
+							</figure>
+							<div class="caption text_left">
+								<div>
+									<h3 class="lang_jp">沿革</h3>
+									<span class="lang_en">HISTORY</span>
+								</div>
+							</div>
 						</a>
 					</div>
 
 					<div class="page_nav">
-						<div class="caption text_left">
-							<div>
-								<h3 class="lang_jp">プライバシーポリシー</h3>
-								<span class="lang_en">PRIVACY POLICY</span>
-							</div>
-						</div>
+						
 						<a href="privacy" class="privacy_nav">
-							<img src="assets/img/about_us/jp/about_us_title_privacypolicy_05.png">
+							<figure>
+								<img src="assets/img/about_us/jp/about_us_title_privacypolicy_05.png">
+							</figure>
+							<div class="caption text_left">
+								<div>
+									<h3 class="lang_jp">プライバシーポリシー</h3>
+									<span class="lang_en">PRIVACY POLICY</span>
+								</div>
+							</div>
 						</a>
 					</div>
 				</div>

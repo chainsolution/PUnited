@@ -28,6 +28,16 @@
 		font-size: 300%;
 	}
 
+	#business_domain{
+		.title{
+			h4{
+				font-size: 14px;
+			}
+			span{
+				font-size: 12px;
+			}
+		}
+	}
 	#news .news_heading_canvas{
 		width: 65%;
 	}
@@ -67,6 +77,14 @@
 	}
 	.scroll_bottom span {
 		top: -40%;
+	}
+
+	#business_domain{
+		.canvas_box{
+			.title{
+				margin-top: 0px;
+			}
+		}
 	}
 }
 
@@ -328,6 +346,12 @@
 				margin-bottom: 20px;
 			}
 		}
+
+		.company_description{
+			h1{
+				font-size: 40px;
+			}
+		}
 	}
 	
 }
@@ -394,6 +418,13 @@
 		}
 	}
 
+	.overlay_caption{
+		a{
+			padding: 10px;
+			font-size: 13px;
+		}
+	}
+
 }
 
 @media only screen and (max-width: 420px){
@@ -446,6 +477,15 @@
 		margin-bottom: 2px;
 	}
 
+	.about_en{
+		.company_description{
+			h1{
+				font-size: 30px;
+				padding: 10px 0px;
+			}
+		}
+	}
+
 }
 
 @media only screen and (max-width: 340px){
@@ -453,4 +493,28 @@
 		padding: 10px 5px;
 		font-size: 70%;
 	}
+
+	#business_domain{
+		.canvas_box{
+			padding: 10px;
+		}
+		
+		.title{
+			h4{
+				font-size: 13px;
+			}
+			span{
+				font-size: 11px;
+			}
+		}
+	}
+
+	.about_en{
+		.company_description{
+			h1{
+				font-size: 27px;
+			}
+		}
+	}
+
 }

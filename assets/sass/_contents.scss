@@ -44,7 +44,7 @@
 
 	.canvas_box{
 		width: 20%;
-		padding:40px 10px;
+		padding:30px 10px;
 	}
 
 	.canvas_box.frosted_glass{
@@ -488,7 +488,7 @@
 		color: $paragraph_color;
 		text-shadow: $paragraph_text_shadow;
 		&.text_lg{
-			font-size: 30px;
+			font-size: 23px;
 		}
 	}
 }
@@ -821,7 +821,7 @@
 		@include box-sizing(border-box);
 		h1{
 			color: $heading_color;
-			font-size: 22px;
+			font-size: 18px;
 			font-weight: 400;
 			margin-bottom: 40px;
 			margin-top: 40px;
@@ -882,9 +882,6 @@
 			position: relative;
 			width: 100%;
 			float: left;
-			@include transform-origin(50% 50%);
-		    @include transition-prefix(all .3s cubic-bezier(0, 0, 1, 1) 0s);
-		    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
 			@include box-sizing(border-box);
 			@include clearfix();
 			&:after{
@@ -902,68 +899,25 @@
 				&:after{
 					background: rgba(0,0,0,0.3);
 				}
-				@include transform-prefix(scaleX(1.2) scaleY(1.2) scaleZ(1));
+				img{
+					@include transform-prefix(scaleX(1.2) scaleY(1.2) scaleZ(1));
+				}
 			}
+		}
+
+		figure{
+			overflow: hidden;
 		}
 
 		img{
 			width: 100%;
 			display: block;
-			vertical-align: top;
+			vertical-align: bottom;
+			@include transform-origin(50% 50%);
+		    @include transition-prefix(all .3s cubic-bezier(0, 0, 1, 1) 0s);
+		    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
 		}
 
-	}
-
-	.caption_top{
-		position: absolute;
-		top: 26%;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 99;
-		width: auto;
-		height: 0;
-		@include display-flex();
-		@include justify-content();
-		@include align-items();
-		h3{
-			display: block;
-			color: $white;
-			font-size: 30px;
-			font-weight: 500;
-		}
-
-		span{
-			text-align: center;
-			display: block;
-			color: $white;
-		}
-	}
-
-	.caption_bottom{
-		position: absolute;
-		top: 75%;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 99;
-		width: auto;
-		height: 0;
-		@include display-flex();
-		@include justify-content();
-		@include align-items();
-		h3{
-			display: block;
-			color: $white;
-			font-size: 30px;
-			font-weight: 500;
-		}
-
-		span{
-			text-align: center;
-			display: block;
-			color: $white;
-		}
 	}
 
 	.caption{
@@ -1178,7 +1132,7 @@ article{
 		@include box-sizing(border-box);
 		@include clearfix();
 		h1{
-			padding: 50px 0px;
+			padding: 20px 0px;
 			font-size: 45px;
 			color: #333;
 			font-weight: 400;
