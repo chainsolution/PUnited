@@ -1064,7 +1064,8 @@ body.mobile_nav_open {
     margin-bottom: 30px; }
   .philosophy .row {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    display: block; }
     .philosophy .row::after {
       clear: both;
       content: "";

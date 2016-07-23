@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title><?php echo $page_title; ?></title>
@@ -72,7 +73,7 @@
 		<button onclick="PUNITED.useful.toggleMenu('#mobile_global_nav','#dropdown_ul');">X</button>
 	</div>
 	<ul>
-		<li class="toggle_about_nav" onclick="PUNITED.useful.toggleMenu('#dropdown_ul');">ABOUT US </li>
+		<li class="toggle_about_nav" onclick="PUNITED.useful.toggleMenu('#dropdown_ul','toggleicon');">ABOUT US <span class="dropdown_icon"><img src="assets/img/common/icons/icon_arrow_down_10.png"></span></li>
 		<li>
 			<ul id="dropdown_ul">
 				<li><a href="about_jp">ABOUT US トップ</a></li>
