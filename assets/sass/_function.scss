@@ -23,6 +23,9 @@
 	-webkit-align-items: $align;
 	-moz-align-items: $align;
 	-ms-align-items: $align;
+    -webkit-box-align: $align;
+    -webkit-flex-align: $align;
+    -ms-flex-align: $align;
 }
 
 @mixin background-size($val: cover){

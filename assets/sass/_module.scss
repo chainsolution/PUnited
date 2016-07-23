@@ -10,9 +10,11 @@
     @include justify-content();
     @include align-items();
     padding: 10px 0px 50px 0px;
+
     span{
     	position: relative;
     	top: -80%;
+
     	&:hover{
     		margin-top:10px;
     	}
@@ -25,16 +27,19 @@
 	float: left;
 	padding: 50px 0px;
 	text-align: center;
+
 	span{
 		top: 20%;
 		left: 50%;
+
 		&:hover{
 			margin-top: -10px;
 		}
 	}
 }
 
-.scroll_top span, .scroll_bottom span{
+.scroll_top span,
+.scroll_bottom span{
 	padding: 7px 15px;
 	cursor: pointer;
 	display: inline-block;
@@ -43,7 +48,8 @@
 	@include transform-prefix(translateX(-50%));
 }
 
-a,.canvas_box.frosted_glass:after{
+a,
+.canvas_box.frosted_glass:after{
 	@include transition-prefix(all 0.3s ease-in-out);
 }
 
@@ -92,6 +98,7 @@ a.more_btn{
 	margin-top: 10px;
 	margin-bottom: 20px;
 	@include clearfix();
+
 	a{
 		display: inline-block;
 		text-decoration: none;
@@ -132,7 +139,7 @@ a.more_btn{
 		}
 	}
 
-	a{	
+	a{
 		font-family: $font_en;
 		text-decoration: none;
 		padding: 25px 17px;
@@ -205,7 +212,9 @@ a.more_btn{
 		vertical-align: middle;
 		margin-left: 10px;
 	}
-	.toggle_about_nav,a{
+
+	.toggle_about_nav,
+	a{
 		text-decoration: none;
 		color: $white;
 		width: 100%;
@@ -243,12 +252,13 @@ a.more_btn{
 #overview{
 	article{
 		text-align: center;
-		padding: 0px;
+		padding: 0;
 		margin: 0 auto !important;
 		width: 100%;
-		margin: 0px;
+		margin: 0;
 		z-index: 2;
 		background: transparent;
+
 		h4{
 			font-size: 160%;
 			font-weight: 300;
@@ -266,6 +276,7 @@ a.more_btn{
 			text-shadow: $paragraph_text_shadow;
 		}
 	}
+
 	img.signature{
 		position: relative;
 		display: block;
@@ -296,7 +307,7 @@ a.more_btn{
 #works a.more_btn{
 	position: absolute;
 	top: 50%;
-	right: 0px;
+	right: 0;
 	margin-top: -7px;
 }
 
@@ -414,6 +425,7 @@ a.more_btn{
 			font-weight: 100;
 			color: $white;
 		}
+
 		sup{
 			position: absolute;
 			top: 50%;
@@ -443,6 +455,7 @@ a.more_btn{
 			font-size: 500%;
 			font-weight: 100;
 		}
+
 		sup{
 			position: absolute;
 			top: 50%;
@@ -494,6 +507,7 @@ a.more_btn{
 		line-height: 1.7;
 		z-index: 5;
 		@include transition-prefix(color 0.3s);
+
 		&:hover{
 			text-decoration: underline;
 		}
@@ -516,6 +530,7 @@ a.more_btn{
 	top: 40%;
 	left: 20px;
 	z-index: -1;
+
 	img{
 		vertical-align: bottom;
 		max-width: 100%;
@@ -531,6 +546,7 @@ a.more_btn{
 	z-index: 10;
 	right: 20px;
 	top: 8%;
+
 	img{
 		vertical-align: bottom;
 		max-width: 100%;
@@ -545,6 +561,7 @@ a.more_btn{
 	left: 100px;
 	top: 100%;
 	z-index: 10;
+
 	img{
 		vertical-align: bottom;
 		max-width: 100%;
@@ -559,6 +576,7 @@ a.more_btn{
 	z-index: 101;
 	right: 0%;
 	top: 0%;
+
 	img{
 		vertical-align: bottom;
 		max-width: 100%;
@@ -573,6 +591,7 @@ a.more_btn{
 	z-index: 101;
 	top: 20%;
 	left: 0;
+
 	img{
 		vertical-align: bottom;
 		max-width: 100%;
@@ -588,6 +607,7 @@ a.more_btn{
 	top: 92%;
 	left: 50px;
 	z-index: 10;
+
 	img{
 		vertical-align: bottom;
 		max-width: 100%;

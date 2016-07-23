@@ -59,6 +59,7 @@
 
 		.business_domain_nav{
 			width: 45%;
+
 		}
 
 	}
@@ -82,7 +83,7 @@
 	#business_domain{
 		.canvas_box{
 			.title{
-				margin-top: 0px;
+				margin-top: 0;
 			}
 		}
 	}
@@ -142,7 +143,7 @@
 
 	#works{
 		.content_inner{
-			padding: 0px;
+			padding: 0;
 		}
 
 		.canvas_box{
@@ -254,9 +255,10 @@
 			}
 		}
 
-		.history_date,.history_milestone{
+		.history_date,
+		.history_milestone{
 			width: 100%;
-			padding: 0px;
+			padding: 0;
 			background: transparent;
 			text-align: left;
 		}
@@ -278,7 +280,8 @@
 		.row{
 			display: block;
 		}
-		.content_title,.content_paragraph{
+		.content_title,
+		.content_paragraph{
 			display: block;
 			width: 100%;
 			text-align: left;
@@ -311,6 +314,7 @@
 
 		.business_domain_nav{
 			width: 100%;
+			padding-left: 0;
 		}
 
 		.page_nav{
@@ -321,21 +325,25 @@
 	.about_en{
 		.company_info, .chairman_profile,
 		.ceo_profile{
-			padding: 0px;
+			padding: 0;
 			display: block;
 		}
-		.company_airport_map, .geo_location_desc,
-		.profile_pic, .profile_bio, .description,
+		.company_airport_map,
+		.geo_location_desc,
+		.profile_pic,
+		.profile_bio,
+		.description,
 		.summary{
 			width: 100%;
-			padding: 0px;
+			padding: 0;
 		}
 
 		.summary{
 			margin-top: 30px;
 		}
 
-		.profile_name,.profile_pic{
+		.profile_name,
+		.profile_pic{
 			text-align: center;
 			margin-top: 20px;
 		}
@@ -418,6 +426,16 @@
 		}
 	}
 
+	.about_en{
+		.summary{
+			ul{
+				li{
+					padding: 10px 0;
+				}
+			}
+		}
+
+	}
 	.overlay_caption{
 		a{
 			padding: 10px;
@@ -482,6 +500,15 @@
 			h1{
 				font-size: 30px;
 				padding: 10px 0px;
+			}
+		}
+
+		.summary{
+			ul{
+				span{
+					width: 40%;
+					padding-right: 20px;
+				}
 			}
 		}
 	}
