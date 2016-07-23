@@ -63,7 +63,7 @@ class MetaDescription
 			'og:url' => '',
 			'og:type' => ''
 		);
-
+	
 		public $greeting = array(
 			'title' => 'greeting',
 			'keyword' => '',
