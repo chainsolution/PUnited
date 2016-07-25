@@ -3587,7 +3587,13 @@ a.more_btn {
     padding: 10px 0px; }
   .about_en .summary ul span {
     width: 40%;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+  .profile .content_title {
+    padding: 10px 5px 10px 0px; }
+    .profile .content_title p {
+      font-size: 13px; }
+  .profile .content_paragraph p {
+    font-size: 13px; } }
 
 @media only screen and (max-width: 340px) {
   .footer_nav a {

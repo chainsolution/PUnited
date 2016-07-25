@@ -233,7 +233,7 @@ overlayAnimation = function() {
 
 var checkUserAgent = function() {
     if (navigator.userAgent.match(/Mobi/)) {
-        $('head').append('<link rel="stylesheet" type="text/css" href="assets/css/mobile.css">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="public_html/css/mobile.css">');
         return ('ontouchstart' in document.documentElement);
     }
 }
