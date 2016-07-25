@@ -1,0 +1,1261 @@
+
+/** Company overview **/
+#overview{
+	position: relative;
+	float: left;
+	padding: $section-padding 0;
+	width: 100%;
+	border-bottom: 1px solid $lightGray;
+	z-index: 5;
+	@include clearfix();
+}
+
+/** Business domain **/
+#business_domain{
+	width: 100%;
+	float: left;
+	position: relative;
+	@include clearfix();
+	
+	.canvas_box_container{
+		@include display-flex();
+		flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+	}
+
+	.content{
+		@include background-prefix(#{$defaultBg} url($business_domain_bg) no-repeat center 70px);
+		@include background-size();
+		background-attachment: fixed;
+	}
+
+	.title{
+		span{
+			font-family: $font_en;
+			letter-spacing: 0;
+			color: $paragraph_color;
+		}
+		h4{
+			font-size: 20px;
+			font-weight: 500;
+			color: $heading_color;
+			margin: 7px 0px 2px 0px;
+		}
+	}
+
+	.canvas_box{
+		width: 20%;
+		padding:30px 10px;
+	}
+
+	.canvas_box.frosted_glass{
+		.inner{
+			padding: 10px;
+		}
+
+		figure{
+			@include transition-prefix(all 0.1s cubic-bezier(0, 0, 1, 1) 0s);
+			@include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
+		}
+
+		figure.img_scale{
+			@include transform-prefix(scaleX(1.7) scaleY(1.7) scaleZ(1));
+		}
+
+		&:after{
+			background-image: (linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url($business_domain_bg));
+			background-position: center 70px;
+		}
+
+	}
+
+
+}
+
+#works{
+	width: 100%;
+	position: relative;
+	float: left;
+	@include clearfix();
+
+	.canvas_box_container{
+		position: relative;
+		width: 100%;
+		@include display-flex();
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+	}
+
+	.content_inner{
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 5.2%;
+		@include box-sizing(border-box);
+		@include clearfix();
+	}
+
+	.canvas_box{
+		width: 33.3333333%;
+		padding: 15px;
+
+		.inner{
+			width: 60%;
+		}
+
+		figure{
+		    @include transform-origin(50% 50%);
+		    @include transition-prefix(all .3s cubic-bezier(0, 0, 1, 1) 0s);
+		    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
+		    &:hover{
+		  		cursor: pointer;
+		  		@include transform-prefix(scaleX(1.1) scaleY(1.1) scaleZ(1));
+		    }
+		}
+	}
+
+}
+
+#news{
+	width: 100%;
+	float: left;
+	position: relative;
+	@include clearfix();
+	
+	.section_heading > .inner{
+		display: none;
+	}
+
+	.content{
+		background: $defaultBg url($news_bg) no-repeat center center;
+		@include background-size();
+		background-attachment: fixed;
+		padding: 80px 0px 0px 0px;
+	}
+
+	.row{
+		display: inline-flex;
+		padding-bottom: 80px;
+	}
+
+	.canvas_box_container{
+		width: 100%;
+		float: left;
+		@include box-sizing(border-box);
+		@include display-flex();
+	}
+
+	.canvas_box{
+		width: 33.3333333%;
+		padding: 45px 20px;
+
+		.inner{
+			position: relative;
+			@include clearfix();
+		}
+
+		.heading{
+			position: relative;
+			width: 100%;
+			float: left;
+			display: block;
+			margin-bottom: 15px;
+
+			.date{
+				font-family: $font_en;
+				font-size: 18px;
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+
+			.topic{
+				padding: 3px 0px;
+				border-top: 1px solid $lightBlack;
+				border-bottom: 1px solid $lightBlack;
+				font-size: 11px;
+				vertical-align: middle;
+			}
+		}
+
+		.news_paragraph{
+			font-size: 16px;
+			color: $paragraph_color;
+			line-height: 1.7;
+			&:hover{
+				cursor: pointer;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.canvas_box.frosted_glass{
+		&:after{
+			@include background-prefix((linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url(#{$news_bg})) no-repeat center center);
+			@include background-size();
+			background-attachment: fixed;
+		}
+	}
+
+	.news_heading_canvas.frosted_glass{
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+		background: #444;
+		@include justify-content();
+		@include align-items();
+		&:after{
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: "";
+			z-index: 2;
+			opacity: 0.4;
+			@include background-prefix((linear-gradient(0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)),url(#{$news_bg})) no-repeat center center);
+			@include background-size();
+			background-attachment: fixed;
+			-webkit-filter: blur(6px);
+			-moz-filter: blur(6px);
+			-ms-filter: blur(6px);
+			-o-filter: blur(6px);
+			filter: blur(6px);
+		}
+	}
+
+	.left_news_heading{
+		width: 40%;
+		position: relative;
+		float: left;
+		@include box-sizing(border-box);
+	}
+
+	.right_news_box{
+		width: 60%;
+		float: left;
+		@include box-sizing(border-box);
+	}
+
+	.news_heading_canvas{
+		width: 50%;
+		float: left;
+		@include display-flex();
+		@include background-size();
+		background-position: center center;
+		overflow: hidden;
+		color: $white;
+		text-align: center;
+		@include box-sizing(border-box);
+		
+		.inner{
+			position: relative;
+			display: block;
+			width: 100%;
+			z-index: 3;
+
+			h1{
+				font-family: $font_en;
+				display: block;
+				font-weight: 300;
+				font-size: 40px;
+			}
+
+			span{
+				display: block;
+			}
+			
+		}
+		
+	}
+
+}
+
+/** Recruit section **/
+#recruit{
+	position: relative;
+	width: 100%;
+	float: left;
+	.left_box,
+	.right_box{
+		position: relative;
+		width: 50%;
+		float: left;
+		overflow: hidden;
+		@include display-flex();
+		@include background-size();
+		background-position: center center;
+		@include box-sizing(border-box);
+		@include clearfix();
+	}
+
+	.left_box .inner,.right_box .inner{
+		position: relative;
+		width: 100%;
+
+	}
+
+	.left_box figure, .right_box figure{
+
+		@include background-size();
+		background-position: center center;
+		@include transform-origin(50% 50%);
+	    @include transition-prefix(all .3s cubic-bezier(0, 0, 1, 1) 0s);
+	    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
+	    &:hover{
+	    	&::after{
+	    		background: rgba(0,0,0,0.3);
+	    	}
+	    	@include transform-prefix(scaleX(1.1) scaleY(1.1) scaleZ(1));
+	    }
+
+		&::after{
+			position: absolute;
+			content: "";
+			background: transparent;
+			display: block;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			@include transition-prefix(all 0.3s ease-out);
+		}
+	}
+
+	.left_box img,
+	.right_box img{
+		width: 100%;
+		vertical-align: bottom;
+	}
+
+	.box_title{
+		position: absolute;
+		top: 0;
+		width: 40%;
+		height: 180px;
+		background: rgba(0,0,0,0.4);
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+		z-index: 2;
+		@include box-sizing(border-box);
+
+		h2{
+			display: block;
+			margin: 0;
+			font-size: 30px;
+			color: darken($white,10%);
+			font-weight: 500;
+		}
+	}
+
+	.left_box .box_title{
+		right: 0;
+	}
+
+	.right_box .box_title{
+		left: 0;
+	}
+
+	.right_box .top_img,
+	.right_box .fb_canvas{
+		width: 100%;
+		float: left;
+	}
+
+	.right_box .top_img{
+		position: relative;
+	}
+
+	.right_box .fb_canvas{
+		position: absolute;
+		text-decoration: none;
+		background: $fbBackground;
+		top: 63%;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+		@include transition-prefix(all 0.5s ease-out);
+
+		&:hover{
+			background: lighten($fbBackground,15%);
+		}
+
+		h2{
+			display: block;
+			color: darken($white,5%);
+			margin: 0;
+		}
+
+		.kanji{
+			font-size: 25px;
+			font-weight: 400;
+		}
+
+		.en{
+			font-size: 35px;
+			font-weight: 700;
+			letter-spacing: 0;
+		}
+		
+	}
+}
+
+
+/** Greeting page **/
+  /**************/
+.greeting{
+	.paragraph{
+		position: relative;
+		width: 65%;
+		float: left;
+		display: block;
+		padding-right: 5%;
+
+		p{
+			margin: 0 0 25px 0;
+    		line-height: 2;
+    		color: $paragraph_color;
+    		font-size: $text_font_size;
+    		font-weight: 300;
+    		text-shadow: $paragraph_text_shadow;
+		}
+	}
+
+	.profile{
+		position: relative;
+		float: left;
+		width: 30%;
+
+		img{
+			width: 100%;
+			max-width: 100%;
+		}
+
+	}
+}
+
+
+/** Philosophy page **/
+  /****************/
+.philosophy{
+	.section_title{
+		position: relative;
+		text-align: center;
+		width: 100%;
+		padding: 10px 0px;
+		margin-bottom: 40px;
+		background: lighten(#999,15%);
+
+		h3{
+			margin: 0px;
+			color: $white;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1;
+		}
+	}
+
+	.company_logo{
+		height: 143px;
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+
+		img{
+			max-width: 100%;
+			vertical-align: middle;
+		}
+	}
+
+	article{
+		width: 100%;
+	}
+	
+	.article_title{
+		margin-top: 30px;
+		margin-bottom: 20px;
+		font-size: 18px;
+		color: $paragraph_color;
+		font-weight: 500;
+		text-shadow: $heading_text_shadow;
+	}
+	
+	.vertical_divider{
+		position: absolute;
+		left: 50%;
+		top: 80px;
+		bottom: 0;
+		width: 1px;
+		background: lighten(#999,25%);
+	}
+
+	ul{
+		margin-left: 20px;
+
+		li{
+			line-height: 2.2;
+			font-size: 18px;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
+		}
+	}
+
+	p{
+		font-size: $text_small;
+		text-align: center;
+		line-height: 2.2;
+		color: $paragraph_color;
+		text-shadow: $paragraph_text_shadow;
+		&.text_lg{
+			font-size: 23px;
+		}
+	}
+}
+
+
+/** History milestone **/
+  /******************/
+.history{
+	ul{
+		position: relative;
+		list-style-type: none;
+		width: 100%;
+		display: block;
+		@include clearfix();
+	}
+
+	li.history_record{
+		position: relative;
+		@include display-flex();
+		width: 100%;
+		float: left;
+		margin: 0;
+		@include box-sizing(border-box);
+		@include clearfix();
+		
+	}
+
+	.history_date,.history_milestone{
+		display: inline-block;
+		position: relative;
+		float: left;
+		vertical-align: top;
+		line-height: 2;
+		text-shadow: $paragraph_text_shadow;
+		@include box-sizing(border-box);
+	}
+
+	.history_date{
+		width: 20%;
+		padding: 20px 30px 20px 10px;
+		float: left;
+		font-size: 16px;
+		text-align: right;
+		background: $heavyGray;
+		color: $white;
+
+	}
+
+	.history_milestone{
+		width: 80%;
+		padding: 20px 10px 20px 30px;
+		float: left;
+		text-align: left;
+		p{
+			color: $paragraph_color;
+			letter-spacing: 1.5px;
+		}
+	}
+}
+
+
+/** Privacy page **/
+  /*************/
+.privacy{
+	.content_title{
+		position: relative;
+		width: 30%;
+		padding: 0px 40px 0px 10px;
+		float: left;
+		text-align: right;
+		@include box-sizing(border-box);
+
+		p{
+			font-size: $text_title;
+			font-weight: 600;
+			color: $heading_color;
+			text-shadow: $heading_text_shadow;
+			line-height: 2.2;
+		}
+	}
+
+	.content_paragraph{
+		position: relative;
+		width: 70%;
+		padding: 0px 10px 0px 40px;
+		float: left;
+		@include box-sizing(border-box);
+
+		p{
+			font-size: $text_font_size;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
+			line-height: 2.1;
+		}
+
+		h4{
+			font-size: $text_title;
+			font-weight: 600;
+			margin: 20px 0px;
+			color: $heading_color;
+			text-shadow: $heading_text_shadow;
+			line-height: 2.1;
+		}
+	}
+
+	.vertical_divider{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 1px;
+		background: lighten(#999,25%);
+	}
+
+	ul{
+		list-style-type: decimal;
+		margin-left: 20px;
+		font-size: $text_font_size;
+		color: $paragraph_color;
+		text-shadow: $paragraph_text_shadow;
+		line-height: 2.1;
+		li{
+			margin-bottom: 20px;
+		}
+
+		ul{
+			list-style-type: circle;
+			margin-left: 20px;
+			li{
+				margin-bottom: 0;
+				font-size: $text_font_size;
+			}
+		}
+	}
+	
+	ul.info{
+		list-style-type: none;
+
+		li{
+			@include display-flex();
+			font-size: 15px;
+		}
+
+		span{
+			width: 20%;
+			color: #222;
+			text-shadow: 0px 0px 1px #222;
+		}
+
+		p{
+			font-size: 15px;
+			margin-top: 10px;
+		}
+
+		a{
+			font-size: 16px;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
+			line-height: 2.1;
+			text-decoration: none;
+			&:hover{
+				color: lighten(#999,15%);
+				border: none;
+			}
+		}
+	}
+}
+
+
+/** Profile page **/
+  /*************/
+.profile{
+	ul{
+		list-style-type: none;
+		width: 100%;
+		position: relative;
+		@include clearfix();
+	}
+
+	.left_content li{
+		display: flex;
+		width: 100%;
+		position: relative;
+		@include align-items(baseline);
+	}
+
+	.right_content{
+		.content_paragraph{
+			@include display-flex();
+			@include align-items();
+			padding-left: 0;
+		}
+	}
+
+	.content_title{
+		width: 25%;
+		float: left;
+		padding: 15px 30px 15px 0px; 
+		position: relative;
+		@include box-sizing(border-box);
+		p{
+			text-align: right;
+			font-size: $text_title;
+			color: $heading_color;
+			font-weight: 500;
+			text-shadow: $heading_text_shadow;
+			line-height: 2.1;
+		}
+	}
+	
+	.content_paragraph{
+		width: 75%;
+		float: left;
+		padding: 15px 0px 15px 30px;
+		position: relative;
+		@include box-sizing(border-box);
+
+		p{
+			font-size: $text_font_size;
+			font-weight: 400;
+			line-height: 2.1;
+			color: $paragraph_color;
+			text-shadow: $paragraph_text_shadow;
+		}
+
+	}
+
+	.link_underline{
+		display: inline-block;
+		color: $paragraph_color;
+		text-decoration: none;
+		border-bottom: 1px solid #888;
+
+		&:hover{
+			color: #666;
+		}
+	}
+
+	.depart_contact{
+		margin-bottom: 15px;
+		width: 100%;
+
+		h4{
+			font-size: 17px;
+			color: $heading_color;
+			font-weight: 600;
+			text-shadow: $heading_text_shadow;
+		}
+	}
+
+	.head_title{
+		position: relative;
+		float: left;
+		display: block;
+		width: 40%;
+		padding-right: 30px;
+		@include box-sizing(border-box);
+
+		p{
+			color: $white;
+			text-align: center;
+			background: $lightBlack;
+
+			&:after{
+				position: absolute;
+				content: "";
+				display: block;
+				top: 50%;
+				right: 0;
+				width: 20px;
+				height: 1px;
+				background: lighten(#999,25%);
+			}
+		}
+	}
+
+	.vertical_line{
+		position: absolute;
+		left: 0;
+		top: 28px;
+		bottom: 71px;
+		width: 1px;
+		background: #999;
+	}
+
+	.diagram_lists{
+		position: relative;
+		float: left;
+		display: block;
+		width: 60%;
+		padding-left: 20px;
+		@include box-sizing(border-box);
+
+		.list{
+			position: relative;
+			list-style-type: none;
+			display: block;
+			width: 100%;
+			margin: 10px 0px;
+
+			&:before{
+				position: absolute;
+				content: "";
+				display: block;
+				top: 50%;
+				left: -20px;
+				height: 1px;
+				width: 12px;
+				background: lighten(#999,25%);
+			}
+
+			&:last-child:before{
+				display: none;
+			}
+		}
+
+		a{
+			text-decoration: none;
+			color: $lightBlack;
+			padding: 10px 5px;
+			background: $lightGray;
+			display: block;
+			font-size: $text_font_size;
+			line-height: 1;
+			text-align: center;
+			letter-spacing: 2px;
+
+			&:hover{
+				background: darken($lightGray,10%);
+			}
+		}
+
+	}
+}
+
+
+/** About us japanese **/
+  /******************/
+.about_jp{
+	article{
+		position: relative;
+		float: left;
+		display: block;
+		width: 60%;
+		margin-bottom: 40px;
+		@include box-sizing(border-box);
+
+		h1{
+			color: $heading_color;
+			font-size: 18px;
+			font-weight: 400;
+			margin-bottom: 40px;
+			margin-top: 40px;
+			text-shadow: $heading_text_shadow;
+		}
+
+		p{
+			font-size: $text_font_size;
+			text-shadow: $paragraph_text_shadow;
+			color: $paragraph_color;
+			margin-bottom: 15px;
+			line-height: 2.1;
+			letter-spacing: 1.5px;
+		}
+	}
+
+	.business_domain_nav{
+		position: relative;
+		float: left;
+		width: 40%;
+		margin-bottom: 40px;
+		padding-left: 5%;
+		@include box-sizing(border-box);
+		@include clearfix();
+
+		.wrap_content{
+			position: relative;
+			@include display-flex();
+			@include justify-content();
+			@include align-items();
+		}
+
+		img{
+			vertical-align: top;
+			display: block;
+			max-width: 100%;
+		}
+	}
+
+	.about_page_nav{
+		position: relative;
+		float: left;
+		display: block;
+		width: 100%;
+		@include clearfix();
+	}
+
+	.page_nav{
+		position: relative;
+		float: left;
+		width: 50%;
+		background-position: center center;
+		@include background-size();
+		overflow: hidden;
+		@include clearfix();
+		@include box-sizing(border-box);
+
+		a{
+			display: block;
+			position: relative;
+			width: 100%;
+			float: left;
+			@include box-sizing(border-box);
+			@include clearfix();
+
+			&:after{
+				position: absolute;
+				content: "";
+				display: block;
+				top:0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				background: transparent;
+				@include transition-prefix(all 0.3s ease-out);
+			}
+
+			&:hover{
+				&:after{
+					background: rgba(0,0,0,0.3);
+				}
+
+				img{
+					@include transform-prefix(scaleX(1.2) scaleY(1.2) scaleZ(1));
+				}
+			}
+		}
+
+		figure{
+			overflow: hidden;
+		}
+
+		img{
+			width: 100%;
+			display: block;
+			vertical-align: bottom;
+			@include transform-origin(50% 50%);
+		    @include transition-prefix(all .3s cubic-bezier(0, 0, 1, 1) 0s);
+		    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
+		}
+
+	}
+
+	.caption{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		width: auto;
+		height: 0;
+		@include display-flex();
+		@include justify-content();
+		@include align-items();
+
+		h3{
+			display: block;
+			color: $white;
+			font-size: 30px;
+			font-weight: 500;
+		}
+
+		span{
+			text-align: center;
+			display: block;
+			color: $white;
+		}
+	}
+}
+
+
+/** About us english **/
+  /*****************/
+.about_en{
+article{
+		display: block;
+		width: 100%;
+	}
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	span,
+	li{
+		font-family: $font_en;
+	}
+
+	p,
+	li{
+		font-size: 16px;
+		line-height: 1.5;
+		color: $paragraph_color;
+	}
+
+	p{
+		margin-bottom: 20px;
+	}
+	
+	.impression_sentence{
+		width: 100%;
+		position: relative;
+		float: left;
+		margin: 50px 0px;
+
+		p{
+			text-align: center;
+			font-size: 25px;
+			font-weight: 500;
+			color: #444;
+		}
+	}
+
+	.company_map{
+		position: relative;
+		width: 100%;
+		float: left;
+
+		img{
+			width: 100%;
+			vertical-align: top;
+			display: block;
+		}
+	}
+
+	.company_info{
+		width: 100%;
+		float: left;
+		position: relative;
+		padding: 0px 8%;
+		@include box-sizing(border-box);
+		@include display-flex();
+		@include align-items();
+
+	}
+
+	.company_airport_map{
+		position: relative;
+		width: 60%;
+		float: left;
+
+		img{
+			max-width: 100%;
+			vertical-align: top;
+			display: block;
+		}
+	}
+
+	.geo_location_desc{
+		position: relative;
+		width: 40%;
+		float: left;
+
+		h1{
+			font-size: 25px;
+			font-weight: 500;
+			color: #444;
+			margin-bottom: 50px;
+		}
+
+		
+	}
+
+	.board_of_director{
+		width: 100%;
+		float: left;
+		position: relative;
+		background: #f5f5f5;
+		padding: 70px 5.2%;
+		@include clearfix();
+		@include box-sizing(border-box);
+
+		h1{
+			font-size: 40px;
+			font-weight: 500;
+			color: #333;
+		    margin: 0;
+		    line-height: 1;
+			text-align: center;
+		}
+	}
+
+	.chairman_profile,.ceo_profile{
+		width: 100%;
+		float: left;
+		position: relative;
+		padding-top: 70px;
+		display: inline-block;
+		@include clearfix();
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+    .profile_pic{
+		position: relative;
+		width: 25%;
+		float: left;
+	}
+
+	.profile_bio{
+		position: relative;
+		width: 75%;
+		padding-left: 40px;
+		float: left;
+		@include box-sizing(border-box);
+		
+	}
+
+	.profile_name{
+		h2{
+			font-size: 25px;
+			color: #333;
+			font-weight: 500;
+			line-height: 1;
+		}
+
+		.kanji_name{
+			font-size: 14px;
+			font-family: $font_jp;
+			color: #666;
+			text-shadow: $paragraph_text_shadow;
+			letter-spacing: 1.5px;
+		}
+
+		.position_title{
+			color: #888;
+			font-size: 15px;
+			display: block;
+			font-family: $font_en;
+			text-shadow: 0px 0px 0.5px #999;
+			margin-top: 5px;
+			margin-bottom: 30px;
+		}
+	}
+	
+	.topic_title{
+		display: block;
+		width: 100%;
+		padding: 5px 0px;
+		margin: 0px 0px 20px 0px;
+		background: lighten(#999,15%);
+
+		h4{
+			color: $white;
+			font-size: 18px;
+			font-weight: 400;
+			margin-left: 10px;
+			line-height: 1;
+		}
+	}
+
+	.jmca_logo{
+		display: inline;
+		padding: 20px;
+		margin-right: 20px;
+		float: left;
+		background: $white;
+	}
+
+	.company_description{
+		position: relative;
+		width: 100%;
+		float: left;
+		padding: 0px 5.2%;
+		@include box-sizing(border-box);
+		@include clearfix();
+
+		h1{
+			padding: 20px 0px;
+			font-size: 45px;
+			color: #333;
+			font-weight: 400;
+			text-align: center;
+		}
+
+		h2{
+			font-size: 17px;
+			color: #333;
+			margin-bottom: 20px;
+		}
+	}
+
+	.description{
+		position: relative;
+		width: 64%;
+		float: left;
+		padding-right: 6%;
+
+		ul{
+			margin-left: 20px;
+
+			li{
+				line-height: 2;
+			}
+		}
+	}
+
+	.summary{
+		position: relative;
+		width: 30%;
+		float: left;
+
+		ul{
+			list-style-type: none;
+
+			li{
+				display: flex;
+				padding: 25px 0px;
+			}
+
+			span{
+				font-size: 17px;
+				font-weight: 600;
+				color: #333;
+				width: 30%;
+				text-align: right;
+				padding-right: 20%;
+			}
+		}
+	}	
+}
+
