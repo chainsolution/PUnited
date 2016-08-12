@@ -1,3 +1,6 @@
+<?php 
+	require(dirname(dirname(__DIR__)).'/php/function/authenticate.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +39,7 @@
 	<div class="site_md_container">
 		<div class="site_logo">
 			<div class="logo_inner">
-				<a href="index.php"><img src="public_html/img/common/logo/site_header_logo.png"></a>
+				<a href="/"><img src="public_html/img/common/logo/site_header_logo.png"></a>
 			</div>
 		</div>
 		<nav class="global_nav">

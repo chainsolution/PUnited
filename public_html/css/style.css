@@ -728,9 +728,9 @@ body.mobile_nav_open {
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box; }
     .site_banner .banner_inner img {
-      max-width: 100%;
+      width: 100%;
       border: 0;
-      vertical-align: middle; }
+      vertical-align: bottom; }
   .site_banner .banner_list {
     visibility: visible;
     width: 100%;

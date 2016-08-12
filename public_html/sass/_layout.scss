@@ -1,4 +1,4 @@
-@import 'plugin/bourbon/_bourbon.scss';
+﻿@import 'plugin/bourbon/_bourbon.scss';
 /* 
  * PAGE : Main visaul
  * SECTION : Header navigation
@@ -219,9 +219,9 @@ body.mobile_nav_open{
 	    @include box-sizing(border-box);
 
 		img{
-			max-width: 100%;
+			width: 100%;
 	    	border: 0;
-	    	vertical-align: middle;
+	    	vertical-align: bottom;
 		}
 	}
 
