@@ -1,4 +1,4 @@
-<div class="site_container">
+<div class="fluid_container">
 	<!-- footer -->
 	<div class="site_footer">
 		<div class="content_inner">

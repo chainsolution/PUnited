@@ -94,13 +94,14 @@
 </div>
 <!-- /banner -->
 
-<div class="site_container">
 
-	<!-- page content -->
-	<div class="page_content">
 
+<!-- page content -->
+<div class="page_content">
+
+	<div class="site_md_container">
 		<!-- overview -->
-		<div id="overview">
+		<div class="overview">
 			<article>
 				<h4>会社統合のごあいさつ</h4>
 				<p>2016年4月、新生ビザビがスタートします。</p>
@@ -123,9 +124,11 @@
 			<!-- Triangle Moving Object -->
 		</div>
 		<!-- /overview -->
+	</div>
 
+	<div class="fluid_container">
 		<!-- business domain -->
-		<div id="business_domain">
+		<div class="business_domain">
 
 			<div class="content_inner">
 
@@ -155,7 +158,7 @@
 					<div class="row">
 						<div class="canvas_box_container">
 							
-							<div class="canvas_box frosted_glass">
+							<a href="" class="canvas_box frosted_glass">
 								<div class="inner">
 									<figure>
 										<img src="public_html/img/common/icons/icon_research_04.png">
@@ -167,30 +170,30 @@
 								</div>
 								<div class="overlay_caption">
 									<div class="flex_inner">
-										<a href="">独自のリサーチ&データ管理から地域活性化事業のご提案まで、数多くのデータを分析・検証・加工し、有益な情報として提供します。</a>
+										<span>独自のリサーチ&データ管理から地域活性化事業のご提案まで、数多くのデータを分析・検証・加工し、有益な情報として提供します。</span>
 									</div>
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box">
+							<a href="" class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box hide_sm">
+							<a href="" class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box">
+							<a href="" class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box frosted_glass">
+							<a href="" class="canvas_box frosted_glass">
 								<div href="#" class="inner">
 									<figure>
 										<img src="public_html/img/common/icons/icon_area_content_06.png">
@@ -202,18 +205,18 @@
 								</div>
 								<div class="overlay_caption">
 									<div class="flex_inner">
-										<a href="">岡山を元気にする”をキーワードに、独自の媒体、独自の企画をアグレッシブに展開しています。</a>
+										<span>岡山を元気にする”をキーワードに、独自の媒体、独自の企画をアグレッシブに展開しています。</span>
 									</div>
 								</div>
-							</div>
+							</a>
 				
-							<div class="canvas_box hide_sm">
+							<a href="" class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box frosted_glass">
+							<a href="" class="canvas_box frosted_glass">
 								<div href="#" class="inner">
 									<figure>
 										<img src="public_html/img/common/icons/icon_advertising_pr_02.png">
@@ -225,30 +228,30 @@
 								</div>
 								<div class="overlay_caption">
 									<div class="flex_inner">
-										<a href="">企画から構成、運営、広告展開まで、トータルなプロモーションで高い成果をあげています。</a>
+										<span>企画から構成、運営、広告展開まで、トータルなプロモーションで高い成果をあげています。</span>
 									</div>
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box">
+							<a href="" class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box hide_sm">
+							<a href="" class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box">
+							<a href="" class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 					
-							<div class="canvas_box frosted_glass">
+							<a href="" class="canvas_box frosted_glass">
 								<div href="#" class="inner">
 									<figure>
 										<img src="public_html/img/common/icons/icon_recruit_05.png">
@@ -260,18 +263,18 @@
 								</div>
 								<div class="overlay_caption">
 									<div class="flex_inner">
-										<a href="">私たちがご提案したいのは、人材活用のためのトータルソリューションです。</a>
+										<span>私たちがご提案したいのは、人材活用のためのトータルソリューションです。</span>
 									</div>
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box hide_sm">
+							<a href="" class="canvas_box hide_sm">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box frosted_glass">
+							<a href="" class="canvas_box frosted_glass">
 								<div href="#" class="inner">
 									<figure>
 										<img src="public_html/img/common/icons/icon_event_01.png">
@@ -283,24 +286,24 @@
 								</div>
 								<div class="overlay_caption">
 									<div class="flex_inner">
-										<a href="">確固たるコンセプトを構築し、あらゆる要件を充たしたインパクトあるイベントを実現します。</a>
+										<span>確固たるコンセプトを構築し、あらゆる要件を充たしたインパクトあるイベントを実現します。</span>
 									</div>
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box">
+							<a href="" class="canvas_box">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box show_sm">
+							<a href="" class="canvas_box show_sm">
 								<div class="inner">
 									
 								</div>
-							</div>
+							</a>
 
-							<div class="canvas_box frosted_glass float_r_sm">
+							<a href="" class="canvas_box frosted_glass float_r_sm">
 								<div class="inner">
 									<figure>
 										<img src="public_html/img/common/icons/icon_internet_03.png">
@@ -312,10 +315,10 @@
 								</div>
 								<div class="overlay_caption">
 									<div class="flex_inner">
-										<a href="">ICTを活かす。それがこれからのコミュニケーションだと考えます。</a>
+										<span>ICTを活かす。それがこれからのコミュニケーションだと考えます。</span>
 									</div>
 								</div>
-							</div>
+							</a>
 
 						</div>
 					</div>
@@ -325,10 +328,11 @@
 
 		</div>
 		<!-- /business domain -->
-		
+	</div>
+
+	<div class="site_md_container">
 		<!-- works -->
-		<!-- last added -->
-		<div id="works">
+		<div class="works">
 
 			<div class="content_inner">
 
@@ -510,9 +514,11 @@
 			</div>
 		</div>
 		<!-- /work -->
+	</div>
 
+	<div class="fluid_container"
 		<!-- News -->
-		<div id="news">
+		<div class="news">
 			<div class="content_inner">
 
 				<div class="section_heading">
@@ -539,7 +545,7 @@
 
 						<div class="right_news_box">
 							<div class="canvas_box_container">
-								<div class="canvas_box frosted_glass">
+								<div class="canvas_box bg_dark frosted_glass">
 									<div class="inner">
 										<div class="heading text_left">
 											<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
@@ -561,7 +567,7 @@
 									</div>
 								</div>
 
-								<div class="canvas_box frosted_glass">
+								<div class="canvas_box bg_dark frosted_glass">
 									<div class="inner text_left">
 										<div class="heading">
 											<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
@@ -585,7 +591,7 @@
 									</div>
 								</div>
 
-								<div class="canvas_box frosted_glass">
+								<div class="canvas_box bg_dark frosted_glass">
 									<div class="inner text_left">
 										<div class="heading">
 											<p><span class="date">2016/1/25</span><span class="topic">地域コンテンツ</span></p>
@@ -606,7 +612,6 @@
 										</p>
 									</div>
 								</div>
-
 							</div>
 						</div>
 
@@ -621,9 +626,11 @@
 			</div>
 		</div>
 		<!-- /News -->
+	</div>
 
+	<div class="fluid_container">
 		<!-- Recruit -->
-		<div id="recruit">
+		<div class="recruit">
 			<div class="content_inner">
 				
 				<!-- Round Moving Object -->
@@ -645,7 +652,7 @@
 									<img src="public_html/img/main/recruit/main_recruit_man_img_01.png">
 								</figure>
 								<div class="box_title">
-									<h2>中途採用</h2>
+									<p>中途採用</p>
 								</div>
 							</div>
 						</div>
@@ -656,7 +663,7 @@
 										<img src="public_html/img/main/recruit/main_recruit_woman_img_02.png">
 									</figure>
 									<div class="box_title">
-										<h2>新卒採用</h2>
+										<p>新卒採用</p>
 									</div>
 								</div>
 								
@@ -673,10 +680,10 @@
 			</div>
 		</div>
 		<!-- /Recruit -->
-
 	</div>
-	<!-- /page content -->
+
 </div>
-<!-- /site container -->
+<!-- /page content -->
+
 
 <?php include("php/includes/footer.php"); ?>

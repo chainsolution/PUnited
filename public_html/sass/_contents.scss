@@ -1,9 +1,9 @@
 
 /** Company overview **/
-#overview{
+.overview{
 	position: relative;
 	float: left;
-	padding: $section-padding 0;
+	padding: 60px 0;
 	width: 100%;
 	border-bottom: 1px solid $lightGray;
 	z-index: 5;
@@ -11,10 +11,11 @@
 }
 
 /** Business domain **/
-#business_domain{
+.business_domain{
 	width: 100%;
 	float: left;
 	position: relative;
+	overflow: hidden;
 	@include clearfix();
 	
 	.canvas_box_container{
@@ -54,18 +55,20 @@
 	.canvas_box.frosted_glass{
 		.inner{
 			padding: 10px;
-		}
-
-		figure{
 			@include transition-prefix(all 0.1s cubic-bezier(0, 0, 1, 1) 0s);
 			@include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
 		}
 
-		figure.img_scale{
-			@include transform-prefix(scaleX(1.7) scaleY(1.7) scaleZ(1));
+		figure{
+			
+		}
+
+		.inner.img_scale{
+			@include transform-prefix(scaleX(1.4) scaleY(1.4) scaleZ(1));
 		}
 
 		&:after{
+			margin: -10px -20px -20px -10px;
 			background-image: (linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url($business_domain_bg));
 			background-position: center 70px;
 		}
@@ -75,7 +78,7 @@
 
 }
 
-#works{
+.works{
 	width: 100%;
 	position: relative;
 	float: left;
@@ -98,7 +101,7 @@
 		left: 0;
 		bottom: 0;
 		right: 0;
-		padding: 5.2%;
+		/*padding: 5.2%;*/
 		@include box-sizing(border-box);
 		@include clearfix();
 	}
@@ -115,16 +118,17 @@
 		    @include transform-origin(50% 50%);
 		    @include transition-prefix(all .3s cubic-bezier(0, 0, 1, 1) 0s);
 		    @include transform-prefix(scaleX(1) scaleY(1) scaleZ(1));
-		    &:hover{
-		  		cursor: pointer;
-		  		@include transform-prefix(scaleX(1.1) scaleY(1.1) scaleZ(1));
-		    }
 		}
+
+		figure.img_scale{
+	  		@include transform-prefix(scaleX(1.1) scaleY(1.1) scaleZ(1));
+	  	}
+
 	}
 
 }
 
-#news{
+.news{
 	width: 100%;
 	float: left;
 	position: relative;
@@ -186,9 +190,10 @@
 		}
 
 		.news_paragraph{
-			font-size: 16px;
+			font-size: 14px;
 			color: $paragraph_color;
 			line-height: 1.7;
+			text-align: left;
 			&:hover{
 				cursor: pointer;
 				text-decoration: underline;
@@ -196,11 +201,18 @@
 		}
 	}
 
+	.canvas_box.bg_dark{
+		background: #ddd;
+	}
+
 	.canvas_box.frosted_glass{
+
 		&:after{
+
 			@include background-prefix((linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url(#{$news_bg})) no-repeat center center);
 			@include background-size();
 			background-attachment: fixed;
+			margin: -10px -20px -20px -10px;
 		}
 	}
 
@@ -223,14 +235,15 @@
 			content: "";
 			z-index: 2;
 			opacity: 0.4;
+			margin: -10px -20px -20px -10px;
 			@include background-prefix((linear-gradient(0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)),url(#{$news_bg})) no-repeat center center);
 			@include background-size();
 			background-attachment: fixed;
-			-webkit-filter: blur(6px);
-			-moz-filter: blur(6px);
-			-ms-filter: blur(6px);
-			-o-filter: blur(6px);
-			filter: blur(6px);
+			-webkit-filter: blur(10px);
+			-moz-filter: blur(10px);
+			-ms-filter: blur(10px);
+			-o-filter: blur(10px);
+			filter: blur(10px);
 		}
 	}
 
@@ -282,7 +295,7 @@
 }
 
 /** Recruit section **/
-#recruit{
+.recruit{
 	position: relative;
 	width: 100%;
 	float: left;
@@ -342,7 +355,7 @@
 		position: absolute;
 		top: 0;
 		width: 40%;
-		height: 180px;
+		height: 200px;
 		background: rgba(0,0,0,0.4);
 		@include display-flex();
 		@include justify-content();
@@ -350,12 +363,13 @@
 		z-index: 2;
 		@include box-sizing(border-box);
 
-		h2{
+		p{
 			display: block;
 			margin: 0;
-			font-size: 30px;
+			font-size: 24px;
+			font-weight: 100;
+			line-height: 1;
 			color: darken($white,10%);
-			font-weight: 500;
 		}
 	}
 

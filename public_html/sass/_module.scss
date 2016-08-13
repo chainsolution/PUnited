@@ -128,11 +128,18 @@ a.more_btn{
 
 	li.relative{
 		position: relative;
+		
+		ul{
+			a{
+				font-size: 14px;
+			}
+		}
 	}
 
 	li.over_black a{
 		background: $lightBlack;
 		color: $white;
+		padding: 25px 25px;
 		&:hover{
 			background: $black;
 			color: darken($white,10%);
@@ -144,7 +151,7 @@ a.more_btn{
 		text-decoration: none;
 		padding: 25px 17px;
 		color: $black;
-		font-size: $font_size_en;
+		font-size: 16px;
 		line-height: 70px;
 		font-weight: 500;
 		letter-spacing: 1px;
@@ -156,7 +163,7 @@ a.more_btn{
 	}
 
 	li:hover > ul{
-		height: 227px;
+		height: 215px;
 	}
 	
 	ul{
@@ -185,7 +192,7 @@ a.more_btn{
 }
 
 
-#mobile_global_nav{
+.mobile_global_nav{
 
 	button{
 		background: transparent;
@@ -249,7 +256,7 @@ a.more_btn{
 }
 
 
-#overview{
+.overview{
 	article{
 		text-align: center;
 		padding: 0;
@@ -296,7 +303,7 @@ a.more_btn{
 
 	span{
 		display: block;
-		font-size: $text_font_size;
+		font-size: $text_small;
 		font-weight: 100;
 		color: $paragraph_color;
 		text-shadow: $paragraph_text_shadow;
@@ -304,14 +311,14 @@ a.more_btn{
 
 }
 
-#works a.more_btn{
+.works a.more_btn{
 	position: absolute;
 	top: 50%;
 	right: 0;
 	margin-top: -7px;
 }
 
-#news a.more_btn{
+.news a.more_btn{
 	position: relative;
 	margin: 10px auto;
 }
@@ -319,7 +326,7 @@ a.more_btn{
 .canvas_box{
 	figure > img{
 		max-width: 100%;
-		vertical-align: middle;
+		vertical-align: bottom;
 	}
 }
 
@@ -476,6 +483,7 @@ a.more_btn{
 	left: 0;
 	right: 0;
 	bottom: 0;
+	z-index: 5;
 	@include transform-origin(50% 50%);
 
 	.flex_inner{
@@ -498,7 +506,7 @@ a.more_btn{
     	background: rgba(0,0,0,0.5);
     	z-index: 3;
     }
-	a{
+	a,span{
 		display: block;
 		text-decoration: none;
 		padding:20px;
@@ -508,9 +516,6 @@ a.more_btn{
 		z-index: 5;
 		@include transition-prefix(color 0.3s);
 
-		&:hover{
-			text-decoration: underline;
-		}
 	}
 }
 

@@ -12,25 +12,25 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
 
 /** Banner slide **/
 /*************/
-var animateSlide;animateSlide=function(){var e,i;
+var animateSlide;animateSlide=function(){var e,n;
 // atfer 1s removed the loading gif image.
 setTimeout(function(){$(".site_banner .load_banner").removeClass("loading")},1e3),
 // funtion to swicth the banner image.
-function n(){e=$(".site_banner .banner_item.active"),i=e.next(),i.length?(e.find(".item_img").addClass("img_scale"),e.css("z-index","1"),e.animate({opacity:1},3e3,function(){e.animate({opacity:.99},6e3,function(){i.addClass("active"),e.removeClass("active"),e.find(".item_img").removeClass("img_scale"),e.animate({opacity:0},900,function(){e.css("z-index","0")}),n()})})):(i=$(".site_banner .banner_item:first"),e.find(".item_img").addClass("img_scale"),e.css("z-index","1"),e.animate({opacity:1},3e3,function(){e.animate({opacity:.99},6e3,function(){i.addClass("active"),e.removeClass("active"),e.find(".item_img").removeClass("img_scale"),e.animate({opacity:0},900,function(){e.css("z-index","0")}),n()})}))}()};/** initialized the slide banner when page first loaded **/
+function i(){e=$(".site_banner .banner_item.active"),n=e.next(),n.length?(e.find(".item_img").addClass("img_scale"),e.css("z-index","1"),e.animate({opacity:1},3e3,function(){e.animate({opacity:.99},6e3,function(){n.addClass("active"),e.removeClass("active"),e.find(".item_img").removeClass("img_scale"),e.animate({opacity:0},900,function(){e.css("z-index","0")}),i()})})):(n=$(".site_banner .banner_item:first"),e.find(".item_img").addClass("img_scale"),e.css("z-index","1"),e.animate({opacity:1},3e3,function(){e.animate({opacity:.99},6e3,function(){n.addClass("active"),e.removeClass("active"),e.find(".item_img").removeClass("img_scale"),e.animate({opacity:0},900,function(){e.css("z-index","0")}),i()})}))}()};/** initialized the slide banner when page first loaded **/
 /****************************************************/
 var bannerInitialize;bannerInitialize=function(){$(".site_banner .load_banner").addClass("loading")};/** Synchronize mouse scroll with moving object **/
 /***********************************************/
 var windowScroll;windowScroll=function(){/* Query for header */
-var e=$(".site_header"),i=$("#triangle_object"),n=$("#circle_object"),t=$("#cricle_bottom"),a=$("#stick_object"),o=$("#blue_shape"),s=($(i).offset()||{top:NaN}).top,c=($(n).offset()||{top:NaN}).top,r=($(t).offset()||{top:NaN}).top,d=($(a).offset()||{top:NaN}).top,l=($(o).offset()||{top:NaN}).top;/**/
+var e=$(".site_header"),n=$("#triangle_object"),i=$("#circle_object"),t=$("#cricle_bottom"),o=$("#stick_object"),a=$("#blue_shape"),s=($(n).offset()||{top:NaN}).top,c=($(i).offset()||{top:NaN}).top,l=($(t).offset()||{top:NaN}).top,r=($(o).offset()||{top:NaN}).top,d=($(a).offset()||{top:NaN}).top;/**/
 $(window).scroll(function(){var f=$(window).scrollTop();$(window).height;/** Working with moving objects **/
 /****************************/
-isNaN(s)||f>s/2&&i.css("top",f/2.3+"px"),isNaN(c)||f>c/2&&n.css("top",f/9+"px"),isNaN(r)||f>r/2&&t.css("top",f/2.1+"px"),isNaN(d)||f>d/1.4&&a.css("top",f/2.6+"px"),isNaN(l)||f>l/1.1&&o.css("top",f/3.5*.5+"px"),/** Set border bottom of header when scroll, and remove when scroll top = 0 **/
+isNaN(s)||f>s/2&&n.css("top",f/2.3+"px"),isNaN(c)||f>c/2&&i.css("top",f/9+"px"),isNaN(l)||f>l/2&&t.css("top",f/2.1+"px"),isNaN(r)||f>r/1.4&&o.css("top",f/2.6+"px"),isNaN(d)||f>d/1.1&&a.css("top",f/3.5*.5+"px"),/** Set border bottom of header when scroll, and remove when scroll top = 0 **/
 /************************************************************************/
 f>0?e.css("border-bottom","1px solid #f5f5f5"):e.css("border-bottom","0px")})};/** Resize the height of banner slide, when window width get resize smaller **/
 /***********************************************************************/
-var resizeBannerHeight;resizeBannerHeight=function(){var e,i,n,t,a;e=$(".banner_inner"),function(){i=e.width(),n=e.height(),t=1300/600,e.css("height",i/t+"px"),$(window).resize(function(){a=$(window).width(),i=e.width(),900>a?e.css({height:i/(1.1*t)+"px"}):e.css({height:i/t+"px"}),a>768&&($("#mobile_global_nav").fadeOut(300),$("#dropdown_ul").fadeOut(300))})}()};/** Animation for overlay hover **/
+var resizeBannerHeight;resizeBannerHeight=function(){var e,n,i,t,o;e=$(".banner_inner"),function(){n=e.width(),i=e.height(),t=1300/600,e.css("height",n/t+"px"),$(window).resize(function(){o=$(window).width(),n=e.width(),900>o?e.css({height:n/(1.1*t)+"px"}):e.css({height:n/t+"px"}),o>768&&($(".mobile_global_nav").fadeOut(300),$(".dropdown_ul").fadeOut(300))})}()};/** Animation for overlay hover **/
 /****************************/
-var overlayAnimation;overlayAnimation=function(){$("#business_domain .frosted_glass").mouseenter(function(){$(this).find(".overlay_caption").fadeIn(180),$(this).find("figure").addClass("img_scale")}).mouseleave(function(){$(this).find(".overlay_caption").fadeOut(180),$(this).find("figure").removeClass("img_scale")}),$("#works .canvas_box").mouseenter(function(){$(this).find(".overlay_caption").fadeIn(180),$(this).find("figure").addClass("img_scale")}).mouseleave(function(){$(this).find(".overlay_caption").fadeOut(180),$(this).find("figure").removeClass("img_scale")})};/** Check user-agent : mobile or computer **/
+var overlayAnimation;overlayAnimation=function(){$(".business_domain .frosted_glass").mouseenter(function(){$(this).find(".overlay_caption").fadeIn(180),$(this).find(".inner").addClass("img_scale")}).mouseleave(function(){$(this).find(".overlay_caption").fadeOut(180),$(this).find(".inner").removeClass("img_scale")}),$(".works .canvas_box").mouseenter(function(){$(this).find(".overlay_caption").fadeIn(180),$(this).find("figure").addClass("img_scale")}).mouseleave(function(){$(this).find(".overlay_caption").fadeOut(180),$(this).find("figure").removeClass("img_scale")})};/** Check user-agent : mobile or computer **/
 /**************************************/
 /*
     #Benefit : do somthing for only mobile
@@ -51,14 +51,14 @@ e.jumpToPageTop=function(){return $("html,body").stop().animate({scrollTop:0},1e
 		PUNITED.useful.SmoothScrollTo("element id");
 		use with event onClick(), onMouseover() etc.
 	*/
-e.SmoothScrollTo=function(e){var i=$("#"+e).offset().top-60;return $("#mobile_global_nav").slideUp(),$("html,body").stop().animate({scrollTop:i},900,"swing"),!1},/** Toggle navigation bar in mobile or smaller screen **/
+e.SmoothScrollTo=function(e){var n=$("#"+e).offset().top-60;return $("#mobile_global_nav").slideUp(),$("html,body").stop().animate({scrollTop:n},900,"swing"),!1},/** Toggle navigation bar in mobile or smaller screen **/
 /**************************************************/
 /* 
 		#usage : calling function => 
 		PUNITED.useful.toggleMenu("class/id name with . or #");
 		use with event onClick(), onMouseover() etc.
 	*/
-e.toggleMenu=function(e,i){var i="undefined"!=typeof i?i:!1;i!==!1&&("noscroll"==i?$("body").toggleClass("mobile_nav_open"):"toggleicon"==i?$(".dropdown_icon").toggleClass("hide"):($(i).fadeOut(100),$("body").toggleClass("mobile_nav_open"))),$(e).slideToggle(500)}}();
+e.toggleMenu=function(e,n){var n="undefined"!=typeof n?n:!1;n!==!1&&("noscroll"==n?$("body").toggleClass("mobile_nav_open"):"toggleicon"==n?$(".dropdown_icon").toggleClass("hide"):($(n).fadeOut(100),$("body").toggleClass("mobile_nav_open"))),$(e).slideToggle(500)}}();
 /* -------------------------------------------------------------------------
 	
 ------------------------------------------------------------------------- */

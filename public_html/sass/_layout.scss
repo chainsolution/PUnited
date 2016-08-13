@@ -28,7 +28,7 @@ body.mobile_nav_open{
 .fluid_container{
 	position: relative;
 	width: 100%;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	@include clearfix();
 }
@@ -47,10 +47,13 @@ body.mobile_nav_open{
   /******************/
 .site_md_container{
 	position: relative;
-	width: $site_md_container;
-	padding: 0 $site_md_container_padding;
+	width: 100%;
+	padding: 0 20px;
 	margin: 0 auto;
+	max-width: 1140px;
+	@include box-sizing(border-box);
 	@include clearfix;
+
 }
 
 /** Normal container **/
@@ -90,7 +93,7 @@ body.mobile_nav_open{
 	@include display-flex();
 	@include justify-content(flex-start);
 	@include align-items();
-	height: 100%;
+	height: 70px;
 
 	img{
 		margin: 0;
@@ -100,7 +103,7 @@ body.mobile_nav_open{
 	}
 	.logo_inner{
 		margin-bottom: 7px;
-		margin-top: 10px;
+		/*margin-top: 10px;*/
 	}
 }
 
@@ -158,7 +161,7 @@ body.mobile_nav_open{
 
 
 /** Global navigation in smartphone and small screen **/
-#mobile_global_nav{
+.mobile_global_nav{
 	display: none;
 	position: fixed;
 	overflow: scroll;
@@ -166,7 +169,7 @@ body.mobile_nav_open{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	padding: 0px 20px;
+	padding: 0px 10px;
 	background: rgba(0,0,0,0.9);
 	z-index: 1100;
 	
@@ -316,8 +319,11 @@ body.mobile_nav_open{
 }
 
 .page_content{
- 	width: 100%;
-	position: relative;
+ 	position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    overflow-y: visible;
 	@include clearfix();
  }
 
@@ -348,7 +354,6 @@ body.mobile_nav_open{
 	@include display-flex();
 	@include justify-content();
 	@include align-items();
-	overflow: hidden;
 	@include box-sizing(border-box);
 
 	.inner{
@@ -392,11 +397,11 @@ body.mobile_nav_open{
 		opacity: 0.4;
 		@include background-size();
 		background-attachment: fixed;
-		-webkit-filter: blur(5px);
-		-moz-filter: blur(5px);
-		-ms-filter: blur(5px);
-		-o-filter: blur(5px);
-		filter: blur(5px);
+		-webkit-filter: blur(10px);
+		-moz-filter: blur(10px);
+		-ms-filter: blur(10px);
+		-o-filter: blur(10px);
+		filter: blur(10px);
 	}	
 }
 
