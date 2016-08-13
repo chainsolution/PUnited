@@ -57,6 +57,8 @@
 					<article>
 						<h1>
 							株式会社ビザビは2016年4月に1社体制となりました。
+						</h1>
+						<h1>
 							グループ各社が持っていた専門能力を一つに集中させ、 人と人とをつなぐコミュニケーションのお手伝いをしています。
 						</h1>
 						<p>
@@ -85,7 +87,7 @@
 								<img src="public_html/img/about_us/jp/about_us_title_greeting_01.png">
 							</figure>
 							<div class="caption text_left">
-								<div>
+								<div class="inner">
 									<h3 class="lang_jp">ごあいさつ</h3>
 									<span class="lang_en">GREETING</span>
 								</div>
@@ -99,7 +101,7 @@
 								<img src="public_html/img/about_us/jp/about_us_title_philosophy_02.png">
 							</figure>
 							<div class="caption text_left">
-								<div>
+								<div class="inner">
 									<h3 class="lang_jp">企業理念</h3>
 									<span class="lang_en">PHILOSOPHY</span>
 								</div>
@@ -111,7 +113,7 @@
 								<img src="public_html/img/about_us/jp/about_us_title_profile_03.png">
 							</figure>
 							<div class="caption text_left">
-								<div>
+								<div class="inner">
 									<h3 class="lang_jp">会社概要</h3>
 									<span class="lang_en">PROFILE</span>
 								</div>
@@ -131,7 +133,7 @@
 								<img src="public_html/img/about_us/jp/about_us_title_history_04.png">
 							</figure>
 							<div class="caption text_left">
-								<div>
+								<div class="inner">
 									<h3 class="lang_jp">沿革</h3>
 									<span class="lang_en">HISTORY</span>
 								</div>
@@ -146,7 +148,7 @@
 								<img src="public_html/img/about_us/jp/about_us_title_privacypolicy_05.png">
 							</figure>
 							<div class="caption text_left">
-								<div>
+								<div class="inner">
 									<h3 class="lang_jp">プライバシーポリシー</h3>
 									<span class="lang_en">PRIVACY POLICY</span>
 								</div>

@@ -28,17 +28,18 @@ animateSlide = function() {
             current.css("z-index", "1");
             current.animate({
                 opacity: 1.0
-            }, 3000, function() {
+            }, 1000, function() {
                 current.animate({
                     opacity: 0.99
-                }, 6000, function() {
+                }, 9000, function() {
                     next.addClass("active");
                     current.removeClass("active");
+                    current.css("z-index", "0");
                     current.find(".item_img").removeClass("img_scale");
                     current.animate({
                         opacity: 0
-                    }, 900, function() {
-                        current.css("z-index", "0");
+                    }, 200, function() {
+                        
                     });
                     switchImg();
                 });
@@ -50,17 +51,18 @@ animateSlide = function() {
             current.css("z-index", "1");
             current.animate({
                 opacity: 1.0
-            }, 3000, function() {
+            }, 1000, function() {
                 current.animate({
                     opacity: 0.99
-                }, 6000, function() {
+                }, 9000, function() {
                     next.addClass("active");
                     current.removeClass("active");
+                    current.css("z-index", "0");
                     current.find(".item_img").removeClass("img_scale");
                     current.animate({
                         opacity: 0
-                    }, 900, function() {
-                        current.css("z-index", "0");
+                    }, 200, function() {
+                        
                     });
                     switchImg();
                 });
@@ -178,15 +180,11 @@ resizeBannerHeight = function() {
         $(window).resize(function() {
             winWidth = $(window).width();
             bannerWidth = banner.width();
-            if (winWidth < 900) {
-                banner.css({
-                    "height": (bannerWidth / (bannerRatio * 1.1)) + "px"
-                });
-            } else {
+           
                 banner.css({
                     "height": (bannerWidth / bannerRatio) + "px"
                 });
-            }
+            
 
             /** when window resize => always slideup the mobile navigation **/
             if (winWidth > 768) {

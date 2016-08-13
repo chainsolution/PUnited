@@ -62,7 +62,10 @@
 			</ul>
 		</nav>
 		<div class="toggle_menu">
-			<button onclick="PUNITED.useful.toggleMenu('.mobile_global_nav','noscroll');">&#9776;</button>
+			<div class="outer-btn" onclick="PUNITED.useful.toggleMenu('.mobile_global_nav','noscroll');">
+				<span class="bar bar-1"></span>
+				<span class="bar bar2"></span>
+			</div>
 		</div>
 	</div>
 </div>
@@ -70,11 +73,14 @@
 
 <!-- mobile global navigation -->
 <nav class="mobile_global_nav">
-	<div class="button_outer">
-		<button onclick="PUNITED.useful.toggleMenu('.mobile_global_nav','.dropdown_ul');">X</button>
+	<div class="button_outer" onclick="PUNITED.useful.toggleMenu('.mobile_global_nav','.dropdown_ul');">
+		<div class="outer">
+			<span class="bar bar-1"></span>
+			<span class="bar bar-2"></span>
+		</div>
 	</div>
 	<ul>
-		<li class="toggle_about_nav" onclick="PUNITED.useful.toggleMenu('.dropdown_ul','toggleicon');">ABOUT US <span class="dropdown_icon"><img src="public_html/img/common/icons/icon_arrow_down_10.png"></span></li>
+		<li class="toggle_about_nav" onclick="PUNITED.useful.toggleMenu('.dropdown_ul');">ABOUT US</li>
 		<li>
 			<ul class="dropdown_ul">
 				<li><a href="about_jp">ABOUT US トップ</a></li>

@@ -566,6 +566,14 @@ body.mobile_nav_open {
     content: "";
     display: block; }
 
+.top_content {
+  position: relative;
+  width: 100%; }
+  .top_content::after {
+    clear: both;
+    content: "";
+    display: block; }
+
 /** Site logo **/
 /**********/
 .site_logo {
@@ -605,20 +613,24 @@ body.mobile_nav_open {
   position: relative;
   float: left;
   width: 50%;
-  height: 100%;
+  height: 70px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box; }
-  .toggle_menu button {
+  .toggle_menu div.outer-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -17px;
+    cursor: pointer; }
+  .toggle_menu span.bar {
     display: block;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 30px;
-    line-height: 1;
-    padding: 20px; }
+    height: 2px;
+    width: 25px;
+    background: #000;
+    margin: 10px 0; }
 
 /** Global navigation bar **/
 /**********************/
@@ -653,7 +665,7 @@ body.mobile_nav_open {
 .mobile_global_nav {
   display: none;
   position: fixed;
-  overflow: scroll;
+  /*overflow: scroll;*/
   top: 0;
   left: 0;
   bottom: 0;
@@ -668,25 +680,57 @@ body.mobile_nav_open {
   .mobile_global_nav .button_outer {
     position: relative;
     width: 100%;
-    height: 70px;
-    float: left;
-    display: -webkit-flex;
-    display: -webkit-box;
-    display: -moz-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: flex-end;
-    -webkit-justify-content: flex-end;
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    align-items: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -webkit-box-align: center;
-    -webkit-flex-align: center;
-    -ms-flex-align: center; }
+    height: 70px; }
+    .mobile_global_nav .button_outer .outer {
+      position: relative;
+      right: 0;
+      height: 70px;
+      cursor: pointer; }
+      .mobile_global_nav .button_outer .outer::after {
+        clear: both;
+        content: "";
+        display: block; }
+    .mobile_global_nav .button_outer span {
+      position: absolute;
+      display: block;
+      float: left;
+      height: 2px;
+      width: 25px;
+      background: #fff;
+      right: 10px;
+      opacity: 0;
+      margin-top: 34px;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+    .mobile_global_nav .button_outer span.bar-1 {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg); }
+    .mobile_global_nav .button_outer span.bar-1.rotate {
+      opacity: 1;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
+    .mobile_global_nav .button_outer span.bar-2 {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg); }
+    .mobile_global_nav .button_outer span.bar-2.rotate {
+      opacity: 1;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg); }
 
 /*
  * PAGE : Mian visual;
@@ -966,11 +1010,9 @@ body.mobile_nav_open {
     display: block;
     font-size: 13px;
     color: #333;
-    text-shadow: 0px 0px 0.3px #999;
     padding: 20px 10px; }
   .canvas_box.striped:nth-child(even) {
-    /* last added */
-    background: #f5f5f5 !important; }
+    background: #f5f5f5; }
 
 /** Page : Main visual **/
 /** Layout for overlay banner **/
@@ -979,20 +1021,24 @@ body.mobile_nav_open {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  min-height: 190px;
   position: relative;
   overflow: hidden;
-  background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
-  -webkit-background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
-  -moz-background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
-  -ms-background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
-  -o-background: #f5f5f5 url("../img/about_us/banner/about_us_clear_banner_01.png") no-repeat top center/cover;
-  -webkit-filter: grayscale(80%) contrast(90%);
-  filter: grayscale(80%) contrast(90%); }
+  max-height: 230px; }
+  .overlay_banner figure {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .overlay_banner img {
     display: block;
     width: 100%;
-    vertical-align: middle; }
+    vertical-align: top;
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(#greyscale);
+    filter: gray; }
   .overlay_banner .overlay_nav {
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
@@ -1002,26 +1048,16 @@ body.mobile_nav_open {
     height: 60px;
     z-index: 3; }
   .overlay_banner .overlay_title {
-    position: relative;
+    position: absolute;
     background: transparent;
     height: 130px;
-    display: -webkit-flex;
-    display: -webkit-box;
-    display: -moz-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -webkit-box-align: center;
-    -webkit-flex-align: center;
-    -ms-flex-align: center; }
+    display: block;
+    top: 0;
+    left: 50%;
+    margin-left: -74px;
+    /*@include display-flex();
+		@include justify-content();
+		@include align-items();*/ }
 
 /** banner in about page with no navbar **/
 /***********************************/
@@ -1163,13 +1199,6 @@ body.mobile_nav_open {
 .about_jp {
   position: relative;
   width: 100%; }
-  .about_jp .top_content {
-    position: relative;
-    width: 100%; }
-    .about_jp .top_content::after {
-      clear: both;
-      content: "";
-      display: block; }
   .about_jp .row {
     position: relative;
     width: 100%;
@@ -1250,7 +1279,13 @@ body.mobile_nav_open {
   padding: 10px 0px 50px 0px; }
   .scroll_bottom span {
     position: relative;
-    top: -80%; }
+    top: -80%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    margin-left: -34px; }
     .scroll_bottom span:hover {
       margin-top: 10px; }
 
@@ -1262,7 +1297,13 @@ body.mobile_nav_open {
   text-align: center; }
   .scroll_top span {
     top: 20%;
-    left: 50%; }
+    left: 50%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    margin-left: -56px; }
     .scroll_top span:hover {
       margin-top: -10px; }
 
@@ -1276,12 +1317,7 @@ body.mobile_nav_open {
   -moz-transition: margin-top 0.4s ease;
   -o-transition: margin-top 0.4s ease;
   -ms-transition: margin-top 0.4s ease;
-  transition: margin-top 0.4s ease;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%); }
+  transition: margin-top 0.4s ease; }
 
 a,
 .canvas_box.frosted_glass:after {
@@ -1322,12 +1358,20 @@ a.more_btn {
     .full_width_btn a:hover {
       background: #000; }
 
+.greeting .section_heading span,
+.profile .section_heading span,
+.history .section_heading span,
+.philosophy .section_heading span,
+.privacy .section_heading span {
+  color: #999;
+  font-size: 18px; }
+
 .language_options {
   position: relative;
   width: 100%;
   float: left;
   margin-top: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
   .language_options::after {
     clear: both;
     content: "";
@@ -1446,7 +1490,10 @@ a.more_btn {
 .mobile_global_nav ul ul {
   display: none;
   width: 100%;
-  padding: 20px 0px; }
+  margin: 20px 0px;
+  border-top: 1px solid #444;
+  border-left: 1px solid #444;
+  border-right: 1px solid #444; }
   .mobile_global_nav ul ul::after {
     clear: both;
     content: "";
@@ -1460,7 +1507,9 @@ a.more_btn {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
-    border: 1px solid #fff; }
+    border-bottom: 1px solid #444; }
+    .mobile_global_nav ul ul li:nth-child(odd) {
+      border-right: 1px solid #444; }
 
 .overview article {
   text-align: center;
@@ -1612,16 +1661,19 @@ a.more_btn {
 
 .overlay_banner .overlay_title span {
   font-family: "Dosis", sans-serif !important;
-  font-size: 260%;
+  font-size: 300%;
   font-weight: 100;
-  color: #fff; }
+  color: #fff;
+  position: relative;
+  display: block;
+  top: 45%; }
 
 .overlay_banner .overlay_title sup {
-  position: absolute;
-  top: 50%;
-  left: 48%;
+  position: relative;
+  top: 70%;
+  left: 35%;
   display: block;
-  font-size: 700%;
+  font-size: 800%;
   color: #fff; }
 
 /** Banner no navbar in about page **/
@@ -2497,8 +2549,7 @@ a.more_btn {
     line-height: 2;
     color: #333;
     font-size: 14px;
-    font-weight: 300;
-    text-shadow: 0px 0px 0.3px #999; }
+    font-weight: 300; }
 
 .greeting .profile {
   position: relative;
@@ -2555,8 +2606,7 @@ a.more_btn {
   margin-bottom: 20px;
   font-size: 18px;
   color: #333;
-  font-weight: 500;
-  text-shadow: 0px 0px 0.5px #999; }
+  font-weight: 500; }
 
 .philosophy .vertical_divider {
   position: absolute;
@@ -2571,15 +2621,13 @@ a.more_btn {
   .philosophy ul li {
     line-height: 2.2;
     font-size: 18px;
-    color: #333;
-    text-shadow: 0px 0px 0.3px #999; }
+    color: #333; }
 
 .philosophy p {
   font-size: 13px;
   text-align: center;
   line-height: 2.2;
-  color: #333;
-  text-shadow: 0px 0px 0.3px #999; }
+  color: #333; }
   .philosophy p.text_lg {
     font-size: 23px; }
 
@@ -2622,7 +2670,6 @@ a.more_btn {
   float: left;
   vertical-align: top;
   line-height: 2;
-  text-shadow: 0px 0px 0.3px #999;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2664,7 +2711,6 @@ a.more_btn {
     font-size: 16px;
     font-weight: 600;
     color: #333;
-    text-shadow: 0px 0px 0.5px #999;
     line-height: 2.2; }
 
 .privacy .content_paragraph {
@@ -2680,14 +2726,12 @@ a.more_btn {
   .privacy .content_paragraph p {
     font-size: 14px;
     color: #333;
-    text-shadow: 0px 0px 0.3px #999;
     line-height: 2.1; }
   .privacy .content_paragraph h4 {
     font-size: 16px;
     font-weight: 600;
     margin: 20px 0px;
     color: #333;
-    text-shadow: 0px 0px 0.5px #999;
     line-height: 2.1; }
 
 .privacy .vertical_divider {
@@ -2703,7 +2747,6 @@ a.more_btn {
   margin-left: 20px;
   font-size: 14px;
   color: #333;
-  text-shadow: 0px 0px 0.3px #999;
   line-height: 2.1; }
   .privacy ul li {
     margin-bottom: 20px; }
@@ -2726,15 +2769,13 @@ a.more_btn {
     font-size: 15px; }
   .privacy ul.info span {
     width: 20%;
-    color: #222;
-    text-shadow: 0px 0px 1px #222; }
+    color: #222; }
   .privacy ul.info p {
     font-size: 15px;
     margin-top: 10px; }
   .privacy ul.info a {
     font-size: 16px;
     color: #333;
-    text-shadow: 0px 0px 0.3px #999;
     line-height: 2.1;
     text-decoration: none; }
     .privacy ul.info a:hover {
@@ -2795,7 +2836,6 @@ a.more_btn {
     font-size: 16px;
     color: #333;
     font-weight: 500;
-    text-shadow: 0px 0px 0.5px #999;
     line-height: 2.1; }
 
 .profile .content_paragraph {
@@ -2812,8 +2852,7 @@ a.more_btn {
     font-size: 14px;
     font-weight: 400;
     line-height: 2.1;
-    color: #333;
-    text-shadow: 0px 0px 0.3px #999; }
+    color: #333; }
 
 .profile .link_underline {
   display: inline-block;
@@ -2829,8 +2868,7 @@ a.more_btn {
   .profile .depart_contact h4 {
     font-size: 17px;
     color: #333;
-    font-weight: 600;
-    text-shadow: 0px 0px 0.5px #999; }
+    font-weight: 600; }
 
 .profile .head_title {
   position: relative;
@@ -2921,16 +2959,15 @@ a.more_btn {
   -o-box-sizing: border-box; }
   .about_jp article h1 {
     color: #333;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 400;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    text-shadow: 0px 0px 0.5px #999; }
+    margin-bottom: 10px;
+    margin-top: 10px; }
   .about_jp article p {
     font-size: 14px;
-    text-shadow: 0px 0px 0.3px #999;
     color: #333;
     margin-bottom: 15px;
+    margin-top: 40px;
     line-height: 2.1;
     letter-spacing: 1.5px; }
 
@@ -3024,7 +3061,7 @@ a.more_btn {
       right: 0;
       left: 0;
       bottom: 0;
-      background: transparent;
+      background: rgba(0, 0, 0, 0.5);
       -webkit-transition: all 0.3s ease-out;
       -moz-transition: all 0.3s ease-out;
       -o-transition: all 0.3s ease-out;
@@ -3062,13 +3099,13 @@ a.more_btn {
 
 .about_jp .caption {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 99;
   width: auto;
-  height: 0;
+  height: 100%;
   display: -webkit-flex;
   display: -webkit-box;
   display: -moz-flex;
@@ -3086,15 +3123,36 @@ a.more_btn {
   -webkit-box-align: center;
   -webkit-flex-align: center;
   -ms-flex-align: center; }
+  .about_jp .caption .inner {
+    z-index: 20;
+    position: relative;
+    text-align: center; }
   .about_jp .caption h3 {
     display: block;
-    color: #fff;
     font-size: 30px;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #fff;
+    text-align: center; }
   .about_jp .caption span {
+    font-size: 16px;
     text-align: center;
     display: block;
-    color: #fff; }
+    color: #b7b7b7; }
+
+.about_jp a.greeting_nav:after {
+  opacity: 1;
+  background: transparent; }
+
+.about_jp a.greeting_nav .caption .inner {
+  position: absolute;
+  top: 35%;
+  left: 17%; }
+
+.about_jp a.greeting_nav .caption h3 {
+  color: #333; }
+
+.about_jp a.greeting_nav .caption span {
+  color: #656565; }
 
 /** About us english **/
 /*****************/
@@ -3188,7 +3246,7 @@ a.more_btn {
   float: left;
   position: relative;
   background: #f5f5f5;
-  padding: 70px 5.2%;
+  padding: 70px 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3245,7 +3303,6 @@ a.more_btn {
   font-size: 14px;
   font-family: arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku GothicProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳＰゴシック", sans-serif !important;
   color: #666;
-  text-shadow: 0px 0px 0.3px #999;
   letter-spacing: 1.5px; }
 
 .about_en .profile_name .position_title {
@@ -3253,7 +3310,6 @@ a.more_btn {
   font-size: 15px;
   display: block;
   font-family: "Dosis", sans-serif !important;
-  text-shadow: 0px 0px 0.5px #999;
   margin-top: 5px;
   margin-bottom: 30px; }
 
@@ -3281,7 +3337,6 @@ a.more_btn {
   position: relative;
   width: 100%;
   float: left;
-  padding: 0px 5.2%;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3389,8 +3444,6 @@ a.more_btn {
     display: none !important; }
   .site_logo {
     width: 50%; }
-    .site_logo .logo_inner {
-      margin-left: 20px; }
   .toggle_menu {
     display: -webkit-flex;
     display: -webkit-box;
@@ -3414,6 +3467,10 @@ a.more_btn {
   .site_sm_container {
     width: 80%;
     padding: 0px 10%; }
+  .overview img.signature {
+    margin: 0 auto;
+    margin-top: 30px;
+    float: none; }
   .business_domain .canvas_box_container > .canvas_box,
   .works .canvas_box_container > .canvas_box {
     width: 50%; }
@@ -3421,6 +3478,12 @@ a.more_btn {
     padding: 0; }
   .works .canvas_box .title {
     display: none; }
+  .canvas_box.striped {
+    background: #fff; }
+    .canvas_box.striped:nth-child(4n) {
+      background: #fff !important; }
+    .canvas_box.striped:nth-child(4n-1) {
+      background: #f5f5f5 !important; }
   .news .content {
     padding: 5% 0px 0px 0px; }
   .news .row {
@@ -3440,6 +3503,8 @@ a.more_btn {
     display: inline-block; }
     .recruit .row .left_box, .recruit .row .right_box {
       width: 100%; }
+    .recruit .row .box_title p {
+      font-size: 16px; }
     .recruit .row .right_box .fb_canvas {
       position: relative;
       padding: 30px 0px;
@@ -3447,8 +3512,6 @@ a.more_btn {
   /* all about page */
   .overlay_banner .overlay_nav {
     display: none; }
-  .overlay_banner .overlay_title {
-    height: 190px; }
   .greeting .paragraph {
     width: 90%;
     padding: 0 5%; }
@@ -3509,6 +3572,12 @@ a.more_btn {
     padding-left: 0; }
   .about_jp .page_nav {
     width: 100%; }
+  .about_en .impression_sentence {
+    margin: 20px 0; }
+    .about_en .impression_sentence p {
+      font-size: 18px; }
+  .about_en .geo_location_desc h1 {
+    font-size: 22px; }
   .about_en .company_info, .about_en .chairman_profile,
   .about_en .ceo_profile {
     padding: 0;
@@ -3530,9 +3599,10 @@ a.more_btn {
   .about_en .board_of_director {
     margin-top: 20px; }
     .about_en .board_of_director h1 {
-      margin-bottom: 20px; }
+      margin-bottom: 10px;
+      font-size: 28px; }
   .about_en .company_description h1 {
-    font-size: 40px; } }
+    font-size: 28px; } }
 
 @media only screen and (max-width: 640px) {
   .site_banner .item_title span {
@@ -3547,7 +3617,15 @@ a.more_btn {
   .section_heading h1 {
     font-size: 35px; }
   .overview {
-    padding-top: 10px; } }
+    padding-top: 10px; }
+  .about_jp article h1 {
+    font-size: 18px; }
+  .about_jp article span {
+    font-size: 11px; }
+  .about_jp .caption h3 {
+    font-size: 20px; }
+  .about_jp .caption span {
+    font-size: 14px; } }
 
 @media only screen and (max-width: 520px) {
   .site_banner .item_title span {
@@ -3556,6 +3634,8 @@ a.more_btn {
     padding: 30px 0px; }
     .section_heading h1 {
       font-size: 30px; }
+  .news .canvas_box {
+    padding: 6%; }
   .recruit .box_title {
     width: 35%;
     height: 140px; }
@@ -3572,7 +3652,13 @@ a.more_btn {
     padding: 10px 0; }
   .overlay_caption a {
     padding: 10px;
-    font-size: 13px; } }
+    font-size: 13px; }
+  .overlay_banner .overlay_title sup {
+    top: 60%;
+    font-size: 600%; }
+  .overlay_banner .overlay_title span {
+    top: 40%;
+    font-size: 250%; } }
 
 @media only screen and (max-width: 420px) {
   .site_banner .item_title span {
@@ -3597,7 +3683,12 @@ a.more_btn {
   .business_domain .title span {
     font-size: 12px; }
   .news .canvas_box {
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    padding: 7%; }
+  .about_jp .caption h3 {
+    font-size: 18px; }
+  .about_jp .caption span {
+    font-size: 13px; }
   .about_en .company_description h1 {
     font-size: 30px;
     padding: 10px 0px; }
@@ -3609,7 +3700,13 @@ a.more_btn {
     .profile .content_title p {
       font-size: 13px; }
   .profile .content_paragraph p {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .overlay_banner .overlay_title sup {
+    top: 45%;
+    font-size: 600%; }
+  .overlay_banner .overlay_title span {
+    top: 30%;
+    font-size: 250%; } }
 
 @media only screen and (max-width: 340px) {
   .footer_nav a {
@@ -3621,8 +3718,16 @@ a.more_btn {
     font-size: 13px; }
   .business_domain .title span {
     font-size: 11px; }
+  .news .canvas_box {
+    padding: 8%; }
   .about_en .company_description h1 {
-    font-size: 27px; } }
+    font-size: 27px; }
+  .overlay_banner .overlay_title sup {
+    top: 60%;
+    font-size: 500%; }
+  .overlay_banner .overlay_title span {
+    top: 40%;
+    font-size: 220%; } }
 
 /* -------------------------------------------------------------------------
 		print.scss

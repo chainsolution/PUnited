@@ -14,7 +14,8 @@
     span{
     	position: relative;
     	top: -80%;
-
+    	@include transform-prefix(translateX(50%));
+		margin-left: -34px;
     	&:hover{
     		margin-top:10px;
     	}
@@ -31,12 +32,14 @@
 	span{
 		top: 20%;
 		left: 50%;
-
+		@include transform-prefix(translateX(50%));
+		margin-left: -56px;
 		&:hover{
 			margin-top: -10px;
 		}
 	}
 }
+
 
 .scroll_top span,
 .scroll_bottom span{
@@ -45,7 +48,6 @@
 	display: inline-block;
 	position: absolute;
 	@include transition-prefix(margin-top .4s ease);
-	@include transform-prefix(translateX(-50%));
 }
 
 a,
@@ -90,13 +92,26 @@ a.more_btn{
 	}
 }
 
+.greeting,
+.profile,
+.history,
+.philosophy,
+.privacy{
+	.section_heading{
+		span{
+			color: #999;
+			font-size: 18px;
+		}
+	}
+}
+
 
 .language_options{
 	position: relative;
 	width: 100%;
 	float: left;
 	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	@include clearfix();
 
 	a{
@@ -241,7 +256,10 @@ a.more_btn{
 	ul ul{
 		display: none;
 		width: 100%;
-		padding: 20px 0px;
+		margin: 20px 0px;
+		border-top: 1px solid #444;
+		border-left: 1px solid #444;
+		border-right: 1px solid #444;
 		@include clearfix();
 
 		li{
@@ -249,7 +267,11 @@ a.more_btn{
 			float: left;
 			width: 50%;
 			@include box-sizing(border-box);
-			border: 1px solid $white;
+			border-bottom: 1px solid #444;
+
+			&:nth-child(odd){
+				border-right: 1px solid #444;
+			}
 		}
 
 	}
@@ -428,17 +450,20 @@ a.more_btn{
 	.overlay_title{
 		span{
 			font-family: $font_en;
-			font-size: 260%;
+			font-size: 300%;
 			font-weight: 100;
 			color: $white;
+			position: relative;
+			display: block;
+			top: 45%;
 		}
 
 		sup{
-			position: absolute;
-			top: 50%;
-			left: 48%;
+			position: relative;
+			top: 70%;
+			left: 35%;
 			display: block;
-			font-size: 700%;
+			font-size: 800%;
 			color: $white;
 		}
 	}

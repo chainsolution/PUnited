@@ -127,9 +127,7 @@
 
 	.site_logo{
 		width: 50%;
-		.logo_inner{
-			margin-left: 20px;
-		}
+
 	}
 
 	.toggle_menu{
@@ -145,6 +143,14 @@
 	.site_sm_container{
 		width: 80%;
 		padding: 0px 10%;
+	}
+
+	.overview{
+		img.signature{
+			margin: 0 auto;
+    		margin-top: 30px;
+    		float: none;
+		}
 	}
 
 	.business_domain .canvas_box_container > .canvas_box,
@@ -164,6 +170,16 @@
 			}
 		}
 		
+	}
+
+	.canvas_box.striped{
+		background: $white;
+		&:nth-child(4n){
+			background: $white !important;
+		}
+		&:nth-child(4n-1){
+			background: $whiteGray !important;
+		}
 	}
 
 
@@ -202,6 +218,12 @@
 			width: 100%;
 		}
 
+		.box_title{
+			p{
+				font-size: 16px;
+			}
+		}
+
 		.right_box .fb_canvas{
 			position: relative;
 			padding: 30px 0px;
@@ -215,9 +237,7 @@
 		.overlay_nav{
 			display: none;
 		}
-		.overlay_title{
-			height: 190px;
-		}
+
 	}
 
 	.greeting{
@@ -334,6 +354,23 @@
 	}
 
 	.about_en{
+
+		.impression_sentence{
+			margin: 20px 0;
+
+			p{
+				font-size: 18px;
+			}
+		}
+
+		.geo_location_desc{
+
+			h1{
+				font-size: 22px;
+			}
+		}
+
+
 		.company_info, .chairman_profile,
 		.ceo_profile{
 			padding: 0;
@@ -362,13 +399,14 @@
 		.board_of_director{
 			margin-top: 20px;
 			h1{
-				margin-bottom: 20px;
+				margin-bottom: 10px;
+				font-size: 28px;
 			}
 		}
 
 		.company_description{
 			h1{
-				font-size: 40px;
+				font-size: 28px;
 			}
 		}
 	}
@@ -401,6 +439,31 @@
 		padding-top: 10px;
 	}
 
+	.about_jp{
+		article{
+
+			h1{
+				font-size: 18px;
+
+			}
+
+			span{
+				font-size: 11px;
+			}
+
+		}
+
+		.caption{
+			h3{
+				font-size: 20px;
+			}
+
+			span{
+				font-size: 14px;
+			}
+		}
+	}
+
 }
 
 @media only screen and (max-width: 520px){
@@ -412,6 +475,12 @@
 		padding: 30px 0px;
 		h1{
 			font-size: 30px;
+		}
+	}
+
+	.news{
+		.canvas_box{
+			padding: 6%;
 		}
 	}
 
@@ -451,6 +520,21 @@
 		a{
 			padding: 10px;
 			font-size: 13px;
+		}
+	}
+
+	.overlay_banner{
+	
+		.overlay_title{
+
+			sup{
+				top: 60%;
+				font-size: 600%;
+			}
+			span{
+				top: 40%;
+				font-size: 250%;
+			}
 		}
 	}
 
@@ -504,6 +588,19 @@
 
 	.news .canvas_box{
 		margin-bottom: 2px;
+		padding: 7%;
+	}
+
+	.about_jp{
+		.caption{
+			h3{
+				font-size: 18px;
+			}
+
+			span{
+				font-size: 13px;
+			}
+		}
 	}
 
 	.about_en{
@@ -540,6 +637,21 @@
 		}
 	}
 
+	.overlay_banner{
+	
+		.overlay_title{
+
+			sup{
+				top: 45%;
+				font-size: 600%;
+			}
+			span{
+				top: 30%;
+				font-size: 250%;
+			}
+		}
+	}
+
 }
 
 @media only screen and (max-width: 340px){
@@ -563,10 +675,31 @@
 		}
 	}
 
+	.news{
+		.canvas_box{
+			padding: 8%;
+		}
+	}
+
 	.about_en{
 		.company_description{
 			h1{
 				font-size: 27px;
+			}
+		}
+	}
+
+	.overlay_banner{
+	
+		.overlay_title{
+
+			sup{
+				top: 60%;
+				font-size: 500%;
+			}
+			span{
+				top: 40%;
+				font-size: 220%;
 			}
 		}
 	}

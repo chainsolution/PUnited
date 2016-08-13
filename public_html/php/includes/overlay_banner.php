@@ -1,7 +1,19 @@
-
+<div style="display:none;">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg">    
+	    <filter id="greyscale">
+	     <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0
+	                                          0.3333 0.3333 0.3333 0 0
+	                                          0.3333 0.3333 0.3333 0 0
+	                                          0      0      0      1 0"/>
+	    </filter>
+	</svg>
+</div>
 <!-- top banner in all about page -->
 <div class="fluid_container">
 	<div class="overlay_banner">
+		<figure>
+			<img src="public_html/img/about_us/banner/about_us_clear_banner_01.png">
+		</figure>
 		<div class="overlay_title">
 			<sup>`</sup>
 			<span>ABOUT US</span>
