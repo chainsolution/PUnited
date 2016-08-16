@@ -29,9 +29,12 @@ if (!PUNITED.useful) PUNITED.useful = {};
 	*/
 
 	ns.SmoothScrollTo = function(id){
-		var top = $('#'+id).offset().top - 60;
-		$('#mobile_global_nav').slideUp();
-		$('html,body').stop().animate({ scrollTop: top },900,'swing');
+		var element = $(id);
+		if(element.length){
+			var top = element.offset().top;
+			$('.mobile_global_nav').slideUp();
+			$('html,body').stop().animate({ scrollTop: (top-60) },900,'swing');
+		}
 		return false;
 	}
 

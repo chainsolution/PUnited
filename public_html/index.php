@@ -86,7 +86,7 @@
 			</li>
 		</ul>
 		<div class="scroll_bottom">
-			<span onclick="PUNITED.useful.SmoothScrollTo('overview');"><img src="public_html/img/common/icons/icon_scroll_to_bottom_08.png"></span>
+			<span onclick="PUNITED.useful.SmoothScrollTo('.overview');"><img src="public_html/img/common/icons/icon_scroll_to_bottom_08.png"></span>
 		</div>
 	</div>
 

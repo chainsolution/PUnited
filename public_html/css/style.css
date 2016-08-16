@@ -1748,6 +1748,7 @@ a.more_btn {
     display: block;
     text-decoration: none;
     padding: 20px;
+    font-size: 14px;
     color: #fff;
     text-align: center;
     line-height: 1.7;
@@ -3650,7 +3651,7 @@ a.more_btn {
     padding: 10px 0px 10px 15px; }
   .about_en .summary ul li {
     padding: 10px 0; }
-  .overlay_caption a {
+  .overlay_caption span {
     padding: 10px;
     font-size: 13px; }
   .overlay_banner .overlay_title sup {
@@ -3674,7 +3675,7 @@ a.more_btn {
     font-size: 25px; }
   .section_heading span {
     font-size: 90%; }
-  .overlay_caption a {
+  .overlay_caption span {
     font-size: 12px; }
   .business_domain .canvas_box {
     padding: 10px; }
