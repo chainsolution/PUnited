@@ -662,8 +662,7 @@
 								
 								<a href="http://facebook.com" class="fb_canvas">
 									<div>
-										<h2 class="kanji">新卒採用</h2>
-										<h2 class="en">Facebook</h2>
+										<img src="assets/img/main/recruit/main_recruit_facebook_img_03.png">
 									</div>
 								</a>
 							</div>
