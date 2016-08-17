@@ -15,7 +15,7 @@
     	position: relative;
     	top: -80%;
     	@include transform-prefix(translateX(50%));
-		margin-left: -34px;
+		margin-left: -54px;
     	&:hover{
     		margin-top:10px;
     	}
@@ -556,7 +556,7 @@ a.more_btn{
 @include keyframe_spin();
 @include keyframe_moveupdown();
 
-#triangle_object{
+.triangle_object{
 	position: absolute;
 	top: 40%;
 	left: 20px;
@@ -572,7 +572,7 @@ a.more_btn{
 	}
 }
 
-#circle_object{
+.circle_object{
 	position: absolute;
 	z-index: 10;
 	right: 20px;
@@ -587,7 +587,7 @@ a.more_btn{
 		@include animation-timing-function(linear);
 	}
 }
-#cricle_bottom{
+.cricle_bottom{
 	position: absolute;
 	left: 100px;
 	top: 100%;
@@ -602,7 +602,7 @@ a.more_btn{
 		@include animation-timing-function(linear);
 	}
 }
-#blue_shape{
+.blue_shape{
 	position: absolute;
 	z-index: 101;
 	right: 0%;
@@ -617,7 +617,7 @@ a.more_btn{
 		@include animation-timing-function(linear);
 	}
 }
-#stick_object{
+.stick_object{
 	position: absolute;
 	z-index: 101;
 	top: 20%;
@@ -633,7 +633,7 @@ a.more_btn{
 	}
 
 }
-#round_object{
+.round_object{
 	position: absolute;
 	top: 92%;
 	left: 50px;

@@ -87,11 +87,11 @@ if (!PUNITED.main) PUNITED.main = {};
         var headbar = $('.site_header');
 
         /* Query for all objects from doc */
-        var tr_obj = $('#triangle_object');
-        var cir_obj1 = $('#circle_object');
-        var cir_obj2 = $('#cricle_bottom');
-        var stick_obj = $('#stick_object');
-        var blue_shape = $('#blue_shape');
+        var tr_obj = $('.triangle_object');
+        var cir_obj1 = $('.circle_object');
+        var cir_obj2 = $('.cricle_bottom');
+        var stick_obj = $('.stick_object');
+        var blue_shape = $('.blue_shape');
 
         /* Find the offset top of each objects */
         var tr_obj_top = ($(tr_obj).offset() || {

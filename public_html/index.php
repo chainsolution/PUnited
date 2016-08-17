@@ -115,7 +115,7 @@
 			</article>
 			<img class="signature" src="public_html/img/main/overview/main_overview_signature_01.png">
 			<!-- Triangle Moving Object -->
-			<div id="triangle_object">
+			<div class="triangle_object">
 				<img src="public_html/img/common/objects/floating_triangle_object_04.png">
 			</div>
 			<!-- Triangle Moving Object -->
@@ -130,13 +130,13 @@
 			<div class="content_inner">
 
 				<!-- Circle Moving Object -->
-				<div id="circle_object">
+				<div class="circle_object">
 					<img src="public_html/img/common/objects/floating_small_yellow_squere_object_02.png">
 				</div>
 				<!-- Circle Moving Object -->
 
 				<!-- Big squere Moving -->
-				<div id="cricle_bottom">
+				<div class="cricle_bottom">
 					<img src="public_html/img/common/objects/floating_large_yellow_squere_object_01.png">
 				</div>
 				<!-- Big squere Moving -->
@@ -334,12 +334,12 @@
 			<div class="content_inner">
 
 				<!-- Blue Shape Moving -->
-				<div id="blue_shape">
+				<div class="blue_shape">
 					<img src="public_html/img/common/objects/floating_blue_object_05.png">
 				</div>
 				<!-- Blue Shape Moving -->
 				<!-- Stick Moving Object -->
-				<div id="stick_object">
+				<div class="stick_object">
 					<img src="public_html/img/common/objects/floating_stick_object_06.png">
 				</div>
 				<!-- stick Moving Object -->
@@ -631,7 +631,7 @@
 			<div class="content_inner">
 				
 				<!-- Round Moving Object -->
-				<div id="round_object">
+				<div class="round_object">
 					<img src="public_html/img/common/objects/floating_large_circle_object_03.png">
 				</div>
 				<!-- Round Moving Object -->

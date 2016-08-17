@@ -1023,7 +1023,7 @@ body.mobile_nav_open {
   width: 100%;
   position: relative;
   overflow: hidden;
-  max-height: 230px; }
+  max-height: 190px; }
   .overlay_banner figure {
     position: relative;
     top: 0;
@@ -1285,7 +1285,7 @@ body.mobile_nav_open {
     -moz-transform: translateX(50%);
     -ms-transform: translateX(50%);
     -o-transform: translateX(50%);
-    margin-left: -34px; }
+    margin-left: -54px; }
     .scroll_bottom span:hover {
       margin-top: 10px; }
 
@@ -1864,12 +1864,12 @@ a.more_btn {
   100% {
     transform: translateY(0px); } }
 
-#triangle_object {
+.triangle_object {
   position: absolute;
   top: 40%;
   left: 20px;
   z-index: -1; }
-  #triangle_object img {
+  .triangle_object img {
     vertical-align: bottom;
     max-width: 100%;
     animation-name: spin;
@@ -1893,12 +1893,12 @@ a.more_btn {
     -o-animation-timing-function: linear;
     -ms-animation-timing-function: linear; }
 
-#circle_object {
+.circle_object {
   position: absolute;
   z-index: 10;
   right: 20px;
   top: 8%; }
-  #circle_object img {
+  .circle_object img {
     vertical-align: bottom;
     max-width: 100%;
     animation-name: spin;
@@ -1922,12 +1922,12 @@ a.more_btn {
     -o-animation-timing-function: linear;
     -ms-animation-timing-function: linear; }
 
-#cricle_bottom {
+.cricle_bottom {
   position: absolute;
   left: 100px;
   top: 100%;
   z-index: 10; }
-  #cricle_bottom img {
+  .cricle_bottom img {
     vertical-align: bottom;
     max-width: 100%;
     animation-name: spin;
@@ -1951,12 +1951,12 @@ a.more_btn {
     -o-animation-timing-function: linear;
     -ms-animation-timing-function: linear; }
 
-#blue_shape {
+.blue_shape {
   position: absolute;
   z-index: 101;
   right: 0%;
   top: 0%; }
-  #blue_shape img {
+  .blue_shape img {
     vertical-align: bottom;
     max-width: 100%;
     animation-name: moveupdown;
@@ -1980,12 +1980,12 @@ a.more_btn {
     -o-animation-timing-function: linear;
     -ms-animation-timing-function: linear; }
 
-#stick_object {
+.stick_object {
   position: absolute;
   z-index: 101;
   top: 20%;
   left: 0; }
-  #stick_object img {
+  .stick_object img {
     vertical-align: bottom;
     max-width: 100%;
     animation-name: spin;
@@ -2009,12 +2009,12 @@ a.more_btn {
     -o-animation-timing-function: linear;
     -ms-animation-timing-function: linear; }
 
-#round_object {
+.round_object {
   position: absolute;
   top: 92%;
   left: 50px;
   z-index: 10; }
-  #round_object img {
+  .round_object img {
     vertical-align: bottom;
     max-width: 100%;
     animation-name: moveupdown;
