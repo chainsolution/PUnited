@@ -911,7 +911,7 @@ body.mobile_nav_open {
   position: relative;
   float: left;
   background: #fff;
-  padding: 50px 0px;
+  padding: 40px 0px;
   text-align: center; }
 
 /** Page : Main visual **/
@@ -1687,7 +1687,7 @@ a.more_btn {
   display: block;
   color: #fff;
   font-family: "Dosis", sans-serif !important;
-  font-size: 500%;
+  font-size: 67px;
   font-weight: 100; }
 
 .banner_no_navbar .overlay_title sup {
@@ -2960,7 +2960,7 @@ a.more_btn {
   -o-box-sizing: border-box; }
   .about_jp article h1 {
     color: #333;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
     margin-top: 10px; }
@@ -3062,7 +3062,7 @@ a.more_btn {
       right: 0;
       left: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.3);
       -webkit-transition: all 0.3s ease-out;
       -moz-transition: all 0.3s ease-out;
       -o-transition: all 0.3s ease-out;

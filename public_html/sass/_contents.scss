@@ -878,7 +878,7 @@
 
 		h1{
 			color: $heading_color;
-			font-size: 26px;
+			font-size: 24px;
 			font-weight: 400;
 			margin-bottom: 10px;
 			margin-top: 10px;
@@ -952,7 +952,7 @@
 				right: 0;
 				left: 0;
 				bottom: 0;
-				background: rgba(0,0,0,0.5);
+				background: rgba(0,0,0,0.3);
 				@include transition-prefix(all 0.3s ease-out);
 			}
 

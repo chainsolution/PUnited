@@ -47,8 +47,7 @@
 				<div class="item_inner">
 					<div class="item_title">
 						<div>
-							<span>新しい、うれしい、おもしろいを</span>
-							<span>創りつづける</span>
+							<img src="public_html/img/main/banner/main_banner_title_04.png">
 						</div>
 					</div>
 					<div class="item_img">
@@ -61,8 +60,7 @@
 				<div class="item_inner">
 					<div class="item_title">
 						<div>
-							<span>新しい、うれしい、おもしろいを</span>
-							<span>創りつづける</span>
+							<img src="public_html/img/main/banner/main_banner_title_04.png">
 						</div>
 					</div>
 					<div class="item_img">
@@ -75,8 +73,7 @@
 				<div class="item_inner">
 					<div class="item_title">
 						<div>
-							<span>新しい、うれしい、おもしろいを</span>
-							<span>創りつづける</span>
+							<img src="public_html/img/main/banner/main_banner_title_04.png">
 						</div>
 					</div>
 					<div class="item_img">
