@@ -239,6 +239,7 @@ a.more_btn{
 	a{
 		text-decoration: none;
 		color: $white;
+		font-family: $font_en;
 		width: 100%;
 		display: block;
 		font-size: 100%;
@@ -271,6 +272,10 @@ a.more_btn{
 
 			&:nth-child(odd){
 				border-right: 1px solid #444;
+			}
+
+			a{
+				font-family: $font_jp;
 			}
 		}
 
