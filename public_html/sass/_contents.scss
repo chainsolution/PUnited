@@ -143,6 +143,7 @@
 		@include background-size();
 		background-attachment: fixed;
 		padding: 80px 0px 0px 0px;
+		z-index:102;
 	}
 
 	.row{
