@@ -354,8 +354,8 @@
 	.box_title{
 		position: absolute;
 		top: 0;
-		width: 40%;
-		height: 200px;
+		width: 260px;
+		height: 210px;
 		background: rgba(0,0,0,0.4);
 		@include display-flex();
 		@include justify-content();
