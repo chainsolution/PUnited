@@ -518,7 +518,7 @@ body.mobile_nav_open {
 .site_md_container {
   position: relative;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 12px;
   margin: 0 auto;
   max-width: 1140px;
   box-sizing: border-box;
@@ -3150,10 +3150,10 @@ a.more_btn {
   left: 17%; }
 
 .about_jp a.greeting_nav .caption h3 {
-  color: #333; }
+  color: #fff; }
 
 .about_jp a.greeting_nav .caption span {
-  color: #656565; }
+  color: #999999; }
 
 /** About us english **/
 /*****************/
@@ -3603,7 +3603,11 @@ a.more_btn {
       margin-bottom: 10px;
       font-size: 28px; }
   .about_en .company_description h1 {
-    font-size: 28px; } }
+    font-size: 28px; }
+  .site_header {
+    height: 60px; }
+  .overlay_banner {
+    max-height: 140px; } }
 
 @media only screen and (max-width: 640px) {
   .site_banner .item_title span {
@@ -3659,7 +3663,9 @@ a.more_btn {
     font-size: 600%; }
   .overlay_banner .overlay_title span {
     top: 40%;
-    font-size: 250%; } }
+    font-size: 250%; }
+  .overlay_banner {
+    max-height: 120px; } }
 
 @media only screen and (max-width: 420px) {
   .site_banner .item_title span {
@@ -3707,7 +3713,9 @@ a.more_btn {
     font-size: 600%; }
   .overlay_banner .overlay_title span {
     top: 30%;
-    font-size: 250%; } }
+    font-size: 250%; }
+  .overlay_banner {
+    max-height: 100px; } }
 
 @media only screen and (max-width: 340px) {
   .footer_nav a {
@@ -3724,11 +3732,21 @@ a.more_btn {
   .about_en .company_description h1 {
     font-size: 27px; }
   .overlay_banner .overlay_title sup {
-    top: 60%;
-    font-size: 500%; }
+    top: 30%;
+    font-size: 20px;
+    left: 95%; }
   .overlay_banner .overlay_title span {
-    top: 40%;
-    font-size: 220%; } }
+    top: 25%;
+    font-size: 20px;
+    left: 50%; }
+  .mobile_global_nav ul {
+    height: 135px;
+    width: 280px;
+    padding: 0 5px; }
+  .mobile_global_nav .dropdown_ul a {
+    font-size: 11px; }
+  .mobile_global_nav a {
+    font-size: 15px; } }
 
 /* -------------------------------------------------------------------------
 		print.scss

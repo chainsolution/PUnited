@@ -410,6 +410,14 @@
 			}
 		}
 	}
+
+	.site_header{
+		height: 60px;
+	}
+
+	.overlay_banner{
+		max-height: 140px;
+	}
 	
 }
 
@@ -538,6 +546,9 @@
 		}
 	}
 
+	.overlay_banner{
+		max-height: 120px;
+	}
 }
 
 @media only screen and (max-width: 420px){
@@ -652,6 +663,10 @@
 		}
 	}
 
+	.overlay_banner{
+		max-height: 100px;
+	}
+
 }
 
 @media only screen and (max-width: 340px){
@@ -694,14 +709,30 @@
 		.overlay_title{
 
 			sup{
-				top: 60%;
-				font-size: 500%;
+				top: 30%;
+				font-size: 20px;
+				left: 95%;
 			}
 			span{
-				top: 40%;
-				font-size: 220%;
+				top: 25%;
+				font-size: 20px;
+				left: 50%;
 			}
 		}
+	}
+
+	.mobile_global_nav ul{
+		height: 135px;
+		width: 280px;
+		padding: 0 5px;
+	}
+
+	.mobile_global_nav .dropdown_ul a{
+		font-size: 11px;
+	}
+
+	.mobile_global_nav a{
+		font-size: 15px;
 	}
 
 }
