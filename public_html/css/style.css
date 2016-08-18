@@ -2449,8 +2449,8 @@ a.more_btn {
   .recruit .box_title {
     position: absolute;
     top: 0;
-    width: 40%;
-    height: 200px;
+    width: 260px;
+    height: 210px;
     background: rgba(0, 0, 0, 0.4);
     display: -webkit-flex;
     display: -webkit-box;
