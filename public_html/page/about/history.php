@@ -30,7 +30,7 @@
 	include(dirname(dirname(__DIR__)).'/php/includes/overlay_banner.php');
 ?>
 
-<div class="site_sm_container">
+<div class="site_md_container">
 
 	<!-- Page content -->
 	<div class="page_content">
