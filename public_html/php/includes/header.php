@@ -83,7 +83,7 @@
 		<li class="toggle_about_nav" onclick="PUNITED.useful.toggleMenu('.dropdown_ul');">ABOUT US</li>
 		<li>
 			<ul class="dropdown_ul">
-				<li><a href="about_jp">ABOUT US トップ</a></li>
+				<li><a class="lang_en" href="about_jp">ABOUT US トップ</a></li>
 				<li><a href="greeting">ごあいさつ</a></li>
 				<li><a href="philosophy">企業理念</a></li>
 				<li><a href="profile">会社概要</a></li>

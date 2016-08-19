@@ -518,7 +518,7 @@ body.mobile_nav_open {
 .site_md_container {
   position: relative;
   width: 100%;
-  padding: 0 12px;
+  padding: 0 20px;
   margin: 0 auto;
   max-width: 1140px;
   box-sizing: border-box;
@@ -1475,6 +1475,7 @@ a.more_btn {
 .mobile_global_nav a {
   text-decoration: none;
   color: #fff;
+  font-family: "Dosis", sans-serif !important;
   width: 100%;
   display: block;
   font-size: 100%;
@@ -1510,6 +1511,8 @@ a.more_btn {
     border-bottom: 1px solid #444; }
     .mobile_global_nav ul ul li:nth-child(odd) {
       border-right: 1px solid #444; }
+    .mobile_global_nav ul ul li a {
+      font-family: arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku GothicProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳＰゴシック", sans-serif !important; }
 
 .overview article {
   text-align: center;
@@ -2202,7 +2205,8 @@ a.more_btn {
     -ms-background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
-    padding: 80px 0px 0px 0px; }
+    padding: 80px 0px 0px 0px;
+    z-index: 102; }
   .news .row {
     display: inline-flex;
     padding-bottom: 80px; }
@@ -3150,7 +3154,7 @@ a.more_btn {
   left: 17%; }
 
 .about_jp a.greeting_nav .caption h3 {
-  color: #fff; }
+  color: #333; }
 
 .about_jp a.greeting_nav .caption span {
   color: #999999; }
@@ -3628,9 +3632,9 @@ a.more_btn {
   .about_jp article span {
     font-size: 11px; }
   .about_jp .caption h3 {
-    font-size: 20px; }
+    font-size: 18px; }
   .about_jp .caption span {
-    font-size: 14px; } }
+    font-size: 13px; } }
 
 @media only screen and (max-width: 520px) {
   .site_banner .item_title span {
@@ -3693,9 +3697,9 @@ a.more_btn {
     margin-bottom: 2px;
     padding: 7%; }
   .about_jp .caption h3 {
-    font-size: 18px; }
+    font-size: 17px; }
   .about_jp .caption span {
-    font-size: 13px; }
+    font-size: 10px; }
   .about_en .company_description h1 {
     font-size: 28px;
     padding: 10px 0px; }
@@ -3740,9 +3744,7 @@ a.more_btn {
     font-size: 20px;
     left: 50%; }
   .mobile_global_nav ul {
-    height: 135px;
-    width: 280px;
-    padding: 0 5px; }
+    width: 100%; }
   .mobile_global_nav .dropdown_ul a {
     font-size: 11px; }
   .mobile_global_nav a {
