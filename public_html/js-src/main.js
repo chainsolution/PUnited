@@ -120,7 +120,7 @@ if (!PUNITED.main) PUNITED.main = {};
             /****************************/
             if (!(isNaN(tr_obj_top))) {
                 if (scrollTop > (tr_obj_top / 2)) {
-                    tr_obj.css('top', (scrollTop / 2.3) + 'px');
+                    tr_obj.css('top', (scrollTop / 2.4) + 'px');
                 }
             }
 
@@ -144,8 +144,8 @@ if (!PUNITED.main) PUNITED.main = {};
             }
 
             if (!(isNaN(blue_shape_top))) {
-                if (scrollTop > (blue_shape_top / 1.1)) {
-                    blue_shape.css('top', ((scrollTop / 3.5) * 0.5) + 'px');
+                if (scrollTop > (blue_shape_top / 2)) {
+                    blue_shape.css('top', (scrollTop / 3.5) + 'px');
                 }
             }
 

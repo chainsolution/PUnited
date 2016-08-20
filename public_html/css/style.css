@@ -1869,8 +1869,8 @@ a.more_btn {
 
 .triangle_object {
   position: absolute;
-  top: 40%;
-  left: 20px;
+  top: 5%;
+  left: 5%;
   z-index: -1; }
   .triangle_object img {
     vertical-align: bottom;
@@ -1898,7 +1898,7 @@ a.more_btn {
 
 .circle_object {
   position: absolute;
-  z-index: 10;
+  z-index: 3;
   right: 20px;
   top: 8%; }
   .circle_object img {
@@ -1929,7 +1929,7 @@ a.more_btn {
   position: absolute;
   left: 100px;
   top: 100%;
-  z-index: 10; }
+  z-index: 3; }
   .cricle_bottom img {
     vertical-align: bottom;
     max-width: 100%;
@@ -1956,9 +1956,9 @@ a.more_btn {
 
 .blue_shape {
   position: absolute;
-  z-index: 101;
+  z-index: 3;
   right: 0%;
-  top: 0%; }
+  top: 40%; }
   .blue_shape img {
     vertical-align: bottom;
     max-width: 100%;
@@ -1985,9 +1985,9 @@ a.more_btn {
 
 .stick_object {
   position: absolute;
-  z-index: 101;
-  top: 20%;
-  left: 0; }
+  z-index: 3;
+  top: 55%;
+  left: 5%; }
   .stick_object img {
     vertical-align: bottom;
     max-width: 100%;
@@ -2016,7 +2016,7 @@ a.more_btn {
   position: absolute;
   top: 92%;
   left: 50px;
-  z-index: 10; }
+  z-index: 3; }
   .round_object img {
     vertical-align: bottom;
     max-width: 100%;
@@ -3608,8 +3608,6 @@ a.more_btn {
       font-size: 28px; }
   .about_en .company_description h1 {
     font-size: 28px; }
-  .site_header {
-    height: 60px; }
   .overlay_banner {
     max-height: 140px; } }
 
