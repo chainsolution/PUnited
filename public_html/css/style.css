@@ -872,7 +872,7 @@ body.mobile_nav_open {
 .content {
   width: 100%;
   position: relative;
-  z-index: 99;
+  /*z-index: 99;*/
   float: left; }
   .content::after {
     clear: both;
@@ -1560,7 +1560,8 @@ a.more_btn {
   position: absolute;
   top: 50%;
   right: 0;
-  margin-top: -7px; }
+  margin-top: -7px;
+  z-index: 5; }
 
 .news a.more_btn {
   position: relative;
@@ -1958,7 +1959,7 @@ a.more_btn {
   position: absolute;
   z-index: 3;
   right: 0%;
-  top: 40%; }
+  top: 60%; }
   .blue_shape img {
     vertical-align: bottom;
     max-width: 100%;
@@ -1986,7 +1987,7 @@ a.more_btn {
 .stick_object {
   position: absolute;
   z-index: 3;
-  top: 55%;
+  top: 70%;
   left: 5%; }
   .stick_object img {
     vertical-align: bottom;
@@ -2086,7 +2087,8 @@ a.more_btn {
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
-    background-attachment: fixed; }
+    background-attachment: fixed;
+    z-index: 10; }
   .business_domain .title span {
     font-family: "Dosis", sans-serif !important;
     letter-spacing: 0;
@@ -2373,6 +2375,8 @@ a.more_btn {
   position: relative;
   width: 100%;
   float: left; }
+  .recruit .content {
+    z-index: 10; }
   .recruit .left_box,
   .recruit .right_box {
     position: relative;

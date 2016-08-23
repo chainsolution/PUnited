@@ -1,10 +1,10 @@
 <IfModule mod_rewrite.c>
-RewriteBase /
+RewriteBase /modernweb/PUnited/
 RewriteEngine on
 RewriteCond $1 !^(index\.php|images|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /index.php/$1 [L,QSA]  
+RewriteRule ^(.*)$ /modernweb/PUnited/index.php/$1 [L,QSA]  
 </IfModule>
 
 <IfModule !mod_rewrite.c>

@@ -132,20 +132,20 @@ if (!PUNITED.main) PUNITED.main = {};
 
             if (!(isNaN(cir_obj2_top))) {
                 if (scrollTop > (cir_obj2_top / 2)) {
-                    cir_obj2.css('top', (scrollTop / 2.1) + 'px');
+                    cir_obj2.css('top', (scrollTop / 1.6) + 'px');
                 }
             }
 
 
             if (!(isNaN(stick_obj_top))) {
-                if (scrollTop > (stick_obj_top / 1.4)) {
-                    stick_obj.css('top', (scrollTop / 2.6) + 'px');
+                if (scrollTop > (stick_obj_top / 2)) {
+                    stick_obj.css('top', (scrollTop / 1.2) + 'px');
                 }
             }
 
             if (!(isNaN(blue_shape_top))) {
                 if (scrollTop > (blue_shape_top / 2)) {
-                    blue_shape.css('top', (scrollTop / 3.5) + 'px');
+                    blue_shape.css('top', ((scrollTop / 1.3) + 5 )+ 'px');
                 }
             }
 

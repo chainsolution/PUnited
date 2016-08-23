@@ -31,6 +31,7 @@
 		@include background-prefix(#{$defaultBg} url($business_domain_bg) no-repeat center 70px);
 		@include background-size();
 		background-attachment: fixed;
+		z-index: 10;
 	}
 
 	.title{
@@ -300,6 +301,11 @@
 	position: relative;
 	width: 100%;
 	float: left;
+
+	.content{
+		z-index: 10;
+	}
+
 	.left_box,
 	.right_box{
 		position: relative;

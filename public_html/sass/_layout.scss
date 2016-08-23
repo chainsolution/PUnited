@@ -1,4 +1,4 @@
-﻿@import 'plugin/bourbon/_bourbon.scss';
+@import 'plugin/bourbon/_bourbon.scss';
 /* 
  * PAGE : Main visaul
  * SECTION : Header navigation
@@ -343,11 +343,10 @@ body.mobile_nav_open{
 
 }
 
-
 .content{
 	width: 100%;
 	position: relative;
-	z-index: 99;
+	/*z-index: 99;*/
 	float: left;
 	@include clearfix();
 
@@ -666,10 +665,10 @@ body.mobile_nav_open{
 /** Site footer **/
   /************/
 .site_footer{
-width: 100%;
-position: relative;
-padding: 30px 0px 0px;
-@include clearfix();
+	width: 100%;
+	position: relative;
+	padding: 30px 0px 0px;
+	@include clearfix();
 
 	.footer_nav,
 	.footer_copyright{
