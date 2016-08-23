@@ -126,7 +126,7 @@ if (!PUNITED.main) PUNITED.main = {};
 
             if (!(isNaN(cir_obj1_top))) {
                 if (scrollTop > (cir_obj1_top / 2)) {
-                    cir_obj1.css('top', (scrollTop / 9) + 'px');
+                    cir_obj1.css('top', (scrollTop / 8) + 'px');
                 }
             }
 
@@ -172,20 +172,36 @@ if (!PUNITED.main) PUNITED.main = {};
         (function() {
 
             bannerWidth = banner.width();
-            bannerHeight = banner.height();
             bannerRatio = 1300 / 600;
             banner.css("height", (bannerWidth / bannerRatio) + "px");
+            bannerHeight = banner.height();
+
+            function resetBannerHeight(){
+
+            }
+
             $(window).resize(function() {
                 winWidth = $(window).width();
                 bannerWidth = banner.width();
-               
-                    banner.css({
-                        "height": (bannerWidth / bannerRatio) + "px"
-                    });
                 
+                if(winWidth <= 768){
+                    console.log(bannerHeight);
+                    banner.css({
+                        "height": (bannerWidth / bannerRatio) + "px",
+                    });
+                }else if(winWidth > 768 < 1300){
+                    banner.css({
+                        "height": "600px",
+                    });
+                }else{
+                    banner.css({
+                        "height": (bannerWidth / bannerRatio) + "px",
+                    });
+                }
 
                 /** when window resize => always slideup the mobile navigation **/
                 if (winWidth > 768) {
+
                     $('.mobile_global_nav').fadeOut(300);
                     $('.dropdown_ul').fadeOut(300);
                 }

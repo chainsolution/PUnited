@@ -38,7 +38,9 @@
 	</svg>
 </div>
 
+
 <!-- banner -->
+<div class="fluid_container">
 <div class="site_banner">
 	<div class="banner_inner">
 		<ul class="banner_list">
@@ -88,6 +90,7 @@
 	</div>
 
 	<div class="load_banner"></div>
+</div>
 </div>
 <!-- /banner -->
 
