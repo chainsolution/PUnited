@@ -29,6 +29,13 @@ isNaN(s)||m>s/2&&n.css("top",m/2.3+"px"),isNaN(c)||m>c/2&&i.css("top",m/9+"px"),
 m>0?e.css("border-bottom","1px solid #f5f5f5"):e.css("border-bottom","0px")})},/** Resize the height of banner slide, when window width get resize smaller **/
 /***********************************************************************/
 e.resizeBannerHeight=function(){var e,n,i,t,o;e=$(".banner_inner"),function(){n=e.width(),t=1300/600,e.css("height",n/t+"px"),i=e.height(),$(window).resize(function(){o=$(window).width(),n=e.width(),768>=o?(console.log(i),e.css({height:n/t+"px"})):1300>(o>768)?e.css({height:"600px"}):e.css({height:n/t+"px"}),o>768&&($(".mobile_global_nav").fadeOut(300),$(".dropdown_ul").fadeOut(300))})}()},/** Animation for overlay hover **/
+// =======
+// isNaN(s)||m>s/2&&n.css("top",m/2.4+"px"),isNaN(c)||m>c/2&&i.css("top",m/9+"px"),isNaN(l)||m>l/2&&t.css("top",m/2.1+"px"),isNaN(r)||m>r/1.4&&o.css("top",m/2.6+"px"),isNaN(d)||m>d/2&&a.css("top",m/3.5*1.5+"px"),/** Set border bottom of header when scroll, and remove when scroll top = 0 **/
+// /************************************************************************/
+// m>0?e.css("border-bottom","1px solid #f5f5f5"):e.css("border-bottom","0px")})},/** Resize the height of banner slide, when window width get resize smaller **/
+// /***********************************************************************/
+// e.resizeBannerHeight=function(){var e,n,i,t,o;e=$(".banner_inner"),function(){n=e.width(),i=e.height(),t=1300/600,e.css("height",n/t+"px"),$(window).resize(function(){o=$(window).width(),n=e.width(),e.css({height:n/t+"px"}),o>768&&($(".mobile_global_nav").fadeOut(300),$(".dropdown_ul").fadeOut(300))})}()},/** Animation for overlay hover **/
+// >>>>>>> b8ac6db8671b450101d8719293790b90bfda840c
 /****************************/
 e.overlayAnimation=function(){$(".business_domain .frosted_glass").mouseenter(function(){$(this).find(".overlay_caption").fadeIn(180),$(this).find(".inner").addClass("img_scale")}).mouseleave(function(){$(this).find(".overlay_caption").fadeOut(180),$(this).find(".inner").removeClass("img_scale")}),$(".works .canvas_box").mouseenter(function(){$(this).find(".overlay_caption").fadeIn(180),$(this).find("figure").addClass("img_scale")}).mouseleave(function(){$(this).find(".overlay_caption").fadeOut(180),$(this).find("figure").removeClass("img_scale")})},/** Check user-agent : mobile or computer **/
 /**************************************/

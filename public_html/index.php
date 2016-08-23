@@ -98,7 +98,11 @@
 
 <!-- page content -->
 <div class="page_content">
-
+	<!-- Triangle Moving Object -->
+	<div class="triangle_object">
+		<img src="public_html/img/common/objects/floating_triangle_object_04.png">
+	</div>
+	<!-- Triangle Moving Object -->
 	<div class="site_md_container">
 		<!-- overview -->
 		<div class="overview">
@@ -117,11 +121,8 @@
 				<p>どうぞ新生ビザビにご期待ください。</p>
 			</article>
 			<img class="signature" src="public_html/img/main/overview/main_overview_signature_01.png">
-			<!-- Triangle Moving Object -->
-			<div class="triangle_object">
-				<img src="public_html/img/common/objects/floating_triangle_object_04.png">
-			</div>
-			<!-- Triangle Moving Object -->
+			
+
 		</div>
 		<!-- /overview -->
 	</div>
@@ -330,22 +331,24 @@
 		<!-- /business domain -->
 	</div>
 
+	<!-- Blue Shape Moving -->
+	<div class="blue_shape">
+		<img src="public_html/img/common/objects/floating_blue_object_05.png">
+	</div>
+	<!-- Blue Shape Moving -->
+	<!-- Stick Moving Object -->
+	<div class="stick_object">
+		<img src="public_html/img/common/objects/floating_stick_object_06.png">
+	</div>
+	<!-- stick Moving Object -->
+
 	<div class="site_md_container">
+
 		<!-- works -->
 		<div class="works">
 
 			<div class="content_inner">
 
-				<!-- Blue Shape Moving -->
-				<div class="blue_shape">
-					<img src="public_html/img/common/objects/floating_blue_object_05.png">
-				</div>
-				<!-- Blue Shape Moving -->
-				<!-- Stick Moving Object -->
-				<div class="stick_object">
-					<img src="public_html/img/common/objects/floating_stick_object_06.png">
-				</div>
-				<!-- stick Moving Object -->
 
 				<div class="section_heading">
 					<h1 class="lang_en">WORKS</h1>
