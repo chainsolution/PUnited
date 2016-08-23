@@ -165,15 +165,31 @@ if (!PUNITED.main) PUNITED.main = {};
     /***********************************************************************/
 
     func.resizeBannerHeight = function() {
-        var banner, bannerWidth, bannerHeight, bannerRatio, winWidth;
+        var siteBanner, banner, bannerWidth, bannerHeight, bannerRatio, winWidth;
 
         banner = $('.banner_inner');
+        siteBanner = $('.site_banner');
         /* Function to resize the height of banner to the right aspect ratio */
         (function() {
 
             bannerWidth = banner.width();
             bannerRatio = 1300 / 600;
-            banner.css("height", (bannerWidth / bannerRatio) + "px");
+
+            if(bannerWidth <= 768){
+                banner.css({
+                    "height": (bannerWidth / bannerRatio) + "px",
+                });
+
+            }else{
+                banner.css({
+                    "height": "100%",
+                });
+            }
+
+            siteBanner.css({
+                "min-height": (bannerWidth / bannerRatio) + "px",
+            });
+
             bannerHeight = banner.height();
 
             function resetBannerHeight(){
@@ -182,20 +198,27 @@ if (!PUNITED.main) PUNITED.main = {};
 
             $(window).resize(function() {
                 winWidth = $(window).width();
+                winHeight = $(window).height();
+                console.log("height: "+winHeight);
                 bannerWidth = banner.width();
                 
+                siteBanner.css({
+                    "min-height": (bannerWidth / bannerRatio) + "px",
+                });
+                
                 if(winWidth <= 768){
-                    console.log(bannerHeight);
+                    
                     banner.css({
                         "height": (bannerWidth / bannerRatio) + "px",
                     });
-                }else if(winWidth > 768 < 1300){
+
+                }/*else if(winWidth > 768 < 1300){
                     banner.css({
                         "height": "600px",
                     });
-                }else{
+                }*/else{
                     banner.css({
-                        "height": (bannerWidth / bannerRatio) + "px",
+                        "height": "100%",
                     });
                 }
 
