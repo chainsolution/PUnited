@@ -38,7 +38,6 @@
 	</svg>
 </div>
 
-
 <!-- banner -->
 <div class="fluid_container">
 <div class="site_banner">

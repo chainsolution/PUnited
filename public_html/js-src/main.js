@@ -173,7 +173,7 @@ if (!PUNITED.main) PUNITED.main = {};
         (function() {
 
             bannerWidth = banner.width();
-            bannerRatio = 1300 / 600;
+            bannerRatio = 1300 / 640;
 
             if(bannerWidth <= 768){
                 banner.css({
@@ -186,30 +186,16 @@ if (!PUNITED.main) PUNITED.main = {};
                 });
             }
 
-            siteBanner.css({
-                "min-height": (bannerWidth / bannerRatio) + "px",
-            });
-
-            bannerHeight = banner.height();
-
-            function resetBannerHeight(){
-
-            }
-
             $(window).resize(function() {
                 winWidth = $(window).width();
                 winHeight = $(window).height();
                 console.log("height: "+winHeight);
                 bannerWidth = banner.width();
                 
-                siteBanner.css({
-                    "min-height": (bannerWidth / bannerRatio) + "px",
-                });
-                
                 if(winWidth <= 768){
                     
                     banner.css({
-                        "height": (bannerWidth / bannerRatio) + "px",
+                        "height": (winWidth / bannerRatio) + "px",
                     });
 
                 }/*else if(winWidth > 768 < 1300){
