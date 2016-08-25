@@ -3434,7 +3434,6 @@ a.more_btn {
 @media only screen and (min-width: 768px) {
   .site_banner {
     height: 100vh;
-    min-height: 640px;
     margin-top: -70px; }
     .site_banner .item_img img {
       width: 100%;
