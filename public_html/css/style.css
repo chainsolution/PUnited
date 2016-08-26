@@ -3115,7 +3115,7 @@ a.more_btn {
       -ms-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; }
     .about_jp .page_nav a:hover:after {
-      background: rgba(0, 0, 0, 0.3); }
+      background: rgba(0, 0, 0, 0.5); }
     .about_jp .page_nav a:hover img {
       transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
       -webkit-transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
