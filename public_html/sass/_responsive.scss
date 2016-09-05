@@ -137,17 +137,23 @@
 
 	.global_nav{
 		display: none !important;
+		height: 60px;
+	}
+
+	.site_header{
+		height: 60px;
 	}
 
 	.site_logo{
 		width: 50%;
-
+		height: 60px;
 	}
 
 	.toggle_menu{
 		@include display-flex();
 		@include justify-content(flex-end);
 		@include align-items();
+		height: 60px;
 	}
 
 
@@ -158,6 +164,12 @@
 
 	.site_banner{
 		height: 100%;
+		.item_title{
+			img {
+				max-width: 92%;
+				margin-left: 4%;
+			} 
+		} 
 
 		.item_img{
 			img{
