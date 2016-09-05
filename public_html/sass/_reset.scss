@@ -221,6 +221,10 @@ svg:not(:root) {
 hr {
   box-sizing: content-box;
   height: 0;
+  border: 0;
+  height: 1px;
+  padding: 0;
+  border-top: 1px solid $lightGray;
 }
 
 /**

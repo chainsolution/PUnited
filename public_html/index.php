@@ -124,7 +124,7 @@
 
 		</div>
 		<!-- /overview -->
-	</div>
+	</div><hr>
 
 	<div class="fluid_container">
 		<!-- business domain -->

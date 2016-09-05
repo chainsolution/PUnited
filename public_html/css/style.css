@@ -205,7 +205,11 @@ svg:not(:root) {
  */
 hr {
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+  border: 0;
+  height: 1px;
+  padding: 0;
+  border-top: 1px solid #dddddd; }
 
 /**
  * Contain overflow in all browsers.
@@ -2086,7 +2090,6 @@ a.more_btn {
   float: left;
   padding: 80px 0;
   width: 100%;
-  border-bottom: 1px solid #dddddd;
   z-index: 5; }
   .overview::after {
     clear: both;
