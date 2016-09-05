@@ -1910,7 +1910,7 @@ a.more_btn {
   position: absolute;
   top: 5%;
   left: 5%;
-  z-index: -1; }
+  z-index: 1; }
   .triangle_object img {
     vertical-align: bottom;
     max-width: 100%;
@@ -3502,9 +3502,13 @@ a.more_btn {
   .float_r_sm {
     float: right !important; }
   .global_nav {
-    display: none !important; }
+    display: none !important;
+    height: 60px; }
+  .site_header {
+    height: 60px; }
   .site_logo {
-    width: 50%; }
+    width: 50%;
+    height: 60px; }
   .toggle_menu {
     display: -webkit-flex;
     display: -webkit-box;
@@ -3522,12 +3526,16 @@ a.more_btn {
     -ms-align-items: center;
     -webkit-box-align: center;
     -webkit-flex-align: center;
-    -ms-flex-align: center; }
+    -ms-flex-align: center;
+    height: 60px; }
   .site_sm_container {
     width: 80%;
     padding: 0px 10%; }
   .site_banner {
     height: 100%; }
+    .site_banner .item_title img {
+      max-width: 92%;
+      margin-left: 4%; }
     .site_banner .item_img img {
       width: 100%; }
   .overview img.signature {
