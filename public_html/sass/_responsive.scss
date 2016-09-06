@@ -29,7 +29,7 @@
 	.site_md_container{
 		width: 90%;
 		padding: 0px 5%;
-	} */
+	} 
 
 	.global_nav{
 		width: 85%;
@@ -37,12 +37,31 @@
 
 	.site_logo{
 		width: 15%;
-	}
+	} */
 }
 
 @media only screen and (max-width: 960px){
 	.site_banner .item_title span{
 		font-size: 300%;
+	}
+
+	.global_nav{
+		ul{
+			li{
+				a{
+					padding: 0 13px;
+				}
+
+			}
+
+			li.over_black{
+				a{
+					padding-left: 15px;
+					padding-right: 15px;
+					margin-left: 0;
+				}
+			}
+		}
 	}
 
 	.business_domain{
@@ -84,7 +103,7 @@
 }
 
 @media only screen and (max-width: 900px){
-	.site_logo{
+	/*.site_logo{
 		width: 12%;
 	}
 	.global_nav{
@@ -101,7 +120,7 @@
 			}
 
 		}
-	}
+	} */
 	.scroll_bottom span {
 		top: -40%;
 	}
@@ -137,23 +156,23 @@
 
 	.global_nav{
 		display: none !important;
-		height: 60px;
+		height: 70px;
 	}
 
 	.site_header{
-		height: 60px;
+		height: 70px;
 	}
 
 	.site_logo{
 		width: 50%;
-		height: 60px;
+		height: 70px;
 	}
 
 	.toggle_menu{
 		@include display-flex();
 		@include justify-content(flex-end);
 		@include align-items();
-		height: 60px;
+		height: 70px;
 	}
 
 

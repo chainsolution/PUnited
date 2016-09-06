@@ -32,7 +32,7 @@ if (!PUNITED.main) PUNITED.main = {};
             if (!next.length) {
                 next = $(".site_banner .banner_item:first");
                 current.find(".item_img").addClass("img_scale");
-                current.css("z-index", "1");
+                current.css({"z-index":"1"});
                 current.animate({
                     opacity: 1.0
                 }, 1000, function() {
@@ -197,7 +197,7 @@ if (!PUNITED.main) PUNITED.main = {};
                 if(winWidth <= 753){  //753 === 768 in actual
                     
                     banner.css({
-                        "height": (winWidth / bannerRatio) + "px",
+                        "height": (bannerWidth / bannerRatio) + "px",
                     });
 
                 }/*else if(winWidth > 768 < 1300){

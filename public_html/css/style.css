@@ -641,7 +641,8 @@ body.mobile_nav_open {
 .global_nav {
   float: right;
   width: 80%;
-  height: 70px; }
+  height: 70px;
+  overflow: hidden; }
   .global_nav ul {
     list-style-type: none;
     display: inline-block;
@@ -1075,10 +1076,10 @@ body.mobile_nav_open {
     display: block;
     width: 100%;
     vertical-align: top;
+    filter: url(#greyscale);
     -webkit-filter: grayscale(1);
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: url(#greyscale);
     filter: gray; }
   .overlay_banner .overlay_nav {
     position: absolute;
@@ -1444,17 +1445,20 @@ a.more_btn {
 .global_nav ul li.over_black a {
   background: #333;
   color: #fff;
-  padding: 25px 25px; }
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 20px; }
   .global_nav ul li.over_black a:hover {
     background: #000;
     color: #e6e6e6; }
 
 .global_nav ul a {
   font-family: "Dosis", sans-serif !important;
+  display: block;
   text-decoration: none;
-  padding: 25px 17px;
+  padding: 0 20px;
   color: #000;
-  font-size: 16px;
+  font-size: 107%;
   line-height: 70px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -3448,20 +3452,15 @@ a.more_btn {
   .business_domain .canvas_box {
     padding: 10px 10px; } }
 
-@media only screen and (max-width: 1000px) {
-  /*
-	.site_md_container{
-		width: 90%;
-		padding: 0px 5%;
-	} */
-  .global_nav {
-    width: 85%; }
-  .site_logo {
-    width: 15%; } }
-
 @media only screen and (max-width: 960px) {
   .site_banner .item_title span {
     font-size: 300%; }
+  .global_nav ul li a {
+    padding: 0 13px; }
+  .global_nav ul li.over_black a {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0; }
   .business_domain .title h4 {
     font-size: 14px; }
   .business_domain .title span {
@@ -3478,15 +3477,24 @@ a.more_btn {
     width: 45%; } }
 
 @media only screen and (max-width: 900px) {
-  .site_logo {
-    width: 12%; }
-  .global_nav {
-    width: 88%; }
-    .global_nav ul a {
-      font-size: 15px;
-      padding: 26px 17px; }
-    .global_nav ul li.over_black a {
-      padding: 26px 25px; }
+  /*.site_logo{
+		width: 12%;
+	}
+	.global_nav{
+		width: 88%;
+
+		ul{
+			a{
+				font-size: 15px;
+				padding: 26px 17px;
+			}
+
+			li.over_black a{
+				padding: 26px 25px;
+			}
+
+		}
+	} */
   .scroll_bottom span {
     top: -40%; }
   .business_domain .canvas_box .title {
@@ -3506,12 +3514,12 @@ a.more_btn {
     float: right !important; }
   .global_nav {
     display: none !important;
-    height: 60px; }
+    height: 70px; }
   .site_header {
-    height: 60px; }
+    height: 70px; }
   .site_logo {
     width: 50%;
-    height: 60px; }
+    height: 70px; }
   .toggle_menu {
     display: -webkit-flex;
     display: -webkit-box;
@@ -3530,7 +3538,7 @@ a.more_btn {
     -webkit-box-align: center;
     -webkit-flex-align: center;
     -ms-flex-align: center;
-    height: 60px; }
+    height: 70px; }
   .site_sm_container {
     width: 80%;
     padding: 0px 10%; }

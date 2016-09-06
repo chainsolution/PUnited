@@ -146,7 +146,8 @@ body.mobile_nav_open{
 	float: right;
 	width: 80%;
 	height: 70px;
-
+	overflow: hidden;
+	
 	ul{
 		list-style-type: none;
 		display: inline-block;
@@ -511,11 +512,11 @@ body.mobile_nav_open{
 		display: block;
 		width: 100%;
 		vertical-align: top;
-		  -webkit-filter: grayscale(1);
-		  -webkit-filter: grayscale(100%);
-		  filter: grayscale(100%);
-		  filter: url(#greyscale);
-		  filter: gray;
+		filter: url(#greyscale);
+		-webkit-filter: grayscale(1);
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		filter: gray;
 	}
 
 	.overlay_nav{
