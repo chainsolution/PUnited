@@ -176,10 +176,11 @@ if (!PUNITED.main) PUNITED.main = {};
             console.log("test"+bannerWidth);
             bannerRatio = 1300 / 640;
 
-            if(bannerWidth <= 753){  //753 === 768 in actual
+            if(bannerWidth <= 768){  //753 === 768 in actual
                 
                 banner.css({
-                    "height": (bannerWidth / bannerRatio) + "px",
+                    "height": "300px",
+                    "min-height": "300px",
                 });
 
             }else{
@@ -194,10 +195,11 @@ if (!PUNITED.main) PUNITED.main = {};
                 console.log("height: "+winHeight);
                 bannerWidth = banner.width();
                 
-                if(winWidth <= 753){  //753 === 768 in actual
+                if(winWidth <= 768){  //753 === 768 in actual
                     
                     banner.css({
-                        "height": (bannerWidth / bannerRatio) + "px",
+                        "height": "300px",
+                        "min-height": "300px",
                     });
 
                 }/*else if(winWidth > 768 < 1300){
@@ -211,7 +213,7 @@ if (!PUNITED.main) PUNITED.main = {};
                 }
 
                 /** when window resize => always slideup the mobile navigation **/
-                if (winWidth > 753) {  //753 === 768 in actual
+                if (winWidth > 768) {  //753 === 768 in actual
 
                     $('.mobile_global_nav').fadeOut(300);
                     $('.dropdown_ul').fadeOut(300);

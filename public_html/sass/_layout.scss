@@ -146,8 +146,7 @@ body.mobile_nav_open{
 	float: right;
 	width: 80%;
 	height: 70px;
-	overflow: hidden;
-	
+
 	ul{
 		list-style-type: none;
 		display: inline-block;
@@ -209,7 +208,7 @@ body.mobile_nav_open{
 			background: $white;
 			right: 10px;
 			opacity: 0;
-			margin-top: 34px;
+			margin-top: 30px;
 			@include transition-prefix(all 0.3s ease-in);
 			
 		}
