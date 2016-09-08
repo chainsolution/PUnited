@@ -44,7 +44,7 @@
 	<div class="banner_inner">
 		<ul class="banner_list">
 			
-			<li class="banner_item active" style="z-index:0;opacity:0;">
+			<li class="banner_item active" style="z-index:1;">
 				<div class="item_inner">
 					<div class="item_title">
 						<div>
@@ -57,7 +57,7 @@
 				</div>
 			</li>
 
-			<li class="banner_item" style="z-index:0;opacity:0;">
+			<li class="banner_item" style="z-index:0;">
 				<div class="item_inner">
 					<div class="item_title">
 						<div>
@@ -70,7 +70,7 @@
 				</div>
 			</li>
 
-			<li class="banner_item" style="z-index:0;opacity:0;">
+			<li class="banner_item" style="z-index:0;">
 				<div class="item_inner">
 					<div class="item_title">
 						<div>

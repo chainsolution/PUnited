@@ -153,7 +153,9 @@ a.more_btn{
 	li.over_black a{
 		background: $lightBlack;
 		color: $white;
-		padding: 25px 25px;
+		padding-right: 30px;
+		padding-left: 30px;
+		margin-left: 20px;
 		&:hover{
 			background: $black;
 			color: darken($white,10%);
@@ -162,10 +164,11 @@ a.more_btn{
 
 	a{
 		font-family: $font_en;
+		display: block;
 		text-decoration: none;
-		padding: 25px 17px;
+		padding: 0 20px;
 		color: $black;
-		font-size: 16px;
+		font-size: 107%;
 		line-height: 70px;
 		font-weight: 500;
 		letter-spacing: 1px;

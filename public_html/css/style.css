@@ -703,7 +703,7 @@ body.mobile_nav_open {
       background: #fff;
       right: 10px;
       opacity: 0;
-      margin-top: 34px;
+      margin-top: 30px;
       -webkit-transition: all 0.3s ease-in;
       -moz-transition: all 0.3s ease-in;
       -o-transition: all 0.3s ease-in;
@@ -1080,10 +1080,10 @@ body.mobile_nav_open {
     display: block;
     width: 100%;
     vertical-align: top;
+    filter: url(#greyscale);
     -webkit-filter: grayscale(1);
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: url(#greyscale);
     filter: gray; }
   .overlay_banner .overlay_nav {
     position: absolute;
@@ -1449,17 +1449,20 @@ a.more_btn {
 .global_nav ul li.over_black a {
   background: #333;
   color: #fff;
-  padding: 25px 25px; }
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 20px; }
   .global_nav ul li.over_black a:hover {
     background: #000;
     color: #e6e6e6; }
 
 .global_nav ul a {
   font-family: "Dosis", sans-serif !important;
+  display: block;
   text-decoration: none;
-  padding: 25px 17px;
+  padding: 0 20px;
   color: #000;
-  font-size: 16px;
+  font-size: 107%;
   line-height: 70px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -3444,29 +3447,24 @@ a.more_btn {
     height: 100vh;
     margin-top: -70px; }
     .site_banner .item_img img {
-      width: 100%;
-      height: 100%;
-      min-height: 640px;
-      min-width: 1300px; } }
+      width: auto;
+      height: auto;
+      min-height: 100%;
+      min-width: 100%; } }
 
 @media only screen and (max-width: 1160px) {
   .business_domain .canvas_box {
     padding: 10px 10px; } }
 
-@media only screen and (max-width: 1000px) {
-  /*
-	.site_md_container{
-		width: 90%;
-		padding: 0px 5%;
-	} */
-  .global_nav {
-    width: 85%; }
-  .site_logo {
-    width: 15%; } }
-
 @media only screen and (max-width: 960px) {
   .site_banner .item_title span {
     font-size: 300%; }
+  .global_nav ul li a {
+    padding: 0 13px; }
+  .global_nav ul li.over_black a {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0; }
   .business_domain .title h4 {
     font-size: 14px; }
   .business_domain .title span {
@@ -3483,15 +3481,24 @@ a.more_btn {
     width: 45%; } }
 
 @media only screen and (max-width: 900px) {
-  .site_logo {
-    width: 12%; }
-  .global_nav {
-    width: 88%; }
-    .global_nav ul a {
-      font-size: 15px;
-      padding: 26px 17px; }
-    .global_nav ul li.over_black a {
-      padding: 26px 25px; }
+  /*.site_logo{
+		width: 12%;
+	}
+	.global_nav{
+		width: 88%;
+
+		ul{
+			a{
+				font-size: 15px;
+				padding: 26px 17px;
+			}
+
+			li.over_black a{
+				padding: 26px 25px;
+			}
+
+		}
+	} */
   .scroll_bottom span {
     top: -40%; }
   .business_domain .canvas_box .title {
@@ -3502,6 +3509,8 @@ a.more_btn {
     padding: 10px 0 20px 0; } }
 
 @media only screen and (max-width: 768px) {
+  body {
+    padding-top: 60px; }
   .hide_sm {
     display: none !important; }
   .show_sm {
@@ -3536,6 +3545,10 @@ a.more_btn {
     -webkit-flex-align: center;
     -ms-flex-align: center;
     height: 60px; }
+  .mobile_global_nav .button_outer {
+    height: 60px; }
+    .mobile_global_nav .button_outer .outer {
+      height: 60px; }
   .site_sm_container {
     width: 80%;
     padding: 0px 10%; }
@@ -3545,7 +3558,14 @@ a.more_btn {
       max-width: 92%;
       margin-left: 4%; }
     .site_banner .item_img img {
-      width: 100%; }
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: auto;
+      height: auto;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%); }
   #map {
     padding-bottom: 56.25%; }
   .overview img.signature {
