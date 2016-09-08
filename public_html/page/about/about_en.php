@@ -67,10 +67,8 @@
 
 			<div class="fluid_container">
 			<!-- comapny map image -->
-				<div class="company_map">
-					<div class="inner">
-						<img src="public_html/img/about_us/en/about_us_en_company_map_05.png">
-					</div>
+				<div id="map">
+					
 				</div>
 			<!-- /comapny map image -->
 			</div>
@@ -238,6 +236,8 @@
 		</div>
 	</div>
 </div>
+
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxmdIy6GvENTu-DEcpHL_W06FAtx2KhiM&callback=PUNITED.main.initMap"></script>
 <!-- /page content -->
 
 

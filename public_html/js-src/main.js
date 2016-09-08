@@ -256,6 +256,49 @@ if (!PUNITED.main) PUNITED.main = {};
         }
     }
 
+    /** Google map API **/
+    /*********************/
+
+    func.initMap = function() {
+    var styledMapType = new google.maps.StyledMapType(
+        [{
+            "stylers": [{
+                "saturation": -100
+            }, {
+                "visibility": "simplified"
+            }]
+        }, {
+            "featureType": "landscape.natural.terrain",
+            "stylers": [{
+                "lightness": 100
+            }]
+        }], {
+            name: 'Styled Map'
+        });
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 34.6621231, lng: 133.9320698},
+          zoom: 6,
+          mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                    'styled_map']
+          }
+        });
+
+        var image = 'public_html/img/common/icons/map_marker.png';
+        var CustomMarker = new google.maps.Marker({
+          position: {lat: 34.6621231, lng: 133.9320698},
+          map: map,
+          icon: image
+        });
+
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+        map.setOptions({draggable: false, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: true});
+
+
+    }
+
 
 })();
 
@@ -267,5 +310,6 @@ $(document).ready(function() {
     PUNITED.main.resizeBannerHeight();
     PUNITED.main.overlayAnimation();
     PUNITED.main.windowScroll();
+    
 });
 

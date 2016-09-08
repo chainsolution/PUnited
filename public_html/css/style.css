@@ -910,6 +910,11 @@ body.mobile_nav_open {
     -ms-transform: scaleX(1.7) scaleY(1.7) scaleZ(1);
     -o-transform: scaleX(1.7) scaleY(1.7) scaleZ(1); }
 
+#map {
+  position: relative;
+  padding-bottom: 34.61538%;
+  height: 0; }
+
 .content {
   width: 100%;
   position: relative;
@@ -3541,6 +3546,8 @@ a.more_btn {
       margin-left: 4%; }
     .site_banner .item_img img {
       width: 100%; }
+  #map {
+    padding-bottom: 56.25%; }
   .overview img.signature {
     margin: 0 auto;
     margin-top: 30px;
