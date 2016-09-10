@@ -3558,12 +3558,11 @@ a.more_btn {
       max-width: 92%;
       margin-left: 4%; }
     .site_banner .item_img img {
-      position: relative;
+      position: absolute;
       left: 50%;
       top: 50%;
-      width: auto;
       height: auto;
-      min-width: 100%;
+      min-width: 150%;
       min-height: 100%;
       transform: translate(-50%, -50%); }
   #map {

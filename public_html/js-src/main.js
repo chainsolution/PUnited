@@ -176,7 +176,7 @@ if (!PUNITED.main) PUNITED.main = {};
             console.log("test"+bannerWidth);
             bannerRatio = 1300 / 640;
 
-            if(bannerWidth <= 768){  //753 === 768 in actual
+            if(bannerWidth <= 753){  //753 === 768 in actual
                 
                 banner.css({
                     "height": "300px",
@@ -195,7 +195,7 @@ if (!PUNITED.main) PUNITED.main = {};
                 console.log("height: "+winHeight);
                 bannerWidth = banner.width();
                 
-                if(winWidth <= 768){  //753 === 768 in actual
+                if(winWidth <= 753){  //753 === 768 in actual
                     
                     banner.css({
                         "height": "300px",
@@ -213,7 +213,7 @@ if (!PUNITED.main) PUNITED.main = {};
                 }
 
                 /** when window resize => always slideup the mobile navigation **/
-                if (winWidth > 768) {  //753 === 768 in actual
+                if (winWidth > 753) {  //753 === 768 in actual
 
                     $('.mobile_global_nav').fadeOut(300);
                     $('.dropdown_ul').fadeOut(300);
