@@ -11,6 +11,14 @@
     display:flex;
 }
 
+@mixin frosted_glass_filter($val) {
+    -webkit-filter: blur($val);
+    -moz-filter: blur($val);
+    -ms-filter: blur($val);
+    -o-filter: blur($val);
+    filter: blur($val);
+}
+
 @mixin justify-content($justify: center){
 	justify-content: $justify;
     -webkit-justify-content: $justify;
