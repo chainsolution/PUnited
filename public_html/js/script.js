@@ -21,14 +21,14 @@ function n(){e=$(".site_banner .banner_item.active"),i=e.next(),i.length?(e.find
 e.bannerInitialize=function(){$(".site_banner .load_banner").addClass("loading")},/** Synchronize mouse scroll with moving object **/
 /***********************************************/
 e.windowScroll=function(){/* Query for header */
-var e=$(".site_header"),i=$(".triangle_object"),n=$(".circle_object"),t=$(".cricle_bottom"),a=$(".stick_object"),s=$(".blue_shape"),o=($(i).offset()||{top:NaN}).top,l=($(n).offset()||{top:NaN}).top,c=($(t).offset()||{top:NaN}).top,r=($(a).offset()||{top:NaN}).top,m=($(s).offset()||{top:NaN}).top;/**/
+var e=$(".site_header"),i=$(".triangle_object"),n=$(".circle_object"),t=$(".cricle_bottom"),a=$(".stick_object"),o=$(".blue_shape"),s=($(i).offset()||{top:NaN}).top,l=($(n).offset()||{top:NaN}).top,c=($(t).offset()||{top:NaN}).top,r=($(a).offset()||{top:NaN}).top,m=($(o).offset()||{top:NaN}).top;/**/
 $(window).scroll(function(){var d=$(window).scrollTop();$(window).height;/** Working with moving objects **/
 /****************************/
-isNaN(o)||d>o/2&&i.css("top",d/2.4+"px"),isNaN(l)||d>l/2&&n.css("top",d/8+"px"),isNaN(c)||d>c/2&&t.css("top",d/1.6+"px"),isNaN(r)||d>r/2&&a.css("top",d/1.2+"px"),isNaN(m)||d>m/2&&s.css("top",d/1.3+5+"px"),/** Set border bottom of header when scroll, and remove when scroll top = 0 **/
+isNaN(s)||d>s/2&&i.css("top",d/2.4+"px"),isNaN(l)||d>l/2&&n.css("top",d/8+"px"),isNaN(c)||d>c/2&&t.css("top",d/1.6+"px"),isNaN(r)||d>r/2&&a.css("top",d/1.2+"px"),isNaN(m)||d>m/2&&o.css("top",d/1.3+5+"px"),/** Set border bottom of header when scroll, and remove when scroll top = 0 **/
 /************************************************************************/
 d>0?e.css("border-bottom","1px solid #f5f5f5"):e.css("border-bottom","0px")})},/** Resize the height of banner slide, when window width get resize smaller **/
 /***********************************************************************/
-e.resizeBannerHeight=function(){var e,i,n,t,a;i=$(".banner_inner"),e=$(".site_banner"),function(){n=i.width(),console.log("test"+n),t=2.03125,768>=n?i.css({height:"300px","min-height":"300px"}):i.css({height:"100%"}),$(window).resize(function(){a=$(window).width(),winHeight=$(window).height(),console.log("height: "+winHeight),n=i.width(),768>=a?i.css({height:"300px","min-height":"300px"}):i.css({height:"100%"}),a>768&&($(".mobile_global_nav").fadeOut(300),$(".dropdown_ul").fadeOut(300))})}()},/** Animation for overlay hover **/
+e.resizeBannerHeight=function(){var e,i,n,t,a;i=$(".banner_inner"),e=$(".site_banner"),function(){n=i.width(),console.log("test"+n),t=2.03125,753>=n?i.css({height:"300px","min-height":"300px"}):i.css({height:"100%"}),$(window).resize(function(){a=$(window).width(),winHeight=$(window).height(),console.log("height: "+winHeight),n=i.width(),753>=a?i.css({height:"300px","min-height":"300px"}):i.css({height:"100%"}),a>753&&($(".mobile_global_nav").fadeOut(300),$(".dropdown_ul").fadeOut(300))})}()},/** Animation for overlay hover **/
 /****************************/
 e.overlayAnimation=function(){$(".business_domain .frosted_glass").mouseenter(function(){$(this).find(".overlay_caption").fadeIn(180),$(this).find(".inner").addClass("img_scale")}).mouseleave(function(){$(this).find(".overlay_caption").fadeOut(180),$(this).find(".inner").removeClass("img_scale")}),$(".works .canvas_box").mouseenter(function(){$(this).find(".overlay_caption").fadeIn(180),$(this).find("figure").addClass("img_scale")}).mouseleave(function(){$(this).find(".overlay_caption").fadeOut(180),$(this).find("figure").removeClass("img_scale")})},/** Check user-agent : mobile or computer **/
 /**************************************/
@@ -50,14 +50,14 @@ e.jumpToPageTop=function(){return $("html,body").stop().animate({scrollTop:0},1e
 		PUNITED.useful.SmoothScrollTo("element id");
 		use with event onClick(), onMouseover() etc.
 	*/
-e.SmoothScrollTo=function(e){var t=$(e);if(t.length){var n=t.offset().top;$(".mobile_global_nav").slideUp(),$("html,body").stop().animate({scrollTop:n-60},900,"swing")}return!1},/** Toggle navigation bar in mobile or smaller screen **/
+e.SmoothScrollTo=function(e){var n=$(e);if(n.length){var t=n.offset().top;$(".mobile_global_nav").slideUp(),$("html,body").stop().animate({scrollTop:t-60},900,"swing")}return!1},/** Toggle navigation bar in mobile or smaller screen **/
 /**************************************************/
 /* 
 		#usage : calling function => 
 		PUNITED.useful.toggleMenu("class/id name with . or #");
 		use with event onClick(), onMouseover() etc.
 	*/
-e.toggleMenu=function(e,t){var t="undefined"!=typeof t?t:!1;t!==!1&&("noscroll"==t?($("body").toggleClass("mobile_nav_open"),$(".button_outer .bar").toggleClass("rotate")):($(t).fadeOut(100),$("body").toggleClass("mobile_nav_open"),$(".button_outer .bar").toggleClass("rotate"))),$(e).slideToggle(500)}}();
+e.toggleMenu=function(e,n){var n="undefined"!=typeof n?n:!1;n!==!1&&("noscroll"==n?($("body").toggleClass("mobile_nav_open"),$(".button_outer .bar").toggleClass("rotate")):($(n).fadeOut(100),$("body").toggleClass("mobile_nav_open"),$(".button_outer .bar").toggleClass("rotate"))),$(e).slideToggle(500)}}();
 /* -------------------------------------------------------------------------
 	
 ------------------------------------------------------------------------- */
