@@ -17,3 +17,11 @@
 .cricle_bottom, .circle_object, .triangle_object{
 	display: none !important;
 }
+
+.canvas_box.frosted_glass:after {
+	-webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+}
