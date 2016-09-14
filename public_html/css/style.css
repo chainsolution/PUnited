@@ -1038,10 +1038,6 @@ body.mobile_nav_open {
     content: "";
     z-index: 2;
     opacity: 0.4;
-    background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
     background-attachment: fixed;
     -webkit-filter: blur(10px);
     -moz-filter: blur(10px);

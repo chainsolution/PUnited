@@ -469,7 +469,7 @@ body.mobile_nav_open{
 		content: "";
 		z-index: 2;
 		opacity: 0.4;
-		@include background-size();
+		
 		background-attachment: fixed;
 		-webkit-filter: blur(10px);
 		-moz-filter: blur(10px);
