@@ -2167,7 +2167,12 @@ a.more_btn {
   .business_domain .canvas_box.frosted_glass:after {
     margin: -10px -20px -20px -10px;
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/main/business_domain/main_business_domain_bg_07.png");
-    background-position: center 70px; }
+    background-position: center 70px;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px); }
 
 .works {
   width: 100%;
