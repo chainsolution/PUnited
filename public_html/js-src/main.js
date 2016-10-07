@@ -296,7 +296,7 @@ if (!PUNITED.main) PUNITED.main = {};
 
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
-        map.setOptions({draggable: false, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: true});
+        map.setOptions({draggable: false, zoomControl: true, scrollwheel: false, disableDoubleClickZoom: true});
 
 
     }
